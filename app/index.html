@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
@@ -12,46 +12,49 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-      <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css" />
-      <link rel="stylesheet" href="styles/angular-motion.min.css" />
-      <link rel="stylesheet" href="styles/bootstrap-additions.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/angular-motion.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-additions.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="pspApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <title></title>
+</head>
+<body ng-app="psp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <div ng-include="'views/_nav.html'"></div>
-    <div class="container" ng-view=""></div>
+<div ng-include="'components/layout/_nav.html'"></div>
+<div class="container" ng-view=""></div>
 
 
 
-    <!--[if lt IE 9]>
-    <script src="vendors/es5-shim/es5-shim.js"></script>
-    <script src="vendors/json3/lib/json3.min.js"></script>
-    <![endif]-->
+<!--[if lt IE 9]>
+<script src="vendor/es5-shim/es5-shim.js"></script>
+<script src="vendor/json3/lib/json3.min.js"></script>
+<![endif]-->
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="vendors/jquery/jquery.js"></script>
-    <script src="vendors/angular/angular.js"></script>
-    <script src="vendors/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="vendors/angular-resource/angular-resource.js"></script>
-    <script src="vendors/angular-cookies/angular-cookies.js"></script>
-    <script src="vendors/angular-sanitize/angular-sanitize.js"></script>
-    <script src="vendors/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="vendor/angular-resource/angular-resource.js"></script>
+<script src="vendor/angular-cookies/angular-cookies.js"></script>
+<script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+<script src="vendor/angular-route/angular-route.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/login.js"></script>
-        <!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="app.js"></script>
+<script src="components/security/auth-service.js"></script>
+<script src="components/security/login-controller.js"></script>
+<script src="dashboard/main-controller.js"></script>
+
+<!-- endbuild -->
 </body>
 </html>
