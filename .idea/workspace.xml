@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/1x1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/lib/jasmine_favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-mocks/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/.mailmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/CHANGES" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/CONTRIBUTORS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/DOCS-LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/LICENSE-MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-mocks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/absolute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/angular-cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/angular-cookies.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/angular-cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-mocks/angular-mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/angular-resource.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/angular-route.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/angular-scenario.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/atom+xml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/badcall.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/badjson.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/benchmarker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/benchmarker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/body.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/bodyBackground.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-cookies/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-mocks/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-resource/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-route/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-sanitize/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/boxSizing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/core/cc_on.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/cleanScript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/closest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/csp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/csp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/css.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/dashboard.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/delegatetest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/dimensions/documentLarge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/dimensions/documentSmall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/echoData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/echoQuery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/errorWithJSON.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/errorWithText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-sham.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-sham.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-sham.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-shim.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/es5-shim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/etag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/evalScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/event-alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/exports.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/exports.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/find.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/fixed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/event/focusElem.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/helpers/h-kill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/helpers/h-matchers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/helpers/h.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/headers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/hovertest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/selector/html5_selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/if_modified_since.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/manipulation/iframe-denied.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/iframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/index.min.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/intro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/lib/jasmine-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/lib/jasmine.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/lib/jasmine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/jquery-basis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/jquery-migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/jquery-migrate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/json.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/lib/json2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/lib/json3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/json3/lib/json3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/json_obj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/ajax/jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/jstd-scenario-adapter-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/angular-scenario/jstd-scenario-adapter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/localfile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/event/longLoadScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/manipulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/manipulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/name.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/networkerror.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/nocontent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/outro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/params_html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/event/promiseReady.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/readywait.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/readywaitasset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/readywaitloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/relative.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/build/release-notes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/build/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-date.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-function.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-number.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/es5-shim/tests/spec/s-string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/ajax/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/shrinkWrapBlocks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/sizzle-jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/selector/sizzle_cache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/speed/slice.vs.concat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/static.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/statusText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/event/syncReady.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/offset/table.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/test2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/test3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/support/testElementCrash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/testinit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/testrunner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/testsuite.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/traversing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/traversing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/ua.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/ajax/unreleasedXHR.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/with_fries.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/data/with_fries_over_jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/unit/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/src/ajax/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors/jquery/test/xhtml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    </list>
+    <ignored path="PSP.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="PSP" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="56" selection-start="2161" selection-end="2161" vertical-scroll-proportion="-18.153847" vertical-offset="378" max-vertical-offset="1088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="102" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="109" selection-start="626" selection-end="630" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthService.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/AuthService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="3" selection-start="719" selection-end="719" vertical-scroll-proportion="0.4993007" vertical-offset="0" max-vertical-offset="715">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12206">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_nav.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/_nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="21" selection-start="727" selection-end="727" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/app/styles/angular-motion.min.css" />
+        <option value="$PROJECT_DIR$/app/views/_nav.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/LoginCtrl.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/login.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/AuthService.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="" />
+      <created>1395424062083</created>
+      <updated>1395424062083</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17291667" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PSP" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PSP" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="30" selection-start="4465" selection-end="4465" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="712" column="10" selection-start="9442" selection-end="9442" vertical-scroll-proportion="0.0" vertical-offset="11491" max-vertical-offset="12206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.10828026" vertical-offset="0" max-vertical-offset="471" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/angular-motion.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="631" column="12" selection-start="16558" selection-end="16558" vertical-scroll-proportion="0.38181818" vertical-offset="10488" max-vertical-offset="11203" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="727" selection-end="727" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="102" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="56" selection-start="2161" selection-end="2161" vertical-scroll-proportion="-18.153847" vertical-offset="378" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="109" selection-start="626" selection-end="630" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/AuthService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="3" selection-start="719" selection-end="719" vertical-scroll-proportion="0.4993007" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

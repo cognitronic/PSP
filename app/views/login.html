@@ -1,0 +1,31 @@
+<div class=" slim-view">
+    <form id="login-form" class="form-login clearfix well well-sm" ng-submit="login(user)">
+        <header class="img-logo center avatar">
+            <img class="img-circle" src="../images/primeshine-logo.png" />
+        </header>
+
+        <div class="login-message">
+
+        </div>
+
+        <div class="form-group">
+            <input name="email" class="form-control" type="email" placeholder="Email" ng-model="user.email" required autofocus>
+        </div>
+        <div class="form-group">
+            <input name="password" class="form-control" type="password" placeholder="Password" ng-model="user.password" required>
+        </div>
+        <p>
+            <label><input type="checkbox" ng-model="user.remember"> Stay signed in </label>
+            <span class="pull-right"> <a href="#/forgot-password"> Forgot password? </a> </span>
+        </p>
+        <button class="btn btn- btn-primary btn-block" type="submit">
+            Sign in
+        </button>
+        <hr/>
+        <p class="center">
+            <a href="#/register">Create an account</a>
+        </p>
+    </form>
+
+
+</div>
