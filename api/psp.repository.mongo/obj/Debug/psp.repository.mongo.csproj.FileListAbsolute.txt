@@ -1,0 +1,13 @@
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\psp.repository.mongo.dll
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\psp.repository.mongo.pdb
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Bson.dll
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Driver.dll
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Web.dll
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\psp.core.dll
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\psp.core.pdb
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Bson.xml
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Driver.xml
+c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Web.pdb
+c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.csprojResolveAssemblyReference.cache
+c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.dll
+c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.pdb

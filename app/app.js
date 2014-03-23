@@ -3,7 +3,7 @@
  */
 var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service.auth'])
 
-.config(function($routeProvider){
+.config(function($routeProvider, $httpProvider){
     $routeProvider
         .when('/', {
             templateUrl: 'dashboard/main.html',
@@ -15,7 +15,10 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
         })
         .otherwise({
             redirectTo: '/'
-    })
+    });
+    $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
 })
 
 .constant('AUTH_EVENTS', {
@@ -33,5 +36,5 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
     office: 'office'
 })
 .constant('APP_SETTINGS', {
-        apiUrl: 'http://psp.localhost/api/'
+        apiUrl: 'http://pspapi.localhost/'
     })

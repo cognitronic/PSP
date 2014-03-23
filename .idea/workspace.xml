@@ -4,87 +4,11 @@
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Projects\PSP\.travis.yml" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\Properties\AssemblyInfo.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\UnitTest1.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\api.Tests.csproj" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.Tests\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.sln" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api.v12.suo" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\App_Start\WebApiConfig.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Global.asax" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Global.asax.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Properties\AssemblyInfo.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Web.Debug.config" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Web.Release.config" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\Web.config" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\api.csproj" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\api.csproj.user" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\bin\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\bin\System.Net.Http.Formatting.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\bin\System.Web.Http.WebHost.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\bin\System.Web.Http.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\obj\Debug\build.force" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\api\packages.config" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.5.0.0\Microsoft.AspNet.WebApi.5.0.0.nupkg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.5.0.0\Microsoft.AspNet.WebApi.5.0.0.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\Microsoft.AspNet.WebApi.Client.5.0.0.nupkg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\Microsoft.AspNet.WebApi.Client.5.0.0.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\portable-wp8%2Bnetcore45%2Bnet45\System.Net.Http.Formatting.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\portable-wp8%2Bnetcore45%2Bnet45\System.Net.Http.Formatting.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Core.5.0.0\Microsoft.AspNet.WebApi.Core.5.0.0.nupkg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Core.5.0.0\Microsoft.AspNet.WebApi.Core.5.0.0.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Core.5.0.0\content\web.config.transform" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\Microsoft.AspNet.WebApi.WebHost.5.0.0.nupkg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\Microsoft.AspNet.WebApi.WebHost.5.0.0.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\Newtonsoft.Json.5.0.6.nupkg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\Newtonsoft.Json.5.0.6.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net20\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net20\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net35\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net35\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\netcore45\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\netcore45\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\portable-net40%2Bsl4%2Bwp7%2Bwin8\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\portable-net40%2Bsl4%2Bwp7%2Bwin8\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\portable-net45%2Bwp80%2Bwin8\Newtonsoft.Json.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\Newtonsoft.Json.5.0.6\lib\portable-net45%2Bwp80%2Bwin8\Newtonsoft.Json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\api\packages\repositories.config" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\.buildignore" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\.htaccess" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\404.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\images\primeshine-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\images\yeoman.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\scripts\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\scripts\controllers\login.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\scripts\controllers\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\scripts\services\AuthService.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\styles\angular-motion.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\styles\bootstrap-additions.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\styles\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\styles\main.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\.bower.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\README.md" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\angular-cookies.js" afterPath="" />
@@ -374,9 +298,6 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\json3\bower.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\json3\lib\json3.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\json3\lib\json3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\views\_nav.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\views\login.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\app\views\main.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\bower.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\karma-e2e.conf.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\karma.conf.js" afterPath="" />
@@ -384,21 +305,9 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\runner.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\spec\controllers\main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PSP.iml" afterPath="$PROJECT_DIR$/.idea/PSP.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/danny_000.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/danny_000.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/auth-service.js" afterPath="$PROJECT_DIR$/app/components/security/auth-service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -425,7 +334,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="43" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+            <state line="17" column="7" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -461,7 +370,7 @@
       <file leaf-file-name="login-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/security/login-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+            <state line="7" column="83" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -506,7 +415,7 @@
       <file leaf-file-name="auth-service.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="57" selection-start="307" selection-end="307" vertical-scroll-proportion="0.21398601" vertical-offset="0" max-vertical-offset="715">
+            <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
               <folding />
             </state>
           </provider>
@@ -541,10 +450,10 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/dashboard/main-controller.js" />
         <option value="$PROJECT_DIR$/app/components/security/login-controller.js" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
         <option value="$PROJECT_DIR$/app/assets/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
       </list>
     </option>
@@ -597,214 +506,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -996,34 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="43" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/login-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="12206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="368" column="0" selection-start="4955" selection-end="4955" vertical-scroll-proportion="0.0" vertical-offset="6111" max-vertical-offset="120768">
@@ -1038,9 +711,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="7" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="12206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/login-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="83" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="57" selection-start="307" selection-end="307" vertical-scroll-proportion="0.21398601" vertical-offset="0" max-vertical-offset="715">
+        <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
           <folding />
         </state>
       </provider>

@@ -1,0 +1,11 @@
+c:\Projects\PSP\api\psp.core\bin\Debug\psp.core.dll
+c:\Projects\PSP\api\psp.core\bin\Debug\psp.core.pdb
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Bson.dll
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Driver.dll
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Web.dll
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Bson.xml
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Driver.xml
+c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Web.pdb
+c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.csprojResolveAssemblyReference.cache
+c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.dll
+c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.pdb

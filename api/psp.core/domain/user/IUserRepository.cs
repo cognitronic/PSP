@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MongoDB.Bson;
+
+namespace psp.core.domain.user
+{
+    public interface IUserRepository
+    {
+        IList<IUser> Get();
+        IUser GetById(ObjectId id);
+        IUser GetByEmail(string email);
+        IUser Save(IUser user);
+        IUser Delete(IUser user);
+    }
+}

@@ -8,10 +8,13 @@ angular.module('service.auth', [])
 .factory('AuthService', function($http, APP_SETTINGS){
         return {
             login: function(credentials){
-                console.log(credentials);
-                return $http.post(APP_SETTINGS.apiUrl + 'User/login', credentials)
+                console.log('hey there ' + credentials.email);
+                return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                })
                     .then(function(res){
-                        console.log('whoop...im logged in');
+                        console.log('whoop...im logged in' + res);
+                        console.log(res.config.data.email);
                     });
             },
             isAuthenticated: function(){

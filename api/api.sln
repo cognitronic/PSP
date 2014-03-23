@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psp.api", "psp.api\psp.api.csproj", "{D59A5BFE-A27C-4F55-9303-70D92F86CAEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psp.api.Tests", "psp.api.Tests\psp.api.Tests.csproj", "{98C78D7F-477D-4CC1-86B6-F3FB6DDADCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psp.core", "psp.core\psp.core.csproj", "{7A707854-952D-463A-B288-4011275304BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psp.repository.mongo", "psp.repository.mongo\psp.repository.mongo.csproj", "{6F893445-F93F-4E1B-B35B-74AFA620F30A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D59A5BFE-A27C-4F55-9303-70D92F86CAEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59A5BFE-A27C-4F55-9303-70D92F86CAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59A5BFE-A27C-4F55-9303-70D92F86CAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59A5BFE-A27C-4F55-9303-70D92F86CAEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C78D7F-477D-4CC1-86B6-F3FB6DDADCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C78D7F-477D-4CC1-86B6-F3FB6DDADCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C78D7F-477D-4CC1-86B6-F3FB6DDADCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C78D7F-477D-4CC1-86B6-F3FB6DDADCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A707854-952D-463A-B288-4011275304BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A707854-952D-463A-B288-4011275304BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A707854-952D-463A-B288-4011275304BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A707854-952D-463A-B288-4011275304BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F893445-F93F-4E1B-B35B-74AFA620F30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F893445-F93F-4E1B-B35B-74AFA620F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F893445-F93F-4E1B-B35B-74AFA620F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F893445-F93F-4E1B-B35B-74AFA620F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
