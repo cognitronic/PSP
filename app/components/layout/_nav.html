@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation" ng-controller="NavCtrl">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,7 +24,10 @@
             </ul>
             <ul class="nav navbar-nav pull-right">
                 <li>
-                    <a ng-show="false" href="#login">Sign In</a>
+                    <a ng-show="!isAuthenticated" href="#login">Sign In</a>
+                </li>
+                <li>
+                    <a ng-show="isAuthenticated" href="#logout">Sign Out</a>
                 </li>
             </ul>
         </div>

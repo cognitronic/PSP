@@ -5,27 +5,48 @@
 'use strict'
 
 angular.module('service.auth', [])
-.factory('AuthService', function($http, APP_SETTINGS){
-        
+.factory('AuthService', function($http, $location, APP_SETTINGS){
+        var _currentuser = {
+            email:'',
+            first: '',
+            last: '',
+            password: '',
+            id: ''
+        };
+
         return {
             login: function(credentials){
                 console.log('hey there ' + credentials.email);
                 return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
                 })
-                    .then(function(res){
-                        console.log('whoop...im logged in' + res);
-                        console.log(res.config.data.email);
+                    .success(function(data, status, headers, config){
+                        console.log( data);
+                        _currentuser = data;
+                        console.log(_currentuser.first);
+                        if(_currentuser !== "null")
+                            $location.path('/');
+                        else
+                            console.log('Invalid email or password');
                     });
             },
             isAuthenticated: function(){
-                return false; //check against session
+               if(_currentuser !== '' && _currentuser !== undefined){
+                   return true;
+               }
+                return false;
             },
             isAuthorized: function(authorizedRoles){
                 if(!angular.isArray(authorizedRoles)){
                     authorizedRoles = [authorizedRoles];
                 }
                 return true;//test against session
+            },
+            logout: function(){
+                _currentuser = {};
+                $location.path('/login');
+            },
+            currentUser: function(){
+                return _currentuser;
             }
         };
     });

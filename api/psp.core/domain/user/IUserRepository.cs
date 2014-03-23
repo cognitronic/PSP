@@ -12,6 +12,7 @@ namespace psp.core.domain.user
         IList<IUser> Get();
         IUser GetById(ObjectId id);
         IUser GetByEmail(string email);
+        IUser GetByEmailPassword(string email, string password);
         IUser Save(IUser user);
         IUser Delete(IUser user);
     }

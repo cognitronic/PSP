@@ -34,6 +34,14 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<User>(query);
         }
 
+        public IUser GetByEmailPassword(string email, string password)
+        {
+            var query = Query.And(
+                Query.EQ("email", email),
+                Query.EQ("password", password));
+            return _collection.FindOneAs<User>(query);
+        }
+
         public IUser Save(IUser user)
         {
             throw new NotImplementedException();

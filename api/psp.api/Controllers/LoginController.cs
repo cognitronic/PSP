@@ -43,7 +43,7 @@ namespace psp.api.Controllers
 
         public HttpResponseMessage PostUser([FromBody]User credentials)
         {
-            var user = (User)_userRepository.GetByEmail(credentials.email);
+            var user = (User)_userRepository.GetByEmailPassword(credentials.email, credentials.password);
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, user);
             response.Content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(user));
             response.Headers.Location = new Uri(Url.Link("DefaultApi", new { email = credentials.email }));
