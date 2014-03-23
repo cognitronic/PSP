@@ -6,6 +6,7 @@
 
 angular.module('service.auth', [])
 .factory('AuthService', function($http, APP_SETTINGS){
+        
         return {
             login: function(credentials){
                 console.log('hey there ' + credentials.email);
@@ -18,7 +19,7 @@ angular.module('service.auth', [])
                     });
             },
             isAuthenticated: function(){
-                return true; //check against session
+                return false; //check against session
             },
             isAuthorized: function(authorizedRoles){
                 if(!angular.isArray(authorizedRoles)){

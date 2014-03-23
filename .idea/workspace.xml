@@ -305,10 +305,10 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\runner.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\spec\controllers\main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/auth-service.js" afterPath="$PROJECT_DIR$/app/components/security/auth-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="PSP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -334,7 +334,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state line="53" column="40" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="1474">
               <folding />
             </state>
           </provider>
@@ -352,7 +352,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="41" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-19.961538" vertical-offset="416" max-vertical-offset="1122">
+            <state line="48" column="44" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-19.083334" vertical-offset="598" max-vertical-offset="1474">
               <folding />
             </state>
           </provider>
@@ -361,7 +361,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
+            <state line="6" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.076923" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
@@ -385,37 +385,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="12206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="368" column="0" selection-start="4955" selection-end="4955" vertical-scroll-proportion="0.0" vertical-offset="6111" max-vertical-offset="120768">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="366" column="0" selection-start="4885" selection-end="4885" vertical-scroll-proportion="0.0" vertical-offset="5672" max-vertical-offset="121091">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="auth-service.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
+            <state line="8" column="8" selection-start="157" selection-end="157" vertical-scroll-proportion="0.18461539" vertical-offset="0" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -447,12 +420,12 @@
         <option value="$PROJECT_DIR$/.bowerrc" />
         <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/dashboard/main-controller.js" />
         <option value="$PROJECT_DIR$/app/components/security/login-controller.js" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
         <option value="$PROJECT_DIR$/app/assets/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
       </list>
@@ -509,6 +482,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="underscore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -516,7 +543,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.xslt" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -531,6 +558,7 @@
       <recent name="C:\Projects\PSP\app\common\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\PSP\app\vendor" />
       <recent name="C:\Projects\PSP\app" />
     </key>
   </component>
@@ -607,7 +635,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16875" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1423611" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -626,7 +654,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <PATH>
@@ -678,14 +708,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="41" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-19.961538" vertical-offset="416" max-vertical-offset="1122">
+        <state line="6" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.076923" vertical-offset="0" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
@@ -711,23 +734,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="0" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="12206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
           <folding />
         </state>
       </provider>
@@ -739,9 +748,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="44" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-19.083334" vertical-offset="598" max-vertical-offset="1474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="40" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="1474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
+        <state line="8" column="8" selection-start="157" selection-end="157" vertical-scroll-proportion="0.18461539" vertical-offset="0" max-vertical-offset="748">
           <folding />
         </state>
       </provider>

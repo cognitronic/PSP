@@ -1,6 +1,9 @@
 /**
  * Created by danny_000 on 3/22/14.
  */
+
+
+
 var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service.auth'])
 
 .config(function($routeProvider, $httpProvider){
@@ -13,14 +16,18 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
             templateUrl: 'components/security/login.html',
             controller: 'LoginCtrl'
         })
+        .when('/dashboard', {
+            templateUrl: 'dashboard/dashboard.html',
+            controller: 'DashboardCtrl'
+        })
         .otherwise({
             redirectTo: '/'
     });
+
     $httpProvider.defaults.useXDomain = true;
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 })
-
 .constant('AUTH_EVENTS', {
     loginSuccess: 'auth-login-success',
     loginFailed: 'auth-login-failed',
@@ -38,3 +45,20 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
 .constant('APP_SETTINGS', {
         apiUrl: 'http://pspapi.localhost/'
     })
+.run(function($rootScope, $location, AuthService){
+    var routesThatDontRequireAuth = ['/login'];
+
+    var routeClean = function(route){
+        return _.find(routesThatDontRequireAuth,
+        function(noAuthRoute){
+            return (route == noAuthRoute);
+        });
+    };
+
+    $rootScope.$on('$routeChangeStart', function(event, next, current){
+        if(!routeClean($location.url()) && !AuthService.isAuthenticated()){
+            $location.path('/login');
+        }
+    });
+
+});
