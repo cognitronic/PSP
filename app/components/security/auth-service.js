@@ -5,7 +5,7 @@
 'use strict'
 
 angular.module('service.auth', [])
-.factory('AuthService', function($http, $location, APP_SETTINGS){
+.factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS){
         var _currentuser = {
             email:'',
             first: '',
@@ -23,17 +23,19 @@ angular.module('service.auth', [])
                         console.log( data);
                         _currentuser = data;
                         console.log(_currentuser.first);
-                        if(_currentuser !== "null")
+                        if(_currentuser !== "null"){
+                            $rootScope.$broadcast('userLoggedIn', {user: _currentuser});
                             $location.path('/');
+                        }
                         else
                             console.log('Invalid email or password');
                     });
             },
             isAuthenticated: function(){
-               if(_currentuser !== '' && _currentuser !== undefined){
-                   return true;
+               if(_currentuser === null || _currentuser === undefined || _currentuser.email === ''){
+                   return false;
                }
-                return false;
+                return true;
             },
             isAuthorized: function(authorizedRoles){
                 if(!angular.isArray(authorizedRoles)){
@@ -42,7 +44,8 @@ angular.module('service.auth', [])
                 return true;//test against session
             },
             logout: function(){
-                _currentuser = {};
+                _currentuser = null;
+                $rootScope.$broadcast('userLoggedIn', {user: _currentuser});
                 $location.path('/login');
             },
             currentUser: function(){

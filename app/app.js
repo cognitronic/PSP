@@ -31,6 +31,18 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
             templateUrl: 'dashboard/dashboard.html',
             controller: 'DashboardCtrl'
         })
+        .when('/reports', {
+            templateUrl: 'reports/reports-index.html',
+            controller: 'ReportsCtrl'
+        })
+        .when('/forms', {
+            templateUrl: 'forms/forms-index.html',
+            controller: 'FormsCtrl'
+        })
+        .when('/settings', {
+            templateUrl: 'settings/settings-index.html',
+            controller: 'SettingsCtrl'
+        })
         .otherwise({
             redirectTo: '/'
     });
@@ -67,7 +79,6 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
     };
 
     $rootScope.$on('$routeChangeStart', function(event, next, current){
-        console.log('for every page: ' + AuthService.currentUser().email);
         if(!routeClean($location.url()) && !AuthService.isAuthenticated()){
             $location.path('/login');
         }
