@@ -78,7 +78,7 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
         });
     };
 
-    $rootScope.$on('$routeChangeStart', function(event, next, current){
+    $rootScope.$on('$locationChangeStart', function(event, next, current){
         if(!routeClean($location.url()) && !AuthService.isAuthenticated()){
             $location.path('/login');
         }

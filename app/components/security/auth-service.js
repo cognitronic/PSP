@@ -6,13 +6,6 @@
 
 angular.module('service.auth', [])
 .factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS){
-        var _currentuser = {
-            email:'',
-            first: '',
-            last: '',
-            password: '',
-            id: ''
-        };
 
         return {
             login: function(credentials){
@@ -20,11 +13,10 @@ angular.module('service.auth', [])
                 return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
                 })
                     .success(function(data, status, headers, config){
-                        console.log( data);
-                        _currentuser = data;
-                        console.log(_currentuser.first);
-                        if(_currentuser !== "null"){
-                            $rootScope.$broadcast('userLoggedIn', {user: _currentuser});
+                        //_currentuser = data;
+                        sessionStorage.setItem('psp.currentUser', JSON.stringify(data));
+                        if(sessionStorage.getItem('psp.currentUser') !== null){
+                            $rootScope.$broadcast('userLoggedIn', {user: data});
                             $location.path('/');
                         }
                         else
@@ -32,10 +24,10 @@ angular.module('service.auth', [])
                     });
             },
             isAuthenticated: function(){
-               if(_currentuser === null || _currentuser === undefined || _currentuser.email === ''){
-                   return false;
-               }
-                return true;
+                if(sessionStorage.getItem('psp.currentUser') !== null){
+                    return true;
+                }
+                return false;
             },
             isAuthorized: function(authorizedRoles){
                 if(!angular.isArray(authorizedRoles)){
@@ -44,12 +36,15 @@ angular.module('service.auth', [])
                 return true;//test against session
             },
             logout: function(){
-                _currentuser = null;
-                $rootScope.$broadcast('userLoggedIn', {user: _currentuser});
+               sessionStorage.removeItem('psp.currentUser');
+                $rootScope.$broadcast('userLoggedOut', {user: null});
                 $location.path('/login');
             },
             currentUser: function(){
-                return _currentuser;
+                if(sessionStorage.getItem('psp.currentUser') !== null){
+                    return (JSON.parse(sessionStorage.getItem('psp.currentUser')));
+                }
+                return null;
             }
         };
     });

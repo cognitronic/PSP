@@ -3,9 +3,8 @@
  */
 
 app.controller('NavCtrl', function($scope, $rootScope, AuthService){
-    $scope.$on("userLoggedIn",function(event,args) {
-        $scope.isAuthenticated = AuthService.isAuthenticated();
-    });
+
+    $scope.isAuthenticated = AuthService.isAuthenticated();
 
     $scope.logout = function(){
         console.log('logout');

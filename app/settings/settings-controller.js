@@ -4,5 +4,5 @@
 'use strict'
 
 app.controller('SettingsCtrl', function($scope, $rootScope, AuthService){
-
+    $scope.username = AuthService.currentUser().first;
 });
