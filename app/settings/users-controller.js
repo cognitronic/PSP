@@ -3,6 +3,6 @@
  */
 'use strict'
 
-app.controller('SettingsCtrl', function($scope, $rootScope, AuthService){
+app.controller('settings.UsersCtrl', function($scope, $rootScope, AuthService){
     $scope.username = AuthService.currentUser().first;
 });

@@ -36,13 +36,29 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
             templateUrl: 'reports/reports-index.html',
             controller: 'ReportsCtrl'
         })
+        .when('/gsrreport', {
+            templateUrl: 'reports/gsr.html',
+            controller: 'reports.GSRCtrl'
+        })
         .when('/forms', {
             templateUrl: 'forms/forms-index.html',
             controller: 'FormsCtrl'
         })
-        .when('/settings', {
-            templateUrl: 'settings/settings-index.html',
-            controller: 'SettingsCtrl'
+        .when('/claims', {
+            templateUrl: 'forms/claims.html',
+            controller: 'forms.ClaimsCtrl'
+        })
+        .when('/users', {
+            templateUrl: 'settings/users.html',
+            controller: 'settings.UsersCtrl'
+        })
+        .when('/sites', {
+            templateUrl: 'settings/sites.html',
+            controller: 'settings.SitesCtrl'
+        })
+        .when('/notifications', {
+            templateUrl: 'settings/notifications.html',
+            controller: 'settings.NotificationsCtrl'
         })
         .otherwise({
             redirectTo: '/'
