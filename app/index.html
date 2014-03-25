@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="psp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="psp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="psp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="psp"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="//rawgithub.com/mgcrea/bootstrap-additions/master/dist/bootstrap-additions.min.css">
     <link rel="stylesheet" href="assets/css/angular-motion.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-additions.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -22,13 +22,13 @@
     <!-- endbuild -->
     <title></title>
 </head>
-<body ng-app="psp">
+<body ng-controller="MainCtrl">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <div ng-include="'components/layout/_nav.html'"></div>
-<div id="sidebar"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar" ng-include="'components/layout/_sidebar.html'"></div>
+<!--<div id="sidebar"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar" ng-include="'components/layout/_sidebar.html'"></div>-->
 <div id="main-content" class="main-content " ng-view=""></div>
 
 
@@ -40,8 +40,9 @@
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/jquery/dist/jquery.js"></script>
 <script src="vendor/angular/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-animate.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
 <script src="vendor/angular-resource/angular-resource.js"></script>
 <script src="vendor/angular-cookies/angular-cookies.js"></script>

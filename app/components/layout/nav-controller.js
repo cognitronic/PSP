@@ -11,7 +11,5 @@ app.controller('NavCtrl', function($scope, $rootScope, AuthService){
         AuthService.logout();
     }
 
-    $scope.toggleSideNav = function(){
-        return false;
-    }
+
 });

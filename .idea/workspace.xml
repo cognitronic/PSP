@@ -9,6 +9,137 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\app\404.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\bootstrap\DOCS-LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\bootstrap\LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\.mailmap" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\build\release-notes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\build\release.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\jquery-migrate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\jquery-migrate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\benchmarker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\benchmarker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\closest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\css.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\event.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\filter.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\find.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\jquery-basis.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\speed\slice.vs.concat.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\src\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\src\event-alias.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\src\exports.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\src\sizzle-jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\src\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\.jshintignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\1x1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\ajax\unreleasedXHR.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\atom+xml.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\badcall.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\badjson.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\cleanScript.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\core\cc_on.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\dashboard.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\dimensions\documentLarge.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\dimensions\documentSmall.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\echoData.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\echoQuery.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\errorWithJSON.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\errorWithText.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\etag.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\evalScript.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\event\focusElem.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\event\longLoadScript.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\event\promiseReady.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\event\syncReady.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\headers.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\if_modified_since.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\iframe.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\jquery-1.9.1.ajax_xhr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\json_obj.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\jsonp.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\manipulation\iframe-denied.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\name.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\name.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\nocontent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\absolute.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\body.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\fixed.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\relative.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\static.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\offset\table.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\params_html.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\readywaitasset.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\readywaitloader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\script.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\selector\html5_selector.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\selector\sizzle_cache.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\statusText.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\bodyBackground.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\boxSizing.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\csp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\csp.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\shrinkWrapBlocks.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\support\testElementCrash.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\test.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\test2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\test3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\testinit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\testrunner.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\testsuite.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\text.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\ua.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\with_fries.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\data\with_fries_over_jsonp.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\delegatetest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\hovertest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\localfile.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\networkerror.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\readywait.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\exports.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\offset.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\unit\wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\app\vendor\jquery\test\xhtml.php" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\.bower.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\README.md" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\vendors\angular-cookies\angular-cookies.js" afterPath="" />
@@ -305,14 +436,93 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\runner.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\spec\controllers\main.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Projects\PSP\app\components\layout\NavCtrl.js" afterPath="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/.bower.json" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/.bower.json" afterPath="$PROJECT_DIR$/app/vendor/jquery/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/app/vendor/jquery/MIT-LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/README.md" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/_nav.html" afterPath="$PROJECT_DIR$/app/components/layout/_nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/_sidebar.html" afterPath="$PROJECT_DIR$/app/components/layout/_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/alert.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/app/dashboard/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/badges.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/bootstrap.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/bower.json" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/bower.json" afterPath="$PROJECT_DIR$/app/vendor/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/breadcrumbs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/button-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/code.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/core.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/css.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/data.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/dropdowns.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/effects.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/event.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/glyphicons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/grid.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/input-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/intro.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/jumbotron.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/login.html" afterPath="$PROJECT_DIR$/app/components/security/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/main-controller.js" afterPath="$PROJECT_DIR$/app/dashboard/main-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/main.css" afterPath="$PROJECT_DIR$/app/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/main.html" afterPath="$PROJECT_DIR$/app/dashboard/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/modals.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/nav-controller.js" afterPath="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/navbar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/navs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/normalize.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/normalize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/offset.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/outro.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/pager.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/panels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/popovers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/print.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/queue.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/responsive-utilities.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/scaffolding.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" afterPath="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/tables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/thumbnails.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/tooltip.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/transition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/type.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/wells.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/ajax/xhr.js" />
     </list>
     <ignored path="PSP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -335,24 +545,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar-slide-directive.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -362,10 +554,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dashboard/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_nav.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="14" selection-start="574" selection-end="574" vertical-scroll-proportion="0.2467344" vertical-offset="0" max-vertical-offset="1156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_sidebar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/layout/_sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="1" column="26" selection-start="60" selection-end="60" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -373,10 +583,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dashboard/main-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="18" selection-start="1363" selection-end="1363" vertical-scroll-proportion="-0.0" vertical-offset="510" max-vertical-offset="1292">
+            <state line="30" column="129" selection-start="1455" selection-end="1580" vertical-scroll-proportion="-4.769231" vertical-offset="386" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
@@ -385,7 +604,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="35" selection-start="2213" selection-end="2217" vertical-scroll-proportion="0.0" vertical-offset="866" max-vertical-offset="1598">
+            <state line="8" column="46" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -394,16 +613,16 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="787" column="20" selection-start="10018" selection-end="10018" vertical-scroll-proportion="-7.16" vertical-offset="13200" max-vertical-offset="121329">
+            <state line="4026" column="2" selection-start="79134" selection-end="79134" vertical-scroll-proportion="3.04" vertical-offset="68518" max-vertical-offset="98821">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_nav.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="716" selection-end="729" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="816">
+            <state line="3" column="46" selection-start="211" selection-end="211" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -412,7 +631,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="728" column="66" selection-start="9681" selection-end="9681" vertical-scroll-proportion="0.0" vertical-offset="12001" max-vertical-offset="13005">
+            <state line="701" column="30" selection-start="9208" selection-end="9208" vertical-scroll-proportion="0.0" vertical-offset="11763" max-vertical-offset="12852">
               <folding />
             </state>
           </provider>
@@ -436,22 +655,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/settings/settings-controller.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/_aside.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/dashboard-controller.js" />
-        <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
         <option value="$PROJECT_DIR$/app/dashboard/dashboard.html" />
-        <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/components/layout/NavCtrl.js" />
         <option value="$PROJECT_DIR$/app/components/layout/SidebarCtrl.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/_nav.html" />
-        <option value="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
-        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/components/layout/_sidebar.html" />
         <option value="$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js" />
+        <option value="$PROJECT_DIR$/app/vendor/bootstrap-additions/bootstrap-additions.min.css" />
+        <option value="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" />
+        <option value="$PROJECT_DIR$/app/dashboard/main-controller.js" />
+        <option value="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
+        <option value="$PROJECT_DIR$/app/components/layout/_sidebar.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/components/security/login.html" />
+        <option value="$PROJECT_DIR$/app/dashboard/main.html" />
+        <option value="$PROJECT_DIR$/app/components/layout/_nav.html" />
       </list>
     </option>
   </component>
@@ -575,43 +794,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,6 +835,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -790,46 +1013,78 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/settings-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/vendor/angular-strap/dist/angular-strap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="44" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/dashboard-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/login-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+        <state line="28" column="38" selection-start="847" selection-end="867" vertical-scroll-proportion="0.46541786" vertical-offset="153" max-vertical-offset="60112">
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#223#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap-additions/bootstrap-additions.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7405" selection-start="7405" selection-end="7405" vertical-scroll-proportion="0.9510086" vertical-offset="394" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/angular-strap/dist/angular-strap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8619">
+          <folding>
+            <element signature="e#0#223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="29" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/sidebar-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/main-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="15" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/_sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="27" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="901">
+        <state line="1" column="26" selection-start="60" selection-end="60" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="129" selection-start="1455" selection-end="1580" vertical-scroll-proportion="-4.769231" vertical-offset="386" max-vertical-offset="1309">
           <folding />
         </state>
       </provider>
@@ -841,67 +1096,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="701" column="30" selection-start="9208" selection-end="9208" vertical-scroll-proportion="0.0" vertical-offset="11763" max-vertical-offset="12852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="787" column="20" selection-start="10018" selection-end="10018" vertical-scroll-proportion="-7.16" vertical-offset="13200" max-vertical-offset="121329">
+        <state line="4026" column="2" selection-start="79134" selection-end="79134" vertical-scroll-proportion="3.04" vertical-offset="68518" max-vertical-offset="98821">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
+    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="35" selection-start="2213" selection-end="2217" vertical-scroll-proportion="0.0" vertical-offset="866" max-vertical-offset="1598">
+        <state line="3" column="46" selection-start="211" selection-end="211" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/sidebar-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/dashboard/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="166" selection-end="166" vertical-scroll-proportion="0.16643357" vertical-offset="0" max-vertical-offset="715">
+        <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="716" selection-end="729" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="728" column="66" selection-start="9681" selection-end="9681" vertical-scroll-proportion="0.0" vertical-offset="12001" max-vertical-offset="13005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="18" selection-start="1363" selection-end="1363" vertical-scroll-proportion="-0.0" vertical-offset="510" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/_sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
+        <state line="10" column="14" selection-start="574" selection-end="574" vertical-scroll-proportion="0.2467344" vertical-offset="0" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>

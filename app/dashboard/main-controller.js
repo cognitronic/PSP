@@ -5,6 +5,7 @@
 'use strict'
 
 app.controller('MainCtrl', function($scope, $location, $rootScope, AuthService){
+
     console.log(AuthService.isAuthenticated());
     if(!AuthService.isAuthenticated()){
         $location.path('/login');

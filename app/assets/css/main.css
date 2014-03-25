@@ -14,17 +14,7 @@
 	text-align: center;
 }
 
-.aside {
-	width: 320px;
-	z-index: 5000;
-	background: #fff;
-	position: fixed;
-	overflow: auto;
-	min-width: 320px;
-	top: 0;
-	display: block;
-	bottom: 0;
-}
+
 
 /* @group Global */
 
@@ -33,7 +23,7 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-top: 65px;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
 
 }
 
@@ -714,6 +704,7 @@ html body {
     left: 250px;
     right: 0;
     bottom: 0px;
+    margin: 25px;
 }
 
 /* Sidebar */
