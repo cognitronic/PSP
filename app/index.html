@@ -28,8 +28,8 @@
 <![endif]-->
 
 <div ng-include="'components/layout/_nav.html'"></div>
-<div ng-include="'components/layout/_sidebar.html'"></div>
-<div class="container" ng-view=""></div>
+<div id="sidebar"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar" ng-include="'components/layout/_sidebar.html'"></div>
+<div id="main-content" class="main-content " ng-view=""></div>
 
 
 
@@ -55,12 +55,15 @@
 <script src="app.js"></script>
 <script src="components/security/auth-service.js"></script>
 <script src="components/security/login-controller.js"></script>
+<script src="components/layout/sidebar-slide-directive.js"></script>
 <script src="dashboard/main-controller.js"></script>
 <script src="dashboard/dashboard-controller.js"></script>
-<script src="components/layout/NavCtrl.js"></script>
+<script src="components/layout/nav-controller.js"></script>
 <script src="reports/reports-controller.js"></script>
 <script src="forms/forms-controller.js"></script>
 <script src="settings/settings-controller.js"></script>
+
+<script src="components/layout/sidebar-slide-directive.js"></script>
 
 <!-- endbuild -->
 </body>

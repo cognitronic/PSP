@@ -33,7 +33,10 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-top: 65px;
+    background-color: #f7f7f7;
+
 }
+
 
 button.navbar-toggle {
 
@@ -703,3 +706,55 @@ html body {
 }
 
 /* @end */
+
+.main-content{
+
+    background-color: #ffffff;
+    top: 50px;
+    left: 250px;
+    right: 0;
+    bottom: 0px;
+}
+
+/* Sidebar */
+.sidebar{
+    background-color: #00b3ee;
+    color: #ffffff;
+    margin-right: 25px;
+    width: 250px;
+    top: 50px;
+    bottom: 0px;
+    position: absolute;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=90);
+
+    /* Netscape */
+    -moz-opacity: 0.9;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.9;
+
+    /* Good browsers */
+    opacity: 0.9;
+}
+
+.sidebar h2{
+    font-size: 18px;
+}
+
+.container .menu-toggler {
+    float: left;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #888;
+    text-shadow: 0px 1px 1px #000;
+    line-height: 50px;
+    border-right: 1px solid #202224;
+    -webkit-box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.05);
+    -moz-box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.05);
+    box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.05);
+    padding-right: 20px;
+}

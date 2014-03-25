@@ -10,4 +10,8 @@ app.controller('NavCtrl', function($scope, $rootScope, AuthService){
         console.log('logout');
         AuthService.logout();
     }
+
+    $scope.toggleSideNav = function(){
+        return false;
+    }
 });
