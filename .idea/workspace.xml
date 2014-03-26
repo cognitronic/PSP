@@ -436,12 +436,6 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\runner.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\spec\controllers\main.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Projects\PSP\app\settings\settings-controller.js" afterPath="$PROJECT_DIR$/app/settings/users-controller.js" />
-      <change type="MOVED" beforePath="C:\Projects\PSP\app\settings\settings-index.html" afterPath="$PROJECT_DIR$/app/settings/users.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/_nav.html" afterPath="$PROJECT_DIR$/app/components/layout/_nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
     <ignored path=".idea/workspace.xml" />
