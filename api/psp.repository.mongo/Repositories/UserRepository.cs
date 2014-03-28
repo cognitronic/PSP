@@ -18,9 +18,9 @@ namespace psp.repository.mongo.Repositories
             : base(ResourceStrings.Mongo_Users_Collection)
         {
         }
-        public IList<IUser> Get()
+        public IList<User> GetAll()
         {
-            throw new NotImplementedException();
+            return _collection.FindAllAs<User>().ToList<User>();
         }
 
         public IUser GetById(ObjectId id)

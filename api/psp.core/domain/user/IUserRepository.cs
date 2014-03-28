@@ -9,7 +9,7 @@ namespace psp.core.domain.user
 {
     public interface IUserRepository
     {
-        IList<IUser> Get();
+        IList<User> GetAll();
         IUser GetById(ObjectId id);
         IUser GetByEmail(string email);
         IUser GetByEmailPassword(string email, string password);

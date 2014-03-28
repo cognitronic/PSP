@@ -4,34 +4,37 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using psp.core.domain.user;
+using psp.repository.mongo.Repositories;
 
 namespace psp.api.Controllers
 {
-    public class NotificationsController : ApiController
+    public class UsersController : ApiController
     {
-        // GET api/notifications
-        public IEnumerable<string> Get()
+        // GET api/users
+        public IList<User> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            var users = new UserRepository().GetAll();
+            return users;
         }
 
-        // GET api/notifications/5
+        // GET api/user/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/notifications
+        // POST api/user
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/notifications/5
+        // PUT api/user/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/notifications/5
+        // DELETE api/user/5
         public void Delete(int id)
         {
         }

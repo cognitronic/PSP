@@ -4,6 +4,25 @@
     <title></title>
 </head>
 <body>
-Users Landing {{ username }}
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td>{{ user.first }}</td>
+                    <td>{{ user.last }}</td>
+                    <td>{{ user.email }}</td>
+                    <td><a ng-href="user.html" class="btn btn-primary"> Edit</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
