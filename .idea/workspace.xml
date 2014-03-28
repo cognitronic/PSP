@@ -837,6 +837,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/callbacks.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/carousel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/claims-controller.js" afterPath="$PROJECT_DIR$/app/forms/claims-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/claims.html" afterPath="$PROJECT_DIR$/app/forms/claims.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/var/class2type.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/attributes/classes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/close.less" />
@@ -1127,10 +1129,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_nav.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_nav.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="25" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.6661829" vertical-offset="0" max-vertical-offset="1156">
+            <state line="42" column="54" selection-start="2263" selection-end="2263" vertical-scroll-proportion="-23.538462" vertical-offset="102" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -1165,10 +1167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="150" selection-end="150" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="561">
+            <state line="25" column="36" selection-start="779" selection-end="779" vertical-scroll-proportion="0.63622755" vertical-offset="0" max-vertical-offset="668">
               <folding />
             </state>
           </provider>
@@ -1204,10 +1206,19 @@
       <file leaf-file-name="auth-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+            <state line="12" column="88" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1054">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accesslevel-directive.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/security/accesslevel-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="54" selection-start="661" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1230,15 +1241,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/dashboard/main.html" />
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites.html" />
         <option value="$PROJECT_DIR$/app/settings/notifications.html" />
         <option value="$PROJECT_DIR$/app/settings/notifications-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/users.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/dashboard/main-controller.js" />
         <option value="$PROJECT_DIR$/app/forms/claims.html" />
@@ -1246,6 +1254,9 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/_nav.html" />
+        <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
+        <option value="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" />
+        <option value="$PROJECT_DIR$/app/settings/users.html" />
       </list>
     </option>
   </component>
@@ -1607,11 +1618,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="0.14804064" vertical-offset="0" max-vertical-offset="689" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.14804064" vertical-offset="0" max-vertical-offset="689" />
@@ -1645,20 +1651,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/main-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.16643357" vertical-offset="0" max-vertical-offset="715">
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1684,22 +1681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="150" selection-end="150" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="25" selection-start="2983" selection-end="2983" vertical-scroll-proportion="-15.384615" vertical-offset="671" max-vertical-offset="1377">
@@ -1714,9 +1695,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/accesslevel-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="54" selection-start="661" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="88" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1054">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="3" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.6661829" vertical-offset="0" max-vertical-offset="1156">
+        <state line="42" column="54" selection-start="2263" selection-end="2263" vertical-scroll-proportion="-23.538462" vertical-offset="102" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="779" selection-end="779" vertical-scroll-proportion="0.63622755" vertical-offset="0" max-vertical-offset="668">
           <folding />
         </state>
       </provider>

@@ -29,6 +29,13 @@ angular.module('service.auth', [])
                 }
                 return false;
             },
+            authorize: function(accessLevel, role) {
+                if(role === undefined) {
+                    role = currentUser.role;
+                }
+
+                return accessLevel.bitMask & role.bitMask;
+            },
             isAuthorized: function(authorizedRoles){
                 if(!angular.isArray(authorizedRoles)){
                     authorizedRoles = [authorizedRoles];

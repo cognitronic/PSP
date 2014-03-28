@@ -25,5 +25,7 @@ namespace psp.core.domain.user
 
         [DataMember]
         public string password { get; set; }
+        [DataMember]
+        public string role { get; set; }
     }
 }

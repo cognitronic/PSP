@@ -14,5 +14,6 @@ namespace psp.core.domain.user
         string last { get; set; }
         string email { get; set; }
         string password { get; set; }
+        string role { get; set; }
     }
 }
