@@ -14,10 +14,10 @@
                 <li>
 
                 </li>
-                <li class="active">
+                <li ng-class="{active:isActive(['/dashboard'])}">
                     <a href="#dashboard">Dashboard</a>
                 </li>
-                <li class="dropdown">
+                <li ng-class="{active:isActive(['/gsrreport'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#gsrreport">GSR</a></li>
@@ -33,7 +33,7 @@
                         <li><a href="#claimsform">Claims</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li ng-class="{active:isActive(['/users','/sites', '/notifications'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>

@@ -88,7 +88,6 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
 .run(function($rootScope, $location, AuthService){
 
         $rootScope.isVisible = true;
-        console.log($rootScope.isVisible);
 
     var routesThatDontRequireAuth = ['/login'];
 
