@@ -7,6 +7,7 @@ app.controller('settings.UsersCtrl', function($scope, $rootScope, AuthService, m
     $scope.username = AuthService.currentUser().first;
     myService.getUsers().then(function(data){
         $scope.users = data;
+        console.log($scope.users[0]);
     });
 });
 

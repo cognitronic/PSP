@@ -16,7 +16,7 @@
                 <th>Last</th>
                 <th>Email</th>
                 <th>Role</th>
-                <th></th>
+                <th style="text-align: right;">Actions</th>
             </tr>
             <tbody>
                 <tr ng-repeat="user in users">
@@ -24,7 +24,10 @@
                     <td>{{ user.last }}</td>
                     <td>{{ user.email }}</td>
                     <td>{{ user.role }}</td>
-                    <td><a ng-href="user.html" class="btn btn-primary"> Edit</a> </td>
+                    <td style="text-align: right;">
+                        <a ng-href="/user/{{ user.Id}}" class="btn btn-primary"> Edit</a>
+                        <a ng-href="/user/{{ user.Id }}" class="btn btn-danger"> Delete</a>
+                    </td>
                 </tr>
             </tbody>
         </table>

@@ -755,6 +755,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/_sidebar.html" afterPath="$PROJECT_DIR$/app/components/layout/_sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/data/accepts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/core/access.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" afterPath="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/css/addGetHookIf.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-strap/src/affix/affix.js" afterPath="$PROJECT_DIR$/app/vendor/angular-strap/src/affix/affix.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" />
@@ -1159,7 +1160,7 @@
       <file leaf-file-name="nav-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="14" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -1170,8 +1171,11 @@
       <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="36" selection-start="779" selection-end="779" vertical-scroll-proportion="0.63622755" vertical-offset="0" max-vertical-offset="668">
-              <folding />
+            <state line="28" column="51" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.71257484" vertical-offset="0" max-vertical-offset="714">
+              <folding>
+                <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1197,7 +1201,7 @@
       <file leaf-file-name="users-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="44" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="9" column="29" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -1206,7 +1210,7 @@
       <file leaf-file-name="auth-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="88" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1054">
+            <state line="18" column="41" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1054">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -1246,16 +1250,16 @@
         <option value="$PROJECT_DIR$/app/settings/notifications.html" />
         <option value="$PROJECT_DIR$/app/settings/notifications-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/dashboard/main-controller.js" />
         <option value="$PROJECT_DIR$/app/forms/claims.html" />
         <option value="$PROJECT_DIR$/app/reports/claims-controller.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/_nav.html" />
-        <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
         <option value="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" />
+        <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
+        <option value="$PROJECT_DIR$/app/components/layout/nav-controller.js" />
+        <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/users.html" />
       </list>
     </option>
@@ -1489,7 +1493,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1660,13 +1664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="44" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/forms/claims.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="12" selection-start="77" selection-end="77" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
@@ -1702,24 +1699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="88" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1054">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/layout/_nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="54" selection-start="2263" selection-end="2263" vertical-scroll-proportion="-23.538462" vertical-offset="102" max-vertical-offset="1156">
@@ -1727,10 +1706,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="41" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1054">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="779" selection-end="779" vertical-scroll-proportion="0.63622755" vertical-offset="0" max-vertical-offset="668">
-          <folding />
+        <state line="28" column="51" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.71257484" vertical-offset="0" max-vertical-offset="714">
+          <folding>
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
