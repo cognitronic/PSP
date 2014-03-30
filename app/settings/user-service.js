@@ -7,8 +7,19 @@ angular.module('service.user', [])
     .factory('UserService', function($http, $rootScope,$q, $location, APP_SETTINGS){
 
         return{
-            createUser: function(){
-
+            saveUser: function(user){
+                if(user.Id !== undefined){
+                    user.sid = user.Id;
+                }
+                var deferred = $q.defer();
+                $http.post(APP_SETTINGS.apiUrl + 'Users/Post', user)
+                    .success(function(data){
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        deferred.reject();
+                    });
+                return deferred.promise;
             },
             getUser: function(usr){
 
@@ -42,7 +53,15 @@ angular.module('service.user', [])
 
             },
             deleteUser: function(usr){
-
+                var deferred = $q.defer();
+                $http.post(APP_SETTINGS.apiUrl + 'Users/RemoveUser/', usr)
+                    .success(function(data){
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        deferred.reject();
+                    });
+                return deferred.promise;
             }
         }
     });

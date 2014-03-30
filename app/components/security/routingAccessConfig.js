@@ -33,6 +33,7 @@
 
     }
 
+    exports.rolesList = config.roles;
     exports.userRoles = buildRoles(config.roles);
     exports.accessLevels = buildAccessLevels(config.accessLevels, exports.userRoles);
 

@@ -32,8 +32,9 @@ namespace psp.api.Controllers
         }
 
         // POST api/user
-        public void Post([FromBody]string value)
+        public User Post([FromBody]User user)
         {
+           return  _userRepository.Save(user);
         }
 
         // PUT api/user/5
@@ -42,8 +43,9 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/user/5
-        public void Delete(int id)
+        public User RemoveUser([FromBody]User usr)
         {
+            return _userRepository.Delete(usr);
         }
     }
 }

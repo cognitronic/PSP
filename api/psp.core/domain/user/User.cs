@@ -18,6 +18,9 @@ namespace psp.core.domain.user
         public string first { get; set; }
 
         [DataMember]
+        public string sid { get; set; }
+
+        [DataMember]
         public string last { get; set; }
 
         [DataMember]

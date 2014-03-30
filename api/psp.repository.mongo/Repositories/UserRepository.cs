@@ -29,13 +29,13 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<User>(query);
         }
 
-        public IUser GetByEmail(string email)
+        public User GetByEmail(string email)
         {
             var query = Query<User>.EQ(e => e.email, email);
             return _collection.FindOneAs<User>(query);
         }
 
-        public IUser GetByEmailPassword(string email, string password)
+        public User GetByEmailPassword(string email, string password)
         {
             var query = Query.And(
                 Query.EQ("email", email),
@@ -43,14 +43,21 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<User>(query);
         }
 
-        public IUser Save(IUser user)
+        public User Save(User user)
         {
-            throw new NotImplementedException();
+            if (user.sid != null && user.sid != "") {
+                user.Id = new ObjectId(user.sid);
+            }
+            _collection.Save<User>(user);
+            return user;
         }
 
-        public IUser Delete(IUser user)
+        public User Delete(User user)
         {
-            throw new NotImplementedException();
+            var usr = user;
+            var query = Query<User>.EQ(u => u.Id, new ObjectId(user.sid));
+            _collection.Remove(query);
+            return usr;
         }
     }
 }

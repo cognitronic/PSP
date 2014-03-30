@@ -26,7 +26,7 @@
                     <td>{{ user.role }}</td>
                     <td style="text-align: right;">
                         <a ng-href="#/users/{{ user.Id}}" class="btn btn-info"> Edit</a>
-                        <a ng-href="#/users/{{ user.Id }}" class="btn btn-danger"> Delete</a>
+                        <a ng-click="deleteUser(user)" class="btn btn-danger"> Delete</a>
                     </td>
                 </tr>
             </tbody>
