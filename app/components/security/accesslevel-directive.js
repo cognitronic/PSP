@@ -10,7 +10,7 @@ app.directive('accessLevel', ['AuthService', '$rootScope', '$location', function
             var prevDisp = element.css('display');
             var accessLevels = routingAccessConfig.accessLevels;
 
-            $scope.$watch(AuthService.currentUser(), function(value){
+            $scope.$watch('isAuthenticated', function(value){
                 updateCSS(accessLevels[attrs.accessLevel]);
             });
 
@@ -27,6 +27,9 @@ app.directive('accessLevel', ['AuthService', '$rootScope', '$location', function
                     } else {
                         element.css('display', prevDisp);
                     }
+                } else {
+
+                    element.css('display', 'none');
                 }
             }
         }
