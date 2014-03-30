@@ -1,15 +1,16 @@
 /**
- * Created by danny_000 on 3/22/14.
+ * Created by Danny Schreiber on 3/22/14.
  */
 
 'use strict'
 
 angular.module('service.auth', [])
 .factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS){
+        var accessLevels = routingAccessConfig.accessLevels
+            , userRoles = routingAccessConfig.userRoles;
 
         return {
             login: function(credentials){
-                console.log('hey there ' + credentials.email);
                 return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
                 })
                     .success(function(data, status, headers, config){
@@ -24,14 +25,15 @@ angular.module('service.auth', [])
                     });
             },
             isAuthenticated: function(){
-                if(sessionStorage.getItem('psp.currentUser') !== null){
-                    return true;
-                }
-                return false;
+                return sessionStorage.getItem('psp.currentUser');
             },
             authorize: function(accessLevel, role) {
                 if(role === undefined) {
-                    role = currentUser.role;
+                    if(!this.currentUser().first){
+                        role = userRoles["public"];
+                    } else {
+                        role = userRoles[this.currentUser().role];
+                    }
                 }
 
                 return accessLevel.bitMask & role.bitMask;
@@ -51,7 +53,7 @@ angular.module('service.auth', [])
                 if(sessionStorage.getItem('psp.currentUser') !== null){
                     return (JSON.parse(sessionStorage.getItem('psp.currentUser')));
                 }
-                return null;
+                return {};
             }
         };
     });

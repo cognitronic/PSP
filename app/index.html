@@ -53,9 +53,11 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="components/security/routingAccessConfig.js"></script>
 <script src="app.js"></script>
 <script src="components/security/auth-service.js"></script>
 <script src="components/security/login-controller.js"></script>
+<script src="components/security/noaccess-controller.js"></script>
 <script src="components/layout/sidebar-slide-directive.js"></script>
 <script src="dashboard/main-controller.js"></script>
 <script src="dashboard/dashboard-controller.js"></script>
@@ -67,8 +69,7 @@
 <script src="settings/users-controller.js"></script>
 <script src="settings/sites-controller.js"></script>
 <script src="settings/notifications-controller.js"></script>
-
-<script src="components/layout/sidebar-slide-directive.js"></script>
+<script src="components/security/accesslevel-directive.js"></script>
 
 <!-- endbuild -->
 </body>

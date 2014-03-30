@@ -1,34 +1,32 @@
 /**
- * Created by danny_000 on 3/28/14.
+ * Created by Danny Schreiber on 3/28/14.
  */
 'use strict';
 
-app.directive('accessLevel', ['AuthService', function(AuthService) {
+app.directive('accessLevel', ['AuthService', '$rootScope', '$location', function(AuthService, $rootScope, $location) {
     return {
         restrict: 'A',
         link: function($scope, element, attrs) {
-            var prevDisp = element.css('display')
-                , userRole
-                , accessLevel;
+            var prevDisp = element.css('display');
+            var accessLevels = routingAccessConfig.accessLevels;
 
-            $scope.user = AuthService.currentUser();
-            $scope.$watch('user', function(user) {
-                if(user.role)
-                    userRole = user.role;
-                updateCSS();
-            }, true);
-
-            attrs.$observe('accessLevel', function(al) {
-                if(al) accessLevel = $scope.$eval(al);
-                updateCSS();
+            $scope.$watch(AuthService.currentUser(), function(value){
+                updateCSS(accessLevels[attrs.accessLevel]);
             });
 
-            function updateCSS() {
-                if(userRole && accessLevel) {
-                    if(!AuthService.authorize(accessLevel, userRole))
+            attrs.$observe('accessLevel', function(al) {
+                if(al){
+                    updateCSS(accessLevels[al]);
+                }
+            });
+
+            function updateCSS(accessLevel) {
+                if(AuthService.currentUser().first !== undefined){
+                    if(!AuthService.authorize(accessLevel)){
                         element.css('display', 'none');
-                    else
+                    } else {
                         element.css('display', prevDisp);
+                    }
                 }
             }
         }

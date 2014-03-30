@@ -1,5 +1,5 @@
 /**
- * Created by danny_000 on 3/22/14.
+ * Created by Danny Schreiber on 3/22/14.
  */
 
 
@@ -8,6 +8,7 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
 
 .config(function($routeProvider, $httpProvider){
 
+        var access = routingAccessConfig.accessLevels;
     //This transformRequest is a global override for $http.post that transforms the body to the same param format used by  jQuery's $.post call
     $httpProvider.defaults.transformRequest = function(data){
         if (data === undefined) {
@@ -22,46 +23,62 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
     $routeProvider
         .when('/', {
             templateUrl: 'dashboard/main.html',
-            controller: 'MainCtrl'
+            controller: 'MainCtrl',
+            access: access.anon
         })
         .when('/login', {
             templateUrl: 'components/security/login.html',
-            controller: 'LoginCtrl'
+            controller: 'LoginCtrl',
+            access: access.anon
         })
         .when('/dashboard', {
             templateUrl: 'dashboard/dashboard.html',
-            controller: 'DashboardCtrl'
+            controller: 'DashboardCtrl',
+            access: access.anon
         })
         .when('/reports', {
             templateUrl: 'reports/reports-index.html',
-            controller: 'ReportsCtrl'
+            controller: 'ReportsCtrl',
+            access: access.anon
         })
         .when('/gsrreport', {
             templateUrl: 'reports/gsr.html',
-            controller: 'reports.GSRCtrl'
+            controller: 'reports.GSRCtrl',
+            access: access.executive
         })
         .when('/forms', {
             templateUrl: 'forms/forms-index.html',
-            controller: 'FormsCtrl'
+            controller: 'FormsCtrl',
+            access: access.anon
         })
         .when('/claims', {
             templateUrl: 'forms/claims.html',
-            controller: 'forms.ClaimsCtrl'
+            controller: 'forms.ClaimsCtrl',
+            access: access.anon
         })
         .when('/users', {
             templateUrl: 'settings/users.html',
-            controller: 'settings.UsersCtrl'
+            controller: 'settings.UsersCtrl',
+            access: access.admin
         })
         .when('/sites', {
             templateUrl: 'settings/sites.html',
-            controller: 'settings.SitesCtrl'
+            controller: 'settings.SitesCtrl',
+            access: access.admin
         })
         .when('/notifications', {
             templateUrl: 'settings/notifications.html',
-            controller: 'settings.NotificationsCtrl'
+            controller: 'settings.NotificationsCtrl',
+            access: access.admin
+        })
+        .when('/noaccess', {
+            templateUrl: 'components/security/no-access.html',
+            controller: 'security.NoAccessCtrl',
+            access: access.anon
         })
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/',
+            access: access.anon
     });
 
     $httpProvider.defaults.useXDomain = true;
@@ -75,12 +92,6 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
     sessionTimeout: 'auth-session-timeout',
     notAuthenticated: 'auth-not-authenticated',
     notAuthorized: 'auth-not-authorized'
-})
- .constant('USER_ROLES',{
-    admin: 'admin',
-    executive: 'executive',
-    sitemanager: 'sitemanager',
-    office: 'office'
 })
 .constant('APP_SETTINGS', {
         apiUrl: 'http://pspapi.localhost/'
@@ -101,6 +112,13 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
     $rootScope.$on('$locationChangeStart', function(event, next, current){
         if(!routeClean($location.url()) && !AuthService.isAuthenticated()){
             $location.path('/login');
+        }
+    });
+
+    $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
+        if(!AuthService.authorize(currRoute.access)){
+            $location.path('/noaccess');
+            console.log('unauthorized');
         }
     });
 
