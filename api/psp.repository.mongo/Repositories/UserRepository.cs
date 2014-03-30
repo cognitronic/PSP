@@ -23,9 +23,10 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindAllAs<User>().ToList<User>();
         }
 
-        public IUser GetById(ObjectId id)
+        public User GetById(ObjectId id)
         {
-            throw new NotImplementedException();
+            var query = Query<User>.EQ(e => e.Id, id);
+            return _collection.FindOneAs<User>(query);
         }
 
         public IUser GetByEmail(string email)

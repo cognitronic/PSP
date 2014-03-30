@@ -10,7 +10,7 @@ namespace psp.core.domain.user
     public interface IUserRepository
     {
         IList<User> GetAll();
-        IUser GetById(ObjectId id);
+        User GetById(ObjectId id);
         IUser GetByEmail(string email);
         IUser GetByEmailPassword(string email, string password);
         IUser Save(IUser user);

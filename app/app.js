@@ -4,7 +4,12 @@
 
 
 
-var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service.auth'])
+var app = angular.module('psp', [
+        'ngResource',
+        'ngSanitize',
+        'ngRoute',
+        'service.auth',
+        'service.user'])
 
 .config(function($routeProvider, $httpProvider){
 
