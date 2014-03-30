@@ -61,6 +61,11 @@ var app = angular.module('psp', ['ngResource', 'ngSanitize', 'ngRoute', 'service
             controller: 'settings.UsersCtrl',
             access: access.admin
         })
+        .when('/users/:id', {
+            templateUrl: 'settings/user.html',
+            controller: 'settings.UserCtrl',
+            access: access.admin
+        })
         .when('/sites', {
             templateUrl: 'settings/sites.html',
             controller: 'settings.SitesCtrl',

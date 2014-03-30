@@ -11,9 +11,8 @@ app.controller('LoginCtrl', function($scope, $rootScope, AUTH_EVENTS, AuthServic
         email: '',
         password: ''
     };
-
     $scope.login = function(credentials){
-        AuthService.login(credentials);
+        console.log(AuthService.login(credentials));
     };
 
 });

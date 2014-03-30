@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div>
+            <form id="userprofile-form" ng-submit="SaveProfile()">
+                <header class="jumbotron">
+                    <h1>Here is the header stuff</h1>
+                </header>
+                <div class="form-group">
+                    <b>First Name:</b>
+                    <input value="{{ user.first }}" name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="user.first" required autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Last Name:</b>
+                    <input value="{{ user.last }}" name="firstname" id="lastname" class="form-control" type="text" placeholder="EnterLast Name" ng-model="user.last" required autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Email:</b>
+                    <input value="{{ user.email }}" name="email" id="email" class="form-control" type="email" placeholder="Enter Email" ng-model="user.email" required autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Password:</b>
+                    <input name="password" id="password" class="form-control" type="password" placeholder="Enter Password" ng-model="user.password" required autofocus>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

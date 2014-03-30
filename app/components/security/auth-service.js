@@ -7,7 +7,8 @@
 angular.module('service.auth', [])
 .factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS){
         var accessLevels = routingAccessConfig.accessLevels
-            , userRoles = routingAccessConfig.userRoles;
+            , userRoles = routingAccessConfig.userRoles
+            , authMsg;
 
         return {
             login: function(credentials){
@@ -15,13 +16,17 @@ angular.module('service.auth', [])
                 })
                     .success(function(data, status, headers, config){
                         //_currentuser = data;
-                        sessionStorage.setItem('psp.currentUser', JSON.stringify(data));
-                        if(sessionStorage.getItem('psp.currentUser') !== null){
-                            $rootScope.$broadcast('userLoggedIn', {user: data});
-                            $location.path('/');
-                        }
-                        else
+                        if(data === "null"){
                             console.log('Invalid email or password');
+                            sessionStorage.removeItem('psp.currentUser');
+                            return authMsg = 'Invalid email or password';
+                        } else {
+                            sessionStorage.setItem('psp.currentUser', JSON.stringify(data));
+                            if(sessionStorage.getItem('psp.currentUser') !== null){
+                                $rootScope.$broadcast('userLoggedIn', {user: data});
+                                $location.path('/');
+                            }
+                        }
                     });
             },
             isAuthenticated: function(){
@@ -48,6 +53,9 @@ angular.module('service.auth', [])
                sessionStorage.removeItem('psp.currentUser');
                 $rootScope.$broadcast('userLoggedOut', {user: null});
                 $location.path('/login');
+            },
+            authenitcationAttemptMessage: function(){
+                return authMsg;
             },
             currentUser: function(){
                 if(sessionStorage.getItem('psp.currentUser') !== null){
