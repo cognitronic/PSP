@@ -8,8 +8,8 @@ app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootSc
     $scope.user = {};
     $scope.roles = routingAccessConfig.rolesList;
     $scope.role = $scope.roles[0];
-    $scope.toggleer = true;
     $scope.isHidden = true;
+
 
     if($routeParams.id !== "new"){
         UserService.getUserById($routeParams.id)
@@ -23,9 +23,8 @@ app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootSc
     $scope.SaveProfile = function(){
         UserService.saveUser($scope.user)
             .then(function(data){
-                //$location.path('/users/' + data.Id);
+                $location.path('/users/' + data.Id);
                 $scope.isHidden = !$scope.isHidden;
-                $scope.toggleer = !$scope.toggleer;
 
             });
     }

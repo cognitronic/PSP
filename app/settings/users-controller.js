@@ -3,10 +3,13 @@
  */
 'use strict'
 
-app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService){
+app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService, Paginator){
+
+    $scope.pagination = Paginator.getNew(2);
 
     UserService.getUsers().then(function(data){
         $scope.users = data;
+        $scope.pagination.numPages = Math.ceil($scope.users.length/$scope.pagination.perPage);
     });
 
     $scope.AddUser = function(){
