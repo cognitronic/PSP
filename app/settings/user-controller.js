@@ -4,10 +4,11 @@
 
 'use strict'
 
-app.controller('settings.UserCtrl', function($scope, $location, $rootScope, $routeParams, UserService){
+app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootScope, $routeParams, UserService){
     $scope.user = {};
     $scope.roles = routingAccessConfig.rolesList;
     $scope.role = $scope.roles[0];
+    $scope.toggleer = true;
 
     if($routeParams.id !== "new"){
         UserService.getUserById($routeParams.id)
@@ -22,6 +23,8 @@ app.controller('settings.UserCtrl', function($scope, $location, $rootScope, $rou
         UserService.saveUser($scope.user)
             .then(function(data){
                 $location.path('/users/' + data.Id);
+                $scope.toggleer = !$scope.toggleer;
+
             });
     }
 

@@ -8,6 +8,7 @@ var app = angular.module('psp', [
         'ngResource',
         'ngSanitize',
         'ngRoute',
+        'ngAnimate',
         'service.auth',
         'service.user'])
 
