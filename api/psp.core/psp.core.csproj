@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="domain\Site.cs" />
     <Compile Include="domain\user\IUser.cs" />
     <Compile Include="domain\user\IUserRepository.cs" />
     <Compile Include="domain\user\User.cs" />

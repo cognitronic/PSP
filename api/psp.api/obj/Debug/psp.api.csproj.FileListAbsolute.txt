@@ -38,3 +38,6 @@ c:\Projects\PSP\api\psp.api\bin\MongoDB.Bson.dll
 c:\Projects\PSP\api\psp.api\bin\MongoDB.Bson.xml
 c:\Projects\PSP\api\psp.api\bin\MongoDB.Driver.dll
 c:\Projects\PSP\api\psp.api\bin\MongoDB.Driver.xml
+C:\Projects\PSP\api\psp.api\bin\FirebirdSql.Data.FirebirdClient.dll
+C:\Projects\PSP\api\psp.api\bin\MySql.Data.dll
+C:\Projects\PSP\api\psp.api\bin\FirebirdSql.Data.FirebirdClient.pdb

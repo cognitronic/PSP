@@ -17,14 +17,12 @@ app.factory('Paginator', function(){
         };
 
         paginator.prevPage = function(){
-            console.log(paginator);
             if(paginator.page > 0){
                 paginator.page -= 1;
             }
         };
 
         paginator.nextPage = function(){
-            console.log(paginator);
             if(paginator.page < paginator.numPages -1){
                 paginator.page += 1;
             }

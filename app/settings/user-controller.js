@@ -20,7 +20,7 @@ app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootSc
 
     }
 
-    $scope.SaveProfile = function(){
+    $scope.saveProfile = function(){
         UserService.saveUser($scope.user)
             .then(function(data){
                 $location.path('/users/' + data.Id);
@@ -29,12 +29,16 @@ app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootSc
             });
     }
 
-    $scope.DeleteUser = function(){
+    $scope.deleteUser = function(){
         if($routeParams.id !== "new"){
             UserService.deleteUser($routeParams.id)
                 .then(function(data){
                     $location.path('/users');
                 });
         }
+    }
+
+    $scope.returnToList = function(){
+        $location.path('/users');
     }
 });

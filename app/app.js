@@ -2,8 +2,6 @@
  * Created by Danny Schreiber on 3/22/14.
  */
 
-
-
 var app = angular.module('psp', [
         'ngResource',
         'ngSanitize',
