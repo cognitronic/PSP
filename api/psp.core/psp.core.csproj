@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHelpers\SiteWatch.cs" />
     <Compile Include="domain\GSR.cs" />
     <Compile Include="domain\Site.cs" />
     <Compile Include="domain\SiteWatchGSRSalesItem.cs" />

@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Site Mangement</title>
 </head>
 <body>
-Sites
+<div class="container">
+    <div class="row">
+        <div class="pull-right">
+            <button class="btn btn-success" type="button" ng-click="AddSite()">Add Site</button>
+        </div>
+        <h2>Manage Sites</h2>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>WashLink IP</th>
+                <th>DB Type</th>
+                <th style="text-align: right;">Actions</th>
+            </tr>
+            <tbody>
+            <tr ng-repeat="site in sites | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+                <td>{{ site.location }}</td>
+                <td>{{ site.description }}</td>
+                <td>{{ site.washlinkip }}</td>
+                <td>{{ site.dbtype }}</td>
+                <td style="text-align: right;">
+                    <a ng-href="#/sites/{{ site.Id}}" class="btn btn-info"> Edit</a>
+                    <a ng-click="deleteSite(site)" class="btn btn-danger"> Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <span ng-repeat="n in [] | range: pagination.numPages" >
+        <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
+    </span>
+    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+</div>
 </body>
 </html>

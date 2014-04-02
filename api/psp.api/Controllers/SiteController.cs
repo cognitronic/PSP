@@ -4,15 +4,26 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using psp.core.domain;
+using psp.repository.mongo.Repositories;
+using MongoDB.Bson;
 
 namespace psp.api.Controllers
 {
     public class SiteController : ApiController
     {
-        // GET api/site
-        public IEnumerable<string> Get()
+         private readonly SiteRepository _repository;
+
+        public SiteController()
         {
-            return new string[] { "value1", "value2" };
+            _repository = new SiteRepository();
+        }
+
+        // GET api/site
+        public IList<Site> GetAll()
+        {
+            var sites = _repository.GetAll();
+            return sites;
         }
 
         // GET api/site/5
