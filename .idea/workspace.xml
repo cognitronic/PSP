@@ -450,9 +450,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" />
@@ -491,6 +493,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net40/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net40/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net45/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net45/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" />
@@ -1205,7 +1208,7 @@
       <file leaf-file-name="sites.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.7648766" vertical-offset="51" max-vertical-offset="816">
+            <state line="14" column="29" selection-start="402" selection-end="402" vertical-scroll-proportion="0.16110305" vertical-offset="127" max-vertical-offset="816">
               <folding>
                 <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1718,7 +1721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.7648766" vertical-offset="51" max-vertical-offset="816">
+        <state line="14" column="29" selection-start="402" selection-end="402" vertical-scroll-proportion="0.16110305" vertical-offset="127" max-vertical-offset="816">
           <folding>
             <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
