@@ -446,6 +446,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nupkg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" />
@@ -477,6 +484,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MongoDB.Web.1.3.0/lib/MongoDB.Web.pdb" afterPath="$PROJECT_DIR$/api/packages/MongoDB.Web.1.3.0/lib/MongoDB.Web.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/MongoDB.Web.pdb" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/MongoDB.Web.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Web.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Web.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/MySql.Data.6.8.3.nupkg" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/MySql.Data.6.8.3.nupkg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/netcore45/MySql.Data.RT.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/netcore45/MySql.Data.RT.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net20-cf/MySql.Data.cf.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net20-cf/MySql.Data.cf.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net20/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net20/MySql.Data.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net40/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net40/MySql.Data.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net45/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/lib/net45/MySql.Data.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" />
@@ -622,6 +636,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/data/Data.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Views/Shared/Error.cshtml" afterPath="$PROJECT_DIR$/api/psp.api/Views/Shared/Error.cshtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/FilterConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/FilterConfig.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax" />
@@ -664,6 +679,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MongoDB.Web.1.3.0/MongoDB.Web.1.3.0.nuspec" afterPath="$PROJECT_DIR$/api/packages/MongoDB.Web.1.3.0/MongoDB.Web.1.3.0.nuspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Cache/MongoDBCacheAdapter.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Cache/MongoDBCacheAdapter.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Providers/MongoDBOutputCacheProvider.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Providers/MongoDBOutputCacheProvider.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/MySql.Data.6.8.3.nuspec" afterPath="$PROJECT_DIR$/api/packages/MySql.Data.6.8.3/MySql.Data.6.8.3.nuspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nuspec" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nuspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.xml" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.xml" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.xml" />
@@ -694,8 +710,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/underscore/README.md" afterPath="$PROJECT_DIR$/app/vendor/underscore/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/ResourceStrings.cs" afterPath="$PROJECT_DIR$/api/psp.core/ResourceStrings.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/RouteConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/RouteConfig.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/Site.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/Site.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Content/Site.css" afterPath="$PROJECT_DIR$/api/psp.api/Content/Site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.xml" />
@@ -757,6 +775,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/core/access.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" afterPath="$PROJECT_DIR$/app/components/security/accesslevel-directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/css/addGetHookIf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/aes/aes.js" afterPath="$PROJECT_DIR$/app/vendor/aes/aes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-strap/src/affix/affix.js" afterPath="$PROJECT_DIR$/app/vendor/angular-strap/src/affix/affix.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/js/affix.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/ajax.js" />
@@ -947,6 +966,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Scripts/jquery.validate.unobtrusive.js" afterPath="$PROJECT_DIR$/api/psp.api/Scripts/jquery.validate.unobtrusive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.jQuery.Unobtrusive.Validation.3.0.0/Content/Scripts/jquery.validate.unobtrusive.min.js" afterPath="$PROJECT_DIR$/api/packages/Microsoft.jQuery.Unobtrusive.Validation.3.0.0/Content/Scripts/jquery.validate.unobtrusive.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Scripts/jquery.validate.unobtrusive.min.js" afterPath="$PROJECT_DIR$/api/psp.api/Scripts/jquery.validate.unobtrusive.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/es5-shim/tests/lib/json2.js" afterPath="$PROJECT_DIR$/app/vendor/es5-shim/tests/lib/json2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/json3/lib/json3.js" afterPath="$PROJECT_DIR$/app/vendor/json3/lib/json3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/json3/lib/json3.min.js" afterPath="$PROJECT_DIR$/app/vendor/json3/lib/json3.min.js" />

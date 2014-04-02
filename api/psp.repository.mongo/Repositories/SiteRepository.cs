@@ -29,11 +29,11 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<Site>(query);
         }
 
-        //public Site GetByEmail(string email)
-        //{
-        //    var query = Query<Site>.EQ(e => e.email, email);
-        //    return _collection.FindOneAs<Site>(query);
-        //}
+        public Site GetByName(string name)
+        {
+            var query = Query<Site>.EQ(e => e.name, name);
+            return _collection.FindOneAs<Site>(query);
+        }
 
         //public Site GetByEmailPassword(string email, string password)
         //{
