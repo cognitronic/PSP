@@ -1184,10 +1184,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/site.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="94" selection-start="524" selection-end="524" vertical-scroll-proportion="0.13642961" vertical-offset="195" max-vertical-offset="1326">
+            <state line="50" column="70" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-8.192307" vertical-offset="637" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -1196,16 +1196,16 @@
       <file leaf-file-name="site-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="30" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
+            <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sites.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="816">
+            <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.7648766" vertical-offset="51" max-vertical-offset="816">
               <folding>
                 <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1226,7 +1226,7 @@
       <file leaf-file-name="sites-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/sites-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+            <state line="5" column="42" selection-start="201" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -1246,7 +1246,16 @@
       <file leaf-file-name="sites-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="73" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+            <state line="20" column="42" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paginator-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/paginator-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="1" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -1280,12 +1289,12 @@
         <option value="$PROJECT_DIR$/app/components/layout/paginator-service.js" />
         <option value="$PROJECT_DIR$/app/vendor/aes/aes.js" />
         <option value="$PROJECT_DIR$/app/settings/sites.html" />
-        <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-service.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/site.html" />
+        <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
+        <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
       </list>
     </option>
   </component>
@@ -1413,6 +1422,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1577,27 +1626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/paginator-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.35664335" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/users.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="19" selection-start="0" selection-end="1714" vertical-scroll-proportion="-8.192307" vertical-offset="127" max-vertical-offset="816">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1610,25 +1642,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="7" selection-start="50" selection-end="2196" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="73" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
@@ -1663,17 +1679,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/settings/site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="30" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
+        <state line="50" column="70" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-8.192307" vertical-offset="637" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/site.html">
+    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="94" selection-start="524" selection-end="524" vertical-scroll-proportion="0.13642961" vertical-offset="195" max-vertical-offset="1326">
+        <state line="20" column="42" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1156">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/sites-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="201" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/paginator-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="1" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.7648766" vertical-offset="51" max-vertical-offset="816">
+          <folding>
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

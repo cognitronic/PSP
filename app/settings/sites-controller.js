@@ -3,7 +3,7 @@
  */
 app.controller('settings.SitesCtrl', function($scope, $rootScope, $location, AuthService, SiteService, Paginator){
 
-    $scope.pagination = Paginator.getNew(2);
+    $scope.pagination = Paginator.getNew(5);
 
     SiteService.getSites().then(function(data){
         $scope.sites = data;

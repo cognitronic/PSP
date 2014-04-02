@@ -33,8 +33,9 @@ namespace psp.api.Controllers
         }
 
         // POST api/site
-        public void Post([FromBody]string value)
+        public Site Post([FromBody]Site site)
         {
+            return _repository.Save(site);
         }
 
         // PUT api/site/5

@@ -9,3 +9,6 @@ c:\Projects\PSP\api\psp.core\bin\Debug\MongoDB.Web.pdb
 c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.csprojResolveAssemblyReference.cache
 c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.dll
 c:\Projects\PSP\api\psp.core\obj\Debug\psp.core.pdb
+C:\Projects\PSP\api\psp.core\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Projects\PSP\api\psp.core\bin\Debug\MySql.Data.dll
+C:\Projects\PSP\api\psp.core\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb

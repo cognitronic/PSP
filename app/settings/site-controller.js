@@ -21,7 +21,7 @@ app.controller('settings.SiteCtrl', function($scope, $location,$timeout, $rootSc
     $scope.saveSite = function(){
         SiteService.saveSite($scope.site)
             .then(function(data){
-                $location.path('/site/' + data.Id);
+                $location.path('/sites/' + data.Id);
                 $scope.isHidden = !$scope.isHidden;
             });
     }

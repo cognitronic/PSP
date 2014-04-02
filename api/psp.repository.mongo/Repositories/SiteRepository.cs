@@ -20,7 +20,7 @@ namespace psp.repository.mongo.Repositories
         }
         public IList<Site> GetAll()
         {
-            return _collection.FindAllAs<Site>().ToList<Site>();
+            return _collection.FindAllAs<Site>().OrderBy(o => o.name).ToList<Site>();
         }
 
         public Site GetById(ObjectId id)
