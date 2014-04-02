@@ -76,6 +76,11 @@ var app = angular.module('psp', [
             controller: 'settings.SitesCtrl',
             access: access.admin
         })
+        .when('/sites/:id', {
+            templateUrl: 'settings/site.html',
+            controller: 'settings.SiteCtrl',
+            access: access.admin
+        })
         .when('/notifications', {
             templateUrl: 'settings/notifications.html',
             controller: 'settings.NotificationsCtrl',

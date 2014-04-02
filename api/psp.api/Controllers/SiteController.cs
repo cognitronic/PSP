@@ -27,9 +27,9 @@ namespace psp.api.Controllers
         }
 
         // GET api/site/5
-        public string Get(int id)
+        public Site Get(string id)
         {
-            return "value";
+            return _repository.GetById(new ObjectId(id));
         }
 
         // POST api/site
