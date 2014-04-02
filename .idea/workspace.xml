@@ -637,6 +637,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Views/Shared/Error.cshtml" afterPath="$PROJECT_DIR$/api/psp.api/Views/Shared/Error.cshtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/FilterConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/FilterConfig.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax" />
@@ -1172,7 +1173,7 @@
       <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="11" selection-start="1352" selection-end="1555" vertical-scroll-proportion="0.8026125" vertical-offset="76" max-vertical-offset="816">
+            <state line="16" column="30" selection-start="464" selection-end="464" vertical-scroll-proportion="0.28447026" vertical-offset="76" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -1739,7 +1740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="11" selection-start="1352" selection-end="1555" vertical-scroll-proportion="0.8026125" vertical-offset="76" max-vertical-offset="816">
+        <state line="16" column="30" selection-start="464" selection-end="464" vertical-scroll-proportion="0.28447026" vertical-offset="76" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
