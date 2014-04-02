@@ -8,7 +8,8 @@ var app = angular.module('psp', [
         'ngRoute',
         'ngAnimate',
         'service.auth',
-        'service.user'])
+        'service.user',
+        'service.site'])
 
 .config(function($routeProvider, $httpProvider){
 

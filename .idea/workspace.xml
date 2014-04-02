@@ -715,6 +715,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Content/Site.css" afterPath="$PROJECT_DIR$/api/psp.api/Content/Site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/DataHelpers/SiteWatch.cs" afterPath="$PROJECT_DIR$/api/psp.core/DataHelpers/SiteWatch.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/SiteWatchGSRSalesItem.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/SiteWatchGSRSalesItem.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" />
@@ -1088,6 +1089,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" afterPath="$PROJECT_DIR$/app/components/layout/sidebar-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js" afterPath="$PROJECT_DIR$/app/components/layout/sidebar-slide-directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites-controller.js" afterPath="$PROJECT_DIR$/app/settings/sites-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites-service.js" afterPath="$PROJECT_DIR$/app/settings/sites-service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites.html" afterPath="$PROJECT_DIR$/app/settings/sites.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/var/slice.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-motion/src/slide/docs/slide.demo.html" afterPath="$PROJECT_DIR$/app/vendor/angular-motion/src/slide/docs/slide.demo.html" />
@@ -1163,7 +1165,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
+            <state line="11" column="8" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -1171,10 +1173,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/users.html">
+      <file leaf-file-name="user-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="0" selection-end="1714" vertical-scroll-proportion="-8.192307" vertical-offset="127" max-vertical-offset="816">
+            <state line="41" column="33" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/site.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
               <folding />
             </state>
           </provider>
@@ -1195,7 +1215,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="48" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.9259797" vertical-offset="688" max-vertical-offset="1513">
+            <state line="75" column="26" selection-start="3714" selection-end="3714" vertical-scroll-proportion="0.8026125" vertical-offset="739" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -1221,31 +1241,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="7" selection-start="50" selection-end="2196" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sites-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="73" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1156">
+            <state line="54" column="73" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="104" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1268,8 +1268,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/components/security/routingAccessConfig.js" />
         <option value="$PROJECT_DIR$/app/settings/user-service.js" />
         <option value="$PROJECT_DIR$/app/components/layout/animate-event-directive.js" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
@@ -1278,11 +1276,13 @@
         <option value="$PROJECT_DIR$/app/settings/user.html" />
         <option value="$PROJECT_DIR$/app/settings/user-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/paginator-service.js" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/vendor/aes/aes.js" />
         <option value="$PROJECT_DIR$/app/settings/sites.html" />
         <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-service.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/settings/site.html" />
+        <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
@@ -1552,38 +1552,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/components/layout/animate-event-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="460" selection-end="460" vertical-scroll-proportion="0.26153848" vertical-offset="0" max-vertical-offset="715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="33" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.92727274" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/http_crypto-js.googlecode.com_svn_tags_3.1.2_build_rollups_aes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="0" selection-end="13473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4374" column="1" selection-start="86910" selection-end="86910" vertical-scroll-proportion="0.48433048" vertical-offset="74188" max-vertical-offset="98583">
@@ -1670,9 +1638,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="33" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="48" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.9259797" vertical-offset="688" max-vertical-offset="1513">
+        <state line="75" column="26" selection-start="3714" selection-end="3714" vertical-scroll-proportion="0.8026125" vertical-offset="739" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
