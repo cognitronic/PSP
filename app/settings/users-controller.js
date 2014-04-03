@@ -5,7 +5,7 @@
 
 app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService, Paginator){
 
-    $scope.pagination = Paginator.getNew(2);
+    $scope.pagination = Paginator.getNew(5);
 
     UserService.getUsers().then(function(data){
         $scope.users = data;

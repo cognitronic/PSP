@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datahelpers\BaseHelpers.cs" />
     <Compile Include="datahelpers\SiteWatch.cs" />
     <Compile Include="datahelpers\WashLink.cs" />
     <Compile Include="domain\GSR.cs" />

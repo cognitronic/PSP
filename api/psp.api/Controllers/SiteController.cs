@@ -27,9 +27,9 @@ namespace psp.api.Controllers
         // GET api/site
         public IList<Site> GetAll()
         {
-            var test = _sitewatch.SitewatchSalesBySiteDate("2", DateTime.Today.AddDays(-60));
+            //var test = _sitewatch.SitewatchSalesBySiteDate("2", DateTime.Today.AddDays(-60));
             var sites = _repository.GetAll().OrderBy(o => o.name).ToList<Site>();
-            var mysql = _washlink.WashLinkWashTotalsBySiteDate(sites[11], DateTime.Today.AddDays(-60));
+            //var mysql = _washlink.WashLinkWashTotalsBySiteDate(sites[11], DateTime.Today.AddDays(-60));
             return sites;
         }
 

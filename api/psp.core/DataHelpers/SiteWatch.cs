@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace psp.core.datahelpers
 {
-    public class SiteWatch
+    public class SiteWatch : BaseHelpers
     {
         public IList<SiteWatchGSRSalesItem> SitewatchSalesBySiteDate(string siteid, DateTime startdate)
         {

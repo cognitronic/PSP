@@ -12,7 +12,7 @@ using psp.core.domain;
 
 namespace psp.core.datahelpers
 {
-    public class WashLink
+    public class WashLink : BaseHelpers
     {
         public IList<WashLinkWashTotals> WashLinkWashTotalsBySiteDate(Site site, DateTime date)
         {
