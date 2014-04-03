@@ -9,14 +9,14 @@ using MongoDB.Bson;
 using FirebirdSql.Data.FirebirdClient;
 using MySql.Data.MySqlClient;
 
-namespace psp.core.DataHelpers
+namespace psp.core.datahelpers
 {
     public class SiteWatch
     {
         public IList<SiteWatchGSRSalesItem> SitewatchSalesBySiteDate(string siteid, DateTime startdate)
         {
             string sQuery = "";
-            string connectionString = "Server=localhost;User=SYSDBA;Password=masterkey;Database=H:\Prime Shine\SiteWatch\SiteWatch.fdb";//ConfigurationSettings.AppSettings["PSFirebirdConnectionString"];
+            string connectionString = "Server=192.168.1.105;User=SYSDBA;Password=masterkey;Database=d:\\Databases\\PrimeShine\\SiteWatch\\SiteWatch.fdb";//ConfigurationSettings.AppSettings["PSFirebirdConnectionString"];
             sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
                     From
                     V_item i
@@ -43,8 +43,15 @@ namespace psp.core.DataHelpers
                objid = r["objid"].ToString(),
                item = r["item"].ToString(),
                itemtype = r["itemtype"].ToString(),
-               total = r["total"].ToString()
+               total = r["total"].ToString(),
+               logdate =r["logdate"].ToString(),
+               reportcategory = r["reportcategory"].ToString(),
+               locationid = r["locationid"].ToString(),
+               amt = r["amt"].ToString(),
+               val = r["val"].ToString()
             })).ToList<SiteWatchGSRSalesItem>();
+
+            return list;
         }
     }
 }

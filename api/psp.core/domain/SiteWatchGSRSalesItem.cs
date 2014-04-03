@@ -19,14 +19,14 @@ namespace psp.core.domain
         [DataMember]
         public string total { get; set; }
         [DataMember]
-        public DateTime logdate { get; set; }
+        public string logdate { get; set; }
         [DataMember]
         public string reportcategory { get; set; }
         [DataMember]
-        public int locationid { get; set; }
+        public string locationid { get; set; }
         [DataMember]
-        public decimal amt { get; set; }
+        public string amt { get; set; }
         [DataMember]
-        public decimal val { get; set; }
+        public string val { get; set; }
     }
 }

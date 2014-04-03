@@ -11,3 +11,6 @@ c:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MongoDB.Web.pdb
 c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.csprojResolveAssemblyReference.cache
 c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.dll
 c:\Projects\PSP\api\psp.repository.mongo\obj\Debug\psp.repository.mongo.pdb
+C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MySql.Data.dll

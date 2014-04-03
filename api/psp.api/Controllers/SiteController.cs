@@ -7,22 +7,29 @@ using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
 using MongoDB.Bson;
+using psp.core.datahelpers;
 
 namespace psp.api.Controllers
 {
     public class SiteController : ApiController
     {
          private readonly SiteRepository _repository;
+         private readonly SiteWatch _sitewatch;
+         private readonly WashLink _washlink;
 
         public SiteController()
         {
+            _sitewatch = new SiteWatch();
+            _washlink = new WashLink();
             _repository = new SiteRepository();
         }
 
         // GET api/site
         public IList<Site> GetAll()
         {
-            var sites = _repository.GetAll();
+            var test = _sitewatch.SitewatchSalesBySiteDate("2", DateTime.Today.AddDays(-60));
+            var sites = _repository.GetAll().OrderBy(o => o.name).ToList<Site>();
+            var mysql = _washlink.WashLinkWashTotalsBySiteDate(sites[11], DateTime.Today.AddDays(-60));
             return sites;
         }
 
