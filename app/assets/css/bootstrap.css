@@ -366,7 +366,7 @@ img {
 }
 
 .img-circle {
-
+    border-radius: 0 !important;
 }
 
 hr {

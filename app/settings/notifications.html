@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Notification Mangement</title>
 </head>
 <body>
-Notifications
+<div class="container">
+    <div class="row">
+        <h2>Manage Notifications</h2>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Last Ran</th>
+                <th># of Recipients</th>
+                <th style="text-align: right;">Actions</th>
+            </tr>
+            <tbody>
+            <tr ng-repeat="note in notifications">
+                <td>{{ note.name }}</td>
+                <td>{{ note.lastran |  date:'MM/dd/yyyy @ h:mma' }}</td>
+                <td>{{ notifications.count() }}</td>
+                <td style="text-align: right;">
+                    <a ng-href="#/notifications/{{ note.Id}}" class="btn btn-info"> Edit</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>

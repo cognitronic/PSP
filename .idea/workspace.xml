@@ -634,6 +634,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.api/Properties/AssemblyInfo.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.core/Properties/AssemblyInfo.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Properties/AssemblyInfo.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/datahelpers/BaseHelpers.cs" afterPath="$PROJECT_DIR$/api/psp.core/datahelpers/BaseHelpers.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/BundleConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/BundleConfig.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/es5-shim/CHANGES" afterPath="$PROJECT_DIR$/app/vendor/es5-shim/CHANGES" />
@@ -1186,28 +1187,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="3" selection-start="51" selection-end="1077" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="799">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/site.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="70" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-8.192307" vertical-offset="637" max-vertical-offset="1326">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
+            <state line="14" column="76" selection-start="769" selection-end="769" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -1216,11 +1199,52 @@
       <file leaf-file-name="sites.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="402" selection-end="402" vertical-scroll-proportion="-4.269231" vertical-offset="127" max-vertical-offset="816">
+            <state line="14" column="29" selection-start="0" selection-end="1706" vertical-scroll-proportion="-3.4615386" vertical-offset="148" max-vertical-offset="816">
               <folding>
                 <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="10" selection-start="894" selection-end="894" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="612">
+              <folding>
+                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications-service.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="78" selection-start="1980" selection-end="1980" vertical-scroll-proportion="1.2363636" vertical-offset="0" max-vertical-offset="1343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sites-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="7" selection-start="50" selection-end="2137" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1156">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1232,44 +1256,6 @@
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="63" selection-start="0" selection-end="2216" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sites-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="42" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users-controller.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="694">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paginator-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/paginator-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="1" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1292,22 +1278,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/settings/user-service.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/animate-event-directive.js" />
-        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/settings/users.html" />
-        <option value="$PROJECT_DIR$/app/settings/user.html" />
-        <option value="$PROJECT_DIR$/app/settings/user-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/paginator-service.js" />
         <option value="$PROJECT_DIR$/app/vendor/aes/aes.js" />
         <option value="$PROJECT_DIR$/app/settings/sites.html" />
         <option value="$PROJECT_DIR$/app/settings/sites-service.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/settings/site.html" />
         <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
+        <option value="$PROJECT_DIR$/app/assets/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/vendor/bootstrap/less/scaffolding.less" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/components/security/login.html" />
+        <option value="$PROJECT_DIR$/app/settings/notifications.html" />
+        <option value="$PROJECT_DIR$/app/settings/notifications-service.js" />
       </list>
     </option>
   </component>
@@ -1417,90 +1403,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1642,71 +1544,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="765" column="1" selection-start="10614" selection-end="10614" vertical-scroll-proportion="0.5244755" vertical-offset="12630" max-vertical-offset="13413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/aes/aes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="13606" selection-end="13606" vertical-scroll-proportion="0.9230769" vertical-offset="1618" max-vertical-offset="2380">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="0" selection-end="1714" vertical-scroll-proportion="-8.192307" vertical-offset="127" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="50" selection-end="2196" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="26" selection-start="3714" selection-end="3714" vertical-scroll-proportion="-20.615385" vertical-offset="739" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="63" selection-start="0" selection-end="2216" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="51" selection-end="1077" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="70" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-8.192307" vertical-offset="637" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="42" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="748">
@@ -1730,16 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="402" selection-end="402" vertical-scroll-proportion="-4.269231" vertical-offset="127" max-vertical-offset="816">
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/psp.core/domain/GSR.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4896">
@@ -1756,12 +1583,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/less/scaffolding.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="325" selection-end="325" vertical-scroll-proportion="0.31726283" vertical-offset="0" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="368" column="31" selection-start="4986" selection-end="4986" vertical-scroll-proportion="0.793007" vertical-offset="5689" max-vertical-offset="121227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="76" selection-start="769" selection-end="769" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="337" column="19" selection-start="5220" selection-end="5220" vertical-scroll-proportion="0.0" vertical-offset="5187" max-vertical-offset="98923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="12" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.66167665" vertical-offset="0" max-vertical-offset="668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="694">
+        <state line="16" column="5" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="0" selection-end="1706" vertical-scroll-proportion="-3.4615386" vertical-offset="148" max-vertical-offset="816">
+          <folding>
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="10" selection-start="894" selection-end="894" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="7" selection-start="50" selection-end="2137" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="78" selection-start="1980" selection-end="1980" vertical-scroll-proportion="1.2363636" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
         </state>
       </provider>
     </entry>
