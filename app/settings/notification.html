@@ -10,10 +10,31 @@
         <div>
             <b>Name:</b>
             <input value="{{ currentNotification.name }}" class="form-control" name="name" id="name" type="text" />
-        </div>
+        </div><br />
+        <b>Recipients: <small>A comma separated list of email addresses</small></b>
         <div>
-            <b>Recipients: <small>A comma separated list of email addresses</small></b>
-            <textarea name="recipients" id="recipients" class="form-control">{{ currentNotification.recipients.join(',') }}</textarea>
+            <table class="table">
+                <tr ng-repeat="recipient in recipients">
+                    <td>
+                        {{ recipient }}
+                    </td>
+                    <td style="text-align: right;">
+                        <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p >
+                    <input type="text" class="form-control" name="addRecipient" ng-model="newRecipient" value="{{ newRecipient }}" id="addRecipient"/>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <button type="button" class="btn btn-success" ng-click="addRecipient()">Add Recipient</button>
+            </div>
         </div><br />
         <div class="jumbotron">
             <h3 class="messagecontainer">
@@ -28,7 +49,7 @@
                       </span>
                     </p>
                 </div>
-                <div class="pull-left">
+                <div class="col-md-6 pull-left">
                     <button class="btn btn-warning" id="run" ng-click="runNotification()">Run Notification</button>&nbsp;
                 </div>
             </div>

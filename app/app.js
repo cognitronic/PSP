@@ -90,7 +90,7 @@ var app = angular.module('psp', [
         })
         .when('/notifications/:id', {
             templateUrl: 'settings/notification.html',
-            controller: 'settings.NotificationsCtrl',
+            controller: 'settings.NotificationCtrl',
             access: access.admin
         })
         .when('/noaccess', {
