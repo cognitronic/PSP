@@ -29,15 +29,26 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
         console.log(idx);
         $scope.recipients.splice(idx, 1);
         console.log($scope.recipients.join(','));
+        $scope.saveNotification();
     }
 
     $scope.addRecipient = function(){
         console.log($scope.newRecipient);
         if($scope.newRecipient !== ''){
             $scope.recipients.push($scope.newRecipient);
+            $scope.saveNotification();
             $scope.newRecipient = '';
         }
     }
+
+    $scope.returnToList = function(){
+        window.location = '#/notifications';
+    }
+
+    $scope.toggleMax = function() {
+        $scope.maxDate = ( $scope.maxDate ) ? null : new Date();
+    };
+    $scope.toggleMax();
 
 
 

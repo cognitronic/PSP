@@ -13,11 +13,14 @@ angular.module('service.notifications', [])
                     notification.sid = notification.Id;
                 }
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.post(APP_SETTINGS.apiUrl + 'Notifications/Post', notification)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
@@ -30,44 +33,56 @@ angular.module('service.notifications', [])
             },
             getNotificationById: function(id){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.get(APP_SETTINGS.apiUrl + 'Notifications/Get/' + id)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
             },
             getNotifications: function(){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.get(APP_SETTINGS.apiUrl + 'Notifications/GetAll')
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
             },
             deleteRecipient: function(notification){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.post(APP_SETTINGS.apiUrl + 'Notification/DeleteRecipient/', notification)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
             },
             addRecipient: function(notification){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.post(APP_SETTINGS.apiUrl + 'Notification/AddRecipient', notification)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                        deferred.reject();
                     });
                 return deferred.promise;
