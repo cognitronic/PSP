@@ -12,11 +12,14 @@ angular.module('service.user', [])
                     user.sid = user.Id;
                 }
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.post(APP_SETTINGS.apiUrl + 'Users/Post', user)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
@@ -29,22 +32,28 @@ angular.module('service.user', [])
             },
             getUserById: function(id){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.get(APP_SETTINGS.apiUrl + 'Users/Get/' + id)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
             },
             getUsers: function(){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.get(APP_SETTINGS.apiUrl + 'Users/GetAll')
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;
@@ -54,11 +63,14 @@ angular.module('service.user', [])
             },
             deleteUser: function(usr){
                 var deferred = $q.defer();
+                $rootScope.loading = true;
                 $http.post(APP_SETTINGS.apiUrl + 'Users/RemoveUser/', usr)
                     .success(function(data){
+                        $rootScope.loading = false;
                         deferred.resolve(data);
                     })
                     .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;

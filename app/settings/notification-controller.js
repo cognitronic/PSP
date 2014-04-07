@@ -42,7 +42,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
     }
 
     $scope.returnToList = function(){
-        window.location = '#/notifications';
+        $location.path('notifications');
     }
 
     $scope.toggleMax = function() {

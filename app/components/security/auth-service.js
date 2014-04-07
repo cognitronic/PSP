@@ -12,9 +12,11 @@ angular.module('service.auth', [])
 
         return {
             login: function(credentials){
+                $rootScope.loading = true;
                 return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
                 })
                     .success(function(data, status, headers, config){
+                        $rootScope.loading = false;
                         //_currentuser = data;
                         if(data === "null"){
                             console.log('Invalid email or password');

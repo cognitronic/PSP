@@ -6,4 +6,9 @@ app.controller('settings.NotificationsCtrl', function($scope, $rootScope, $route
     NotificationService.getNotifications().then(function(data){
         $scope.notifications = data;
     });
+
+    $scope.editNotification = function(id){
+
+        $location.path('notifications/' + id);
+    }
 });

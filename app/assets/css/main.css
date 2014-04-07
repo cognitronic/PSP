@@ -260,8 +260,8 @@ html {
 	text-align: left;
     color: #ffffff;
 
-    webkit-text-shadow: 1px 1px rgba(46, 46, 46, 0.37);
-    text-shadow: 1px 1px rgba(46, 46, 46, 0.37);
+    webkit-text-shadow: 1px 1px #111111;
+    text-shadow: 1px 1px #111111;
 }
 
 .jumbotron h1 {
@@ -807,3 +807,4 @@ html body {
     background-color:grey;
     opacity: .25;
 }
+

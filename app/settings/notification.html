@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div class="container">
+<div class="container" ng-cloak>
     <div class="row">
         <h2>{{ currentNotification.name.replace('_', ' ') }}</h2>
-
-        <b>Recipients:</b>
-        <div>
-            <table class="table table-striped table-hover">
-                <tr ng-repeat="recipient in recipients">
-                    <td>
-                        {{ recipient }}
-                    </td>
-                    <td style="text-align: right;">
-                        <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p >
-                    <input type="text" class="form-control" name="addRecipient" ng-model="newRecipient" value="{{ newRecipient }}" id="addRecipient" autofocus/>
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <button type="button" class="btn btn-success" ng-click="addRecipient()">Add Recipient</button>
-            </div>
-        </div>
-        <hr/>
         <div class="jumbotron">
             <h4 class="messagecontainer">
-                To send notification immediately to all recipients in the list above, select a date and click the Run Notification button.
+                To send notification immediately to all recipients in the list below, select a date and click the Run Notification button.
             </h4>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -51,7 +19,28 @@
                 </div>
             </div>
         </div>
+        <b>Recipients:</b>
+        <div>
+            <table class="table table-striped table-hover">
+                <tr ng-repeat="recipient in recipients">
+                    <td>
+                        {{ recipient }}
+                    </td>
+                    <td style="text-align: right;">
+                        <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p >
+                    <input type="email" class="form-control" name="addRecipient" ng-model="newRecipient" value="{{ newRecipient }}" id="addRecipient" required autofocus/>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <button type="button" class="btn btn-success" ng-click="addRecipient()">Add Recipient</button>
+            </div>
+        </div>
     </div>
 </div>
-</body>
-</html>

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Notification Mangement</title>
-</head>
-<body>
-<div class="container">
+<div class="container" ng-cloak>
     <div class="row">
         <h2>Manage Notifications</h2>
         <table class="table table-hover table-striped">
@@ -20,12 +14,10 @@
                 <td>{{ note.lastran |  date:'MM/dd/yyyy @ h:mma' }}</td>
                 <td><a href="#/notifications" tooltip-placement="right" tooltip-html-unsafe="{{ note.recipients.join('\n') }}">{{ note.recipients.length }}</a></td>
                 <td style="text-align: right;">
-                    <a ng-href="#/notifications/{{ note.Id }}" class="btn btn-info"  data-toggle="modal"> Edit</a>
+                    <a ng-click="editNotification(note.Id)" class="btn btn-info"  data-toggle="modal"> Edit</a>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-</body>
-</html>
