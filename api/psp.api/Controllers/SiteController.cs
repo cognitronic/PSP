@@ -7,7 +7,7 @@ using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
 using MongoDB.Bson;
-using psp.core.datahelpers;
+using psp.api.datahelpers;
 
 namespace psp.api.Controllers
 {

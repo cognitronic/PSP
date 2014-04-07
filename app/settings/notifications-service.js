@@ -62,7 +62,7 @@ angular.module('service.notifications', [])
             deleteRecipient: function(notification){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Notification/DeleteRecipient/', notification)
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications/DeleteRecipient/', notification)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -76,7 +76,7 @@ angular.module('service.notifications', [])
             addRecipient: function(notification){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Notification/AddRecipient', notification)
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications/AddRecipient', notification)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -84,6 +84,20 @@ angular.module('service.notifications', [])
                     .error(function(){
                         $rootScope.loading = false;
                        deferred.reject();
+                    });
+                return deferred.promise;
+            },
+            runNotification: function(noteparam){
+                var deferred = $q.defer();
+                $rootScope.loading = true;
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications/RunNotification', noteparam)
+                    .success(function(data){
+                        $rootScope.loading = false;
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        $rootScope.loading = false;
+                        deferred.reject();
                     });
                 return deferred.promise;
             }

@@ -17,6 +17,18 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
             });
     }
 
+    $scope.runNotification = function(){
+        console.log($scope.currentNotification.Id + ", " + $scope.currentNotification.Id);
+        var notificationParam = {
+            notificationId: $scope.currentNotification.Id,
+            reportDate: $scope.dt.toLocaleDateString()
+        };
+        NotificationService.runNotification(notificationParam)
+            .then(function(data){
+               console.log(data);
+            });
+    }
+
     if($routeParams.id !== "new"){
         NotificationService.getNotificationById($routeParams.id)
             .then(function(data){

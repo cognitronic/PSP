@@ -7,7 +7,8 @@ using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
 using MongoDB.Bson;
-using psp.core.datahelpers;
+using psp.api.datahelpers;
+using System.Web.Mvc;
 
 namespace psp.api.Controllers
 {
@@ -49,5 +50,31 @@ namespace psp.api.Controllers
         public void Delete(int id)
         {
         }
+
+        public IAPIResponse RunNotification([FromBody]NotificationParam parm)
+        {
+            var note = _repository.GetById(new ObjectId(parm.notificationId));
+
+            switch (note.name)
+            { 
+                case("GSR_Audit"):
+
+                    break;
+                case("Volume_Report"):
+                    var list = new SiteWatch().RunRewashNotification(parm.reportDate);
+
+                    break;
+                case ("Rewash_Alert"):
+                    list = new SiteWatch().RunRewashNotification(parm.reportDate);
+                    break;
+            }
+            return null;
+        }
+    }
+
+    public class NotificationParam
+    {
+        public string notificationId { get; set; }
+        public string reportDate { get; set; }
     }
 }

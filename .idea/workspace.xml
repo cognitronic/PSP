@@ -4,6 +4,13 @@
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Projects\PSP\.travis.yml" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.core\DataHelpers\BaseHelpers.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.core\DataHelpers\SiteWatch.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.core\DataHelpers\WashLink.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.core\domain\SiteWatchGSRSalesItem.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\FirebirdSql.Data.FirebirdClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\PSP\api\psp.repository.mongo\bin\Debug\MySql.Data.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\.buildignore" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\.htaccess" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\app\404.html" afterPath="" />
@@ -452,13 +459,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/FirebirdSql.Data.FirebirdClient.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net40-client/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/lib/net45/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/FirebirdSql.Data.FirebirdClient.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Mvc.5.0.0/Microsoft.AspNet.Mvc.5.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Razor.3.0.0/Microsoft.AspNet.Razor.3.0.0.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.Web.Optimization.1.1.1/Microsoft.AspNet.Web.Optimization.1.1.1.nupkg" />
@@ -499,7 +504,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/MySql.Data.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MySql.Data.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/Newtonsoft.Json.6.0.1.nupkg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net20/Newtonsoft.Json.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" afterPath="$PROJECT_DIR$/api/packages/Newtonsoft.Json.6.0.1/lib/net35/Newtonsoft.Json.dll" />
@@ -635,7 +639,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.api/Properties/AssemblyInfo.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.core/Properties/AssemblyInfo.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Properties/AssemblyInfo.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/datahelpers/BaseHelpers.cs" afterPath="$PROJECT_DIR$/api/psp.core/datahelpers/BaseHelpers.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/BundleConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/BundleConfig.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/es5-shim/CHANGES" afterPath="$PROJECT_DIR$/app/vendor/es5-shim/CHANGES" />
@@ -728,8 +731,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Content/Site.css" afterPath="$PROJECT_DIR$/api/psp.api/Content/Site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/datahelpers/SiteWatch.cs" afterPath="$PROJECT_DIR$/api/psp.core/datahelpers/SiteWatch.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/SiteWatchGSRSalesItem.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/SiteWatchGSRSalesItem.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/net45/System.Net.Http.Formatting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8%2Bnetcore45%2Bnet45/System.Net.Http.Formatting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.xml" afterPath="$PROJECT_DIR$/api/packages/Microsoft.AspNet.WebApi.Client.5.0.0/lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.xml" />
@@ -777,7 +778,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/user/User.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/user/User.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/UserRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/UserRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/UsersController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/UsersController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/datahelpers/WashLink.cs" afterPath="$PROJECT_DIR$/api/psp.core/datahelpers/WashLink.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/WashLinkWashTotals.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/WashLinkWashTotals.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Web.Debug.config" afterPath="$PROJECT_DIR$/api/psp.api/Web.Debug.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Web.Release.config" afterPath="$PROJECT_DIR$/api/psp.api/Web.Release.config" />
@@ -1187,7 +1187,7 @@
       <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="84" selection-start="279" selection-end="279" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="918">
+            <state line="17" column="86" selection-start="1101" selection-end="1116" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="918">
               <folding>
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -1198,7 +1198,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="49" selection-start="1839" selection-end="1984" vertical-scroll-proportion="-16.346153" vertical-offset="340" max-vertical-offset="1615">
+            <state line="33" column="0" selection-start="1645" selection-end="1645" vertical-scroll-proportion="-8.5" vertical-offset="340" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
@@ -1213,19 +1213,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/site.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.9230769" vertical-offset="51" max-vertical-offset="1343">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2601">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification-controller.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="notification-controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1632">
+            <state line="25" column="61" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.56340057" vertical-offset="0" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -1249,10 +1251,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="263" column="32" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.78818446" vertical-offset="3924" max-vertical-offset="13872">
+            <state line="263" column="32" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.0" vertical-offset="3924" max-vertical-offset="13872">
               <folding />
             </state>
           </provider>
@@ -1261,7 +1263,7 @@
       <file leaf-file-name="notifications-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="51" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1598">
+            <state line="92" column="91" selection-start="3705" selection-end="3705" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -1303,16 +1305,16 @@
         <option value="$PROJECT_DIR$/app/settings/site.html" />
         <option value="$PROJECT_DIR$/app/settings/user.html" />
         <option value="$PROJECT_DIR$/app/components/layout/loading-directive.js" />
-        <option value="$PROJECT_DIR$/app/settings/notifications-service.js" />
         <option value="$PROJECT_DIR$/app/settings/sites-service.js" />
         <option value="$PROJECT_DIR$/app/settings/user-service.js" />
         <option value="$PROJECT_DIR$/app/components/security/auth-service.js" />
         <option value="$PROJECT_DIR$/app/settings/notifications-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/notifications.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/settings/notification.html" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/app/settings/notifications-service.js" />
+        <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
       </list>
     </option>
   </component>
@@ -1545,22 +1547,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="46" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2601">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4371" column="22" selection-start="86865" selection-end="86865" vertical-scroll-proportion="0.32132566" vertical-offset="74254" max-vertical-offset="98872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/site.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="29" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.9230769" vertical-offset="51" max-vertical-offset="1343">
@@ -1579,7 +1565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="41" selection-start="418" selection-end="418" vertical-scroll-proportion="0.3429395" vertical-offset="0" max-vertical-offset="1258">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1588,7 +1574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="51" selection-start="591" selection-end="591" vertical-scroll-proportion="0.40419582" vertical-offset="0" max-vertical-offset="1428">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1596,20 +1582,6 @@
     <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="42" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.5944056" vertical-offset="612" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="51" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.0" vertical-offset="849" max-vertical-offset="1598">
           <folding />
         </state>
       </provider>
@@ -1638,13 +1610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="49" selection-start="1839" selection-end="1984" vertical-scroll-proportion="-16.346153" vertical-offset="340" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="153" selection-end="153" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="952">
@@ -1652,18 +1617,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="32" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.0" vertical-offset="3924" max-vertical-offset="13872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-27.739193" vertical-offset="19251" max-vertical-offset="63869">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1581#2226#0" expanded="true" />
+            <element signature="e#17483#17605#0" expanded="true" />
+            <element signature="e#24296#25308#0" expanded="true" />
+            <element signature="e#25741#27600#0" expanded="true" />
+            <element signature="e#29599#29879#0" expanded="true" />
+            <element signature="e#30326#30447#0" expanded="true" />
+            <element signature="e#30592#30723#0" expanded="true" />
+            <element signature="e#31139#31281#0" expanded="true" />
+            <element signature="e#32289#32427#0" expanded="true" />
+            <element signature="e#57000#57128#0" expanded="true" />
+            <element signature="e#58906#58990#0" expanded="true" />
+            <element signature="e#81348#81563#0" expanded="true" />
+            <element signature="e#81660#81782#0" expanded="true" />
+            <element signature="e#82296#82654#0" expanded="true" />
+            <element signature="e#82770#82954#0" expanded="true" />
+            <element signature="e#83090#83184#0" expanded="true" />
+            <element signature="e#83457#83578#0" expanded="true" />
+            <element signature="e#83951#84793#0" expanded="true" />
+            <element signature="e#94347#94446#0" expanded="true" />
+            <element signature="e#98936#99166#0" expanded="true" />
+            <element signature="e#105334#105450#0" expanded="true" />
+            <element signature="e#106518#107429#0" expanded="true" />
+            <element signature="e#108110#109868#0" expanded="true" />
+            <element signature="e#109870#110413#0" expanded="true" />
+            <element signature="e#125255#125403#0" expanded="true" />
+            <marker date="1396826311708" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396826311708" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396826311708" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396826311708" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1645" selection-end="1645" vertical-scroll-proportion="-8.5" vertical-offset="340" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="84" selection-start="279" selection-end="279" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="918">
+        <state line="17" column="86" selection-start="1101" selection-end="1116" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="918">
           <folding>
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="32" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.78818446" vertical-offset="3924" max-vertical-offset="13872">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2601">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="91" selection-start="3705" selection-end="3705" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="61" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.56340057" vertical-offset="0" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>

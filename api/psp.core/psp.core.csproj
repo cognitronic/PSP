@@ -58,13 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datahelpers\BaseHelpers.cs" />
-    <Compile Include="datahelpers\SiteWatch.cs" />
-    <Compile Include="datahelpers\WashLink.cs" />
+    <Compile Include="domain\IAPIResponse.cs" />
     <Compile Include="domain\GSR.cs" />
     <Compile Include="domain\Notification.cs" />
+    <Compile Include="domain\RewashNotificationResponse.cs" />
     <Compile Include="domain\Site.cs" />
-    <Compile Include="domain\SiteWatchGSRSalesItem.cs" />
+    <Compile Include="domain\SiteWatchSalesItem.cs" />
     <Compile Include="domain\user\IUser.cs" />
     <Compile Include="domain\user\IUserRepository.cs" />
     <Compile Include="domain\user\User.cs" />
