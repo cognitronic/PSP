@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h2>Notification</h2>
+        <div>
+            <b>Name:</b>
+            <input value="{{ currentNotification.name }}" class="form-control" name="name" id="name" type="text" />
+        </div>
+        <div>
+            <b>Recipients: <small>A comma separated list of email addresses</small></b>
+            <textarea name="recipients" id="recipients" class="form-control">{{ currentNotification.recipients.join(',') }}</textarea>
+        </div><br />
+        <div class="jumbotron">
+            <h3 class="messagecontainer">
+                Enter a start date and click run notification.  All recipients shown in the box above will receive the message.
+            </h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="input-group">
+                        <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened"  max="'2015-06-22'" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                      </span>
+                    </p>
+                </div>
+                <div class="pull-left">
+                    <button class="btn btn-warning" id="run" ng-click="runNotification()">Run Notification</button>&nbsp;
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-success" id="save" ng-click="saveNotification()">Save</button>&nbsp;
+            <button class="btn btn-link" id="returntolist" ng-href="#/notifications">Return to List</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

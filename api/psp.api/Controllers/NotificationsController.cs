@@ -4,26 +4,40 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using psp.core.domain;
+using psp.repository.mongo.Repositories;
+using MongoDB.Bson;
+using psp.core.datahelpers;
 
 namespace psp.api.Controllers
 {
     public class NotificationsController : ApiController
     {
-        // GET api/notifications
-        public IEnumerable<string> Get()
+        private readonly NotificationRepository _repository;
+
+        public NotificationsController()
         {
-            return new string[] { "value1", "value2" };
+            _repository = new NotificationRepository();
+        }
+
+        // GET api/notifications
+        public IList<Notification> GetAll()
+        {
+
+            var notifications = _repository.GetAll().OrderBy(o => o.name).ToList<Notification>();
+            return notifications;
         }
 
         // GET api/notifications/5
-        public string Get(int id)
+        public Notification Get(string id)
         {
-            return "value";
+            return _repository.GetById(new ObjectId(id));
         }
 
         // POST api/notifications
-        public void Post([FromBody]string value)
+        public Notification Post([FromBody]Notification site)
         {
+            return _repository.Save(site);
         }
 
         // PUT api/notifications/5

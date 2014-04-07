@@ -13,7 +13,7 @@ angular.module('service.notifications', [])
                     notification.sid = notification.Id;
                 }
                 var deferred = $q.defer();
-                $http.post(APP_SETTINGS.apiUrl + 'Notification/Post', notification)
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications/Post', notification)
                     .success(function(data){
                         deferred.resolve(data);
                     })
@@ -30,7 +30,7 @@ angular.module('service.notifications', [])
             },
             getNotificationById: function(id){
                 var deferred = $q.defer();
-                $http.get(APP_SETTINGS.apiUrl + 'Notification/Get/' + id)
+                $http.get(APP_SETTINGS.apiUrl + 'Notifications/Get/' + id)
                     .success(function(data){
                         deferred.resolve(data);
                     })
@@ -41,7 +41,7 @@ angular.module('service.notifications', [])
             },
             getNotifications: function(){
                 var deferred = $q.defer();
-                $http.get(APP_SETTINGS.apiUrl + 'Notification/GetAll')
+                $http.get(APP_SETTINGS.apiUrl + 'Notifications/GetAll')
                     .success(function(data){
                         deferred.resolve(data);
                     })

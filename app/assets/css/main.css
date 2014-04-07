@@ -256,8 +256,11 @@ html {
 	webkit-border-radius: 5px;
 }
 
-.jumbotron {
+.messagecontainer  {
 	text-align: center;
+    color: #ffffff;
+    webkit-text-shadow: 1px 1px #2e2e2e;
+    text-shadow: 1px 1px #2e2e2e;
 }
 
 .jumbotron h1 {

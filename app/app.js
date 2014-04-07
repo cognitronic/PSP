@@ -9,7 +9,9 @@ var app = angular.module('psp', [
         'ngAnimate',
         'service.auth',
         'service.user',
-        'service.site'])
+        'service.site',
+        'ui.bootstrap',
+        'service.notifications'])
 
 .config(function($routeProvider, $httpProvider){
 
@@ -83,6 +85,11 @@ var app = angular.module('psp', [
         })
         .when('/notifications', {
             templateUrl: 'settings/notifications.html',
+            controller: 'settings.NotificationsCtrl',
+            access: access.admin
+        })
+        .when('/notifications/:id', {
+            templateUrl: 'settings/notification.html',
             controller: 'settings.NotificationsCtrl',
             access: access.admin
         })

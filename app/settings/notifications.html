@@ -18,9 +18,9 @@
             <tr ng-repeat="note in notifications">
                 <td>{{ note.name }}</td>
                 <td>{{ note.lastran |  date:'MM/dd/yyyy @ h:mma' }}</td>
-                <td>{{ notifications.count() }}</td>
+                <td><a href="#/notifications" tooltip-placement="right" tooltip-html-unsafe="{{ note.recipients.join('\n') }}">{{ note.recipients.length }}</a></td>
                 <td style="text-align: right;">
-                    <a ng-href="#/notifications/{{ note.Id}}" class="btn btn-info"> Edit</a>
+                    <a ng-href="#/notifications/{{ note.Id }}" class="btn btn-info"  data-toggle="modal"> Edit</a>
                 </td>
             </tr>
             </tbody>
