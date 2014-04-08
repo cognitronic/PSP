@@ -65,7 +65,7 @@ namespace psp.api.Controllers
 
                     break;
                 case ("Rewash_Alert"):
-                    list = new SiteWatch().RunRewashNotification(parm.reportDate);
+                    var rewashes = new SiteWatch().RunRewashNotification(parm.reportDate);
                     break;
             }
             return null;

@@ -104,7 +104,7 @@ namespace psp.api.datahelpers
             return list;
         }
 
-        private string GetSiteWashVolumeData(string reportDate)
+        private IList<SiteWatchSalesItem> GetSiteWashVolumeData(string reportDate)
         {
             
             StringBuilder sb = new StringBuilder();
@@ -139,33 +139,33 @@ namespace psp.api.datahelpers
                 sitename = r["sitename"].ToString()
             })).ToList<SiteWatchSalesItem>();
 
-            sb.Append("<table>");
-            int total = 0;
-            sb.Append("<tr><td style='width: 100px;'>Site</td><td style='width: 50px;'>Count</td><td style='width: 100px;'>$ per Car</td></tr>");
-            foreach (var item in list)
-            {
-                sb.Append("<tr><td>");
-                sb.Append(item.sitename);
-                sb.Append("</td><td>");
-                sb.Append(item.total);
-                sb.Append("</td><td>$");
-                try
-                {
-                    //sb.Append(TTAPerCar[row["site"].ToString()]);
-                }
-                catch (Exception exc)
-                {
-                    sb.Append("0 - An error occurred processing this site.");
-                }
-                sb.Append("</td></tr>");
-                total += Convert.ToInt32(item.total);
-            }
-            sb.Append("<tr><td>");
-            sb.Append("<b>Total Count:</b>     <font color='Red'>");
-            sb.Append(total.ToString());
-            sb.Append("</font></td></tr>");
-            sb.Append("</table>");
-            return sb.ToString();
+            //sb.Append("<table>");
+            //int total = 0;
+            //sb.Append("<tr><td style='width: 100px;'>Site</td><td style='width: 50px;'>Count</td><td style='width: 100px;'>$ per Car</td></tr>");
+            //foreach (var item in list)
+            //{
+            //    sb.Append("<tr><td>");
+            //    sb.Append(item.sitename);
+            //    sb.Append("</td><td>");
+            //    sb.Append(item.total);
+            //    sb.Append("</td><td>$");
+            //    try
+            //    {
+            //        //sb.Append(TTAPerCar[row["site"].ToString()]);
+            //    }
+            //    catch (Exception exc)
+            //    {
+            //        sb.Append("0 - An error occurred processing this site.");
+            //    }
+            //    sb.Append("</td></tr>");
+            //    total += Convert.ToInt32(item.total);
+            //}
+            //sb.Append("<tr><td>");
+            //sb.Append("<b>Total Count:</b>     <font color='Red'>");
+            //sb.Append(total.ToString());
+            //sb.Append("</font></td></tr>");
+            //sb.Append("</table>");
+            return list;
         }
 
 
@@ -174,13 +174,12 @@ namespace psp.api.datahelpers
             var list = new List<IAPIResponse>();
             foreach (var site in sites)
             {
-                var rewash = new RewashNotificationResponse();
-                
                 foreach (var item in GetSiteWatchRewashData(site.sitewatchid, reportDate))
                 {
+                    var rewash = new RewashNotificationResponse();
                     rewash.RewashCount += item.total;
+                    list.Add(rewash as IAPIResponse);
                 }
-                list.Add(rewash as IAPIResponse);
             }
 
             var totes = list.Count();
@@ -189,7 +188,7 @@ namespace psp.api.datahelpers
             return "";
         }
 
-        public string RunVolumeData(string reportDate)
+        public IList<SiteWatchSalesItem> RunVolumeData(string reportDate)
         {
             var list = GetSiteWashVolumeData(reportDate);
             return list;
