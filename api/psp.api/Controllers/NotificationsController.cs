@@ -61,7 +61,7 @@ namespace psp.api.Controllers
 
                     break;
                 case("Volume_Report"):
-                    var list = new SiteWatch().RunRewashNotification(parm.reportDate);
+                    var list = new SiteWatch().RunVolumeData(parm.reportDate);
 
                     break;
                 case ("Rewash_Alert"):

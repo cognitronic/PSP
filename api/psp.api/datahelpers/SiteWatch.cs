@@ -104,6 +104,71 @@ namespace psp.api.datahelpers
             return list;
         }
 
+        private string GetSiteWashVolumeData(string reportDate)
+        {
+            
+            StringBuilder sb = new StringBuilder();
+            string sQuery = "";
+            sQuery = @"select s.site, si.sitename, count(s.site) ttlcount
+                from
+                v_sale s
+                inner join v_salefacts sf on
+                s.objid = sf.saleid
+                inner join v_site si on
+                s.site = si.id
+                where
+                sf.fact = 54200 and
+                s.site = sf.site and
+                sf.profitcenter = 1 and
+                si.id <> 99 and
+                s.logdate between '" + DateTime.Parse(reportDate).ToShortDateString() + @"' and '" + DateTime.Parse(reportDate).ToShortDateString() + @"'
+                group by s.site, si.sitename
+                order by s.site";
+            DataSet ds = new DataSet();
+            var list = new List<SiteWatchSalesItem>();
+            using (FbConnection con = new FbConnection(connectionString))
+            {
+                FbDataAdapter da = new FbDataAdapter(sQuery, connectionString);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(ds, "PrimeShine");
+            }
+            list = (ds.Tables[0].AsEnumerable().Select(r => new SiteWatchSalesItem
+            {
+                total = r["ttlcount"].ToString(),
+                locationid = r["site"].ToString(),
+                sitename = r["sitename"].ToString()
+            })).ToList<SiteWatchSalesItem>();
+
+            sb.Append("<table>");
+            int total = 0;
+            sb.Append("<tr><td style='width: 100px;'>Site</td><td style='width: 50px;'>Count</td><td style='width: 100px;'>$ per Car</td></tr>");
+            foreach (var item in list)
+            {
+                sb.Append("<tr><td>");
+                sb.Append(item.sitename);
+                sb.Append("</td><td>");
+                sb.Append(item.total);
+                sb.Append("</td><td>$");
+                try
+                {
+                    //sb.Append(TTAPerCar[row["site"].ToString()]);
+                }
+                catch (Exception exc)
+                {
+                    sb.Append("0 - An error occurred processing this site.");
+                }
+                sb.Append("</td></tr>");
+                total += Convert.ToInt32(item.total);
+            }
+            sb.Append("<tr><td>");
+            sb.Append("<b>Total Count:</b>     <font color='Red'>");
+            sb.Append(total.ToString());
+            sb.Append("</font></td></tr>");
+            sb.Append("</table>");
+            return sb.ToString();
+        }
+
+
         public string RunRewashNotification(string reportDate)
         {
             var list = new List<IAPIResponse>();
@@ -122,6 +187,12 @@ namespace psp.api.datahelpers
 
             
             return "";
+        }
+
+        public string RunVolumeData(string reportDate)
+        {
+            var list = GetSiteWashVolumeData(reportDate);
+            return list;
         }
     }
 }
