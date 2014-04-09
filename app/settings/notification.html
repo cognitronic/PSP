@@ -1,7 +1,7 @@
 <div class="container" ng-cloak>
     <div class="row">
         <h2>{{ currentNotification.name.replace('_', ' ') }}</h2>
-        <div class="jumbotron">
+        <div data-access-level='{{ currentNotification.canrunmanually }}' class="jumbotron">
             <h4 class="messagecontainer">
                 To send notification immediately to all recipients in the list below, select a date and click the Run Notification button.
             </h4>

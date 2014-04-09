@@ -11,7 +11,9 @@ app.directive('accessLevel', ['AuthService', '$rootScope', '$location', function
             var accessLevels = routingAccessConfig.accessLevels;
 
             $scope.$watch('isAuthenticated', function(value){
-                updateCSS(accessLevels[attrs.accessLevel]);
+                if(value){
+                    updateCSS(accessLevels[attrs.accessLevel]);
+                }
             });
 
             attrs.$observe('accessLevel', function(al) {

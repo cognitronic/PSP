@@ -16,7 +16,8 @@
             'office',
             'sitemanager',
             'executive',
-            'admin'],
+            'admin',
+            'inivsible'],
 
         /*
          Build out all the access levels you want referencing the roles listed above
@@ -28,7 +29,8 @@
             'user' : ['user', 'admin'],
             'office': ['office', 'executive', 'admin'],
             'executive': ['executive', 'admin'],
-            'admin': ['admin']
+            'admin': ['admin'],
+            'invisible': []
         }
 
     }

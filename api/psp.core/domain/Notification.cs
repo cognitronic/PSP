@@ -24,6 +24,8 @@ namespace psp.core.domain
         [DataMember]
         public string subject { get; set; }
         [DataMember]
+        public string canrunmanually { get; set; }
+        [DataMember]
         public IList<string> recipients { get; set; }
         [DataMember]
         public IList<string> bccemails { get; set; }
