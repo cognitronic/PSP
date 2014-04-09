@@ -260,8 +260,12 @@ html {
 	text-align: left;
     color: #ffffff;
 
-    webkit-text-shadow: 1px 1px #111111;
-    text-shadow: 1px 1px #111111;
+    webkit-text-shadow: 1px 1px #2e2e2e;
+    text-shadow: 1px 1px #2e2e2e;
+}
+
+.jumbotron .messagecontainer  {
+
 }
 
 .jumbotron h1 {

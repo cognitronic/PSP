@@ -35,17 +35,10 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<Notification>(query);
         }
 
-        //public Site GetByEmailPassword(string email, string password)
-        //{
-        //    var query = Query.And(
-        //        Query.EQ("email", email),
-        //        Query.EQ("password", password));
-        //    return _collection.FindOneAs<Site>(query);
-        //}
-
         public Notification Save(Notification Site)
         {
-            if (Site.sid != null && Site.sid != "") {
+            if (Site.sid != null && Site.sid != "")
+            {
                 Site.Id = new ObjectId(Site.sid);
             }
             _collection.Save<Notification>(Site);
@@ -59,6 +52,16 @@ namespace psp.repository.mongo.Repositories
             _collection.Remove(query);
             return usr;
         }
+
+        //public Site GetByEmailPassword(string email, string password)
+        //{
+        //    var query = Query.And(
+        //        Query.EQ("email", email),
+        //        Query.EQ("password", password));
+        //    return _collection.FindOneAs<Site>(query);
+        //}
+
+        
     }
 }
 

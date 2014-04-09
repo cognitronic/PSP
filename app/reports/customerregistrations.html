@@ -1,0 +1,80 @@
+<div class="container" ng-cloak>
+    <div class="row">
+        <div class="pull-right">
+            <button ng-click="addClient()" class="btn btn-success">Add Client</button>
+        </div>
+        <h2>Manage Clients</h2>
+        <div class="jumbotron">
+            <h3 class="messagecontainer">Search Criteria</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <b class="messagecontainer">Date Registered:</b>
+                        <p class="input-group">
+                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <b class="messagecontainer">Birthdate:</b>
+                        <p class="input-group">
+                            <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="dtBirthdate" is-open="birthdateOpened"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="pull-left">
+                        <button class="btn btn-warning" id="run" ng-click="search()">Search Clients</button>&nbsp;
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <b class="messagecontainer">Last Name:</b>
+                        <p>
+                            <input class="form-control" type="text" ng-model="criteria_lastname"/>
+                        </p>
+                    </div>
+                    <div>
+                        <b class="messagecontainer">Email:</b>
+                        <p>
+                            <input class="form-control" type="email" ng-model="criteria_email"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Registered</th>
+                <th>Address</th>
+                <th>Birthdate</th>
+                <th style="text-align: right;">Actions</th>
+            </tr>
+            <tbody>
+            <tr ng-repeat="client in clients">
+                <td>{{ client.firstname }}</td>
+                <td>{{ client.lastname }}</td>
+                <td>{{ client.email }}</td>
+                <td>{{ client.dateregistered |  date:'MM/dd/yyyy' }}</td>
+                <td>
+                    {{ client.address }} <br />
+                    {{ client.city }}, {{ client.state }} {{ client.zip }}
+                </td>
+                <td>{{ client.birthdate }}</td>
+                <td style="text-align: right;">
+                    <a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a>
+                    <a ng-click="deleteClient(client.Id)" class="btn btn-danger"> Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

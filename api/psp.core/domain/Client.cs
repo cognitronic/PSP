@@ -34,6 +34,8 @@ namespace psp.core.domain
         [DataMember]
         public bool isactive { get; set; }
         [DataMember]
+        public DateTime dateregistered { get; set; }
+        [DataMember]
         public bool receivenotifications { get; set; }
         [DataMember]
         public string birthdate { get; set; }

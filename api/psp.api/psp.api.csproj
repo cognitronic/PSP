@@ -162,6 +162,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClaimsController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\CouponController.cs" />
     <Compile Include="Controllers\CustomerRegistrationController.cs" />
     <Compile Include="Controllers\GSRController.cs" />

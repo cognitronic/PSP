@@ -11,7 +11,8 @@ var app = angular.module('psp', [
         'service.user',
         'service.site',
         'ui.bootstrap',
-        'service.notifications'])
+        'service.notifications',
+        'service.reports'])
 
 .config(function($routeProvider, $httpProvider){
 
@@ -52,6 +53,21 @@ var app = angular.module('psp', [
             templateUrl: 'reports/gsr.html',
             controller: 'reports.GSRCtrl',
             access: access.executive
+        })
+        .when('/customerregistrations', {
+            templateUrl: 'reports/customerregistrations.html',
+            controller: 'reports.CustomerRegistrationsCtrl',
+            access: access.office
+        })
+        .when('/customerregistrations/:id', {
+            templateUrl: 'reports/customerregistration.html',
+            controller: 'reports.CustomerRegistrationCtrl',
+            access: access.office
+        })
+        .when('/birthdays', {
+            templateUrl: 'reports/birthdays.html',
+            controller: 'reports.BirthdaysCtrl',
+            access: access.office
         })
         .when('/forms', {
             templateUrl: 'forms/forms-index.html',

@@ -22,6 +22,7 @@ namespace psp.core
         public static string Mongo_Tags_Collection = "tags";
         public static string Mongo_Schedule_Collection = "schedule";
         public static string Mongo_Notification_Collection = "notifications";
+        public static string Mongo_Client_Collection = "client";
         #endregion
     }
 }
