@@ -20,6 +20,12 @@ namespace psp.core.domain
         [DataMember]
         public DateTime lastran { get; set; }
         [DataMember]
+        public string fromemail { get; set; }
+        [DataMember]
+        public string subject { get; set; }
+        [DataMember]
         public IList<string> recipients { get; set; }
+        [DataMember]
+        public IList<string> bccemails { get; set; }
     }
 }

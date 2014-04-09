@@ -10,7 +10,7 @@
             </tr>
             <tbody>
             <tr ng-repeat="note in notifications">
-                <td>{{ note.name }}</td>
+                <td>{{ note.name.replace('_', ' ') }}</td>
                 <td>{{ note.lastran |  date:'MM/dd/yyyy @ h:mma' }}</td>
                 <td><a href="#/notifications" tooltip-placement="right" tooltip-html-unsafe="{{ note.recipients.join('\n') }}">{{ note.recipients.length }}</a></td>
                 <td style="text-align: right;">

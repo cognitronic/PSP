@@ -6,7 +6,9 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
     $scope.currentNotification = {};
     $scope.isHidden = true;
     $scope.recipients = [];
+    $scope.bccemails = [];
     $scope.newRecipient = '';
+    $scope.newBccRecipient = '';
 
     $scope.saveNotification = function(){
         $scope.currentNotification.recipients = $scope.recipients;
@@ -34,6 +36,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
             .then(function(data){
                 $scope.currentNotification = data;
                 $scope.recipients = $scope.currentNotification.recipients;
+                $scope.bccemails = $scope.currentNotification.bccemails;
             });
     }
 
@@ -52,6 +55,24 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
             $scope.newRecipient = '';
         }
     }
+
+
+    $scope.removeBccRecipient = function(idx){
+        console.log(idx);
+        $scope.bccemails.splice(idx, 1);
+        console.log($scope.bccemails.join(','));
+        $scope.saveNotification();
+    }
+
+    $scope.addBccRecipient = function(){
+        console.log($scope.newBccRecipient);
+        if($scope.newBccRecipient !== ''){
+            $scope.bccemails.push($scope.newBccRecipient);
+            $scope.saveNotification();
+            $scope.newBccRecipient = '';
+        }
+    }
+
 
     $scope.returnToList = function(){
         $location.path('notifications');

@@ -7,8 +7,9 @@ using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
 using MongoDB.Bson;
-using psp.api.datahelpers;
+using psp.api.helpers;
 using System.Web.Mvc;
+using IdeaSeed.Core.Mail;
 
 namespace psp.api.Controllers
 {
@@ -65,7 +66,7 @@ namespace psp.api.Controllers
 
                     break;
                 case ("Rewash_Alert"):
-                    var rewashes = new SiteWatch().RunRewashNotification(parm.reportDate);
+                    var rewashes = new SiteWatch().RunRewashNotification(note, parm.reportDate);
                     break;
             }
             return null;

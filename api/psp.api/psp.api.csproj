@@ -44,6 +44,12 @@
     <Reference Include="FirebirdSql.Data.FirebirdClient">
       <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.4.1.0.0\lib\net45\FirebirdSql.Data.FirebirdClient.dll</HintPath>
     </Reference>
+    <Reference Include="IdeaSeed.Core">
+      <HintPath>..\..\references\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IdeaSeed.Web">
+      <HintPath>..\..\references\IdeaSeed.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -163,9 +169,9 @@
     <Compile Include="Controllers\NotificationsController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
-    <Compile Include="datahelpers\BaseHelpers.cs" />
-    <Compile Include="datahelpers\SiteWatch.cs" />
-    <Compile Include="datahelpers\WashLink.cs" />
+    <Compile Include="helpers\BaseHelpers.cs" />
+    <Compile Include="helpers\SiteWatch.cs" />
+    <Compile Include="helpers\WashLink.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

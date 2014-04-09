@@ -41,3 +41,7 @@ c:\Projects\PSP\api\psp.api\bin\MongoDB.Driver.xml
 C:\Projects\PSP\api\psp.api\bin\FirebirdSql.Data.FirebirdClient.dll
 C:\Projects\PSP\api\psp.api\bin\MySql.Data.dll
 C:\Projects\PSP\api\psp.api\bin\FirebirdSql.Data.FirebirdClient.pdb
+C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Core.dll
+C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Web.dll
+C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Core.pdb
+C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Web.pdb
