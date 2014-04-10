@@ -68,10 +68,10 @@
                     {{ client.address }} <br />
                     {{ client.city }}, {{ client.state }} {{ client.zip }}
                 </td>
-                <td>{{ client.birthdate }}</td>
+                <td>{{ client.birthdate |  date:'MM/dd/yyyy' }}</td>
                 <td style="text-align: right;">
                     <a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a>
-                    <a ng-click="deleteClient(client.Id)" class="btn btn-danger"> Delete</a>
+                    <a ng-click="deleteClient(client)" class="btn btn-danger"> Delete</a>
                 </td>
             </tr>
             </tbody>

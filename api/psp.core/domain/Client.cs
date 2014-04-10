@@ -38,7 +38,7 @@ namespace psp.core.domain
         [DataMember]
         public bool receivenotifications { get; set; }
         [DataMember]
-        public string birthdate { get; set; }
+        public DateTime birthdate { get; set; }
         [DataMember]
         public bool addressverified { get; set; }
         [DataMember]

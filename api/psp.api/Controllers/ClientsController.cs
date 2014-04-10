@@ -51,8 +51,9 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/clients/5
-        public void Delete(int id)
+        public Client RemoveClient([FromBody]Client client)
         {
+            return _repository.Delete(client);
         }
     }
 }

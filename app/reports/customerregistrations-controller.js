@@ -14,6 +14,19 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
 
     }
 
+    $scope.deleteClient = function(client){
+        var deleteItem = confirm('Are you sure you want to delete record?');
+        if(deleteItem){
+            client.sid = client.Id.toString();
+            ReportsService.deleteClient(client)
+                .then(function(data){
+                    ReportsService.getClients().then(function(data){
+                        $scope.clients = data;
+                    });
+                });
+        }
+    }
+
     $scope.editClient = function(id){
 
         $location.path('customerregistrations/' + id);

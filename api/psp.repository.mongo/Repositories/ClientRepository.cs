@@ -35,20 +35,20 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<Client>(query);
         }
 
-        public Client Save(Client Site)
+        public Client Save(Client client)
         {
-            if (Site.sid != null && Site.sid != "")
+            if (client.sid != null && client.sid != "")
             {
-                Site.Id = new ObjectId(Site.sid);
+                client.Id = new ObjectId(client.sid);
             }
-            _collection.Save<Client>(Site);
-            return Site;
+            _collection.Save<Client>(client);
+            return client;
         }
 
-        public Client Delete(Client Site)
+        public Client Delete(Client client)
         {
-            var usr = Site;
-            var query = Query<Client>.EQ(u => u.Id, new ObjectId(Site.sid));
+            var usr = client;
+            var query = Query<Client>.EQ(u => u.Id, new ObjectId(client.sid));
             _collection.Remove(query);
             return usr;
         }

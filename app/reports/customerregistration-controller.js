@@ -14,11 +14,26 @@ app.controller('reports.CustomerRegistrationCtrl', function($scope, $rootScope, 
     }
 
     $scope.saveClient = function(){
-
+        if($scope.client.dateregistered === undefined){
+            $scope.client.dateregistered = new Date().toISOString();
+        }
+        $scope.client.birthdate = $scope.client.birthdate.toISOString();
+        ReportsService.saveClient($scope.client)
+            .then(function(data){
+               $location.path('/customerregistrations/' + data.Id);
+            });
     }
 
     $scope.deleteClient = function(){
-
+        if($routeParams.id !== "new"){
+            var deleteItem = confirm('Are you sure you want to delete record?');
+            if(deleteItem){
+                ReportsService.deleteClient($scope.client)
+                .then(function(data){
+                   $location.path('/customerregistrations');
+                });
+            }
+        }
     }
 
     $scope.returnToList = function(){
@@ -33,7 +48,7 @@ app.controller('reports.CustomerRegistrationCtrl', function($scope, $rootScope, 
     $scope.toggleMax();
 
     $scope.today = function() {
-        $scope.dt = new Date();
+        $scope.client.birthdate = new Date();
     };
 //    $scope.dtBirthdate = new Date();
 //    $scope.dtDateRegistered = new Date();
@@ -45,7 +60,7 @@ app.controller('reports.CustomerRegistrationCtrl', function($scope, $rootScope, 
     };
 
     $scope.clear = function () {
-        $scope.dt = null;
+        $scope.client.birthdate = null;
     };
 
     // Disable weekend selection

@@ -24,6 +24,23 @@ angular.module('service.reports', [])
                     });
                 return deferred.promise;
             },
+            deleteClient: function(client){
+                if(client.Id !== undefined){
+                    client.sid = client.Id;
+                }
+                var deferred = $q.defer();
+                $rootScope.loading = true;
+                $http.post(APP_SETTINGS.apiUrl + 'Clients/RemoveClient', client)
+                    .success(function(data){
+                        $rootScope.loading = false;
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        $rootScope.loading = false;
+                        deferred.reject();
+                    });
+                return deferred.promise;
+            },
             getClientById: function(id){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
