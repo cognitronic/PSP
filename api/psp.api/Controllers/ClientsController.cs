@@ -34,9 +34,9 @@ namespace psp.api.Controllers
         }
 
         // GET api/clients/5
-        public string Get(int id)
+        public Client Get(string id)
         {
-            return "value";
+            return _repository.GetById(new ObjectId(id));
         }
 
         // POST api/clients

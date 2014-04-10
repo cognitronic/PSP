@@ -34,8 +34,8 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     $scope.today = function() {
         $scope.dt = new Date();
     };
-    $scope.dtBirthdate = new Date();
-    $scope.dtDateRegistered = new Date();
+//    $scope.dtBirthdate = new Date();
+//    $scope.dtDateRegistered = new Date();
     $scope.today();
 
     $scope.showWeeks = true;
