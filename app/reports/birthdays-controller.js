@@ -1,21 +1,19 @@
 /**
- * Created by Danny Schreiber on 4/9/14.
+ * Created by Danny Schreiber on 4/11/14.
  */
-
 'use strict'
 
-app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
-
+app.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
     $scope.pagination = Paginator.getNew(25);
     $scope.criteria_lastname = "";
     $scope.criteria_email = "";
-    $scope.dtBirthdate = undefined;
-    $scope.dtDateRegistered = undefined;
+    $scope.dtBirthdate = new Date();
+    $scope.dtBirthdate.setDate($scope.dtBirthdate.getDate() + 1);
 
     ReportsService.getClients().then(function(data){
         $scope.clients = data;
         $scope.pagination.numPages = Math.ceil($scope.clients.length/$scope.pagination.perPage);
-        console.log(new Date($scope.clients[2].dateregistered).toLocaleDateString());
+        console.log((new Date()).getDay());
     });
 
     $scope.convertDateToBirthdate = function(){
@@ -36,14 +34,8 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
         }
     }
 
-    $scope.editClient = function(id){
+    $scope.sendCoupon = function(client){
 
-        $location.path('customerregistrations/' + id);
-    }
-
-    $scope.addClient = function(){
-
-        $location.path('customerregistrations/new');
     }
 
     $scope.toggleMax = function() {
@@ -81,13 +73,7 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     $scope.open = function($event) {
         $event.preventDefault();
         $event.stopPropagation();
-        if($event.currentTarget.id === 'btnBirthdate'){
-            $scope.birthdateOpened = true;
-            $scope.registeredOpened = false;
-        } else {
-            $scope.birthdateOpened = false;
-            $scope.registeredOpened = true;
-        }
+        $scope.birthdateOpened = true;
     };
 
 
@@ -99,4 +85,5 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     $scope.formats = ['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
     $scope.format = $scope.formats[1];
     $scope.birthdateFormat = $scope.formats[2];
+
 });
