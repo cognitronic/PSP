@@ -9,18 +9,23 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     $scope.pagination = Paginator.getNew(25);
     $scope.criteria_lastname = "";
     $scope.criteria_email = "";
-    $scope.dtBirthdate = new Date();
-    $scope.dtDateRegistered = '';
+    $scope.dtBirthdate = undefined;
+    $scope.dtDateRegistered = undefined;
 
     ReportsService.getClients().then(function(data){
         $scope.clients = data;
         $scope.pagination.numPages = Math.ceil($scope.clients.length/$scope.pagination.perPage);
-        console.log($scope.clients[2].birthdate);
+        console.log(new Date($scope.clients[2].dateregistered).toLocaleDateString());
     });
 
     $scope.search = function(){
         var client = {};
 
+    }
+
+    $scope.convertDateToBirthdate = function(){
+        if(!isNaN($scope.dtBirthdate))
+            return (new Date($scope.dtBirthdate).getMonth() + 1) + '/' + (new Date($scope.dtBirthdate).getDate());
     }
 
     $scope.deleteClient = function(client){

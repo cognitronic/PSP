@@ -9,6 +9,20 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div>
+                        <b class="messagecontainer">Last Name:</b>
+                        <p>
+                            <input class="form-control" type="text" ng-model="criteria_lastname"/>
+                        </p>
+                    </div>
+                    <div>
+                        <b class="messagecontainer">Email:</b>
+                        <p>
+                            <input class="form-control" type="text" ng-model="criteria_email"/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
                         <b class="messagecontainer">Date Registered:</b>
                         <p class="input-group">
                             <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
@@ -24,20 +38,6 @@
                             <span class="input-group-btn">
                                 <button class="btn btn-default" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div>
-                        <b class="messagecontainer">Last Name:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="criteria_lastname"/>
-                        </p>
-                    </div>
-                    <div>
-                        <b class="messagecontainer">Email:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="criteria_email"/>
                         </p>
                     </div>
                 </div>
@@ -59,16 +59,17 @@
             <tr ng-repeat="client in clients |
             startFrom: pagination.page * pagination.perPage |
             limitTo: pagination.perPage |
-            filter:{lastname: criteria_lastname, email : criteria_email, birthdate : dtBirthdate.toISOString().replace('.000', '')}">
+            convertToISODate  |
+            filter:{lastname: criteria_lastname, email : criteria_email, birthdate : convertDateToBirthdate(), dateregistered : dtDateRegistered.toLocaleDateString() }">
                 <td>{{ client.firstname }}</td>
                 <td>{{ client.lastname }}</td>
                 <td>{{ client.email }}</td>
-                <td>{{ client.dateregistered |  date:'MM/dd/yyyy' }}</td>
+                <td>{{ client.dateregistered }}</td>
                 <td>
                     {{ client.address }} <br />
                     {{ client.city }}, {{ client.state }} {{ client.zip }}
                 </td>
-                <td>{{ client.birthdate |  date:'MM/dd/yyyy'  }}</td>
+                <td>{{ client.birthdate }}</td>
                 <td style="text-align: right;">
                     <a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a>
                     <a ng-click="deleteClient(client)" class="btn btn-danger"> Delete</a>

@@ -12,7 +12,8 @@ var app = angular.module('psp', [
         'service.site',
         'ui.bootstrap',
         'service.notifications',
-        'service.reports'])
+        'service.reports',
+        'filters.app'])
 
 .config(function($routeProvider, $httpProvider){
 
