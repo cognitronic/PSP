@@ -4,13 +4,22 @@
 
 'use strict'
 
-app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService){
+app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
+
+    $scope.pagination = Paginator.getNew(25);
+    $scope.criteria_lastname = "";
+    $scope.criteria_email = "";
+    $scope.dtBirthdate = new Date();
+    $scope.dtDateRegistered = '';
 
     ReportsService.getClients().then(function(data){
         $scope.clients = data;
+        $scope.pagination.numPages = Math.ceil($scope.clients.length/$scope.pagination.perPage);
+        console.log($scope.clients[2].birthdate);
     });
 
     $scope.search = function(){
+        var client = {};
 
     }
 
@@ -47,8 +56,7 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     $scope.today = function() {
         $scope.dt = new Date();
     };
-//    $scope.dtBirthdate = new Date();
-//    $scope.dtDateRegistered = new Date();
+
     $scope.today();
 
     $scope.showWeeks = true;

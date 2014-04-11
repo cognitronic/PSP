@@ -26,9 +26,6 @@
                             </span>
                         </p>
                     </div>
-                    <div class="pull-left">
-                        <button class="btn btn-warning" id="run" ng-click="search()">Search Clients</button>&nbsp;
-                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div>
@@ -40,7 +37,7 @@
                     <div>
                         <b class="messagecontainer">Email:</b>
                         <p>
-                            <input class="form-control" type="email" ng-model="criteria_email"/>
+                            <input class="form-control" type="text" ng-model="criteria_email"/>
                         </p>
                     </div>
                 </div>
@@ -59,7 +56,10 @@
                 <th style="text-align: right;">Actions</th>
             </tr>
             <tbody>
-            <tr ng-repeat="client in clients">
+            <tr ng-repeat="client in clients |
+            startFrom: pagination.page * pagination.perPage |
+            limitTo: pagination.perPage |
+            filter:{lastname: criteria_lastname, email : criteria_email, birthdate : dtBirthdate.toISOString().replace('.000', '')}">
                 <td>{{ client.firstname }}</td>
                 <td>{{ client.lastname }}</td>
                 <td>{{ client.email }}</td>
@@ -68,7 +68,7 @@
                     {{ client.address }} <br />
                     {{ client.city }}, {{ client.state }} {{ client.zip }}
                 </td>
-                <td>{{ client.birthdate |  date:'MM/dd/yyyy' }}</td>
+                <td>{{ client.birthdate |  date:'MM/dd/yyyy'  }}</td>
                 <td style="text-align: right;">
                     <a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a>
                     <a ng-click="deleteClient(client)" class="btn btn-danger"> Delete</a>
@@ -77,4 +77,9 @@
             </tbody>
         </table>
     </div>
+    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <span ng-repeat="n in [] | range: pagination.numPages" >
+        <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
+    </span>
+    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>

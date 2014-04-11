@@ -444,9 +444,6 @@
       <change type="DELETED" beforePath="C:\Projects\PSP\karma.conf.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\package.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\psp_notificationlauncher\bin\packages" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\psp_notificationlauncher\bin\psp_notificationlauncher.dart" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\psp_notificationlauncher\pubspec.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\PSP\psp_notificationlauncher\pubspec.yaml" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\runner.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Projects\PSP\test\spec\controllers\main.js" afterPath="" />
@@ -1352,10 +1349,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerregistration-controller.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="customerregistration-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistration-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="72" selection-start="638" selection-end="638" vertical-scroll-proportion="0.4164265" vertical-offset="0" max-vertical-offset="1598">
+            <state line="19" column="72" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
               <folding />
             </state>
           </provider>
@@ -1364,7 +1361,7 @@
       <file leaf-file-name="customerregistrations-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="19" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+            <state line="17" column="49" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
@@ -1373,7 +1370,7 @@
       <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.6923075" vertical-offset="122" max-vertical-offset="816">
+            <state line="38" column="135" selection-start="1234" selection-end="1691" vertical-scroll-proportion="-20.153847" vertical-offset="122" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -1421,10 +1418,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="94" selection-start="296" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerregistrations.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="52" selection-start="3750" selection-end="3750" vertical-scroll-proportion="-18.307692" vertical-offset="765" max-vertical-offset="1513">
+            <state line="61" column="82" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.27994013" vertical-offset="918" max-vertical-offset="1615">
               <folding>
                 <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -1464,9 +1470,9 @@
         <option value="$PROJECT_DIR$/app/reports/customerregistration.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
+        <option value="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
       </list>
     </option>
   </component>
@@ -1818,30 +1824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="52" selection-start="3750" selection-end="3750" vertical-scroll-proportion="-18.307692" vertical-offset="765" max-vertical-offset="1513">
-          <folding>
-            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.6923075" vertical-offset="122" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="526" selection-end="616" vertical-scroll-proportion="0.4409222" vertical-offset="0" max-vertical-offset="694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1428">
@@ -1851,17 +1833,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+        <state line="38" column="135" selection-start="1234" selection-end="1691" vertical-scroll-proportion="-20.153847" vertical-offset="122" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="94" selection-start="296" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/customerregistration-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="72" selection-start="638" selection-end="638" vertical-scroll-proportion="0.4164265" vertical-offset="0" max-vertical-offset="1598">
+        <state line="19" column="72" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="49" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="82" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.27994013" vertical-offset="918" max-vertical-offset="1615">
+          <folding>
+            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
