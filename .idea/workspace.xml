@@ -885,6 +885,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/attributes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/security/auth-service.js" afterPath="$PROJECT_DIR$/app/components/security/auth-service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/less/badges.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/birthdays-controller.js" afterPath="$PROJECT_DIR$/app/reports/birthdays-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/birthdays.html" afterPath="$PROJECT_DIR$/app/reports/birthdays.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/bootstrap-additions.min.css" afterPath="$PROJECT_DIR$/app/assets/css/bootstrap-additions.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap-additions/bootstrap-additions.min.css" afterPath="$PROJECT_DIR$/app/vendor/bootstrap-additions/bootstrap-additions.min.css" />
@@ -1350,14 +1351,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="birthdays.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="birthdays.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="112" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.5805515" vertical-offset="450" max-vertical-offset="1343">
+            <state line="31" column="18" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-2.9615386" vertical-offset="450" max-vertical-offset="1343">
               <folding>
                 <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volumereport.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/volumereport.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volumereport-controller.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/reports/volumereport-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1419,8 +1438,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/components/layout/_nav.html" />
         <option value="$PROJECT_DIR$/app/reports/ReportsService.js" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
         <option value="$PROJECT_DIR$/app/common/clients-service.js" />
@@ -1435,6 +1452,8 @@
         <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/birthdays-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/birthdays.html" />
+        <option value="$PROJECT_DIR$/app/reports/volumereport.html" />
+        <option value="$PROJECT_DIR$/app/reports/volumereport-controller.js" />
       </list>
     </option>
   </component>
@@ -1743,22 +1762,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="792" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-0.9798271" vertical-offset="1122" max-vertical-offset="2193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="70" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="1292">
@@ -1859,11 +1862,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="112" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.5805515" vertical-offset="450" max-vertical-offset="1343">
+        <state line="31" column="18" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-2.9615386" vertical-offset="450" max-vertical-offset="1343">
           <folding>
             <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/volumereport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/volumereport-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
+          <folding />
         </state>
       </provider>
     </entry>
