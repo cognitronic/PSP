@@ -1167,7 +1167,7 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
 
                     var elementFocusBind = function() {
                         scope.$apply(function() {
-                            setOpen( true );
+                            //setOpen( true );
                         });
                     };
 
