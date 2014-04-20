@@ -1235,8 +1235,10 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
                     // Outter change
                     ngModel.$render = function() {
                         var date = ngModel.$viewValue ? dateFilter(ngModel.$viewValue, dateFormat) : '';
-                        element.val(date);
-                        scope.date = ngModel.$modelValue;
+                        if(date !== '12/31/1969'){
+                            element.val(date);
+                            scope.date = ngModel.$modelValue;
+                        }
                     };
 
                     function addWatchableAttribute(attribute, scopeProperty, datepickerAttribute) {
