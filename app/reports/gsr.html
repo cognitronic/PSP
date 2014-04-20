@@ -1,9 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-GSR
-</body>
-</html>
+<div class="container">
+    <div class="row">
+        <h2>GSR Report</h2>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div>
+                <b>Date:</b>
+                <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" enable-on-focus="false"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div>
+                <b>Date:</b>
+                <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" enable-on-focus="false"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+               </p>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
