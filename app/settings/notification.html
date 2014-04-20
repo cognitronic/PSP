@@ -30,56 +30,58 @@
             </div>
         </div>
         <br />
-        <hr/>
-        <b>Recipients:</b>
-        <div>
-            <table class="table table-striped table-hover">
-                <tr ng-repeat="recipient in recipients">
-                    <td>
-                        {{ recipient }}
-                    </td>
-                    <td style="text-align: right;">
-                        <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p >
-                    <input type="email" class="form-control" name="addRecipient" ng-model="newRecipient" value="{{ newRecipient }}" id="addRecipient" required autofocus/>
-                </p>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <b>Recipients:</b>
+            <div>
+                <table class="table table-striped table-hover">
+                    <tr ng-repeat="recipient in recipients">
+                        <td>
+                            {{ recipient }}
+                        </td>
+                        <td style="text-align: right;">
+                            <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <button type="button" class="btn btn-success" ng-click="addRecipient()">Add Recipient</button>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p >
+                        <input type="email" class="form-control" name="addRecipient" ng-model="newRecipient" value="{{ newRecipient }}" id="addRecipient" required autofocus/>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <button type="button" class="btn btn-success" ng-click="addRecipient()">Add Recipient</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <b>Bcc Recipients:</b>
+            <div>
+                <table class="table table-striped table-hover">
+                    <tr ng-repeat="bcc in bccemails">
+                        <td>
+                            {{ bcc }}
+                        </td>
+                        <td style="text-align: right;">
+                            <button type="button" class="btn btn-danger btn-sm" ng-click="removeBccRecipient($index)">Remove</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p >
+                        <input type="email" class="form-control" name="addRecipient" ng-model="newBccRecipient" value="{{ newBccRecipient }}" id="addBccRecipient" required autofocus/>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <button type="button" class="btn btn-success" ng-click="addBccRecipient()">Add Recipient</button>
+                </div>
             </div>
         </div>
     </div>
     <br />
     <hr/>
-    <div class="row">
-        <b>BCC Recipients:</b>
-        <div>
-            <table class="table table-striped table-hover">
-                <tr ng-repeat="bcc in bccemails">
-                    <td>
-                        {{ bcc }}
-                    </td>
-                    <td style="text-align: right;">
-                        <button type="button" class="btn btn-danger btn-sm" ng-click="removeBccRecipient($index)">Remove</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p >
-                    <input type="email" class="form-control" name="addRecipient" ng-model="newBccRecipient" value="{{ newBccRecipient }}" id="addBccRecipient" required autofocus/>
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <button type="button" class="btn btn-success" ng-click="addBccRecipient()">Add Recipient</button>
-            </div>
-        </div>
-    </div>
+
 </div>

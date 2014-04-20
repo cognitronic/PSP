@@ -1099,7 +1099,8 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
         closeText: 'Done',
         closeOnDateSelection: true,
         appendToBody: false,
-        showButtonBar: true
+        showButtonBar: true,
+        enableOnFocus: false
     })
 
     .directive('datepickerPopup', ['$compile', '$parse', '$document', '$position', 'dateFilter', 'datepickerPopupConfig', 'datepickerConfig',
@@ -1119,6 +1120,8 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
                     });
 
                     scope.showButtonBar = angular.isDefined(attrs.showButtonBar) ? originalScope.$eval(attrs.showButtonBar) : datepickerPopupConfig.showButtonBar;
+
+                    scope.enableOnFocus = angular.isDefined(attrs.enableOnFocus) ? originalScope.$eval(attrs.enableOnFocus) : datepickerPopupConfig.enableOnFocus;
 
                     originalScope.$on('$destroy', function() {
                         $popup.remove();
@@ -1167,7 +1170,10 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
 
                     var elementFocusBind = function() {
                         scope.$apply(function() {
-                            setOpen( true );
+                            console.log('elementFocusBind: ' + scope.enableOnFocus);
+                            if(scope.enableOnFocus){
+                                setOpen( true );
+                            }
                         });
                     };
 
