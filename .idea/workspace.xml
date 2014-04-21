@@ -1347,7 +1347,7 @@
       <file leaf-file-name="customerregistrations-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="32" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1802">
+            <state line="57" column="6" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
@@ -1433,7 +1433,7 @@
       <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1239" column="61" selection-start="51877" selection-end="51877" vertical-scroll-proportion="0.71449924" vertical-offset="18511" max-vertical-offset="61404">
+            <state line="3517" column="0" selection-start="145520" selection-end="146654" vertical-scroll-proportion="0.20627803" vertical-offset="57968" max-vertical-offset="61404">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#49779#50765#0" expanded="false" />
@@ -1972,23 +1972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="175" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.807693" vertical-offset="204" max-vertical-offset="1666">
-          <folding>
-            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="32" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14390" column="10" selection-start="501965" selection-end="501975" vertical-scroll-proportion="-0.5052317" vertical-offset="147558" max-vertical-offset="187578">
@@ -2000,9 +1983,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="6" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="175" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.807693" vertical-offset="204" max-vertical-offset="1666">
+          <folding>
+            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1239" column="61" selection-start="51877" selection-end="51877" vertical-scroll-proportion="0.71449924" vertical-offset="18511" max-vertical-offset="61404">
+        <state line="3517" column="0" selection-start="145520" selection-end="146654" vertical-scroll-proportion="0.20627803" vertical-offset="57968" max-vertical-offset="61404">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#49779#50765#0" expanded="false" />
