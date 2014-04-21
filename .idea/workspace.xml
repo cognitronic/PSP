@@ -1433,9 +1433,10 @@
       <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3517" column="0" selection-start="145520" selection-end="146654" vertical-scroll-proportion="0.20627803" vertical-offset="57968" max-vertical-offset="61404">
+            <state line="1052" column="0" selection-start="42901" selection-end="42901" vertical-scroll-proportion="0.54409564" vertical-offset="14545" max-vertical-offset="60248">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#35319#38937#0" expanded="false" />
                 <element signature="e#49779#50765#0" expanded="false" />
                 <element signature="e#57366#57494#0" expanded="true" />
                 <element signature="e#59272#59356#0" expanded="true" />
@@ -2002,9 +2003,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3517" column="0" selection-start="145520" selection-end="146654" vertical-scroll-proportion="0.20627803" vertical-offset="57968" max-vertical-offset="61404">
+        <state line="1052" column="0" selection-start="42901" selection-end="42901" vertical-scroll-proportion="0.54409564" vertical-offset="14545" max-vertical-offset="60248">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#35319#38937#0" expanded="false" />
             <element signature="e#49779#50765#0" expanded="false" />
             <element signature="e#57366#57494#0" expanded="true" />
             <element signature="e#59272#59356#0" expanded="true" />

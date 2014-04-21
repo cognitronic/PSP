@@ -56,6 +56,7 @@
     <Compile Include="Providers\MongoDBOutputCacheProvider.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\GSRRepository.cs" />
     <Compile Include="Repositories\NotificationRepository.cs" />
     <Compile Include="Repositories\SiteRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />

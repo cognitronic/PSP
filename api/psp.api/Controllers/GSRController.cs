@@ -4,11 +4,22 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using psp.core.domain;
+using psp.repository.mongo.Repositories;
+using MongoDB.Bson;
+using psp.api.helpers;
 
 namespace psp.api.Controllers
 {
     public class GSRController : ApiController
     {
+        private readonly GSRRepository _repository;
+
+         public GSRController()
+        {
+            _repository = new GSRRepository();
+        }
+
         // GET api/gsr
         public IEnumerable<string> Get()
         {
@@ -19,6 +30,11 @@ namespace psp.api.Controllers
         public string Get(int id)
         {
             return "value";
+        }
+
+        public GSR GetSiteGSRByDate([FromBody]GSRViewModel gsr)
+        {
+            return _repository.GetBySiteIdGSRDate(gsr.siteId, gsr.gsrDate);
         }
 
         // POST api/gsr
@@ -35,5 +51,11 @@ namespace psp.api.Controllers
         public void Delete(int id)
         {
         }
+    }
+
+    public class GSRViewModel
+    {
+        public string siteId { get; set; }
+        public DateTime gsrDate { get; set; }
     }
 }

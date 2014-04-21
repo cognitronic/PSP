@@ -14,6 +14,8 @@ namespace psp.core.domain
         [DataMember]
         public ObjectId Id { get; set; }
         [DataMember]
+        public string sid { get; set; }
+        [DataMember]
         public string site { get; set; }
         [DataMember]
         public DateTime gsrdate { get; set; }
@@ -120,7 +122,7 @@ namespace psp.core.domain
         [DataMember]
         public int unlimitedug_count { get; set; }
         [DataMember]
-        public decimal unlimitedug_decimal { get; set; }
+        public decimal unlimitedug_dollars { get; set; }
         [DataMember]
         public int sw_totalpremier_count { get; set; }
         [DataMember]
