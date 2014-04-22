@@ -3,9 +3,17 @@
  */
 'use strict'
 
-app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService){
-    $scope.username = AuthService.currentUser().first;
+app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, SiteService){
+   $scope.sites = [];
+    SiteService.getSites().then(function(data){
+       $scope.sites = data;
+        $scope.site = $scope.sites[0];
+        console.log($scope.sites);
+    });
 
+//    ReportsService.getGSRBySiteDate().then(function(data){
+//        $scope.gsr = data;
+//    });
 
 
     $scope.toggleMax = function() {
@@ -31,14 +39,14 @@ app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $lo
     };
 
     // Disable weekend selection
-    $scope.disabled = function(date, mode) {
-        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-    };
-
-    $scope.toggleMin = function() {
-        $scope.minDate = ( $scope.minDate ) ? null : new Date();
-    };
-    $scope.toggleMin();
+//    $scope.disabled = function(date, mode) {
+//        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+//    };
+//
+//    $scope.toggleMin = function() {
+//        $scope.minDate = ( $scope.minDate ) ? null : new Date();
+//    };
+//    $scope.toggleMin();
 
     $scope.open = function($event) {
         $event.preventDefault();

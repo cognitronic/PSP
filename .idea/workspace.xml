@@ -672,6 +672,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" afterPath="$PROJECT_DIR$/api/packages/FirebirdSql.Data.FirebirdClient.4.1.0.0/FirebirdSql.Data.FirebirdClient.4.1.0.0.nuspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/GSRController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/GSRRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/GSRRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Global.asax" afterPath="$PROJECT_DIR$/api/psp.api/Global.asax" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/angular-motion/Gruntfile.js" afterPath="$PROJECT_DIR$/app/vendor/angular-motion/Gruntfile.js" />
@@ -1347,7 +1348,7 @@
       <file leaf-file-name="customerregistrations-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="6" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="1802">
+            <state line="18" column="7" selection-start="407" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
@@ -1371,22 +1372,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gsr.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gsr.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="20" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-5.230769" vertical-offset="663" max-vertical-offset="1377">
+            <state line="20" column="94" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.5838323" vertical-offset="1" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/nav-controller.js">
+      <file leaf-file-name="user.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state line="30" column="19" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-9.807693" vertical-offset="255" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1394,25 +1402,9 @@
       <file leaf-file-name="gsr-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="47" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="1173">
+            <state line="9" column="38" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="10" selection-start="4202" selection-end="4202" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1421,8 +1413,9 @@
       <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="175" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.807693" vertical-offset="204" max-vertical-offset="1666">
+            <state line="11" column="51" selection-start="456" selection-end="480" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1258">
               <folding>
+                <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
                 <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -1430,10 +1423,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1052" column="0" selection-start="42901" selection-end="42901" vertical-scroll-proportion="0.54409564" vertical-offset="14545" max-vertical-offset="60248">
+            <state line="1043" column="13" selection-start="42626" selection-end="42626" vertical-scroll-proportion="5.16" vertical-offset="14545" max-vertical-offset="60248">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#35319#38937#0" expanded="false" />
@@ -1481,7 +1474,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/convertToISODate.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -1493,10 +1485,11 @@
         <option value="$PROJECT_DIR$/app/reports/volumereport.html" />
         <option value="$PROJECT_DIR$/app/reports/volumereport-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/notification.html" />
-        <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js" />
+        <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
+        <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
       </list>
     </option>
   </component>
@@ -1742,6 +1735,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="fileTemplates" />
+    <property name="last_opened_file_path" value="C:/Development/coordinatedcare" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1871,37 +1865,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="65" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-2.9615386" vertical-offset="450" max-vertical-offset="1343">
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/volumereport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/volumereport-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/security/login-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
@@ -1915,7 +1878,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="39" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1258">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1924,7 +1887,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="19" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1957,53 +1920,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="47" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="1173">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-5.230769" vertical-offset="663" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14390" column="10" selection-start="501965" selection-end="501975" vertical-scroll-proportion="-0.5052317" vertical-offset="147558" max-vertical-offset="187578">
           <folding>
-            <element signature="e#0#103#0" expanded="true" />
-            <element signature="e#159#1392#0" expanded="true" />
-            <element signature="e#286895#292153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="6" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="1802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="175" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-9.807693" vertical-offset="204" max-vertical-offset="1666">
-          <folding>
-            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#103#0" expanded="false" />
+            <element signature="e#159#1392#0" expanded="false" />
+            <element signature="e#286895#292153#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1052" column="0" selection-start="42901" selection-end="42901" vertical-scroll-proportion="0.54409564" vertical-offset="14545" max-vertical-offset="60248">
+        <state line="1043" column="13" selection-start="42626" selection-end="42626" vertical-scroll-proportion="5.16" vertical-offset="14545" max-vertical-offset="60248">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#35319#38937#0" expanded="false" />
@@ -2029,6 +1959,70 @@
             <marker date="1398034340552" expanded="true" signature="153216:153227" placeholder="..." />
             <marker date="1398034340552" expanded="true" signature="153592:153603" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="40" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1564">
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="7" selection-start="407" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="42" selection-start="2045" selection-end="2045" vertical-scroll-proportion="1.3472623" vertical-offset="0" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-9.807693" vertical-offset="255" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="456" selection-end="480" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1258">
+          <folding>
+            <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="94" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.5838323" vertical-offset="1" max-vertical-offset="1445">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -32,9 +32,9 @@ namespace psp.api.Controllers
             return "value";
         }
 
-        public GSR GetSiteGSRByDate([FromBody]GSRViewModel gsr)
+        public GSR GetSiteGSRByDate([FromBody]GSRViewModel data)
         {
-            return _repository.GetBySiteIdGSRDate(gsr.siteId, gsr.gsrDate);
+            return _repository.GetBySiteIdGSRDate(data.siteId, data.gsrDate);
         }
 
         // POST api/gsr
