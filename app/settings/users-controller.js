@@ -17,14 +17,13 @@ app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, Aut
     }
 
     $scope.deleteUser = function(usr){
-        var deleteUser = confirm('Are you sure you want to delete user?');
-        if(deleteUser){
-            usr.sid = usr.Id;
-            UserService.deleteUser(usr).then(function(data){
-                UserService.getUsers().then(function(data){
-                    $scope.users = data;
-                });
+        usr.sid = usr.Id;
+        UserService.deleteUser(usr).then(function(data){
+            UserService.getUsers().then(function(data){
+                $scope.users = data;
             });
-        }
+        });
+        console.log(usr);
+        $scope.confirmed = 'from the directive';
     }
 });

@@ -8,7 +8,7 @@
                     <div>
                         <b class="messagecontainer">Date:</b>
                         <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" enable-on-focus="false"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="registeredOpened" enable-on-focus="false"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                     <span class="input-group-btn">
                         <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                     </span>
@@ -25,7 +25,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="form-group">
                         <br/>
-                        <button class="btn btn-success" ng-click="runGSR()">Run GSR</button>
+                        <button class="btn btn-success" ng-confirm ng-click="runGSR()">Run GSR</button>
                     </div>
                 </div>
             </div>
@@ -59,13 +59,13 @@
                         Prime Shine Wash:
                     </td>
                     <td>
-                        382
+                        {{ gsr.primeshine_count }}
                     </td>
                     <td>
                         --
                     </td>
                     <td>
-                        $2,674.00
+                        {{ gsr.primeshine_dollars | currency }}
                     </td>
                     <td>
                         --

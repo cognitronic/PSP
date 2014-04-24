@@ -13,7 +13,8 @@ var app = angular.module('psp', [
         'ui.bootstrap',
         'service.notifications',
         'service.reports',
-        'filters.app'])
+        'filters.app',
+        'dialogs.services'])
 
 .config(function($routeProvider, $httpProvider){
 
@@ -133,7 +134,7 @@ var app = angular.module('psp', [
     notAuthorized: 'auth-not-authorized'
 })
 .constant('APP_SETTINGS', {
-        apiUrl: 'http://pspapi.dannyschreiber.net/'
+        apiUrl: 'http://pspapi.localhost/'
     })
 .run(function($rootScope, $location, AuthService){
 

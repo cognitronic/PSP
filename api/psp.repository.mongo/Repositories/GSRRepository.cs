@@ -41,11 +41,11 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindAs<GSR>(query).ToList<GSR>();
         }
 
-        public GSR GetBySiteIdGSRDate(string siteId, DateTime date)
+        public GSR GetBySiteIdGSRDate(string site, DateTime date)
         {
             var query = Query.And(
-                Query.EQ("Id", siteId),
-                Query.EQ("gsrdate", date));
+                Query.EQ("site", site),
+                Query.EQ("gsrdate", date.ToString("yyy-MM-ddTH7:mm:ssZ")));
             return _collection.FindOneAs<GSR>(query);
         }
 

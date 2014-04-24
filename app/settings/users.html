@@ -6,6 +6,7 @@
 <body>
 <div class="container">
     <div class="row">
+        {{ confirmed }}
         <div class="pull-right">
             <button class="btn btn-success" type="button" ng-click="AddUser()">Add User</button>
         </div>
@@ -26,7 +27,8 @@
                     <td>{{ user.role }}</td>
                     <td style="text-align: right;">
                         <a ng-href="#/users/{{ user.Id}}" class="btn btn-info"> Edit</a>
-                        <a ng-click="deleteUser(user)" class="btn btn-danger"> Delete</a>
+                        <a ng-confirm-click="Are you sure you wanna do this?" factory-name="$dialogs" confirm-clicked="deleteUser(user)" class="btn btn-danger"> Delete</a>
+                        <!--<a ng-click="launch('confirm')" confirmed-clicked="deleteUser(user)" class="btn btn-danger"> Delete</a>-->
                     </td>
                 </tr>
             </tbody>

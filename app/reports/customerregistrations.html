@@ -72,7 +72,7 @@
                 <td>{{ client.birthdate }}</td>
                 <td style="text-align: right;">
                     <span><a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a></span>
-                    <span><a ng-click="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
+                    <span><a ng-confirm-click="Are you sure you wanna do this?" factory-name="$dialogs" confirm-clicked="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
                 </td>
             </tr>
             </tbody>

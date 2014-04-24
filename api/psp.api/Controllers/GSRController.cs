@@ -32,9 +32,10 @@ namespace psp.api.Controllers
             return "value";
         }
 
-        public GSR GetSiteGSRByDate([FromBody]GSRViewModel data)
+        public GSR GetSiteGSRByDate(string gsrDate, string site)
         {
-            return _repository.GetBySiteIdGSRDate(data.siteId, data.gsrDate);
+            var gsr = _repository.GetBySiteIdGSRDate(site, DateTime.Parse(gsrDate));
+            return gsr;
         }
 
         // POST api/gsr
@@ -55,7 +56,7 @@ namespace psp.api.Controllers
 
     public class GSRViewModel
     {
-        public string siteId { get; set; }
+        public string site { get; set; }
         public DateTime gsrDate { get; set; }
     }
 }

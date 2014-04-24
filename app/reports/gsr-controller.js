@@ -4,7 +4,20 @@
 'use strict'
 
 app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, SiteService){
-   $scope.sites = [];
+
+    $scope.gsr = {};
+    $scope.runGSR = function(){
+        console.log($scope.site);
+        $scope.viewModel = {
+            site: $scope.site.name,
+            gsrDate: $scope.dt.toLocaleDateString()
+        }
+        ReportsService.getGSRBySiteDate($scope.viewModel).then(function(data){
+           console.log(data);
+            $scope.gsr = data;
+        });
+    }
+
     SiteService.getSites().then(function(data){
        $scope.sites = data;
         $scope.site = $scope.sites[0];

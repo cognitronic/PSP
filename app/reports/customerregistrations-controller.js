@@ -4,7 +4,7 @@
 
 'use strict'
 
-app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
+app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator, $dialogs){
 
     $scope.pagination = Paginator.getNew(25);
     $scope.criteria_lastname = "";
@@ -24,16 +24,13 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
     }
 
     $scope.deleteClient = function(client){
-        var deleteItem = confirm('Are you sure you want to delete record?');
-        if(deleteItem){
-            client.sid = client.Id.toString();
-            ReportsService.deleteClient(client)
-                .then(function(data){
-                    ReportsService.getClients().then(function(data){
-                        $scope.clients = data;
-                    });
+        client.sid = client.Id.toString();
+        ReportsService.deleteClient(client)
+            .then(function(data){
+                ReportsService.getClients().then(function(data){
+                    $scope.clients = data;
                 });
-        }
+            });
     }
 
     $scope.editClient = function(id){

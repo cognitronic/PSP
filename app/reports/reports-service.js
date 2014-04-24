@@ -69,16 +69,22 @@ angular.module('service.reports', [])
                     });
                 return deferred.promise;
             },
-            getGSRBySiteDate: function(data){
+            getGSRBySiteDate: function(viewModel){
+                console.log(viewModel);
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'GSR/GetSiteGSRByDate', data)
+                $http({
+                    url: APP_SETTINGS.apiUrl + 'GSR/GetSiteGSRByDate',
+                    method: 'GET',
+                    params: viewModel})
                     .success(function(data){
                         $rootScope.loading = false;
+                        console.log('success: ' + data);
                         deferred.resolve(data);
                     })
                     .error(function(){
                         $rootScope.loading = false;
+                        console.log('rejected: ');
                         deferred.reject();
                     });
                 return deferred.promise;
