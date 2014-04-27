@@ -34,7 +34,7 @@ namespace psp.api.Controllers
 
         public GSR GetSiteGSRByDate(string gsrDate, string site)
         {
-            var gsr = _repository.GetBySiteIdGSRDate(site, DateTime.Parse(gsrDate));
+            var gsr = _repository.GetBySiteIdGSRDate(site, gsrDate);
             return gsr;
         }
 

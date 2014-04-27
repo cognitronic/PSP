@@ -29,7 +29,7 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<GSR>(query);
         }
 
-        public GSR GetByGSRDate(DateTime date)
+        public GSR GetByGSRDate(string date)
         {
             var query = Query<GSR>.EQ(e => e.gsrdate, date);
             return _collection.FindOneAs<GSR>(query);
@@ -41,11 +41,11 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindAs<GSR>(query).ToList<GSR>();
         }
 
-        public GSR GetBySiteIdGSRDate(string site, DateTime date)
+        public GSR GetBySiteIdGSRDate(string site, string date)
         {
             var query = Query.And(
                 Query.EQ("site", site),
-                Query.EQ("gsrdate", date.ToString("yyy-MM-ddTH7:mm:ssZ")));
+                Query.EQ("gsrdate", date));
             return _collection.FindOneAs<GSR>(query);
         }
 

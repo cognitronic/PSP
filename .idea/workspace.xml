@@ -541,6 +541,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/queue/delay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/app/vendor/jquery/src/deprecated.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialog-confirm.html" afterPath="$PROJECT_DIR$/app/components/layout/dialog-confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialog-error.html" afterPath="$PROJECT_DIR$/app/components/layout/dialog-error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialog-notify.html" afterPath="$PROJECT_DIR$/app/components/layout/dialog-notify.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialog-wait.html" afterPath="$PROJECT_DIR$/app/components/layout/dialog-wait.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialogs-controller.js" afterPath="$PROJECT_DIR$/app/components/layout/dialogs-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialogs-directive.js" afterPath="$PROJECT_DIR$/app/components/layout/dialogs-directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/layout/dialogs-service.js" afterPath="$PROJECT_DIR$/app/components/layout/dialogs-service.js" />
@@ -904,28 +907,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/settings/users.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="457" selection-end="457" vertical-scroll-proportion="0.14071856" vertical-offset="178" max-vertical-offset="867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sites.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="53" selection-start="985" selection-end="1015" vertical-scroll-proportion="-11.961538" vertical-offset="148" max-vertical-offset="816">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dialogs-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1870">
+            <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="1870">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
                 <element signature="e#132#158#0" expanded="true" />
@@ -934,19 +919,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialogs-directive.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+      <file leaf-file-name="reports-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="14" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0" vertical-offset="921" max-vertical-offset="1615">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="1666">
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogs-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1836">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#112#146#0" expanded="true" />
+                <element signature="e#736#769#0" expanded="true" />
+                <element signature="e#2408#2443#0" expanded="true" />
+                <element signature="e#3046#3082#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="46" selection-start="3882" selection-end="3882" vertical-scroll-proportion="-10.346154" vertical-offset="989" max-vertical-offset="1683">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <file leaf-file-name="dialog-confirm.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-confirm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="834" column="23" selection-start="11858" selection-end="11858" vertical-scroll-proportion="0.0" vertical-offset="13586" max-vertical-offset="14280">
+            <state line="11" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogs-directive.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
@@ -955,44 +975,8 @@
       <file leaf-file-name="dialog-wait.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-wait.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="465" selection-end="465" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+            <state line="0" column="0" selection-start="0" selection-end="465" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog-error.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-error.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="356" selection-end="356" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialogs-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="12" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.0" vertical-offset="426" max-vertical-offset="1258">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <element signature="e#112#146#0" expanded="true" />
-                <element signature="e#736#769#0" expanded="true" />
-                <element signature="e#803#2383#0" expanded="false" />
-                <element signature="e#2408#2443#0" expanded="true" />
-                <element signature="e#3046#3082#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="28" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="901">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1002,6 +986,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="467" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gsr-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1024,7 +1019,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/dialogs-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-confirm.html" />
@@ -1032,13 +1026,14 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-notify.html" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-error.html" />
         <option value="$PROJECT_DIR$/app/components/layout/dialogs-service.js" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-wait.html" />
         <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/dialogs-directive.js" />
+        <option value="$PROJECT_DIR$/app/components/security/login.html" />
+        <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/settings/users.html" />
       </list>
     </option>
@@ -1148,46 +1143,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="settings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1225,6 +1180,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1439,120 +1398,23 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="289">
-          <folding>
-            <marker date="1398350913110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1398350913110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1398350913110" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="15" selection-start="1206" selection-end="1206" vertical-scroll-proportion="-0.48991355" vertical-offset="867" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1348" column="0" selection-start="56355" selection-end="56355" vertical-scroll-proportion="12.04" vertical-offset="20990" max-vertical-offset="52904">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#57536#59269#0" expanded="false" />
-            <element signature="e#59389#59805#0" expanded="false" />
-            <element signature="e#59838#60978#0" expanded="false" />
-            <element signature="e#61009#67031#0" expanded="false" />
-            <element signature="e#67070#71873#0" expanded="false" />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="74" selection-start="3616" selection-end="3616" vertical-scroll-proportion="-9.038462" vertical-offset="938" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="51" selection-start="3421" selection-end="3421" vertical-scroll-proportion="-8.192307" vertical-offset="977" max-vertical-offset="1751">
+        <state line="70" column="51" selection-start="3421" selection-end="3421" vertical-scroll-proportion="1.4071857" vertical-offset="267" max-vertical-offset="1751">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites.html">
+    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="985" selection-end="1015" vertical-scroll-proportion="-11.961538" vertical-offset="148" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="12" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.0" vertical-offset="426" max-vertical-offset="1258">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#112#146#0" expanded="true" />
-            <element signature="e#736#769#0" expanded="true" />
-            <element signature="e#803#2383#0" expanded="false" />
-            <element signature="e#2408#2443#0" expanded="true" />
-            <element signature="e#3046#3082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="28" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="901">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="14" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0" vertical-offset="921" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1870">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#132#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="834" column="23" selection-start="11858" selection-end="11858" vertical-scroll-proportion="0.0" vertical-offset="13586" max-vertical-offset="14280">
+        <state line="13" column="32" selection-start="576" selection-end="576" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="356" selection-end="356" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
+        <state line="0" column="0" selection-start="0" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
           <folding />
         </state>
       </provider>
@@ -1566,14 +1428,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-wait.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="465" selection-end="465" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+        <state line="0" column="0" selection-start="0" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="830" column="74" selection-start="11392" selection-end="11813" vertical-scroll-proportion="0.0" vertical-offset="13586" max-vertical-offset="14280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1337" column="78" selection-start="55881" selection-end="55881" vertical-scroll-proportion="0.031700287" vertical-offset="20990" max-vertical-offset="53125">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#55881#57295#0" expanded="false" />
+            <element signature="e#57366#57494#0" expanded="true" />
+            <element signature="e#59389#59805#0" expanded="false" />
+            <element signature="e#59838#60978#0" expanded="false" />
+            <element signature="e#61009#67031#0" expanded="false" />
+            <element signature="e#67070#71873#0" expanded="false" />
+            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="457" selection-end="457" vertical-scroll-proportion="0.14071856" vertical-offset="178" max-vertical-offset="867">
+        <state line="29" column="128" selection-start="1075" selection-end="1204" vertical-scroll-proportion="0.4571843" vertical-offset="178" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1836">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#112#146#0" expanded="true" />
+            <element signature="e#736#769#0" expanded="true" />
+            <element signature="e#2408#2443#0" expanded="true" />
+            <element signature="e#3046#3082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="46" selection-start="3882" selection-end="3882" vertical-scroll-proportion="-10.346154" vertical-offset="989" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1870">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#132#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
