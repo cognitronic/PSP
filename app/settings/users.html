@@ -26,9 +26,9 @@
                     <td>{{ user.email }}</td>
                     <td>{{ user.role }}</td>
                     <td style="text-align: right;">
-                        <a ng-href="#/users/{{ user.Id}}" class="btn btn-info"> Edit</a>
-                        <a ng-confirm-click="Are you sure you wanna do this?" factory-name="$dialogs" confirm-clicked="deleteUser(user)" class="btn btn-danger"> Delete</a>
-                        <!--<a ng-click="launch('confirm')" confirmed-clicked="deleteUser(user)" class="btn btn-danger"> Delete</a>-->
+                        <!--<a  ng-href="#/users/{{ user.Id}}"  class="btn btn-info"> Edit</a>-->
+                        <a  cc-wait-dialog="here it is" click-action="_fakeWaitProgress(counter)" class="btn btn-info"> Edit</a>
+                        <a cc-confirm-dialog="Are you sure you wanna do this?" confirm-clicked="deleteUser(user)" class="btn btn-danger" cc-confirm-header="Please Confirm"> Delete</a>
                     </td>
                 </tr>
             </tbody>

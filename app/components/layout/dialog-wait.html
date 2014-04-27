@@ -1,0 +1,12 @@
+<div class="modal-header dialog-header-wait">
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-time"></span> {{ defaultStrings.pleaseWait }}
+    </h4>
+</div>
+<div class="modal-body">
+    <p>{{ msg }}</p>
+    <div class="progress progress-striped active">
+        <div class="progress-bar progress-bar-info" ng-style="getProgress()"></div>
+        <span class="sr-only">{{ progress }}{{ defaultStrings.percentComplete }}</span>
+    </div>
+</div>

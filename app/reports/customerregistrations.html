@@ -25,7 +25,7 @@
                     <div>
                         <b class="messagecontainer">Date Registered:</b>
                         <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" show-button-bar="false" enable-on-focus="false"  max="maxDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" show-button-bar="false" enable-on-focus="false"  min="minDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
                                 <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
@@ -72,7 +72,7 @@
                 <td>{{ client.birthdate }}</td>
                 <td style="text-align: right;">
                     <span><a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a></span>
-                    <span><a ng-confirm-click="Are you sure you wanna do this?" factory-name="$dialogs" confirm-clicked="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
+                    <span><a ng-confirm-click="Are you sure you wanna do this?" cc-confirm-header="Please Confirm" factory-name="$dialogs" confirm-clicked="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
                 </td>
             </tr>
             </tbody>

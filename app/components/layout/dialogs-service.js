@@ -11,7 +11,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
         return {
             error : function(header,msg,static){
                 return $modal.open({
-                    templateUrl : '/dialogs/error.html',
+                    templateUrl : '/components/layout/dialog-error.html',
                     controller : 'errorDialogCtrl',
                     backdrop: (static ? 'static' : true),
                     keyboard: (static ? false: true),
@@ -24,7 +24,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 
             wait : function(header,msg,progress,static){
                 return $modal.open({
-                    templateUrl : '/dialogs/wait.html',
+                    templateUrl : '/components/layout/dialog-wait.html',
                     controller : 'waitDialogCtrl',
                     backdrop: (static ? 'static' : true),
                     keyboard: (static ? false: true),
@@ -38,7 +38,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 
             notify : function(header,msg,static){
                 return $modal.open({
-                    templateUrl : '/dialogs/notify.html',
+                    templateUrl : '/components/layout/dialog-notify.html',
                     controller : 'notifyDialogCtrl',
                     backdrop: (static ? 'static' : true),
                     keyboard: (static ? false: true),
@@ -60,6 +60,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
                         msg : function() { return angular.copy(msg); }
                     }
                 }); // end modal.open
+                $modal.id = 'confirmDialog';
             }, // end confirm
 
             create : function(url,ctrlr,data,opts){
