@@ -14,7 +14,8 @@ var app = angular.module('psp', [
         'service.notifications',
         'service.reports',
         'filters.app',
-        'dialogs.services'])
+        'dialogs.services',
+        'cc.widgets.position'])
 
 .config(function($routeProvider, $httpProvider){
 

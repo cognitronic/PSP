@@ -907,39 +907,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dialogs-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
+      <file leaf-file-name="widget-position-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/widget-position-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="1870">
+            <state line="4" column="36" selection-start="66" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <element signature="e#132#158#0" expanded="true" />
+                <element signature="e#94#374#0" expanded="true" />
+                <element signature="e#835#956#0" expanded="true" />
+                <element signature="e#1101#1232#0" expanded="true" />
+                <element signature="e#1648#1790#0" expanded="true" />
+                <element signature="e#2798#2936#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reports-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="1666">
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state line="75" column="55" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-15.379311" vertical-offset="1054" max-vertical-offset="2120">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialogs-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1836">
+            <state line="17" column="29" selection-start="405" selection-end="405" vertical-scroll-proportion="-2.1005588" vertical-offset="2220" max-vertical-offset="3420">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <element signature="e#112#146#0" expanded="true" />
-                <element signature="e#736#769#0" expanded="true" />
-                <element signature="e#2408#2443#0" expanded="true" />
-                <element signature="e#3046#3082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -948,55 +945,96 @@
       <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="46" selection-start="3882" selection-end="3882" vertical-scroll-proportion="-10.346154" vertical-offset="989" max-vertical-offset="1683">
+            <state line="34" column="66" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-17.448277" vertical-offset="174" max-vertical-offset="1880">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialog-confirm.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-confirm.html">
+      <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
-              <folding />
+            <state line="3491" column="0" selection-start="143670" selection-end="146654" vertical-scroll-proportion="0.0" vertical-offset="34580" max-vertical-offset="38180">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#2255#5257#0" expanded="false" />
+                <element signature="e#5358#8229#0" expanded="false" />
+                <element signature="e#8335#8368#0" expanded="false" />
+                <element signature="e#8410#9791#0" expanded="false" />
+                <element signature="e#9955#10182#0" expanded="false" />
+                <element signature="e#10323#11918#0" expanded="false" />
+                <element signature="e#12183#13004#0" expanded="false" />
+                <element signature="e#13399#13831#0" expanded="false" />
+                <element signature="e#13912#14013#0" expanded="false" />
+                <element signature="e#14052#14353#0" expanded="false" />
+                <element signature="e#14447#14745#0" expanded="false" />
+                <element signature="e#15148#16077#0" expanded="false" />
+                <element signature="e#16122#17479#0" expanded="false" />
+                <element signature="e#17713#24293#0" expanded="false" />
+                <element signature="e#25336#25738#0" expanded="false" />
+                <element signature="e#27626#29550#0" expanded="false" />
+                <element signature="e#29906#33088#0" expanded="false" />
+                <element signature="e#33548#39294#0" expanded="false" />
+                <element signature="e#39327#44771#0" expanded="false" />
+                <element signature="e#44813#45096#0" expanded="false" />
+                <element signature="e#45133#54992#0" expanded="false" />
+                <element signature="e#55044#55453#0" expanded="false" />
+                <element signature="e#55881#57295#0" expanded="false" />
+                <element signature="e#57536#59269#0" expanded="false" />
+                <element signature="e#59389#59805#0" expanded="false" />
+                <element signature="e#59838#60978#0" expanded="false" />
+                <element signature="e#61009#67031#0" expanded="false" />
+                <element signature="e#67070#71873#0" expanded="false" />
+                <element signature="e#143732#145516#0" expanded="false" />
+                <element signature="e#145577#146652#0" expanded="false" />
+                <marker date="1398034340552" expanded="false" signature="145158:145169" placeholder="..." />
+                <marker date="1398034340552" expanded="false" signature="145922:145942" placeholder="..." />
+                <marker date="1398034340552" expanded="false" signature="153216:153227" placeholder="..." />
+                <marker date="1398034340552" expanded="false" signature="153592:153603" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialogs-directive.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+      <file leaf-file-name="datepicker-directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/datepicker-directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog-wait.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-wait.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="465" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog-notify.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-notify.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="467" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gsr-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
+            <state line="361" column="55" selection-start="16233" selection-end="16233" vertical-scroll-proportion="-188.0" vertical-offset="0" max-vertical-offset="5920">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#83#5089#0" expanded="false" />
+                <marker date="1398734571855" expanded="true" signature="17865:17876" placeholder="..." />
+                <marker date="1398734571855" expanded="true" signature="18629:18649" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gsr.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="214" selection-start="605" selection-end="605" vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="1660">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datepicker-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/datepicker-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="2400">
+              <folding>
+                <element signature="e#152#461#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogs-directive.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1900">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1019,13 +1057,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/dialogs-controller.js" />
-        <option value="$PROJECT_DIR$/app/components/layout/dialog-confirm.html" />
-        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-notify.html" />
         <option value="$PROJECT_DIR$/app/components/layout/dialog-error.html" />
         <option value="$PROJECT_DIR$/app/components/layout/dialogs-service.js" />
@@ -1035,14 +1066,21 @@
         <option value="$PROJECT_DIR$/app/components/security/login.html" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/settings/users.html" />
+        <option value="$PROJECT_DIR$/app/components/layout/datepicker-service.js" />
+        <option value="$PROJECT_DIR$/app/components/layout/widget-position-service.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/components/layout/datepicker-controller.js" />
+        <option value="$PROJECT_DIR$/app/components/layout/datepicker-directives.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1261,8 +1299,8 @@
     <property name="last_opened_file_path" value="C:/Development/coordinatedcare" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1280,6 +1318,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -1288,14 +1334,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -1343,27 +1381,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2013889" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15104167" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1398,23 +1436,35 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="51" selection-start="3421" selection-end="3421" vertical-scroll-proportion="1.4071857" vertical-offset="267" max-vertical-offset="1751">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/security/login.html">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="576" selection-end="576" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="646">
+        <state line="84" column="0" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-error.html">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
+        <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-wait.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="465" selection-end="465" vertical-scroll-proportion="0.25404158" vertical-offset="0" max-vertical-offset="866">
           <folding />
         </state>
       </provider>
@@ -1426,114 +1476,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-wait.html">
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="830" column="74" selection-start="11392" selection-end="11813" vertical-scroll-proportion="0.0" vertical-offset="13586" max-vertical-offset="14280">
+        <state line="75" column="55" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-15.379311" vertical-offset="1054" max-vertical-offset="2120">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialog-confirm.html">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+        <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1337" column="78" selection-start="55881" selection-end="55881" vertical-scroll-proportion="0.031700287" vertical-offset="20990" max-vertical-offset="53125">
+        <state line="3491" column="0" selection-start="143670" selection-end="146654" vertical-scroll-proportion="0.0" vertical-offset="34580" max-vertical-offset="38180">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#2255#5257#0" expanded="false" />
+            <element signature="e#5358#8229#0" expanded="false" />
+            <element signature="e#8335#8368#0" expanded="false" />
+            <element signature="e#8410#9791#0" expanded="false" />
+            <element signature="e#9955#10182#0" expanded="false" />
+            <element signature="e#10323#11918#0" expanded="false" />
+            <element signature="e#12183#13004#0" expanded="false" />
+            <element signature="e#13399#13831#0" expanded="false" />
+            <element signature="e#13912#14013#0" expanded="false" />
+            <element signature="e#14052#14353#0" expanded="false" />
+            <element signature="e#14447#14745#0" expanded="false" />
+            <element signature="e#15148#16077#0" expanded="false" />
+            <element signature="e#16122#17479#0" expanded="false" />
+            <element signature="e#17713#24293#0" expanded="false" />
+            <element signature="e#25336#25738#0" expanded="false" />
+            <element signature="e#27626#29550#0" expanded="false" />
+            <element signature="e#29906#33088#0" expanded="false" />
+            <element signature="e#33548#39294#0" expanded="false" />
+            <element signature="e#39327#44771#0" expanded="false" />
+            <element signature="e#44813#45096#0" expanded="false" />
+            <element signature="e#45133#54992#0" expanded="false" />
+            <element signature="e#55044#55453#0" expanded="false" />
             <element signature="e#55881#57295#0" expanded="false" />
-            <element signature="e#57366#57494#0" expanded="true" />
+            <element signature="e#57536#59269#0" expanded="false" />
             <element signature="e#59389#59805#0" expanded="false" />
             <element signature="e#59838#60978#0" expanded="false" />
             <element signature="e#61009#67031#0" expanded="false" />
             <element signature="e#67070#71873#0" expanded="false" />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1398034340552" expanded="false" signature="-1:-1" placeholder="..." />
+            <element signature="e#143732#145516#0" expanded="false" />
+            <element signature="e#145577#146652#0" expanded="false" />
+            <marker date="1398034340552" expanded="false" signature="145158:145169" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="145922:145942" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="153216:153227" placeholder="..." />
+            <marker date="1398034340552" expanded="false" signature="153592:153603" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/users.html">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/datepicker-directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="128" selection-start="1075" selection-end="1204" vertical-scroll-proportion="0.4571843" vertical-offset="178" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/reports-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/gsr-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
+        <state line="361" column="55" selection-start="16233" selection-end="16233" vertical-scroll-proportion="-188.0" vertical-offset="0" max-vertical-offset="5920">
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#83#5089#0" expanded="false" />
+            <marker date="1398734571855" expanded="true" signature="17865:17876" placeholder="..." />
+            <marker date="1398734571855" expanded="true" signature="18629:18649" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/components/layout/widget-position-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1836">
+        <state line="4" column="36" selection-start="66" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#112#146#0" expanded="true" />
-            <element signature="e#736#769#0" expanded="true" />
-            <element signature="e#2408#2443#0" expanded="true" />
-            <element signature="e#3046#3082#0" expanded="true" />
+            <element signature="e#94#374#0" expanded="true" />
+            <element signature="e#835#956#0" expanded="true" />
+            <element signature="e#1101#1232#0" expanded="true" />
+            <element signature="e#1648#1790#0" expanded="true" />
+            <element signature="e#2798#2936#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="46" selection-start="3882" selection-end="3882" vertical-scroll-proportion="-10.346154" vertical-offset="989" max-vertical-offset="1683">
+        <state line="34" column="66" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-17.448277" vertical-offset="174" max-vertical-offset="1880">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-service.js">
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="61" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1870">
+        <state line="10" column="214" selection-start="605" selection-end="605" vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="1660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout/datepicker-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="2400">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#132#158#0" expanded="true" />
+            <element signature="e#152#461#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/layout/dialogs-directive.js">
+    <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="10" selection-start="976" selection-end="976" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="1615">
-          <folding />
+        <state line="17" column="29" selection-start="405" selection-end="405" vertical-scroll-proportion="-2.1005588" vertical-offset="2220" max-vertical-offset="3420">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
