@@ -46,15 +46,17 @@
     </div>
     <div class="row">
         <table class="table table-hover table-striped">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Registered</th>
-                <th>Address</th>
-                <th>Birthdate</th>
-                <th style="text-align: right;">Actions</th>
-            </tr>
+            <thead>
+                <tr class="bg-primary">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Registered</th>
+                    <th>Address</th>
+                    <th>Birthdate</th>
+                    <th style="text-align: right;">Actions</th>
+                </tr>
+            </thead>
             <tbody>
             <tr ng-repeat="client in clients |
             startFrom: pagination.page * pagination.perPage |

@@ -4,7 +4,7 @@
 
 'use strict'
 
-app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator, $dialogs){
+app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator, dialogs){
 
     $scope.pagination = Paginator.getNew(25);
     $scope.criteria_lastname = "";

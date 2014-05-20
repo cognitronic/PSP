@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>User Mangement</title>
-</head>
-<body>
 <div class="container">
     <div class="row">
         {{ confirmed }}
         <div class="pull-right">
-            <button class="btn btn-success" type="button" ng-click="AddUser()">Add User</button>
+            <!--<button class="btn btn-success" type="button" ng-click="AddUser()">Add User</button>-->
+            <button class="btn btn-success" type="button"  cc-add-user cc-post-submit-action="loadUsers()">Add User</button>
         </div>
         <h2>Manage Users</h2>
         <table class="table table-hover table-striped">
-            <tr>
-                <th>First</th>
-                <th>Last</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th style="text-align: right;">Actions</th>
-            </tr>
-            <tbody>
-                <tr ng-repeat="user in users | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
-                    <td>{{ user.first }}</td>
-                    <td>{{ user.last }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.role }}</td>
-                    <td style="text-align: right;">
-                        <!--<a  ng-href="#/users/{{ user.Id}}"  class="btn btn-info"> Edit</a>-->
-                        <a  cc-wait-dialog="here it is" click-action="_fakeWaitProgress(counter)" class="btn btn-info"> Edit</a>
-                        <a cc-confirm-dialog="Are you sure you wanna do this?" confirm-clicked="deleteUser(user)" class="btn btn-danger" cc-confirm-header="Please Confirm"> Delete</a>
-                    </td>
+            <thead>
+                <tr class="bg-primary">
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th style="text-align: right;">Actions</th>
                 </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in users | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+                <td>{{ user.first }}</td>
+                <td>{{ user.last }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+                <td style="text-align: right;">
+                    <button class="btn btn-info" type="button"  cc-add-user cc-editable="{{ user }}" cc-post-submit-action="loadUsers()" >Edit</button>
+                    <!--<a  cc-wait-dialog="here it is" click-action="_fakeWaitProgress(counter)" class="btn btn-info"> Edit</a>-->
+                    <a cc-confirm-dialog="Are you sure you wanna do this?" confirm-clicked="deleteUser(user)" class="btn btn-danger" cc-confirm-header="Please Confirm"> Delete</a>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>
@@ -40,5 +37,3 @@
     </span>
     <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>
-</body>
-</html>

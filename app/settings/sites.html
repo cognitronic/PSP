@@ -11,13 +11,15 @@
         </div>
         <h2>Manage Sites</h2>
         <table class="table table-hover table-striped">
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>WashLink IP</th>
-                <th>DB Type</th>
-                <th style="text-align: right;">Actions</th>
-            </tr>
+            <thead>
+                <tr class="bg-primary">
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>WashLink IP</th>
+                    <th>DB Type</th>
+                    <th style="text-align: right;">Actions</th>
+                </tr>
+            </thead>
             <tbody>
             <tr ng-repeat="site in sites | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
                 <td>{{ site.location }}</td>

@@ -148,6 +148,11 @@ app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$lo
             return {
                 restrict: 'EA',
                 require: 'ngModel',
+                controller: function($scope){
+                    $scope.isPopupOpen;
+
+                    $scope.worky = 'say whuuuuut....';
+                },
                 link: function(originalScope, element, attrs, ngModel) {
                     var scope = originalScope.$new(), // create a child scope so we are not polluting original one
                         dateFormat,
@@ -188,6 +193,8 @@ app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$lo
 
                         originalScope.$watch(getIsOpen, function updateOpen(value) {
                             scope.isOpen = !! value;
+                            scope.isPopupOpen = scope.isOpen;
+                            scope.worky = 'duhz diz worky';
                         });
                     }
                     scope.isOpen = getIsOpen ? getIsOpen(originalScope) : false; // Initial state

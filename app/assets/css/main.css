@@ -833,3 +833,8 @@ html body {
 /* Ease Display */
 
 .pad { padding: 25px; }
+
+
+.gsrtable th{
+    font-size: 18px;
+}

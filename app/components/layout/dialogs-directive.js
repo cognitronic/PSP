@@ -9,10 +9,9 @@ app.directive('ccConfirmDialog', [
         function Link(scope, element, attr){
             var msg = attr.ccConfirmDialog || "Are you sure?";
             var header = attr.ccConfirmHeader || "Confirmation Header";
-            console.log(attr.ccConfirmHeader);
             var clickAction = attr.confirmClicked;
 
-            var factoryInstance = element.injector().get('$dialogs');
+            var factoryInstance = element.injector().get('dialogs');
 
 
             element.bind('click', function(event){
@@ -40,7 +39,7 @@ app.directive('ccNotifyDialog', [
             var msg = attr.ccNotifyDialog || 'Empty notification message';
             var header = attr.ccNotifyHeader || 'Notification';
 
-            var dialogInstance = element.injector().get('$dialogs');
+            var dialogInstance = element.injector().get('dialogs');
             element.bind('click', function(event){
                 dialogInstance.notify(header, msg);
             })
@@ -57,7 +56,7 @@ app.directive('ccErrorDialog', [
             var msg = attr.ccErrorDialog || 'Please, dont do that';
             var header = attr.ccErrorHeader || 'An Error Has Occured';
 
-            var dialogInstance = element.injector().get('$dialogs');
+            var dialogInstance = element.injector().get('dialogs');
             element.bind('click', function(event){
                 dialogInstance.error(header, msg);
             })
@@ -90,3 +89,42 @@ app.directive('ccWaitDialog', [
         };
     }
 ]);
+
+app.directive('ccAddUser', [ function(){
+    function link(scope, element, attrs){
+        var dialogProvider = element.injector().get('dialogs');
+        scope.modalData = {
+            header: 'Add New User',
+            dtDateRegistered: new Date(),
+            registeredOpened: false,
+            burble: 'ly gurgle'
+        }
+        element.bind('click', function(event){
+            if(scope.ccEditable)
+                scope.modalData.editingUser = scope.$eval(scope.ccEditable);
+            var dlg = dialogProvider.create('/settings/modal-add-new-user.html','settings.UserCtrl', scope.modalData);
+            dlg.result.then(function(){
+                if(scope.ccPostSubmitAction){
+                    scope.$eval(scope.ccPostSubmitAction);
+                }
+            },function(){
+                if(scope.postCancelAction){
+                    scope.$eval(scope.ccPostCancelAction);
+                }
+            });
+        })
+    }
+    return {
+        link: link,
+        scope: {
+            ccPostSubmitAction: '&',
+            ccPostCancelAction: '&',
+            ccEditable: '@'
+
+        }
+    }
+}]);
+
+app.directive('ccWhatsNew', function($compile, ReportsService){
+
+});

@@ -17,7 +17,7 @@ var app = angular.module('psp', [
         'dialogs.services',
         'cc.widgets.position'])
 
-.config(function($routeProvider, $httpProvider){
+.config(function($routeProvider, $httpProvider, dialogsProvider){
 
         var access = routingAccessConfig.accessLevels;
     //This transformRequest is a global override for $http.post that transforms the body to the same param format used by  jQuery's $.post call
@@ -27,6 +27,8 @@ var app = angular.module('psp', [
         }
         return $.param(data);
     }
+
+        dialogsProvider.useCopy(false);
 
     //sets the content type header globally for $http calls
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
@@ -124,6 +126,26 @@ var app = angular.module('psp', [
 
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+//        // create a decorator
+//        $provide.decorator('$rootScope', function($delegate) {
+//            // in this case $delegate == $rootScope
+//            // otherwise $delegate would be an array of
+//            // directives registered as the decorator name
+//            var times = 1;
+//            // augument the apply method to log how many times
+//            // it was called
+//            $delegate.$apply = loggerify($delegate.$apply);
+//            function loggerify(fn) {
+//                return function() {
+//                    fn.apply(this, arguments);
+//                    console.log('$apply: ' + times);
+//                    times += 1;
+//                }
+//            }
+//            return $delegate;
+//        });
+
 
 })
 .constant('AUTH_EVENTS', {

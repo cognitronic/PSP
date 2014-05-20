@@ -1268,7 +1268,9 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.position'])
 
                     var documentBindingInitialized = false, elementFocusInitialized = false;
                     scope.$watch('isOpen', function(value) {
+                        console.log('inside isOpen');
                         if (value) {
+                            console.log(value);
                             updatePosition();
                             $document.bind('click', documentClickBind);
                             if(elementFocusInitialized) {

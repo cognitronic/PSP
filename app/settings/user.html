@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
 <div class="container">
     <div class="row">
         <div>
@@ -11,37 +5,56 @@
             <div  data-animate-event="isHidden">
                 <h2>Profile Saved Successfully!!</h2>
             </div>
-            <form id="userprofile-form">
-                <div class="form-group">
-                    <b>First Name:</b>
-                    <input value="{{ user.first }}" name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="user.first" required autofocus>
-                </div>
-                <div class="form-group">
-                    <b>Last Name:</b>
-                    <input value="{{ user.last }}" name="firstname" id="lastname" class="form-control" type="text" placeholder="EnterLast Name" ng-model="user.last" required >
-                </div>
-                <div class="form-group">
-                    <b>Email:</b>
-                    <input value="{{ user.email }}" name="email" id="email" class="form-control" type="email" placeholder="Enter Email" ng-model="user.email" required >
-                </div>
-                <div class="form-group">
-                    <b>Password:</b>
-                    <input name="password" id="password" class="form-control" type="password" placeholder="Enter Password" ng-model="user.password" required >
-                </div>
-                <div class="form-group">
-                    <b>Security Role:</b><br />
-                    <select class="form-control" ng-model="user.role" ng-options="r for r in roles">
-                        <option value="">-- Select Role --</option>
-                    </select>
-                </div>
-                <div>
-                    <button class="btn btn-success" ng-click="saveProfile()">Save</button>
-                    <button class="btn btn-danger" type="button" ng-click="deleteUser()">Delete</button>
-                    <button class="btn btn-link" ng-click="returnToList()">Return To List</button>
-                </div>
+            <form name="userForm">
+                <ng-form name="firstNameForm">
+                    <div class="control-group">
+                        <label class="control-label">* First Name:</label>
+                        <div class="controls">
+                            <input  control-group="false" value="{{ user.first }}"  name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="user.first" isrequired="true" field-validate autofocus>
+                        </div>
+                    </div>
+                </ng-form>
+                <ng-form name="lastNameForm">
+                    <div class="control-group">
+                        <label class="control-label">* Last Name:</label>
+                        <div class="controls">
+                            <input control-group="false" value="{{ user.last }}" name="firstname" id="lastname" class="form-control" type="text" placeholder="Enter Last Name" ng-model="user.last" isrequired="true" field-validate>
+                        </div>
+                    </div>
+                </ng-form>
+                <ng-form name="emailForm">
+                    <div class="control-group">
+                        <label class="control-label">* Email:</label>
+                        <div class="controls">
+                            <input control-group="false" value="{{ user.email }}" name="email" id="email" class="form-control" type="email" placeholder="Enter Email" ng-model="user.email" isrequired="true" field-validate="email" >
+                        </div>
+                    </div>
+                </ng-form>
+                <ng-form name="passwordForm">
+                    <div class="control-group">
+                        <label class="control-label">Password: <small style="cursor: pointer; color:#00b3ee;" ng-click="togglePassword()">{{ showHideText }}</small></label>
+                        <div class="controls">
+                            <input control-group="false" name="password" id="password" class="form-control" type="{{ passwordType }}" value="{{ user.password }}" placeholder="Enter Password" ng-model="user.password" required >
+                        </div>
+                    </div>
+                </ng-form>
+                <ng-form name="securityRoleForm">
+                    <div class="control-group">
+                        <label class="control-label">Security Role:</label>
+                        <div class="controls">
+                            <select control-group="false" class="form-control" ng-model="user.role" ng-options="r for r in roles">
+                                <option value="">-- Select Role --</option>
+                            </select>
+                        </div>
+                    </div>
+                </ng-form>
             </form>
+            <br />
+            <div>
+                <button class="btn btn-success" ng-click="saveProfile()" ng-disabled="{{ userForm.$valid }}">Save</button>
+                <button class="btn btn-danger" type="button" ng-click="deleteUser()" ng-disabled="{{ user }}">Delete</button>
+                <button class="btn btn-link" ng-click="returnToList()">Return To List</button>
+            </div>
         </div>
     </div>
 </div>
-</body>
-</html>

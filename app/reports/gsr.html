@@ -25,7 +25,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="form-group">
                         <br/>
-                        <button class="btn btn-success" ng-confirm ng-click="runGSR()">Run GSR</button>
+                        <button class="btn btn-info" ng-confirm ng-click="runGSR()">Run GSR</button>
                     </div>
                 </div>
             </div>
@@ -33,9 +33,9 @@
     </div>
     <hr/>
     <div class="row">
-        <table class="table table-hover table-striped">
+        <table class="table gsrtable">
             <thead>
-                <tr>
+                <tr class="bg-primary">
                     <th>
                         Wash Services
                     </th>
@@ -66,6 +66,873 @@
                     </td>
                     <td>
                         {{ gsr.primeshine_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fleet PSX Wash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.fleetpsx_count }}
+                    </td>
+                    <td>
+                        {{ gsr.fleetpsx_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PSX Wash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.psx_count }}
+                    </td>
+                    <td>
+                        {{ gsr.psx_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prime Shine Rewash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.primeshinerewash_count }}
+                    </td>
+                    <td>
+                        {{ gsr.primeshinerewash_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited PSX Wash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpsx_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpsx_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited UCW:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimiteducw_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimiteducw_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited PSX W/TG:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unpsxwtg_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unpsxwtg_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Prime Shine:</b>
+                    </td>
+                    <td>
+                        {{ gsr.wl_totalprimeshine_count }}
+                    </td>
+                    <td>
+                        {{ gsr.sw_totalprimeshine_count }}
+                    </td>
+                    <td>
+                        {{ gsr.totalprimeshine_dollars | currency }}
+                    </td>
+                    <td>
+                        {{ gsr.totalprimeshine_diff | currency }}
+                    </td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>
+                        <b>Wash Services</b>
+                    </td>
+                    <td>
+                        <b>Wash Count</b>
+                    </td>
+                    <td>
+                        <b>SW Count</b>
+                    </td>
+                    <td>
+                        <b>Dollars</b>
+                    </td>
+                    <td>
+                        <b>Diff (Count)</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Protex Wash:
+                    </td>
+                    <td>
+                        {{ gsr.protexwash_count }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.protexwash_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Protex Rewash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.protexrewash_count }}
+                    </td>
+                    <td>
+                        {{ gsr.protexrewash_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance PSX To Pro:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxtopro_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxtopro_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited Protex Wash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedprotex_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedprotex_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fleet Protex:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.fleetprotex_count }}
+                    </td>
+                    <td>
+                        {{ gsr.fleetprotex_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PSX Fleet Protex:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetprotex_count }}
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetprotex_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited Pro W/TG:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unprowtg_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unprowtg_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance PSX W/TG To Pro:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxwtgpro_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxwtgpro_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Protex:</b>
+                    </td>
+                    <td>
+                        {{ gsr.wl_totalprotex_count }}
+                    </td>
+                    <td>
+                        {{ gsr.sw_totalprotex_count }}
+                    </td>
+                    <td>
+                        {{ gsr.totalprotex_dollars | currency }}
+                    </td>
+                    <td>
+                        {{ gsr.totalprotex_diff | currency }}
+                    </td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>
+                        <b>Wash Services</b>
+                    </td>
+                    <td>
+                        <b>Wash Count</b>
+                    </td>
+                    <td>
+                        <b>SW Count</b>
+                    </td>
+                    <td>
+                        <b>Dollars</b>
+                    </td>
+                    <td>
+                        <b>Diff (Count)</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Premier Wash:
+                    </td>
+                    <td>
+                        {{ gsr.premierwash_count }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.premierwash_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Premier Rewash:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.premierrewash_count }}
+                    </td>
+                    <td>
+                        {{ gsr.premierrewash_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited Premier:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpremier_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpremier_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited Premier W/TG:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpremierwtg_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedpremierwtg_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fleet Premier:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.fleetpremier_count }}
+                    </td>
+                    <td>
+                        {{ gsr.fleetpremier_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PSX Fleet Premier:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetpremier_count }}
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetpremier_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PSX FleetPremierNoGloss:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetpremiernogloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.psxfleetpremiernogloss_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance Pro To Pre:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhanceprotopre_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhanceprotopre_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance PSX To Pre:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxtopre_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxtopre_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance PSX W/TG To Pre:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxwtgtopre_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhancepsxwtgtopre_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enhance Pro W/TG To Pre:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.enhanceprowtgpre_count }}
+                    </td>
+                    <td>
+                        {{ gsr.enhanceprowtgpre_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Premier:</b>
+                    </td>
+                    <td>
+                        {{ gsr.wl_totalpremier_count }}
+                    </td>
+                    <td>
+                        {{ gsr.sw_totalpremier_count }}
+                    </td>
+                    <td>
+                        {{ gsr.totalpremier_dollars | currency }}
+                    </td>
+                    <td>
+                        {{ gsr.totalpremier_diff | currency }}
+                    </td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>
+                        <b>Wash Services</b>
+                    </td>
+                    <td>
+                        <b>Wash Count</b>
+                    </td>
+                    <td>
+                        <b>SW Count</b>
+                    </td>
+                    <td>
+                        <b>Dollars</b>
+                    </td>
+                    <td>
+                        <b>Diff (Count)</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tire Gloss:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.wl_tiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.tiregloss_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fleet Tire Gloss:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.fleettiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.fleettiregloss_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unlimited Tire Gloss:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedtiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.unlimitedtiregloss_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Reapply Tire Gloss:
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.reapplytiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.reapplytiregloss_dollars | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Tire Gloss:</b>
+                    </td>
+                    <td>
+                        {{ gsr.wl_totaltiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.sw_totaltiregloss_count }}
+                    </td>
+                    <td>
+                        {{ gsr.totaltiregloss_dollars | currency }}
+                    </td>
+                    <td>
+                        {{ gsr.totaltiregloss_diff | currency }}
+                    </td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>
+                        <b>Wash Services</b>
+                    </td>
+                    <td>
+                        <b>Wash Count</b>
+                    </td>
+                    <td>
+                        <b>SW Count</b>
+                    </td>
+                    <td>
+                        <b>Dollars</b>
+                    </td>
+                    <td>
+                        <b>Diff (Count)</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Washes/Dollars:</b>
+                    </td>
+                    <td>
+                        {{ gsr.wl_totalwashes_count }}
+                    </td>
+                    <td>
+                        {{ gsr.sw_totalwashes_count }}
+                    </td>
+                    <td>
+                        {{ gsr.totalwashes_dollars | currency }}
+                    </td>
+                    <td>
+                        {{ gsr.totalwashes_diff | currency }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Web Connect:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.webconnect | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Impulse Items:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.impulseitems | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Wash Services:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.totalwashservices | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Machine Sales:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.machinesales | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Pre Paids:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.prepaids | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Pump WashCode Tender:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.pumpcodewash | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Coupons & Discounts:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.couponsandiscounts | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Paidout/Refunds:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.totalpaidoutrefunds | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total To Account For:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.totaltoaccountfor | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Cash Deposit:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.cashdeposit | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Credit Cards:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.creditcards | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total Over/Under:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.totaloverunder | currency }}
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Amount To Audit:</b>
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        --
+                    </td>
+                    <td>
+                        {{ gsr.amounttoaudit | currency }}
                     </td>
                     <td>
                         --

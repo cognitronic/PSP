@@ -2,12 +2,14 @@
     <div class="row">
         <h2>Manage Notifications</h2>
         <table class="table table-hover table-striped">
-            <tr>
-                <th>Name</th>
-                <th>Last Ran</th>
-                <th># of Recipients</th>
-                <th style="text-align: right;">Actions</th>
-            </tr>
+            <thead>
+                <tr class="bg-primary">
+                    <th>Name</th>
+                    <th>Last Ran</th>
+                    <th># of Recipients</th>
+                    <th style="text-align: right;">Actions</th>
+                </tr>
+            </thead>
             <tbody>
             <tr ng-repeat="note in notifications">
                 <td>{{ note.name.replace('_', ' ') }}</td>

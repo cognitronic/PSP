@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 pull-left">
-                    <button class="btn btn-warning" id="run" ng-click="runNotification()">Run Notification</button>&nbsp;
+                    <button class="btn btn-info" id="run" ng-click="runNotification()">Run Notification</button>&nbsp;
                 </div>
             </div>
         </div>
@@ -31,17 +31,28 @@
         </div>
         <br />
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <b>Recipients:</b>
             <div>
                 <table class="table table-striped table-hover">
-                    <tr ng-repeat="recipient in recipients">
-                        <td>
-                            {{ recipient }}
-                        </td>
-                        <td style="text-align: right;">
-                            <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr class="bg-primary">
+                            <th>
+                                Recipients
+                            </th>
+                            <th>
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="recipient in recipients">
+                            <td>
+                                {{ recipient }}
+                            </td>
+                            <td style="text-align: right;">
+                                <button type="button" class="btn btn-danger btn-sm" ng-click="removeRecipient($index)">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="row">
@@ -56,17 +67,26 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <b>Bcc Recipients:</b>
             <div>
                 <table class="table table-striped table-hover">
-                    <tr ng-repeat="bcc in bccemails">
-                        <td>
-                            {{ bcc }}
-                        </td>
-                        <td style="text-align: right;">
-                            <button type="button" class="btn btn-danger btn-sm" ng-click="removeBccRecipient($index)">Remove</button>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr class="bg-primary">
+                            <th>
+                                Bcc Recipients
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="bcc in bccemails">
+                            <td>
+                                {{ bcc }}
+                            </td>
+                            <td style="text-align: right;">
+                                <button type="button" class="btn btn-danger btn-sm" ng-click="removeBccRecipient($index)">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="row">

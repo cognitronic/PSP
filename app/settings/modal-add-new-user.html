@@ -1,0 +1,72 @@
+<div class="modal-header dialog-header-confirm">
+    <button type="button" class="close" ng-click="no()">&times;</button>
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-check"></span>
+        {{ header }}
+    </h4>
+</div>
+<div class="modal-body">
+    <div>{{ msg }}</div>
+    <form name="userForm">
+        <!--<ng-form name="dateForm">-->
+            <!--<div class="form-group col-lg-7 col-md-7 col-sm-7">-->
+                <!--<label class="control-label">Dates:</label>-->
+                <!--<div class="input-group">-->
+                    <!--<input type="text" class="form-control" control-group="false"   datepicker-popup="{{format}}" ng-model="dp.dtDateRegistered" is-open="dp.isOpen"  />-->
+                    <!--<span class="input-group-btn">-->
+                        <!--<button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>-->
+                    <!--</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</ng-form>-->
+        <ng-form name="firstNameForm">
+            <div class="control-group span6">
+                <label class="control-label">* First Name:</label>
+                <div class="controls">
+                    <input  control-group="false" value="{{ user.first }}"  name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="user.first" isrequired="true" field-validate autofocus>
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="lastNameForm">
+            <div class="control-group">
+                <label class="control-label">* Last Name:</label>
+                <div class="controls">
+                    <input control-group="false" value="{{ user.last }}" name="firstname" id="lastname" class="form-control" type="text" placeholder="Enter Last Name" ng-model="user.last" isrequired="true" field-validate>
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="emailForm">
+            <div class="control-group">
+                <label class="control-label">* Email:</label>
+                <div class="controls">
+                    <input control-group="false" value="{{ user.email }}" name="email" id="email" class="form-control" type="email" placeholder="Enter Email" ng-model="user.email" isrequired="true" field-validate="email" >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="passwordForm">
+            <div class="control-group">
+                <label class="control-label">Password: <small style="cursor: pointer; color:#00b3ee;" ng-click="togglePassword()">{{ showHideText }}</small></label>
+                <div class="controls">
+                    <input control-group="false" name="password" id="password" class="form-control" type="{{ passwordType }}" value="{{ user.password }}" placeholder="Enter Password" ng-model="user.password" isrequired="true" field-validate="password" >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="securityRoleForm">
+            <div class="control-group">
+                <label class="control-label">Security Role:</label>
+                <div class="controls">
+                    <select control-group="false" class="form-control" ng-model="user.role" ng-options="r for r in roles">
+                        <option value="">-- Select Role --</option>
+                    </select>
+                </div>
+            </div>
+        </ng-form>
+    </form>
+    <div style="clear: both;"></div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-click="saveProfile()" ng-disabled="userForm.$invalid">Save</button>
+    <button class="btn btn-danger" type="button" ng-click="deleteUser()" ng-disabled="userForm.$invalid">Delete</button>
+    <button type="button" class="btn btn-default" ng-click="cancel()">{{ defaultStrings.cancel }}</button>
+    <!--<button class="btn btn-link" ng-click="returnToList()">Return To List</button>-->
+</div>
