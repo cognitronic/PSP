@@ -838,3 +838,7 @@ html body {
 .gsrtable th{
     font-size: 18px;
 }
+
+.error {
+    color: #ff0000;
+}

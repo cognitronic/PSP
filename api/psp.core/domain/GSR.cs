@@ -202,6 +202,8 @@ namespace psp.core.domain
         [DataMember]
         public decimal prepaids { get; set; }
         [DataMember]
+        public decimal pumpcodewash { get; set; }
+        [DataMember]
         public decimal couponsanddiscounts { get; set; }
         [DataMember]
         public decimal totalpaidoutrefunds { get; set; }
@@ -278,7 +280,18 @@ namespace psp.core.domain
         public int psxfleetprotex_count { get; set; }
         [DataMember]
         public decimal psxfleetprotex_dollars { get; set; }
-
+        [DataMember]
+        public int unlimitedpremier_count { get; set; }
+        [DataMember]
+        public decimal unlimitedpremier_dollars { get; set; }
+        [DataMember]
+        public int unlimitedpremierwtg_count { get; set; }
+        [DataMember]
+        public decimal unlimitedpremierwtg_dollars { get; set; }
+        [DataMember]
+        public int unlimitedtiregloss_count { get; set; }
+        [DataMember]
+        public decimal unlimitedtiregloss_dollars { get; set; }
 
     }
 }

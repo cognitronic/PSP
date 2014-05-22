@@ -7,13 +7,11 @@ app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $lo
 
     $scope.gsr = {};
     $scope.runGSR = function(){
-        console.log($scope.site);
         $scope.viewModel = {
             site: $scope.site.name,
             gsrDate: $scope.dt.toLocaleDateString()
         }
         ReportsService.getGSRBySiteDate($scope.viewModel).then(function(data){
-           console.log(data);
             $scope.gsr = data;
         });
     }
@@ -21,7 +19,6 @@ app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $lo
     SiteService.getSites().then(function(data){
        $scope.sites = data;
         $scope.site = $scope.sites[0];
-        console.log($scope.sites);
     });
 
 //    ReportsService.getGSRBySiteDate().then(function(data){
