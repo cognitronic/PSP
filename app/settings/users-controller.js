@@ -5,7 +5,7 @@
 
 app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService, Paginator, $timeout){
 
-    $scope.pagination = Paginator.getNew(5);
+    $scope.pagination = Paginator.getNew(1);
 
     $scope.loadUsers = function(){
         console.log('users loaded...');
