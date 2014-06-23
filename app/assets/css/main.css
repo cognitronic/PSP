@@ -842,3 +842,8 @@ html body {
 .error {
     color: #ff0000;
 }
+
+.stick {
+    position:fixed;
+    top:0px;
+}
