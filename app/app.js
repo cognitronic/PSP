@@ -120,7 +120,7 @@ var app = angular.module('psp', [
             access: access.anon
         })
         .otherwise({
-            redirectTo: '/',
+            redirectTo: '/dashboard',
             access: access.anon
     });
 

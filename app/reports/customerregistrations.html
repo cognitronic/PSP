@@ -1,7 +1,7 @@
 <div class="container" ng-cloak>
     <div class="row">
         <div class="pull-right">
-            <button ng-click="addClient()" class="btn btn-success">Add Client</button>
+            <button ng-click="addClient()" class="btn "><i class="glyphicon glyphicon-plus"></i> Add Client</button>
         </div>
         <h2>Manage Clients</h2>
         <div class="jumbotron">
@@ -27,7 +27,7 @@
                         <p class="input-group">
                             <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" show-button-bar="false" enable-on-focus="false"  min="minDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
                         </p>
                     </div>
@@ -36,7 +36,7 @@
                         <p class="input-group">
                             <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="dtBirthdate" is-open="birthdateOpened" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
                         </p>
                     </div>
@@ -73,16 +73,16 @@
                 </td>
                 <td>{{ client.birthdate }}</td>
                 <td style="text-align: right;">
-                    <span><a ng-click="editClient(client.Id)" class="btn btn-info" > Edit</a></span>
-                    <span><a cc-confirm-dialog="Are you sure you wanna do this?" cc-confirm-header="Please Confirm" confirm-clicked="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
+                    <span><a ng-click="editClient(client.Id)" class="btn "><i class="glyphicon glyphicon-pencil"></i> Edit</a></span>
+                    <span><a cc-confirm-dialog="Are you sure you wanna do this?" cc-confirm-header="Please Confirm" confirm-clicked="deleteClient(client)" class="btn "><i class="glyphicon glyphicon-remove"></i> Delete</a></span>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <button class="btn " ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
     <span ng-repeat="n in [] | range: pagination.numPages" >
         <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn " ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>

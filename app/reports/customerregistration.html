@@ -34,14 +34,14 @@
             <p class="input-group col-lg-4 col-md-4 col-sm-4">
                 <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="client.birthdate" is-open="birthdateOpened"  datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
             </p>
         </div>
         <div>
-            <button class="btn btn-success" ng-click="saveClient()">Save</button>
-            <button class="btn btn-danger" type="button" ng-click="deleteClient()">Delete</button>
-            <button class="btn btn-link" ng-click="returnToList()">Return To List</button>
+            <button class="btn" ng-click="saveClient()"><i class="glyphicon glyphicon-save"></i> Save</button>
+            <button class="btn " type="button" ng-click="deleteClient()"><i class="glyphicon glyphicon-remove"></i> Delete</button>
+            <button class="btn " ng-click="returnToList()"><i class="glyphicon glyphicon-step-backward"></i> Return To List</button>
         </div>
     </div>
 </div>

@@ -7,7 +7,9 @@
 <div class="container">
     <div class="row">
         <div class="pull-right">
-            <button class="btn btn-success" type="button" ng-click="AddSite()">Add Site</button>
+            <button class="btn " type="button" ng-click="AddSite()">
+                <i class="glyphicon glyphicon-plus"></i> Add Sites
+            </button>
         </div>
         <h2>Manage Sites</h2>
         <table class="table table-hover table-striped">
@@ -27,18 +29,22 @@
                 <td>{{ site.washlinkip }}</td>
                 <td>{{ site.dbtype }}</td>
                 <td style="text-align: right;">
-                    <a ng-href="#/sites/{{ site.Id}}" class="btn btn-info"> Edit</a>
-                    <a ng-click="deleteSite(site)" class="btn btn-danger"> Delete</a>
+                    <a ng-href="#/sites/{{ site.Id}}" class="btn">
+                        <i class="glyphicon glyphicon-pencil"></i> Edit
+                    </a>
+                    <a ng-click="deleteSite(site)" class="btn">
+                        <i class="glyphicon glyphicon-remove"></i> Delete
+                    </a>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <button class="btn" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
     <span ng-repeat="n in [] | range: pagination.numPages" >
         <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>
 </body>
 </html>

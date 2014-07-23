@@ -21,10 +21,10 @@
 
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	padding-top: 65px;
     background-color: #ffffff;
-
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -48,6 +48,13 @@ footer {
 
 h2 {
 	margin-top: 5px;
+    color: #dc137a;
+    font-size: 58px;
+}
+
+h3{
+    color: #dc137a;
+    font-size: 32px;
 }
 
 html {
@@ -258,10 +265,10 @@ html {
 
 .messagecontainer  {
 	text-align: left;
-    color: #ffffff;
-
-    webkit-text-shadow: 1px 1px #2e2e2e;
-    text-shadow: 1px 1px #2e2e2e;
+    text-shadow: 0 1px 1px rgba(225, 225, 225, 0.50);
+    letter-spacing: -0.06em;
+    -webkit-font-smoothing: antialiased;
+    color: #333333;
 }
 
 .jumbotron .messagecontainer  {
@@ -712,7 +719,6 @@ html body {
     left: 250px;
     right: 0;
     bottom: 0px;
-    margin: 25px;
 }
 
 /* Sidebar */

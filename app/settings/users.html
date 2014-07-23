@@ -3,7 +3,9 @@
         {{ confirmed }}
         <div class="pull-right">
             <!--<button class="btn btn-success" type="button" ng-click="AddUser()">Add User</button>-->
-            <button class="btn btn-success" type="button"  cc-add-user cc-post-submit-action="loadUsers()">Add User</button>
+            <button class="btn" type="button"  cc-add-user cc-post-submit-action="loadUsers()">
+                <i class="glyphicon glyphicon-plus"></i> Add User
+            </button>
         </div>
         <h2>Manage Users</h2>
         <table class="table table-hover table-striped">
@@ -23,17 +25,21 @@
                 <td>{{ user.email }}</td>
                 <td>{{ user.role }}</td>
                 <td style="text-align: right;">
-                    <button class="btn btn-info" type="button"  cc-add-user cc-editable="{{ user }}" cc-post-submit-action="loadUsers()" >Edit</button>
+                    <button class="btn " type="button"  cc-add-user cc-editable="{{ user }}" cc-post-submit-action="loadUsers()" >
+                        <i class="glyphicon glyphicon-pencil"></i>   Edit
+                    </button>
                     <!--<a  cc-wait-dialog="here it is" click-action="_fakeWaitProgress(counter)" class="btn btn-info"> Edit</a>-->
-                    <a cc-confirm-dialog="Are you sure you wanna do this?" confirm-clicked="deleteUser(user)" class="btn btn-danger" cc-confirm-header="Please Confirm"> Delete</a>
+                    <a cc-confirm-dialog="Are you sure you wanna do this?" confirm-clicked="deleteUser(user)" class="btn " cc-confirm-header="Please Confirm">
+                        <i class="glyphicon glyphicon-remove"></i>   Delete
+                    </a>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <button class="btn" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
     <span ng-repeat="n in [] | range: pagination.numPages" >
         <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>

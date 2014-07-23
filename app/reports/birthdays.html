@@ -24,7 +24,7 @@
                         <p class="input-group">
                             <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="dtBirthdate" is-open="birthdateOpened" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
                         </p>
                     </div>
@@ -62,9 +62,9 @@
             </tbody>
         </table>
     </div>
-    <button class="btn btn-primary" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+    <button class="btn " ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
     <span ng-repeat="n in [] | range: pagination.numPages" >
         <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn btn-primary" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
 </div>
