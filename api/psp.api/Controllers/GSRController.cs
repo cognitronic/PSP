@@ -11,11 +11,11 @@ using psp.api.helpers;
 
 namespace psp.api.Controllers
 {
-    public class GSRController : ApiController
+    public class GsrController : ApiController
     {
         private readonly GSRRepository _repository;
 
-         public GSRController()
+         public GsrController()
         {
             _repository = new GSRRepository();
         }
@@ -32,7 +32,7 @@ namespace psp.api.Controllers
             return "value";
         }
 
-        public GSR GetSiteGSRByDate(string gsrDate, string site)
+        public GSR Get(string gsrDate, string site)
         {
             var gsr = _repository.GetBySiteIdGSRDate(site, gsrDate);
             return gsr;

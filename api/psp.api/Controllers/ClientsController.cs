@@ -20,17 +20,11 @@ namespace psp.api.Controllers
             _repository = new ClientRepository();
         }
 
-        // GET api/site
-        public IList<Client> GetAll()
+        // GET api/clients
+        public IList<Client> Get()
         {
             var clients = _repository.GetAll().OrderByDescending(o => o.dateregistered).ToList<Client>();
             return clients;
-        }
-
-        // GET api/clients
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
         }
 
         // GET api/clients/5
@@ -51,7 +45,7 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/clients/5
-        public Client RemoveClient([FromBody]Client client)
+        public Client Delete([FromBody]Client client)
         {
             return _repository.Delete(client);
         }

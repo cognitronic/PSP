@@ -13,7 +13,7 @@ angular.module('service.reports', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Clients/Post', client)
+                $http.post(APP_SETTINGS.apiUrl + 'Clients', client)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -30,7 +30,7 @@ angular.module('service.reports', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Clients/RemoveClient', client)
+                $http.delete(APP_SETTINGS.apiUrl + 'Clients', client)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -44,7 +44,7 @@ angular.module('service.reports', [])
             getClientById: function(id){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Clients/Get/' + id)
+                $http.get(APP_SETTINGS.apiUrl + 'Clients/' + id)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -58,7 +58,7 @@ angular.module('service.reports', [])
             getClients: function(){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Clients/GetAll')
+                $http.get(APP_SETTINGS.apiUrl + 'Clients/')
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -74,7 +74,7 @@ angular.module('service.reports', [])
                 var deferred = $q.defer();
                 $rootScope.loading = true;
                 $http({
-                    url: APP_SETTINGS.apiUrl + 'GSR/GetSiteGSRByDate',
+                    url: APP_SETTINGS.apiUrl + 'Gsr/',
                     method: 'GET',
                     params: viewModel})
                     .success(function(data){

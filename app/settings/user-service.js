@@ -13,7 +13,7 @@ angular.module('service.user', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Users/Post', user)
+                $http.post(APP_SETTINGS.apiUrl + 'Users', user)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -33,7 +33,7 @@ angular.module('service.user', [])
             getUserById: function(id){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Users/Get/' + id)
+                $http.get(APP_SETTINGS.apiUrl + 'Users/' + id)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -47,7 +47,7 @@ angular.module('service.user', [])
             getUsers: function(){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Users/GetAll')
+                $http.get(APP_SETTINGS.apiUrl + 'Users')
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -64,7 +64,7 @@ angular.module('service.user', [])
             deleteUser: function(usr){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Users/RemoveUser/', usr)
+                $http.delete(APP_SETTINGS.apiUrl + 'Users', usr)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);

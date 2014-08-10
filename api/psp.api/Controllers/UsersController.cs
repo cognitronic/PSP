@@ -19,7 +19,7 @@ namespace psp.api.Controllers
             _userRepository = new UserRepository();
         }
         // GET api/users
-        public IList<User> GetAll()
+        public IList<User> Get()
         {
             var users = _userRepository.GetAll();
             return users;
@@ -43,7 +43,7 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/user/5
-        public User RemoveUser([FromBody]User usr)
+        public User Delete([FromBody]User usr)
         {
             return _userRepository.Delete(usr);
         }

@@ -157,7 +157,7 @@ var app = angular.module('psp', [
     notAuthorized: 'auth-not-authorized'
 })
 .constant('APP_SETTINGS', {
-        apiUrl: 'http://pspapi.localhost/'
+        apiUrl: 'http://pspapi.localhost/api/'
     })
 .run(function($rootScope, $location, AuthService){
 

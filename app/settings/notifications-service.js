@@ -14,7 +14,7 @@ angular.module('service.notifications', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Notifications/Post', notification)
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications', notification)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -34,7 +34,7 @@ angular.module('service.notifications', [])
             getNotificationById: function(id){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Notifications/Get/' + id)
+                $http.get(APP_SETTINGS.apiUrl + 'Notifications/' + id)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -48,7 +48,7 @@ angular.module('service.notifications', [])
             getNotifications: function(){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Notifications/GetAll')
+                $http.get(APP_SETTINGS.apiUrl + 'Notifications')
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -76,7 +76,7 @@ angular.module('service.notifications', [])
             addRecipient: function(notification){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Notifications/AddRecipient', notification)
+                $http.post(APP_SETTINGS.apiUrl + 'Notifications', notification)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);

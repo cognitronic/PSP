@@ -14,7 +14,7 @@ angular.module('service.site', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Site/Post', site)
+                $http.post(APP_SETTINGS.apiUrl + 'Site', site)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -34,7 +34,7 @@ angular.module('service.site', [])
             getSiteById: function(id){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Site/Get/' + id)
+                $http.get(APP_SETTINGS.apiUrl + 'Site/' + id)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -48,7 +48,7 @@ angular.module('service.site', [])
             getSites: function(){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.get(APP_SETTINGS.apiUrl + 'Site/GetAll')
+                $http.get(APP_SETTINGS.apiUrl + 'Site')
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -62,7 +62,7 @@ angular.module('service.site', [])
             deleteSite: function(site){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Site/RemoveSite/', site)
+                $http.delete(APP_SETTINGS.apiUrl + 'Site', site)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
