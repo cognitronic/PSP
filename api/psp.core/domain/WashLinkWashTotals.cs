@@ -20,5 +20,11 @@ namespace psp.core.domain
         public int premierwash { get; set; }
         [DataMember]
         public int tireshine { get; set; }
+
+        [DataMember]
+        public int plusplus { get; set; }
+
+        [DataMember]
+        public int rainx { get; set; }
     }
 }
