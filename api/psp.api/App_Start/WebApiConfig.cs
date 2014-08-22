@@ -20,6 +20,11 @@ namespace psp.api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute(
+                name: "VendorApi",
+                routeTemplate: "api/vendors/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             ((DefaultContractResolver)GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ContractResolver).IgnoreSerializableAttribute = true;
             var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;

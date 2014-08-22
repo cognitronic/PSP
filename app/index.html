@@ -27,7 +27,7 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-include="'components/layout/_nav.html'"></div>
+<div ng-include="'common/layout/_nav.html'"></div>
 <!--<div id="sidebar"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar" ng-include="'components/layout/_sidebar.html'"></div>-->
 <loading></loading>
 <div id="main-content" class="main-content " ng-view=""></div>
@@ -56,26 +56,26 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="components/security/routingAccessConfig.js"></script>
+<script src="common/security/routingAccessConfig.js"></script>
 <script src="app.js"></script>
-<script src="components/security/auth-service.js"></script>
-<script src="components/security/login-controller.js"></script>
-<script src="components/security/noaccess-controller.js"></script>
-<script src="components/security/accesslevel-directive.js"></script>
-<script src="components/security/validation-directive.js"></script>
-<script src="components/layout/sidebar-slide-directive.js"></script>
-<script src="components/layout/animate-event-directive.js"></script>
-<script src="components/layout/loading-directive.js"></script>
-<script src="components/layout/nav-controller.js"></script>
-<script src="components/layout/dialogs-controller.js"></script>
-<script src="components/layout/dialogs-service.js"></script>
-<script src="components/layout/dialogs-directive.js"></script>
-<script src="components/layout/paginator-service.js"></script>
-<script src="components/layout/convertToISODate-filter.js"></script>
-<script src="components/layout/widget-position-service.js"></script>
-<script src="components/layout/datepicker-directives.js"></script>
-<script src="components/layout/datepicker-controller.js"></script>
-<script src="components/layout/format-dollar-directive.js"></script>
+<script src="common/security/auth-service.js"></script>
+<script src="common/security/login-controller.js"></script>
+<script src="common/security/noaccess-controller.js"></script>
+<script src="common/security/accesslevel-directive.js"></script>
+<script src="common/security/validation-directive.js"></script>
+<script src="common/layout/sidebar-slide-directive.js"></script>
+<script src="common/layout/animate-event-directive.js"></script>
+<script src="common/layout/loading-directive.js"></script>
+<script src="common/layout/nav-controller.js"></script>
+<script src="common/layout/dialogs-controller.js"></script>
+<script src="common/layout/dialogs-service.js"></script>
+<script src="common/layout/dialogs-directive.js"></script>
+<script src="common/layout/paginator-service.js"></script>
+<script src="common/layout/convertToISODate-filter.js"></script>
+<script src="common/layout/widget-position-service.js"></script>
+<script src="common/layout/datepicker-directives.js"></script>
+<script src="common/layout/datepicker-controller.js"></script>
+<script src="common/layout/format-dollar-directive.js"></script>
 <script src="dashboard/main-controller.js"></script>
 <script src="dashboard/dashboard-controller.js"></script>
 <script src="forms/claims-controller.js"></script>
@@ -97,7 +97,8 @@
 <script src="settings/notifications-controller.js"></script>
 <script src="settings/notification-controller.js"></script>
 <script src="constants/app-constants.js"></script>
-<script src="components/layout/sticky-directive.js"></script>
+<script src="common/layout/sticky-directive.js"></script>
+<script src="common/cache-service.js"></script>
 
 <!-- endbuild -->
 </body>

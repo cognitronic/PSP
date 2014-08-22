@@ -40,7 +40,7 @@ var app = angular.module('psp', [
             access: access.anon
         })
         .when('/login', {
-            templateUrl: 'components/security/login.html',
+            templateUrl: 'common/security/login.html',
             controller: 'LoginCtrl',
             access: access.anon
         })
@@ -56,7 +56,7 @@ var app = angular.module('psp', [
         })
         .when('/gsrreport', {
             templateUrl: 'reports/gsr.html',
-            controller: 'reports.GSRCtrl',
+            controller: 'GSRReportController',
             access: access.executive
         })
         .when('/customerregistrations', {
@@ -115,7 +115,7 @@ var app = angular.module('psp', [
             access: access.admin
         })
         .when('/noaccess', {
-            templateUrl: 'components/security/no-access.html',
+            templateUrl: 'common/security/no-access.html',
             controller: 'security.NoAccessCtrl',
             access: access.anon
         })

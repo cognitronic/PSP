@@ -6,6 +6,7 @@ using System.Data;
 using System.Threading.Tasks;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
+using System.Configuration;
 using MongoDB.Bson;
 using FirebirdSql.Data.FirebirdClient;
 using MySql.Data.MySqlClient;
@@ -23,7 +24,7 @@ namespace psp.api.helpers
             sites = _siteRepository.GetAll();
         }
 
-        private readonly string connectionString = "Server=192.168.1.105;User=SYSDBA;Password=masterkey;Database=d:\\Databases\\PrimeShine\\SiteWatch\\SiteWatch.fdb";
+        private readonly string connectionString = ConfigurationManager.AppSettings["sitewatchConnectionString"];
         public IList<SiteWatchSalesItem> SitewatchSalesBySiteDate(string siteid, DateTime startdate)
         {
             string sQuery = "";//ConfigurationSettings.AppSettings["PSFirebirdConnectionString"];
@@ -38,7 +39,7 @@ namespace psp.api.helpers
                     s.site = '" + siteid + @"' and
                     s.site = si.site and
                     s.terminal <> 3500036 and
-                    i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344') and 
+                    i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344','103965', '500052') and 
                     s.logdate  = '" + startdate.ToShortDateString() + @"'
                     group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val";
             var ds = new DataSet();

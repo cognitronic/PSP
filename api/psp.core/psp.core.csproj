@@ -61,6 +61,7 @@
     <Compile Include="domain\Client.cs" />
     <Compile Include="domain\IAPIResponse.cs" />
     <Compile Include="domain\GSR.cs" />
+    <Compile Include="domain\IClient.cs" />
     <Compile Include="domain\Notification.cs" />
     <Compile Include="domain\RewashNotificationResponse.cs" />
     <Compile Include="domain\Site.cs" />

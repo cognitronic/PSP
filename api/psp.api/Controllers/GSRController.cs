@@ -6,11 +6,13 @@ using System.Net.Http;
 using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
+using psp.api.Reports;
 using MongoDB.Bson;
 using psp.api.helpers;
 
 namespace psp.api.Controllers
 {
+    [RoutePrefix("api/gsr")]
     public class GsrController : ApiController
     {
         private readonly GSRRepository _repository;
@@ -31,10 +33,12 @@ namespace psp.api.Controllers
         {
             return "value";
         }
-
-        public GSR Get(string gsrDate, string site)
+        [Route("{siteId}/{gsrDate}")]
+        public GSR Get(string siteId, string gsrDate)
         {
-            var gsr = _repository.GetBySiteIdGSRDate(site, gsrDate);
+            var site = new SiteController().Get(siteId);
+
+            var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate));
             return gsr;
         }
 

@@ -13,7 +13,7 @@ angular.module('service.auth', [])
         return {
             login: function(credentials){
                 $rootScope.loading = true;
-                return $http.post(APP_SETTINGS.apiUrl + 'Login/PostUser', credentials, {
+                return $http.post(APP_SETTINGS.apiUrl + 'Login', credentials, {
                 })
                     .success(function(data, status, headers, config){
                         $rootScope.loading = false;

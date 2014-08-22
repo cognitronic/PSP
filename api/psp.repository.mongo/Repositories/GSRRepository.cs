@@ -20,7 +20,7 @@ namespace psp.repository.mongo.Repositories
         }
         public IList<GSR> GetAll()
         {
-            return _collection.FindAllAs<GSR>().OrderBy(o => o.gsrdate).ToList<GSR>();
+            return _collection.FindAllAs<GSR>().OrderBy(o => o.gsrDate).ToList<GSR>();
         }
 
         public GSR GetById(ObjectId id)
@@ -31,7 +31,7 @@ namespace psp.repository.mongo.Repositories
 
         public GSR GetByGSRDate(string date)
         {
-            var query = Query<GSR>.EQ(e => e.gsrdate, date);
+            var query = Query<GSR>.EQ(e => e.gsrDate, date);
             return _collection.FindOneAs<GSR>(query);
         }
 
@@ -44,7 +44,7 @@ namespace psp.repository.mongo.Repositories
         public GSR GetBySiteIdGSRDate(string site, string date)
         {
             var query = Query.And(
-                Query.EQ("site", site),
+                Query.EQ("sitename", site),
                 Query.EQ("gsrdate", date));
             return _collection.FindOneAs<GSR>(query);
         }

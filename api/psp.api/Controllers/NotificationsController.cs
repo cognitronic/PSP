@@ -23,7 +23,7 @@ namespace psp.api.Controllers
         }
 
         // GET api/notifications
-        public IList<Notification> GetAll()
+        public IList<Notification> Get()
         {
 
             var notifications = _repository.GetAll().OrderBy(o => o.name).ToList<Notification>();

@@ -13,13 +13,13 @@ app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, Aut
             $scope.users = data;
             $scope.pagination.numPages = Math.ceil($scope.users.length/$scope.pagination.perPage);
         });
-    }
+    };
 
     $scope.loadUsers();
 
     $scope.AddUser = function(){
         $location.path('/users/new');
-    }
+    };
 
     $scope.deleteUser = function(usr){
         usr.sid = usr.Id;
@@ -30,5 +30,5 @@ app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, Aut
         });
         console.log(usr);
         $scope.confirmed = 'from the directive';
-    }
+    };
 });

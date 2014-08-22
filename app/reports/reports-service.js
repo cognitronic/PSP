@@ -74,9 +74,8 @@ angular.module('service.reports', [])
                 var deferred = $q.defer();
                 $rootScope.loading = true;
                 $http({
-                    url: APP_SETTINGS.apiUrl + 'Gsr/',
-                    method: 'GET',
-                    params: viewModel})
+                    url: APP_SETTINGS.apiUrl + 'Gsr/' + viewModel.site + '/' + viewModel.gsrDate.replace('/', '-').replace('/', '-'),
+                    method: 'GET'})
                     .success(function(data){
                         $rootScope.loading = false;
                         console.log('success: ' + data);

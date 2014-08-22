@@ -11,6 +11,7 @@ using psp.api.helpers;
 
 namespace psp.api.Controllers
 {
+    [RoutePrefix("api/sites")]
     public class SiteController : ApiController
     {
          private readonly SiteRepository _repository;
@@ -25,6 +26,7 @@ namespace psp.api.Controllers
         }
 
         // GET api/site
+        [Route("")]
         public IList<Site> Get()
         {
             //var test = _sitewatch.SitewatchSalesBySiteDate("2", DateTime.Today.AddDays(-60));
@@ -34,6 +36,7 @@ namespace psp.api.Controllers
         }
 
         // GET api/site/5
+        [Route("{id}")]
         public Site Get(string id)
         {
             return _repository.GetById(new ObjectId(id));

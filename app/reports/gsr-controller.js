@@ -1,82 +1,118 @@
 /**
  * Created by Danny Schreiber on 3/25/14.
  */
-'use strict'
 
-app.controller('reports.GSRCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, SiteService){
+(function(){
+    'use strict';
+    var GSRReportController = function($scope, $rootScope, CacheService, ReportsService, SiteService){
 
-    $scope.gsr = {};
-    $scope.runGSR = function(){
-        $scope.viewModel = {
-            site: $scope.site.name,
-            gsrDate: $scope.dt.toLocaleDateString()
+        var _selectedSite = {};
+        var _selectedDate = '';
+        var _reportParams = {};
+        var _gsr = {};
+        var _maxDate = '';
+        var _dt = undefined;
+        var _showWeeks = true;
+        var _dateOptions = {
+            'year-format': "'yyyy'",
+            'starting-day': 1
+        };
+
+        var _formats =['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
+        var _format = undefined;
+        var _birthdateFormat = undefined;
+        var _sites = []
+
+        var _init = function(){
+            $scope.model.toggleMax();
+            $scope.model.today();
+            $scope.model.format = $scope.model.formats[1];
+
+            $scope.model.sites = $scope.model.getSites();
+            $scope.model.birthdateFormat = $scope.model.formats[2];
+            if(CacheService.getItem(CacheService.Items.Reports.selectedGsr)){
+                $scope.model.gsr = CacheService.getItem(CacheService.Items.Reports.selectedGsr);
+            } else {
+                $scope.model.getGsr();
+            }
+        };
+
+        var _getGsr = function(){
+            CacheService.removeItem(CacheService.Items.Reports.selectedGsr);
+            console.log($scope.model.selectedSite);
+            $scope.model.reportParams = {
+                site: $scope.model.selectedSite.Id,
+                gsrDate: $scope.model.dt.toLocaleDateString()
+            }
+            ReportsService.getGSRBySiteDate($scope.model.reportParams).then(function(data){
+                CacheService.setItem(CacheService.Items.Reports.selectedGsr, data);
+                $scope.model.gsr = data;
+                console.log(data);
+            });
         }
-        ReportsService.getGSRBySiteDate($scope.viewModel).then(function(data){
-            $scope.gsr = data;
-        });
-    }
 
-    SiteService.getSites().then(function(data){
-       $scope.sites = data;
-        $scope.site = $scope.sites[0];
-    });
+        var _getSites = function(){
+            SiteService.getSites().then(function(data){
+                 $scope.model.sites = data;
+                $scope.model.selectedSite = $scope.model.sites[0];
+            });
+        };
 
-//    ReportsService.getGSRBySiteDate().then(function(data){
-//        $scope.gsr = data;
-//    });
+        var _toggleMax = function() {
+            $scope.model.maxDate = ( $scope.model.maxDate ) ? null : new Date();
+        };
 
+        var _today = function() {
+            $scope.model.dt = new Date();
+        };
 
-    $scope.toggleMax = function() {
-        $scope.maxDate = ( $scope.maxDate ) ? null : new Date();
-    };
-    $scope.toggleMax();
+        var _toggleWeeks = function () {
+            $scope.model.showWeeks = ! $scope.model.showWeeks;
+        };
 
+        var _clear = function () {
+            $scope.model.dt = null;
+        };
 
+        var _open = function($event) {
+            $event.preventDefault();
+            $event.stopPropagation();
+            if($event.currentTarget.id === 'btnBirthdate'){
+                $scope.model.birthdateOpened = true;
+                $scope.model.registeredOpened = false;
+            } else {
+                $scope.model.birthdateOpened = false;
+                $scope.model.registeredOpened = true;
+            }
+        };
 
-    $scope.today = function() {
-        $scope.dt = new Date();
-    };
-
-    $scope.today();
-
-    $scope.showWeeks = true;
-    $scope.toggleWeeks = function () {
-        $scope.showWeeks = ! $scope.showWeeks;
-    };
-
-    $scope.clear = function () {
-        $scope.dt = null;
-    };
-
-    // Disable weekend selection
-//    $scope.disabled = function(date, mode) {
-//        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-//    };
-//
-//    $scope.toggleMin = function() {
-//        $scope.minDate = ( $scope.minDate ) ? null : new Date();
-//    };
-//    $scope.toggleMin();
-
-    $scope.open = function($event) {
-        $event.preventDefault();
-        $event.stopPropagation();
-        if($event.currentTarget.id === 'btnBirthdate'){
-            $scope.birthdateOpened = true;
-            $scope.registeredOpened = false;
-        } else {
-            $scope.birthdateOpened = false;
-            $scope.registeredOpened = true;
+        $scope.model = {
+            init: _init,
+            selectedSite: _selectedSite,
+            selectedDate: _selectedDate,
+            reportParams: _reportParams,
+            getSites: _getSites,
+            sites: _sites,
+            gsr: _gsr,
+            getGsr: _getGsr,
+            toggleMax: _toggleMax,
+            today: _today,
+            showWeeks: _showWeeks,
+            maxDate: _maxDate,
+            dt: _dt,
+            toggleWeeks: _toggleWeeks,
+            clear: _clear,
+            birthdateOpened: true,
+            registeredOpened: false,
+            dateOptions: _dateOptions,
+            open: _open,
+            formats: _formats,
+            format: _format,
+            birthdateFormat: _birthdateFormat
         }
+
+        $scope.model.init();
     };
 
-
-    $scope.dateOptions = {
-        'year-format': "'yyyy'",
-        'starting-day': 1
-    };
-
-    $scope.formats = ['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
-    $scope.format = $scope.formats[1];
-    $scope.birthdateFormat = $scope.formats[2];
-});
+    angular.module('psp').controller('GSRReportController',['$scope', '$rootScope', 'CacheService', 'ReportsService', 'SiteService', GSRReportController]);
+})();

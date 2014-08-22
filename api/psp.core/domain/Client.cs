@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 namespace psp.core.domain
 {
     [Serializable]
-    public class Client
+    public class Client : psp.core.domain.IClient
     {
         [DataMember]
         public ObjectId Id { get; set; }

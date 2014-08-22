@@ -33,12 +33,12 @@ namespace psp.api.Controllers
             return u;
         }
 
-        [System.Web.Http.HttpGet]
-        public User Authenticate([FromBody]User user)
-        {
-            var u = (User)_userRepository.GetByEmail(user.email);
-            return u;
-        }
+        //[System.Web.Http.HttpGet]
+        //public User Authenticate([FromBody]User user)
+        //{
+        //    var u = (User)_userRepository.GetByEmail(user.email);
+        //    return u;
+        //}
 
 
         public HttpResponseMessage Post([FromBody]User credentials)
@@ -50,11 +50,7 @@ namespace psp.api.Controllers
             return response;
         }
 
-        // POST api/<controller>
-        public void Post([FromBody]string email)
-        {
-            
-        }
+        
 
         // PUT api/<controller>/5
         public void Put(int id, [FromBody]string value)
