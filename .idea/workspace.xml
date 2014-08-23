@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/common/layout/_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/MySql.Data.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/WashLink.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/WashLink.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/_nav.html" afterPath="$PROJECT_DIR$/app/common/layout/_nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.sln" afterPath="$PROJECT_DIR$/api/api.sln" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/auth-service.js" afterPath="$PROJECT_DIR$/app/common/security/auth-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/birthdays.html" afterPath="$PROJECT_DIR$/app/reports/birthdays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/claims.html" afterPath="$PROJECT_DIR$/app/forms/claims.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistration-controller.js" afterPath="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistration.html" afterPath="$PROJECT_DIR$/app/reports/customerregistration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" afterPath="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistrations.html" afterPath="$PROJECT_DIR$/app/reports/customerregistrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/app/dashboard/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/forms-index.html" afterPath="$PROJECT_DIR$/app/forms/forms-index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/main.css" afterPath="$PROJECT_DIR$/app/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/main.html" afterPath="$PROJECT_DIR$/app/dashboard/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notification-controller.js" afterPath="$PROJECT_DIR$/app/settings/notification-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notification.html" afterPath="$PROJECT_DIR$/app/settings/notification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notifications-controller.js" afterPath="$PROJECT_DIR$/app/settings/notifications-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notifications.html" afterPath="$PROJECT_DIR$/app/settings/notifications.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/reports-index.html" afterPath="$PROJECT_DIR$/app/reports/reports-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/site-controller.js" afterPath="$PROJECT_DIR$/app/settings/site-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/site.html" afterPath="$PROJECT_DIR$/app/settings/site.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites-controller.js" afterPath="$PROJECT_DIR$/app/settings/sites-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites.html" afterPath="$PROJECT_DIR$/app/settings/sites.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/user-controller.js" afterPath="$PROJECT_DIR$/app/settings/user-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/user.html" afterPath="$PROJECT_DIR$/app/settings/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/users-controller.js" afterPath="$PROJECT_DIR$/app/settings/users-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/users.html" afterPath="$PROJECT_DIR$/app/settings/users.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -91,6 +26,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="gsr.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="996" column="34" selection-start="35434" selection-end="35434" vertical-scroll-proportion="-0.75919336" vertical-offset="20580" max-vertical-offset="26240">
+              <folding>
+                <element signature="tag#tr#59;tag#tbody#0;tag#table#0;tag#div#1;tag#div#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="users-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/users-controller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,23 +90,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-controller.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="34" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.8225617" vertical-offset="660" max-vertical-offset="2080">
+            <state line="68" column="34" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="2080">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="9" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.3793104" vertical-offset="0" max-vertical-offset="1240">
-              <folding>
-                <element signature="tag#div#1;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -217,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/reports/birthdays.html" />
         <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
         <option value="$PROJECT_DIR$/app/common/security/auth-service.js" />
@@ -233,6 +167,7 @@
         <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/user-controller.js" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
       </list>
     </option>
   </component>
@@ -489,28 +424,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -680,7 +593,11 @@
       <created>1408741862786</created>
       <updated>1408741862786</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="modified base style and added notification project">
+      <created>1408808032555</created>
+      <updated>1408808032555</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,7 +664,8 @@
     <MESSAGE value="changed ui to match company's marketing vibe" />
     <MESSAGE value="Refactored rest api  and made appropriate modifications to domain objects" />
     <MESSAGE value="refactored angular sites controller and hooked up webApi rest layer for gsr, sites, and gsrReport" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored angular sites controller and hooked up webApi rest layer for gsr, sites, and gsrReport" />
+    <MESSAGE value="modified base style and added notification project" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified base style and added notification project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -767,15 +685,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="161" selection-end="251" vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1600">
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="60" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1480">
@@ -896,9 +805,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="34" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.8225617" vertical-offset="660" max-vertical-offset="2080">
+        <state line="68" column="34" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="2080">
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="996" column="34" selection-start="35434" selection-end="35434" vertical-scroll-proportion="-0.75919336" vertical-offset="20580" max-vertical-offset="26240">
+          <folding>
+            <element signature="tag#tr#59;tag#tbody#0;tag#table#0;tag#div#1;tag#div#0" expanded="false" />
           </folding>
         </state>
       </provider>
