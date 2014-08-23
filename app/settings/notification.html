@@ -1,10 +1,10 @@
-<div class="container" ng-cloak>
+<div class="container view-container" ng-cloak>
     <div class="row">
-        <h2>{{ currentNotification.name.replace('_', ' ') }}</h2>
-        <div data-access-level='{{ currentNotification.canrunmanually }}' class="jumbotron row">
-            <h4 class="messagecontainer">
+        <h3>{{ currentNotification.name.replace('_', ' ') }}</h3>
+        <div data-access-level='{{ currentNotification.canrunmanually }}' class="jumbotron">
+            <div class="jumbo-header">
                 To send notification immediately to all recipients in the list below, select a date and click the Run Notification button.
-            </h4>
+            </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <p class="input-group">
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <div>
                 <b>Subject: <small>possible variables where applicable - !!date!! or !!site!!</small> </b>
                 <input class="form-control" type="text" ng-model="currentNotification.subject" value="{{ currentNotification.subject }}"/>

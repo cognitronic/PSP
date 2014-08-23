@@ -19,11 +19,17 @@
 /* @group Global */
 
 
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 
 body {
 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	padding-top: 65px;
-    background-color: #ffffff;
+    background-color: #eeeeee;
+    height: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -48,17 +54,11 @@ footer {
 
 h2 {
 	margin-top: 5px;
-    color: #dc137a;
-    font-size: 58px;
+    color: #333;
 }
 
 h3{
-    color: #dc137a;
-    font-size: 32px;
-}
-
-html {
-	overflow-x: hidden;
+    color: #333;
 }
 
 .app {
@@ -265,10 +265,9 @@ html {
 
 .messagecontainer  {
 	text-align: left;
-    text-shadow: 0 1px 1px rgba(225, 225, 225, 0.50);
     letter-spacing: -0.06em;
     -webkit-font-smoothing: antialiased;
-    color: #333333;
+    color: #dc137a;
 }
 
 .jumbotron .messagecontainer  {
@@ -714,11 +713,38 @@ html body {
 
 .main-content{
 
-    background-color: #ffffff;
+    background-color: #eeeeee;
     top: 50px;
     left: 250px;
+    height: 100%;
     right: 0;
     bottom: 0px;
+}
+
+.view-container{
+    background-color: #ffffff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    margin-bottom: 75px;
+}
+
+.footer-container{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    padding: 10px;
+    color: #428BCA;
+    font-weight: 300;
+    font-size: smaller;
+    background-color: #fefefe;
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255,255,255,0.1),4px 0px 15px 0px rgba(0,0,0,0.3);
 }
 
 /* Sidebar */

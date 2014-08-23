@@ -50,7 +50,7 @@ console.log(data);
     $scope.saveProfile = function(){
         UserService.saveUser($scope.user)
             .then(function(data){
-                $location.path('/users');
+                $location.path('/settings/users');
                 $modalInstance.close();
 
             });
@@ -60,13 +60,13 @@ console.log(data);
         if($routeParams.id !== "new"){
             UserService.deleteUser($routeParams.id)
                 .then(function(data){
-                    $location.path('/users');
+                    $location.path('/settings/users');
                 });
         }
     }
 
     $scope.returnToList = function(){
-        $location.path('/users');
+        $location.path('/settings/users');
     }
 
 

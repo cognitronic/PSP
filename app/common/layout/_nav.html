@@ -14,36 +14,36 @@
                 <li>
 
                 </li>
-                <li ng-class="{active:isActive(['/dashboard'])}">
-                    <a href="#dashboard">Dashboard</a>
-                </li>
-                <li ng-class="{active:isActive(['/gsrreport'])}">
+                <!--<li ng-class="{active:isActive(['/dashboard'])}">-->
+                    <!--<a href="#dashboard">Dashboard</a>-->
+                <!--</li>-->
+                <li ng-class="{active:isActive(['/reports/gsr'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li data-access-level='admin'><a href="#gsrreport">GSR</a></li>
-                        <li><a href="#volumereport">Volume</a></li>
-                        <li><a href="#birthdays">Birthday</a></li>
-                        <li><a href="#customerregistrations">Customer Registration</a></li>
-                        <li><a href="#reportengine">Report Engine</a></li>
+                        <li data-access-level='admin'><a href="#/reports/gsr">GSR</a></li>
+                        <!--<li><a href="#volumereport">Volume</a></li>-->
+                        <li><a href="#/reports/birthdays">Birthday</a></li>
+                        <li><a href="#/reports/customerregistrations">Customer Registration</a></li>
+                        <!--<li><a href="#reportengine">Report Engine</a></li>-->
                     </ul>
                 </li>
-                <li ng-class="{active:isActive(['/claims'])}">
+                <li ng-class="{active:isActive(['/forms/claims'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Forms<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#claims">Claims</a></li>
+                        <li><a href="#/forms/claims">Claims</a></li>
                     </ul>
                 </li>
-                <li ng-class="{active:isActive(['/users','/sites', '/notifications'])}">
+                <li ng-class="{active:isActive(['/settings/users','/settings/sites', '/settings/notifications'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#users">Users</a>
+                            <a href="#/settings/users">Users</a>
                         </li>
                         <li>
-                            <a href="#sites">Sites</a>
+                            <a href="#/settings/sites">Sites</a>
                         </li>
                         <li>
-                            <a href="#notifications">Notifications</a>
+                            <a href="#/settings/notifications">Notifications</a>
                         </li>
                     </ul>
                 </li>

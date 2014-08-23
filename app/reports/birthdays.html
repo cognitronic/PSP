@@ -1,8 +1,10 @@
-<div class="container" ng-cloak>
-    <div class="row">
-        <h2>Manage Birthday Coupon Notifications</h2>
+<div class="container view-container" ng-cloak>
+    <div class="row-fluid">
+        <h3>Manage Birthday Coupon Notifications</h3>
         <div class="jumbotron">
-            <h3 class="messagecontainer">Search Criteria</h3>
+            <div class="jumbo-header">
+                Search Criteria
+            </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div>
@@ -32,15 +34,17 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row-fluid">
         <table class="table table-hover table-striped">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th style="text-align: right;">Actions</th>
-            </tr>
+            <thead>
+                <tr class="bg-primary">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th style="text-align: right;">Actions</th>
+                </tr>
+            </thead>
             <tbody>
             <tr ng-repeat="client in clients |
             startFrom: pagination.page * pagination.perPage |
@@ -55,8 +59,8 @@
                     {{ client.city }}, {{ client.state }} {{ client.zip }}
                 </td>
                 <td style="text-align: right;">
-                    <span ng-show="!client.birthdaycouponsent"><a ng-click="sendCoupon(client)" class="btn btn-primary" > Send Coupon</a></span>
-                    <span><a ng-click="deleteClient(client)" class="btn btn-danger"> Delete</a></span>
+                    <span ng-show="!client.birthdaycouponsent"><a ng-click="sendCoupon(client)" class="btn " > Send Coupon</a></span>
+                    <span><a ng-click="deleteClient(client)" class="btn "> Delete</a></span>
                 </td>
             </tr>
             </tbody>

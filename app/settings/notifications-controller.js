@@ -9,6 +9,6 @@ app.controller('settings.NotificationsCtrl', function($scope, $rootScope, $route
 
     $scope.editNotification = function(id){
 
-        $location.path('notifications/' + id);
+        $location.path('/settings/notifications/' + id);
     }
 });

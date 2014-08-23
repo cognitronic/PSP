@@ -54,22 +54,22 @@ var app = angular.module('psp', [
             controller: 'ReportsCtrl',
             access: access.anon
         })
-        .when('/gsrreport', {
+        .when('/reports/gsr', {
             templateUrl: 'reports/gsr.html',
             controller: 'GSRReportController',
             access: access.executive
         })
-        .when('/customerregistrations', {
+        .when('/reports/customerregistrations', {
             templateUrl: 'reports/customerregistrations.html',
             controller: 'reports.CustomerRegistrationsCtrl',
             access: access.office
         })
-        .when('/customerregistrations/:id', {
+        .when('/reports/customerregistrations/:id', {
             templateUrl: 'reports/customerregistration.html',
             controller: 'reports.CustomerRegistrationCtrl',
             access: access.office
         })
-        .when('/birthdays', {
+        .when('/reports/birthdays', {
             templateUrl: 'reports/birthdays.html',
             controller: 'reports.BirthdaysCtrl',
             access: access.office
@@ -79,37 +79,37 @@ var app = angular.module('psp', [
             controller: 'FormsCtrl',
             access: access.anon
         })
-        .when('/claims', {
+        .when('/forms/claims', {
             templateUrl: 'forms/claims.html',
             controller: 'forms.ClaimsCtrl',
             access: access.anon
         })
-        .when('/users', {
+        .when('/settings/users', {
             templateUrl: 'settings/users.html',
             controller: 'settings.UsersCtrl',
             access: access.admin
         })
-        .when('/users/:id', {
+        .when('/settings/users/:id', {
             templateUrl: 'settings/user.html',
             controller: 'settings.UserCtrl',
             access: access.admin
         })
-        .when('/sites', {
+        .when('/settings/sites', {
             templateUrl: 'settings/sites.html',
             controller: 'settings.SitesCtrl',
             access: access.admin
         })
-        .when('/sites/:id', {
+        .when('/settings/sites/:id', {
             templateUrl: 'settings/site.html',
             controller: 'settings.SiteCtrl',
             access: access.admin
         })
-        .when('/notifications', {
+        .when('/settings/notifications', {
             templateUrl: 'settings/notifications.html',
             controller: 'settings.NotificationsCtrl',
             access: access.admin
         })
-        .when('/notifications/:id', {
+        .when('/settings/notifications/:id', {
             templateUrl: 'settings/notification.html',
             controller: 'settings.NotificationCtrl',
             access: access.admin
@@ -120,7 +120,7 @@ var app = angular.module('psp', [
             access: access.anon
         })
         .otherwise({
-            redirectTo: '/dashboard',
+            redirectTo: '/reports/gsr',
             access: access.anon
     });
 

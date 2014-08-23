@@ -35,12 +35,12 @@ app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope,
 
     $scope.editClient = function(id){
 
-        $location.path('customerregistrations/' + id);
+        $location.path('/reports/customerregistrations/' + id);
     }
 
     $scope.addClient = function(){
 
-        $location.path('customerregistrations/new');
+        $location.path('/reports/customerregistrations/new');
     }
 
     $scope.toggleMax = function() {

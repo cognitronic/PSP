@@ -11,7 +11,7 @@ app.controller('settings.SitesCtrl', function($scope, $rootScope, $location, Aut
     });
 
     $scope.AddSite = function(){
-        $location.path('/sites/new');
+        $location.path('/settings/sites/new');
     }
 
     $scope.deleteSite = function(site){

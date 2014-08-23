@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container view-container">
     <div class="row">
-        <h2>Details for: {{ client.firstname }} {{ client.lastname }}</h2>
+        <h3>Details for: {{ client.firstname }} {{ client.lastname }}</h3>
         <div>
             <b>First Name:</b>
             <input value="{{ client.firstname }}" name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="client.firstname" required autofocus>

@@ -26,7 +26,7 @@ angular.module('service.auth', [])
                             sessionStorage.setItem('psp.currentUser', JSON.stringify(data));
                             if(sessionStorage.getItem('psp.currentUser') !== null){
                                 $rootScope.$broadcast('userLoggedIn', {user: data});
-                                $location.path('/dashboard');
+                                $location.path('/reports/gsr');
                             }
                         }
                     });

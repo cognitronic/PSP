@@ -20,7 +20,7 @@ app.controller('reports.CustomerRegistrationCtrl', function($scope, $rootScope, 
         $scope.client.birthdate = $scope.client.birthdate.toISOString();
         ReportsService.saveClient($scope.client)
             .then(function(data){
-               $location.path('/customerregistrations/' + data.Id);
+               $location.path('/reports/customerregistrations/' + data.Id);
             });
     }
 
@@ -30,14 +30,14 @@ app.controller('reports.CustomerRegistrationCtrl', function($scope, $rootScope, 
             if(deleteItem){
                 ReportsService.deleteClient($scope.client)
                 .then(function(data){
-                   $location.path('/customerregistrations');
+                   $location.path('/reports/customerregistrations');
                 });
             }
         }
     }
 
     $scope.returnToList = function(){
-        $location.path('/customerregistrations');
+        $location.path('/reports/customerregistrations');
     }
 
 

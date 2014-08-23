@@ -14,7 +14,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
         $scope.currentNotification.recipients = $scope.recipients;
         NotificationService.saveNotification($scope.currentNotification)
             .then(function(data){
-                $location.path('/notifications/' + data.Id);
+                $location.path('/settings/notifications/' + data.Id);
                 $scope.isHidden = !$scope.isHidden;
             });
     }
@@ -75,7 +75,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
 
 
     $scope.returnToList = function(){
-        $location.path('notifications');
+        $location.path('/settings/notifications');
     }
 
     $scope.toggleMax = function() {

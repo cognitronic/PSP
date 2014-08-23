@@ -363,11 +363,11 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
-    letter-spacing: -0.06em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    letter-spacing: -0.03em;
     -webkit-font-smoothing: antialiased;
 }
 h1 small,
@@ -737,8 +737,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4424,12 +4424,22 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   background-color: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow:0 1px 3px rgba(0,0,0,.55);
-  box-shadow: 0 1px 3px rgba(0,0,0,.55);
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,.55);
+  box-shadow: 0 1px 1px rgba(0,0,0,.55);
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+}
+
+.jumbotron .jumbo-header{
+    color: #fff;
+    background-color: #428bca;
+    height: 35px;
+    font-weight: 800;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4447,7 +4457,7 @@ a.list-group-item.active > .badge,
     /*padding-top: 48px;*/
     padding-bottom: 48px;
   }
-  .container .jumbotron {
+  .container {
     padding-right: 60px;
     padding-left: 60px;
   }

@@ -425,16 +425,16 @@ namespace psp.core.domain
         public decimal siteWatchUnlimitedPremierWithPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToProtexRainX_count { get; set; }
+        public int siteWatchEnhancePsxToProtexWithRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToProtexRainX_dollars { get; set; }
+        public decimal siteWatchEnhancePsxToProtexWithRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToProtexPlusPlus_count { get; set; }
+        public int siteWatchEnhancePsxToProtexWithPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToProtexPlusPlus_dollars { get; set; }
+        public decimal siteWatchEnhancePsxToProtexWithPlusPlus_dollars { get; set; }
 
         [DataMember]
         public int siteWatchEnhancePsxTireGlossToProtexPlusPlus_count { get; set; }
@@ -461,7 +461,7 @@ namespace psp.core.domain
         public decimal siteWatchEnhancePsxToPremierPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEenhancePsxTireGlossToPremierRainX_count { get; set; }
+        public int siteWatchEnhancePsxTireGlossToPremierRainX_count { get; set; }
 
         [DataMember]
         public decimal siteWatchEnhancePsxTireGlossToPremierRainX_dollars { get; set; }

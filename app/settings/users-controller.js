@@ -18,7 +18,7 @@ app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, Aut
     $scope.loadUsers();
 
     $scope.AddUser = function(){
-        $location.path('/users/new');
+        $location.path('/settings/users/new');
     };
 
     $scope.deleteUser = function(usr){

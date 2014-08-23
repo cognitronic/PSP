@@ -21,7 +21,7 @@ app.controller('settings.SiteCtrl', function($scope, $location,$timeout, $rootSc
     $scope.saveSite = function(){
         SiteService.saveSite($scope.site)
             .then(function(data){
-                $location.path('/sites/' + data.Id);
+                $location.path('/settings/sites/' + data.Id);
                 $scope.isHidden = !$scope.isHidden;
             });
     }
@@ -30,12 +30,12 @@ app.controller('settings.SiteCtrl', function($scope, $location,$timeout, $rootSc
         if($routeParams.id !== "new"){
             SiteService.deleteSite($routeParams.id)
                 .then(function(data){
-                    $location.path('/sites');
+                    $location.path('/settings/sites');
                 });
         }
     }
 
     $scope.returnToList = function(){
-        $location.path('/sites');
+        $location.path('/settings/sites');
     }
 });

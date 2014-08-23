@@ -32,6 +32,12 @@ namespace psp.api.helpers
                                     'test' as rooter
                         FROM         StatisticsOptions
                         WHERE     date(timestamp) = '" + FormatMySqlDate(date.ToShortDateString()) + @"'
+                        group by date(timestamp);
+                        
+                        SELECT     SUM(PK6) AS RainX,
+                                    'test' as rooter
+                        FROM         StatisticsOptions
+                        WHERE     date(timestamp) = '" + FormatMySqlDate(date.ToShortDateString()) + @"'
                         group by date(timestamp);";
                 DataSet ds = new DataSet();
                 using (MySqlConnection con = new MySqlConnection(site.dbconnectionstring))
@@ -55,7 +61,13 @@ namespace psp.api.helpers
                         SELECT SUM(dbo.SECCountsDetailsOptions.Item6) AS TireShine,
                         'test' as rooter
                         FROM dbo.SECCountsDetailsOptions
-                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'";
+                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
+                        
+                        SELECT SUM(dbo.SECCountsDetailsOptions.Item6) AS RainX,
+                        'test' as rooter
+                        FROM dbo.SECCountsDetailsOptions
+                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
+";
                 DataSet ds = new DataSet();
                 using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
                 {
@@ -79,7 +91,13 @@ namespace psp.api.helpers
                         SELECT SUM(dbo.TECCountsDetailsOptions.Item6) AS TireShine,
                         'test' as rooter
                         FROM dbo.TECCountsDetailsOptions
-                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'";
+                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
+                        
+                        SELECT SUM(dbo.TECCountsDetailsOptions.Item4) AS RainX,
+                        'test' as rooter
+                        FROM dbo.TECCountsDetailsOptions
+                        WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
+";
                 DataSet ds = new DataSet();
                 using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
                 {
@@ -105,12 +123,16 @@ namespace psp.api.helpers
                     join tireshines in ds.Tables[1].AsEnumerable()
                     on carwashes.Field<string>("rooter") equals
                     tireshines.Field<string>("rooter")
+                    join rainx in ds.Tables[2].AsEnumerable()
+                    on carwashes.Field<string>("rooter") equals
+                    rainx.Field<string>("rooter")
                     select new WashLinkWashTotals()
                     {
                         primeshinewash = carwashes.Field<int>("PrimeShineWash"),
                         protexwash = carwashes.Field<int>("ProtexWash"),
                         premierwash = carwashes.Field<int>("PremierWash"),
-                        tireshine = tireshines.Field<int>("TireShine")
+                        tireshine = tireshines.Field<int>("TireShine"),
+                        rainx = rainx.Field<int>("RainX")
 
                     };
 
@@ -124,12 +146,16 @@ namespace psp.api.helpers
                     join tireshines in ds.Tables[1].AsEnumerable()
                     on carwashes.Field<string>("rooter") equals
                     tireshines.Field<string>("rooter")
+                    join rainx in ds.Tables[2].AsEnumerable()
+                    on carwashes.Field<string>("rooter") equals
+                    rainx.Field<string>("rooter")
                     select new WashLinkWashTotals()
                     {
                         primeshinewash = (int)carwashes.Field<double>("PrimeShineWash"),
                         protexwash = (int)carwashes.Field<double>("ProtexWash"),
                         premierwash = (int)carwashes.Field<double>("PremierWash"),
-                        tireshine = (int)tireshines.Field<double>("TireShine")
+                        tireshine = (int)tireshines.Field<double>("TireShine"),
+                        rainx = (int)rainx.Field<double>("RainX")
 
                     };
 
