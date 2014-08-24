@@ -23,6 +23,11 @@
         var _birthdateFormat = undefined;
         var _sites = []
 
+
+        $scope.$on('$routeChangeStart', function(next, current) {
+            CacheService.removeItem(CacheService.Items.Reports.selectedGsr);
+        });
+
         var _init = function(){
             $scope.model.toggleMax();
             $scope.model.today();
@@ -40,15 +45,18 @@
         var _getGsr = function(){
             CacheService.removeItem(CacheService.Items.Reports.selectedGsr);
             console.log($scope.model.selectedSite);
-            $scope.model.reportParams = {
-                site: $scope.model.selectedSite.Id,
-                gsrDate: $scope.model.dt.toLocaleDateString()
+            if($scope.model.selectedSite.Id){
+
+                $scope.model.reportParams = {
+                    site: $scope.model.selectedSite.Id,
+                    gsrDate: $scope.model.dt.toLocaleDateString()
+                }
+                ReportsService.getGSRBySiteDate($scope.model.reportParams).then(function(data){
+                    CacheService.setItem(CacheService.Items.Reports.selectedGsr, data);
+                    $scope.model.gsr = data;
+                    console.log(data);
+                });
             }
-            ReportsService.getGSRBySiteDate($scope.model.reportParams).then(function(data){
-                CacheService.setItem(CacheService.Items.Reports.selectedGsr, data);
-                $scope.model.gsr = data;
-                console.log(data);
-            });
         }
 
         var _getSites = function(){
