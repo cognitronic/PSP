@@ -5,7 +5,7 @@ namespace psp.core.domain
     {
         string address { get; set; }
         bool addressverified { get; set; }
-        DateTime birthdate { get; set; }
+        string birthdate { get; set; }
         bool birthdaycouponsent { get; set; }
         string city { get; set; }
         DateTime dateregistered { get; set; }

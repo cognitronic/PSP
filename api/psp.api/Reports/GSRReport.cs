@@ -407,6 +407,24 @@ namespace psp.api.Reports
                 gsr.siteWatchReapplyTireGloss_dollars;
 
             gsr.tireGloss_diff = (gsr.siteWatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
+
+            // Rain-X
+            gsr.sitewatchTotalRainX_count = gsr.siteWatchRainX_count +
+                gsr.siteWatchReapplyRainX_count +
+                gsr.siteWatchUnlimitedPremierWithRainX_count +
+                gsr.siteWatchUnlimitedProtexWithRainX_count +
+                gsr.siteWatchUnlimitedPsxWithRainX_count +
+                gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count +
+                gsr.siteWatchEnhanceProtexToPremierRainX_count +
+                gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count +
+                gsr.siteWatchEnhancePsxToProtexWithRainX_count +
+                gsr.siteWatchEnhancePsxToPremierRainX_count +
+                gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count;
+
+            gsr.totalRainX_dollars = gsr.washLinkTotalRainX_dollars +
+                gsr.siteWatchReapplyRainX_dollars;
+            gsr.totalRainX_diff = (gsr.sitewatchTotalRainX_count - gsr.washLinkTotalRainX_count) * (int)GSRMultiplier.PLUS_TWO;
+
             //CHANGED - 6/10/2010.  Added the unlimited wTG  
             //SW Tire Gloss
             

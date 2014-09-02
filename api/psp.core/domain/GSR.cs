@@ -86,6 +86,12 @@ namespace psp.core.domain
         public decimal totalPremier_dollars { get; set; }
 
         [DataMember]
+        public decimal totalPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public decimal totalRainX_dollars { get; set; }
+
+        [DataMember]
         public int siteWatchTotalPrimeShine_count { get; set; }
 
         [DataMember]
@@ -310,30 +316,6 @@ namespace psp.core.domain
         [DataMember]
         public decimal siteWatchEnhancePsxWithTireGlossToProtex_dollars { get; set; }
 
-        //[DataMember]
-        //public int armPrimeShineRedeem_count { get; set; }
-
-        //[DataMember]
-        //public decimal armPrimeShineRedeem_dollars { get; set; }
-
-        //[DataMember]
-        //public int armPrimeShineWithTireGlossRedeem_count { get; set; }
-
-        //[DataMember]
-        //public decimal armPrimeShineWithTireGlossRedeem_dollars { get; set; }
-
-        //[DataMember]
-        //public int armProtexRedeem_count { get; set; }
-
-        //[DataMember]
-        //public decimal armProtexRedeem_dollars { get; set; }
-
-        //[DataMember]
-        //public int armProtexWithTireGlossRedeem_count { get; set; }
-
-        //[DataMember]
-        //public decimal armProtexWithTireGlossRedeem_dollars { get; set; }
-
         [DataMember]
         public int siteWatchPsxFleetPremier_count { get; set; }
 
@@ -507,5 +489,14 @@ namespace psp.core.domain
 
         [DataMember]
         public decimal washLinkTotalRainX_dollars { get; set; }
+
+        [DataMember]
+        public decimal totalRainX_diff { get; set; }
+
+        [DataMember]
+        public decimal totalPlusPlus_diff { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalRainX_count { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Data;
 using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
@@ -11,6 +12,7 @@ using psp.api.helpers;
 
 namespace psp.api.Controllers
 {
+    [RoutePrefix("api/clients")]
     public class ClientsController : ApiController
     {
          private readonly ClientRepository _repository;
@@ -20,9 +22,10 @@ namespace psp.api.Controllers
             _repository = new ClientRepository();
         }
 
-        // GET api/clients
+        [Route("")]
         public IList<Client> Get()
         {
+            var test = new DataImport().ImportClientsIntoMongoFromSqlServer();
             var clients = _repository.GetAll().OrderByDescending(o => o.dateregistered).ToList<Client>();
             return clients;
         }

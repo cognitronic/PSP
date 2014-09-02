@@ -33,6 +33,7 @@ namespace psp.api.Controllers
         {
             return "value";
         }
+
         [Route("{siteId}/{gsrDate}")]
         public GSR Get(string siteId, string gsrDate)
         {
