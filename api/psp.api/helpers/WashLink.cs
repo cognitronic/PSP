@@ -63,7 +63,7 @@ namespace psp.api.helpers
                         FROM dbo.SECCountsDetailsOptions
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
                         
-                        SELECT SUM(dbo.SECCountsDetailsOptions.Item6) AS RainX,
+                        SELECT SUM(dbo.SECCountsDetailsOptions.Item7) AS RainX,
                         'test' as rooter
                         FROM dbo.SECCountsDetailsOptions
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
@@ -93,7 +93,7 @@ namespace psp.api.helpers
                         FROM dbo.TECCountsDetailsOptions
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
                         
-                        SELECT SUM(dbo.TECCountsDetailsOptions.Item4) AS RainX,
+                        SELECT SUM(dbo.TECCountsDetailsOptions.Item7) AS RainX,
                         'test' as rooter
                         FROM dbo.TECCountsDetailsOptions
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'

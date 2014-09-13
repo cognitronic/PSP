@@ -289,6 +289,26 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
                             gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count += int.Parse(item.total);
                             break;
+                        case "49000324": // Reapply Fleet Plus+
+                            gsr.sitewatchReapplyFleetPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_THREE;
+                            gsr.sitewatchReapplyFleetPlusPlus_count += int.Parse(item.total);
+                            break;
+                        case "49000325": // Reapply Fleet RainX
+                            gsr.sitewatchReapplyFleetRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_TWO;
+                            gsr.sitewatchReapplyFleetRainX_count += int.Parse(item.total);
+                            break;
+                        case "49000326": // Reapply Plus+
+                            gsr.sitewatchReapplyPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_THREE;
+                            gsr.sitewatchReapplyPlusPlus_count += int.Parse(item.total);
+                            break;
+                        case "609017": // Unlimited Plus+
+                            gsr.sitewatchUnlimitedPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_THREE;
+                            gsr.sitewatchUnlimitedPlusPlus_count += int.Parse(item.total);
+                            break;
+                        case "609012": // Unlimited RainX
+                            gsr.sitewatchUnlimitedRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_TWO;
+                            gsr.sitewatchUnlimitedRainX_count += int.Parse(item.total);
+                            break;
                     }
                 }
             }
@@ -419,12 +439,36 @@ namespace psp.api.Reports
                 gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count +
                 gsr.siteWatchEnhancePsxToProtexWithRainX_count +
                 gsr.siteWatchEnhancePsxToPremierRainX_count +
+                gsr.sitewatchReapplyFleetRainX_count +
+                gsr.sitewatchUnlimitedRainX_count +
                 gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count;
 
             gsr.totalRainX_dollars = gsr.washLinkTotalRainX_dollars +
+                gsr.sitewatchReapplyFleetRainX_dollars +
+                gsr.sitewatchUnlimitedRainX_dollars +
                 gsr.siteWatchReapplyRainX_dollars;
             gsr.totalRainX_diff = (gsr.sitewatchTotalRainX_count - gsr.washLinkTotalRainX_count) * (int)GSRMultiplier.PLUS_TWO;
 
+
+            gsr.sitewatchTotalPlusPlus_count = gsr.siteWatchPlusPlus_count +
+                gsr.sitewatchReapplyPlusPlus_count +
+                gsr.sitewatchReapplyFleetPlusPlus_count +
+                gsr.sitewatchUnlimitedPlusPlus_count +
+                gsr.siteWatchUnlimitedPremierWithPlusPlus_count +
+                gsr.siteWatchUnlimitedProtexWithPlusPlus_count +
+                gsr.siteWatchUnlimitedPsxWithPlusPlus_count +
+                gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count +
+                gsr.siteWatchEnhanceProtexToPremierPlusPlus_count +
+                gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count +
+                gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count +
+                gsr.siteWatchEnhancePsxToPremierPlusPlus_count +
+                gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count;
+
+            gsr.totalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_dollars +
+                gsr.sitewatchReapplyPlusPlus_dollars +
+                gsr.sitewatchReapplyFleetPlusPlus_dollars +
+                gsr.sitewatchUnlimitedPlusPlus_dollars;
+            gsr.totalPlusPlus_diff = (gsr.sitewatchTotalPlusPlus_count - gsr.washLinkTotalPlusPlus_count) * (int)GSRMultiplier.PLUS_THREE;
             //CHANGED - 6/10/2010.  Added the unlimited wTG  
             //SW Tire Gloss
             

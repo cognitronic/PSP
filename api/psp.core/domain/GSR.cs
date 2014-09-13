@@ -498,5 +498,38 @@ namespace psp.core.domain
 
         [DataMember]
         public decimal sitewatchTotalRainX_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalPlusPlus_count { get; set; }
+
+        [DataMember]
+        public int sitewatchReapplyFleetPlusPlus_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchReapplyFleetPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchReapplyFleetRainX_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchReapplyFleetRainX_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchReapplyPlusPlus_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchReapplyPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchUnlimitedPlusPlus_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchUnlimitedPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchUnlimitedRainX_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchUnlimitedRainX_dollars { get; set; }
     }
 }
