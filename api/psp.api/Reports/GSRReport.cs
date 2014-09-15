@@ -5,6 +5,7 @@ using System.Web;
 using System.Data;
 using psp.api.helpers;
 using psp.core.domain;
+using psp.api.Controllers;
 
 namespace psp.api.Reports
 {
@@ -15,10 +16,10 @@ namespace psp.api.Reports
 
         public GSR GetAmountToAudit(Site site, DateTime reportdate)
         {
-            var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid, reportdate);
+            var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid.ToString(), reportdate);
             var  wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate); 
             var gsr = new GSR();
-            gsr.siteId = site.sitewatchid;
+            gsr.siteId = site.sitewatchid.ToString();
             gsr.siteName = site.name;
             gsr.sid = site.Id.ToString();
             gsr.gsrDate = reportdate.ToShortDateString();
@@ -644,7 +645,7 @@ namespace psp.api.Reports
                 ((gsr.couponsAndDiscounts * (int)GSRMultiplier.NEGATIVE_ONE) - gsr.totalPaidoutRefunds);
             if (gsr.washLinkTotalWashes_count > 0)
             {
-                gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.totalToAccountFor / gsr.washLinkTotalWashes_count));
+                gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.totalToAccountFor / gsr.washLinkTotalWashes_count), 2);
             }
             else
             {
@@ -666,6 +667,121 @@ namespace psp.api.Reports
             gsr.amountToAudit = gsr.totalOverUnder_dollars +((iExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
             
             return gsr;
+        }
+
+        public IList<SiteWatchSalesItem> BuildNotificationData(string gsrDate)
+        {
+            var sites = new SiteController().Get();
+            var list = new List<SiteWatchSalesItem>();
+            foreach (var site in sites)
+            {
+                var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate));
+                list.Add(new SiteWatchSalesItem
+                {
+                    total = gsr.siteWatchTotalWashes_count.ToString(),
+                    locationid = site.sitewatchid,
+                    sitename = site.description,
+                    val = gsr.totalOverUnder_dollars.ToString(),
+                    amt = gsr.amountToAudit.ToString()
+                });
+            }
+            return list;
+        }
+
+        public NotificationMessage BuildNotifications(IList<SiteWatchSalesItem> items, string date)
+        {
+            var sb = NotificationTemplates.StandardNotificationHeader("Prime Shine GSR Report", date);
+            sb.Append("<table style='width: 400px; font-weight: 900; border-collapse: collapse;'>");
+            int i = 0;
+            sb.Append("<tr><td width='250px'><h4>Location</h4></td><td width='75px'><h4>Amt. To Audit</h4></td><td width='75px'><h4>Total O/U</h4></td></tr>");
+            decimal ttlOU = 0;
+            decimal ttlaa = 0;
+            foreach (var item in items.OrderBy(o => o.locationid))
+            {
+                if (i % 2 == 0)
+                {
+                    sb.Append("<tr style='border-bottom: solid 20px #ffffff;'>");
+                }
+                else
+                {
+                    sb.Append("<tr style='border-bottom: solid 20px #ffffff; background-color: #f0f0f0;'>");
+                }
+                sb.Append("<td width='250px'>");
+                sb.Append(item.sitename);
+                sb.Append("</td>");
+                if (item.amt.Contains("-"))
+                {
+                    sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                    sb.Append(item.amt);
+                    sb.Append(")</td>");
+                }
+                else
+                {
+                    sb.Append("<td width='75px'>$");
+                    sb.Append(item.amt);
+                    sb.Append("</td>");
+                }
+                
+                if (item.val.Contains("-"))
+                {
+                    sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                    sb.Append(item.val);
+                    sb.Append(")</td>");
+                }
+                else
+                {
+                    sb.Append("<td width='75px'>$");
+                    sb.Append(item.val);
+                    sb.Append("</td>");
+                }
+                sb.Append("</td>");
+                sb.Append("</tr>");
+
+                ttlaa += Convert.ToDecimal(item.amt);
+                ttlOU += Convert.ToDecimal(item.val);
+            }
+            sb.Append("<tr style='border-bottom: solid 20px #ffffff;'>");
+            sb.Append("<td width='250px'><h4>Total:</h4>");
+            if (ttlaa < 0)
+            {
+                sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                sb.Append(ttlaa.ToString());
+                sb.Append(")</td>");
+            }
+            else
+            {
+                sb.Append("<td width='75px'>$");
+                sb.Append(ttlaa.ToString());
+                sb.Append("</td>");
+            }
+            if (ttlOU < 0)
+            {
+                sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                sb.Append(ttlOU.ToString());
+                sb.Append(")</td>");
+            }
+            else
+            {
+                sb.Append("<td width='75px'>$");
+                sb.Append(ttlOU.ToString());
+                sb.Append("</td>");
+            }
+            sb.Append("</tr></table>");
+
+            var notification = new NotificationsController().GetByName("GSR_Audit");
+            var message = new NotificationMessage();
+            foreach (var email in notification.recipients)
+            {
+                message.ToEmails.Add(email);
+            }
+            foreach (var bcc in notification.bccemails)
+            {
+                message.Bccs.Add(bcc);
+            }
+            message.FromEmail = notification.fromemail;
+            message.Subject = notification.subject.Replace("!!date!!", date);
+            message.MessageBody = NotificationTemplates.StandardNotificationFooter(sb);
+            return message;
         }
     }
 }

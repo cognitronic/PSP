@@ -91,8 +91,11 @@ angular.module('service.notifications', [])
                 var deferred = $q.defer();
                 $rootScope.loading = true;
                 var url = '';
-                if(noteparam.name = 'Volume_Report'){
+                console.log(noteparam.name);
+                if(noteparam.name == 'Volume_Report'){
                     url = 'reports/volume/' + noteparam.date;
+                } else if(noteparam.name == 'GSR_Audit'){
+                    url = 'gsr/' + noteparam.date;
                 }
                 $http.get(APP_SETTINGS.apiUrl + url)
                     .success(function(data){

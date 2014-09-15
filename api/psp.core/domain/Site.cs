@@ -25,7 +25,7 @@ namespace psp.core.domain
         [DataMember]
         public string city { get; set; }
         [DataMember]
-        public string sitewatchid { get; set; }
+        public int sitewatchid { get; set; }
         [DataMember]
         public string washlinkip { get; set; }
         [DataMember]

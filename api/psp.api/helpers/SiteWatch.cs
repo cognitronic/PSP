@@ -57,7 +57,7 @@ namespace psp.api.helpers
                total = r["total"].ToString(),
                logdate =r["logdate"].ToString(),
                reportcategory = r["reportcategory"].ToString(),
-               locationid = r["locationid"].ToString(),
+               locationid = Convert.ToInt16(r["locationid"]),
                amt = r["amt"].ToString(),
                val = r["val"].ToString()
             })).ToList<SiteWatchSalesItem>();
@@ -99,7 +99,7 @@ namespace psp.api.helpers
                 item = r["item"].ToString(),
                 total = r["total"].ToString(),
                 logdate = r["logdate"].ToString(),
-                locationid = r["locationid"].ToString(),
+                locationid = Convert.ToInt16(r["locationid"]),
                 sitename = r["sitename"].ToString()
             })).ToList<SiteWatchSalesItem>();
 
@@ -137,7 +137,7 @@ namespace psp.api.helpers
             list = (ds.Tables[0].AsEnumerable().Select(r => new SiteWatchSalesItem
             {
                 total = r["ttlcount"].ToString(),
-                locationid = r["site"].ToString(),
+                locationid = Convert.ToInt16(r["site"]),
                 sitename = r["sitename"].ToString()
             })).ToList<SiteWatchSalesItem>();
 
@@ -176,7 +176,7 @@ namespace psp.api.helpers
             var list = new List<IAPIResponse>();
             foreach (var site in sites)
             {
-                foreach (var item in GetSiteWatchRewashData(site.sitewatchid, reportDate))
+                foreach (var item in GetSiteWatchRewashData(site.sitewatchid.ToString(), reportDate))
                 {
                     var rewash = new RewashNotificationResponse();
                     rewash.RewashCount += item.total;

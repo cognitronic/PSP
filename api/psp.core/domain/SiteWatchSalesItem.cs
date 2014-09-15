@@ -23,7 +23,7 @@ namespace psp.core.domain
         [DataMember]
         public string reportcategory { get; set; }
         [DataMember]
-        public string locationid { get; set; }
+        public int locationid { get; set; }
         [DataMember]
         public string amt { get; set; }
         [DataMember]

@@ -20,7 +20,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
     }
 
     $scope.runNotification = function(){
-        console.log($scope.currentNotification.Id + ", " + $scope.currentNotification.Id);
+        console.log($scope.currentNotification.name);
         var notificationParam = {
             name: $scope.currentNotification.name,
             date: $scope.dt.toLocaleDateString().replace('/', '-').replace('/', '-')
