@@ -531,5 +531,8 @@ namespace psp.core.domain
 
         [DataMember]
         public decimal sitewatchUnlimitedRainX_dollars { get; set; }
+
+        [DataMember]
+        public double totalToAccountForPerCar_dollars { get; set; }
     }
 }

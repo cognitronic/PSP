@@ -69,13 +69,16 @@ namespace psp.api.helpers
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 4:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
 ";
                 DataSet ds = new DataSet();
-                using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
+                try
                 {
-                    SqlDataAdapter da = new SqlDataAdapter(sQuery, site.dbconnectionstring);
-                    da.SelectCommand.CommandType = CommandType.Text;
-                    da.Fill(ds, "PrimeShine");
+                    using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
+                    {
+                        SqlDataAdapter da = new SqlDataAdapter(sQuery, site.dbconnectionstring);
+                        da.SelectCommand.CommandType = CommandType.Text;
+                        da.Fill(ds, "PrimeShine");
+                    }
                 }
-
+                catch (Exception exc) { }
                 return TotalWashes(ds);
             }
             else if (site.dbtype.Equals("sql2008"))
@@ -99,12 +102,16 @@ namespace psp.api.helpers
                         WHERE [Datetime] between '" + date.ToShortDateString() + @" 6:00:32 AM' and '" + date.ToShortDateString() + @" 9:55:32 PM'
 ";
                 DataSet ds = new DataSet();
-                using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
+                try
                 {
-                    SqlDataAdapter da = new SqlDataAdapter(sQuery, site.dbconnectionstring);
-                    da.SelectCommand.CommandType = CommandType.Text;
-                    da.Fill(ds, "PrimeShine");
+                    using (SqlConnection con = new SqlConnection(site.dbconnectionstring))
+                    {
+                        SqlDataAdapter da = new SqlDataAdapter(sQuery, site.dbconnectionstring);
+                        da.SelectCommand.CommandType = CommandType.Text;
+                        da.Fill(ds, "PrimeShine");
+                    }
                 }
+                catch (Exception) { }
                 return TotalWashes(ds);
             }
             return null;
@@ -118,48 +125,56 @@ namespace psp.api.helpers
 
         private WashLinkWashTotals TotalWashes(DataSet ds)
         {
-            var washes =
-                    from carwashes in ds.Tables[0].AsEnumerable()
-                    join tireshines in ds.Tables[1].AsEnumerable()
-                    on carwashes.Field<string>("rooter") equals
-                    tireshines.Field<string>("rooter")
-                    join rainx in ds.Tables[2].AsEnumerable()
-                    on carwashes.Field<string>("rooter") equals
-                    rainx.Field<string>("rooter")
-                    select new WashLinkWashTotals()
-                    {
-                        primeshinewash = carwashes.Field<int>("PrimeShineWash"),
-                        protexwash = carwashes.Field<int>("ProtexWash"),
-                        premierwash = carwashes.Field<int>("PremierWash"),
-                        tireshine = tireshines.Field<int>("TireShine"),
-                        rainx = rainx.Field<int>("RainX")
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                var washes =
+                        from carwashes in ds.Tables[0].AsEnumerable()
+                        join tireshines in ds.Tables[1].AsEnumerable()
+                        on carwashes.Field<string>("rooter") equals
+                        tireshines.Field<string>("rooter")
+                        join rainx in ds.Tables[2].AsEnumerable()
+                        on carwashes.Field<string>("rooter") equals
+                        rainx.Field<string>("rooter")
+                        select new WashLinkWashTotals()
+                        {
+                            primeshinewash = carwashes.Field<int>("PrimeShineWash"),
+                            protexwash = carwashes.Field<int>("ProtexWash"),
+                            premierwash = carwashes.Field<int>("PremierWash"),
+                            tireshine = tireshines.Field<int>("TireShine"),
+                            rainx = rainx.Field<int>("RainX")
 
-                    };
+                        };
 
-            return washes.First<WashLinkWashTotals>();
+                return washes.First<WashLinkWashTotals>();
+            }
+            return null;
         }
 
         private WashLinkWashTotals TotalWashesMySQL(DataSet ds)
         {
-            var washes =
-                    from carwashes in ds.Tables[0].AsEnumerable()
-                    join tireshines in ds.Tables[1].AsEnumerable()
-                    on carwashes.Field<string>("rooter") equals
-                    tireshines.Field<string>("rooter")
-                    join rainx in ds.Tables[2].AsEnumerable()
-                    on carwashes.Field<string>("rooter") equals
-                    rainx.Field<string>("rooter")
-                    select new WashLinkWashTotals()
-                    {
-                        primeshinewash = (int)carwashes.Field<double>("PrimeShineWash"),
-                        protexwash = (int)carwashes.Field<double>("ProtexWash"),
-                        premierwash = (int)carwashes.Field<double>("PremierWash"),
-                        tireshine = (int)tireshines.Field<double>("TireShine"),
-                        rainx = (int)rainx.Field<double>("RainX")
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                var washes =
+                        from carwashes in ds.Tables[0].AsEnumerable()
+                        join tireshines in ds.Tables[1].AsEnumerable()
+                        on carwashes.Field<string>("rooter") equals
+                        tireshines.Field<string>("rooter")
+                        join rainx in ds.Tables[2].AsEnumerable()
+                        on carwashes.Field<string>("rooter") equals
+                        rainx.Field<string>("rooter")
+                        select new WashLinkWashTotals()
+                        {
+                            primeshinewash = (int)carwashes.Field<double>("PrimeShineWash"),
+                            protexwash = (int)carwashes.Field<double>("ProtexWash"),
+                            premierwash = (int)carwashes.Field<double>("PremierWash"),
+                            tireshine = (int)tireshines.Field<double>("TireShine"),
+                            rainx = (int)rainx.Field<double>("RainX")
 
-                    };
+                        };
 
-            return washes.First<WashLinkWashTotals>();
+                return washes.First<WashLinkWashTotals>();
+            }
+            return null;
         }
     }
 }

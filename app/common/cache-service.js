@@ -9,7 +9,8 @@
         var _cacheItems = {
             UserInfo: {
                 userData: 'userData',
-                userId: 'userId'
+                userId: 'userId',
+                currentUser: 'currentUser'
             },
             Reports: {
                 selectedGsr: 'selectedGsr',

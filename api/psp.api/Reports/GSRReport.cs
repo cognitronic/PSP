@@ -427,6 +427,7 @@ namespace psp.api.Reports
                 gsr.siteWatchReapplyTireGloss_dollars;
 
             gsr.tireGloss_diff = (gsr.siteWatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
+            gsr.totalTireGloss_diff = (gsr.siteWatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
 
             // Rain-X
             gsr.sitewatchTotalRainX_count = gsr.siteWatchRainX_count +
@@ -469,15 +470,6 @@ namespace psp.api.Reports
                 gsr.sitewatchReapplyFleetPlusPlus_dollars +
                 gsr.sitewatchUnlimitedPlusPlus_dollars;
             gsr.totalPlusPlus_diff = (gsr.sitewatchTotalPlusPlus_count - gsr.washLinkTotalPlusPlus_count) * (int)GSRMultiplier.PLUS_THREE;
-            //CHANGED - 6/10/2010.  Added the unlimited wTG  
-            //SW Tire Gloss
-            
-            
-            //gsr.washLinkTotalTireGloss_dollars = gsr.washLinkTireGloss_dollars + 
-            //    gsr.siteWatchFleetTireGloss_dollars +
-            //    gsr.siteWatchReapplyTireGloss_dollars +
-            //    gsr.siteWatchUnlimitedTireGloss_dollars;
-            gsr.totalTireGloss_diff = (gsr.siteWatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
 
             gsr.siteWatchTotalWashes_count = gsr.siteWatchTotalPrimeShine_count + 
                 gsr.siteWatchTotalProtex_count + 
@@ -650,6 +642,14 @@ namespace psp.api.Reports
                 gsr.pumpCodeWash +
                 gsr.prePaids -
                 ((gsr.couponsAndDiscounts * (int)GSRMultiplier.NEGATIVE_ONE) - gsr.totalPaidoutRefunds);
+            if (gsr.washLinkTotalWashes_count > 0)
+            {
+                gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.totalToAccountFor / gsr.washLinkTotalWashes_count));
+            }
+            else
+            {
+                gsr.totalToAccountForPerCar_dollars = 0;
+            }
 
             // Total Over
             gsr.totalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.totalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;

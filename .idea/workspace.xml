@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
@@ -37,9 +35,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/NotificationsController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/NotificationsController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/WashLink.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/WashLink.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Web.config" afterPath="$PROJECT_DIR$/api/psp.api/Web.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/_nav.html" afterPath="$PROJECT_DIR$/app/common/layout/_nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/auth-service.js" afterPath="$PROJECT_DIR$/app/common/security/auth-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/cache-service.js" afterPath="$PROJECT_DIR$/app/common/cache-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/nav-controller.js" afterPath="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notification-controller.js" afterPath="$PROJECT_DIR$/app/settings/notification-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notifications-service.js" afterPath="$PROJECT_DIR$/app/settings/notifications-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notifications.html" afterPath="$PROJECT_DIR$/app/settings/notifications.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" afterPath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/psp.core.csproj" afterPath="$PROJECT_DIR$/api/psp.core/psp.core.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -66,25 +74,45 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="2710" max-vertical-offset="3820">
+            <state line="22" column="101" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="3820">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal-add-new-user.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/modal-add-new-user.html">
+      <file leaf-file-name="cache-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/cache-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="34" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.586207" vertical-offset="120" max-vertical-offset="1640">
+            <state line="9" column="20" selection-start="138" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1080">
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="59" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="640">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading-directive.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/layout/loading-directive.js">
+      <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="53.0" vertical-offset="1537" max-vertical-offset="2380">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification-controller.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.71100914" vertical-offset="0" max-vertical-offset="2620">
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -92,46 +120,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
+      <file leaf-file-name="notifications-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="13" selection-start="2204" selection-end="2402" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1480">
+            <state line="96" column="51" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="2280">
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datepicker-directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/layout/datepicker-directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="399" column="16" selection-start="18503" selection-end="18503" vertical-scroll-proportion="0.0" vertical-offset="7730" max-vertical-offset="8440">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <marker date="1399523966899" expanded="false" signature="18148:18159" placeholder="..." />
-                <marker date="1399523966899" expanded="false" signature="18912:18932" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gsr.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gsr.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="1.1902497" vertical-offset="22939" max-vertical-offset="29300">
+            <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="-0.0" vertical-offset="23920" max-vertical-offset="29300">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui-bootstrap-tpls-0.10.0.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="0" selection-end="155677" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="68020">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -139,30 +143,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-4.827586" vertical-offset="480" max-vertical-offset="2240">
+            <state line="31" column="18" selection-start="1576" selection-end="1576" vertical-scroll-proportion="24.137932" vertical-offset="1320" max-vertical-offset="2260">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/dashboard/main-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="145" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/dashboard/dashboard-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -185,15 +167,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/app/common/layout/_nav.html" />
-        <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/notifications-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/sites-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/users-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
-        <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/site-controller.js" />
         <option value="$PROJECT_DIR$/app/settings/user-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
@@ -201,6 +176,13 @@
         <option value="$PROJECT_DIR$/app/common/security/login.html" />
         <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/reports/gsr.html" />
+        <option value="$PROJECT_DIR$/app/common/cache-service.js" />
+        <option value="$PROJECT_DIR$/app/common/security/auth-service.js" />
+        <option value="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
+        <option value="$PROJECT_DIR$/app/common/layout/_nav.html" />
+        <option value="$PROJECT_DIR$/app/settings/notifications.html" />
+        <option value="$PROJECT_DIR$/app/settings/notifications-service.js" />
+        <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
       </list>
     </option>
   </component>
@@ -362,13 +344,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="278" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="307" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="301" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="301" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PharmacistCentral" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="309" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="975" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="983" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="975" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="301" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="300" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -401,14 +383,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -417,6 +391,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -512,21 +494,24 @@
       <created>1409626091129</created>
       <updated>1409626091129</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added plus+ and rainx packages to gsr">
+      <created>1410642576896</created>
+      <updated>1410642576896</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1547492" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1547492" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -537,6 +522,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -550,17 +536,18 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15104167" sideWeight="0.6707153" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1547492" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -584,7 +571,8 @@
     <MESSAGE value="added line items for Rain-X and Plus+" />
     <MESSAGE value="fixed refresh bug in gsr reload" />
     <MESSAGE value="added packages to gsr and refactored rest api accordingly" />
-    <option name="LAST_COMMIT_MESSAGE" value="added packages to gsr and refactored rest api accordingly" />
+    <MESSAGE value="added plus+ and rainx packages to gsr" />
+    <option name="LAST_COMMIT_MESSAGE" value="added plus+ and rainx packages to gsr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,120 +592,9 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/sites-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5246" column="21" selection-start="88101" selection-end="88101" vertical-scroll-proportion="-16.84" vertical-offset="104499" max-vertical-offset="142500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4425" column="21" selection-start="88651" selection-end="88651" vertical-scroll-proportion="0.44367817" vertical-offset="88194" max-vertical-offset="117440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/sites-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1640">
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/datepicker-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="8" selection-start="50" selection-end="6254" vertical-scroll-proportion="0.0" vertical-offset="1783" max-vertical-offset="2640">
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/widget-position-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="90" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="1460">
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/datepicker-directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="16" selection-start="18503" selection-end="18503" vertical-scroll-proportion="0.0" vertical-offset="7730" max-vertical-offset="8600">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1399523966899" expanded="false" signature="18148:18159" placeholder="..." />
-            <marker date="1399523966899" expanded="false" signature="18912:18932" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="0" selection-end="155677" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="68640">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/modal-add-new-user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.586207" vertical-offset="120" max-vertical-offset="1640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/loading-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-4.827586" vertical-offset="480" max-vertical-offset="2240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/dashboard-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="2204" selection-end="2402" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1480">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="2710" max-vertical-offset="3820">
           <folding />
         </state>
       </provider>
@@ -725,16 +602,119 @@
     <entry file="file://$PROJECT_DIR$/app/dashboard/main-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="5" selection-start="145" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="18" selection-start="1576" selection-end="1576" vertical-scroll-proportion="24.137932" vertical-offset="1320" max-vertical-offset="2260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="101" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/accesslevel-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/requestVerificationToken.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/routingAccessConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2260">
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="44" selection-start="1548" selection-end="1587" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/layout/_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="44" selection-start="2735" selection-end="2735" vertical-scroll-proportion="-17.344828" vertical-offset="517" max-vertical-offset="1420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/layout/nav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="83" selection-start="733" selection-end="733" vertical-scroll-proportion="0.5275229" vertical-offset="0" max-vertical-offset="900">
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="1.1902497" vertical-offset="22939" max-vertical-offset="29300">
+        <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="-0.0" vertical-offset="23920" max-vertical-offset="29300">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/cache-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="138" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1080">
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="59" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="51" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="2280">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="53.0" vertical-offset="1537" max-vertical-offset="2380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.71100914" vertical-offset="0" max-vertical-offset="2620">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

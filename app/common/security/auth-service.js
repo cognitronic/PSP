@@ -5,7 +5,7 @@
 'use strict'
 
 angular.module('service.auth', [])
-.factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS){
+.factory('AuthService', function($http, $rootScope, $location, APP_SETTINGS, CacheService){
         var accessLevels = routingAccessConfig.accessLevels
             , userRoles = routingAccessConfig.userRoles
             , authMsg;
@@ -20,11 +20,11 @@ angular.module('service.auth', [])
                         //_currentuser = data;
                         if(data === "null"){
                             console.log('Invalid email or password');
-                            sessionStorage.removeItem('psp.currentUser');
+                            CacheService.removeItem(CacheService.Items.UserInfo.currentUser);
                             return authMsg = 'Invalid email or password';
                         } else {
-                            sessionStorage.setItem('psp.currentUser', JSON.stringify(data));
-                            if(sessionStorage.getItem('psp.currentUser') !== null){
+                            CacheService.setItem(CacheService.Items.UserInfo.currentUser, data);
+                            if(CacheService.getItem(CacheService.Items.UserInfo.currentUser) !== null){
                                 $rootScope.$broadcast('userLoggedIn', {user: data});
                                 $location.path('/reports/gsr');
                             }
@@ -32,7 +32,7 @@ angular.module('service.auth', [])
                     });
             },
             isAuthenticated: function(){
-                return sessionStorage.getItem('psp.currentUser');
+                return CacheService.getItem(CacheService.Items.UserInfo.currentUser);
             },
             authorize: function(accessLevel, role) {
                 if(role === undefined) {
@@ -52,7 +52,7 @@ angular.module('service.auth', [])
                 return true;//test against session
             },
             logout: function(){
-               sessionStorage.removeItem('psp.currentUser');
+                CacheService.removeItem(CacheService.Items.UserInfo.currentUser);
                 $rootScope.$broadcast('userLoggedOut', {user: null});
                 $location.path('/login');
             },
@@ -60,8 +60,8 @@ angular.module('service.auth', [])
                 return authMsg;
             },
             currentUser: function(){
-                if(sessionStorage.getItem('psp.currentUser') !== null){
-                    return (JSON.parse(sessionStorage.getItem('psp.currentUser')));
+                if(CacheService.getItem(CacheService.Items.UserInfo.currentUser) !== null){
+                    return CacheService.getItem(CacheService.Items.UserInfo.currentUser);
                 }
                 return {};
             }

@@ -90,7 +90,11 @@ angular.module('service.notifications', [])
             runNotification: function(noteparam){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.post(APP_SETTINGS.apiUrl + 'Notifications/RunNotification', noteparam)
+                var url = '';
+                if(noteparam.name = 'Volume_Report'){
+                    url = 'reports/volume/' + noteparam.date;
+                }
+                $http.get(APP_SETTINGS.apiUrl + url)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);

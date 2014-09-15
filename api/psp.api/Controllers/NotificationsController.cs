@@ -6,13 +6,13 @@ using System.Net.Http;
 using System.Web.Http;
 using psp.core.domain;
 using psp.repository.mongo.Repositories;
+using psp.api.Reports;
 using MongoDB.Bson;
 using psp.api.helpers;
-using System.Web.Mvc;
-using IdeaSeed.Core.Mail;
 
 namespace psp.api.Controllers
 {
+    [RoutePrefix("api/notifications")]
     public class NotificationsController : ApiController
     {
         private readonly NotificationRepository _repository;
@@ -23,6 +23,7 @@ namespace psp.api.Controllers
         }
 
         // GET api/notifications
+        [Route("")]
         public IList<Notification> Get()
         {
 
@@ -31,12 +32,20 @@ namespace psp.api.Controllers
         }
 
         // GET api/notifications/5
-        public Notification Get(string id)
+        //[Route("{id}")]
+        //public Notification Get(string id)
+        //{
+        //    return _repository.GetById(new ObjectId(id));
+        //}
+
+        [Route("{name}")]
+        public Notification GetByName(string name)
         {
-            return _repository.GetById(new ObjectId(id));
+            return _repository.GetByName(name);
         }
 
         // POST api/notifications
+        [Route("")]
         public Notification Post([FromBody]Notification site)
         {
             return _repository.Save(site);

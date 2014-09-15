@@ -16,7 +16,7 @@
                 <td>{{ note.lastran |  date:'MM/dd/yyyy @ h:mma' }}</td>
                 <td><a href="#/notifications" tooltip-placement="right" tooltip-html-unsafe="{{ note.recipients.join('\n') }}">{{ note.recipients.length }}</a></td>
                 <td style="text-align: right;">
-                    <a ng-click="editNotification(note.Id)" class="btn"  data-toggle="modal">
+                    <a ng-click="editNotification(note.name)" class="btn"  data-toggle="modal">
                         <i class="glyphicon glyphicon-pencil"></i>   Edit
                     </a>
                 </td>

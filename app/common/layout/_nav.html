@@ -49,11 +49,14 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav pull-right">
-                <li>
-                    <a ng-show="!isAuthenticated" href="#login">Sign In</a>
+                <li ng-show="isAuthenticated">
+                    <a href="#">{{ getLoggedOnUser() }}</a>
                 </li>
                 <li>
-                    <a ng-show="isAuthenticated" ng-click="logout()">Sign Out</a>
+                    <a ng-show="!isAuthenticated" ui-sref="root.login"><i class="glyphicon glyphicon-log-in"></i></a>
+                </li>
+                <li>
+                    <a ng-show="isAuthenticated" title="Log Out" ng-click="logout()"><i class="glyphicon glyphicon-log-out"></i></a>
                 </li>
             </ul>
         </div>

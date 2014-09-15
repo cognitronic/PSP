@@ -14,7 +14,7 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
         $scope.currentNotification.recipients = $scope.recipients;
         NotificationService.saveNotification($scope.currentNotification)
             .then(function(data){
-                $location.path('/settings/notifications/' + data.Id);
+                $location.path('/settings/notifications/' + data.name);
                 $scope.isHidden = !$scope.isHidden;
             });
     }
@@ -22,8 +22,8 @@ app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeP
     $scope.runNotification = function(){
         console.log($scope.currentNotification.Id + ", " + $scope.currentNotification.Id);
         var notificationParam = {
-            notificationId: $scope.currentNotification.Id,
-            reportDate: $scope.dt.toLocaleDateString()
+            name: $scope.currentNotification.name,
+            date: $scope.dt.toLocaleDateString().replace('/', '-').replace('/', '-')
         };
         NotificationService.runNotification(notificationParam)
             .then(function(data){

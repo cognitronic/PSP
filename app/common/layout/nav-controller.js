@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 3/23/14.
  */
 
-app.controller('NavCtrl', function($scope, $rootScope, AuthService, $location){
+app.controller('NavCtrl', function($scope, $rootScope, AuthService, $location, CacheService){
 
     $scope.isAuthenticated = AuthService.isAuthenticated();
 
@@ -18,6 +18,13 @@ app.controller('NavCtrl', function($scope, $rootScope, AuthService, $location){
     $scope.logout = function(){
         AuthService.logout();
     }
+
+    $scope.getLoggedOnUser = function(){
+        if(CacheService.getItem(CacheService.Items.UserInfo.currentUser)){
+            var user = CacheService.getItem(CacheService.Items.UserInfo.currentUser);
+            return user.first + ' ' + user.last;
+        }
+    };
 
     //sets active nav link css, or parent nav link css if has subnav
     $scope.isActive = function(routes) {
