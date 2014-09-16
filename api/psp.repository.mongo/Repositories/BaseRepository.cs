@@ -12,7 +12,7 @@ using psp.repository.mongo.Cache;
 
 namespace psp.repository.mongo.Repositories
 {
-    public class BaseRepository
+    public class BaseRepository<T>
     {
         protected String _connectionString;
         protected MongoClient _client;
@@ -37,7 +37,7 @@ namespace psp.repository.mongo.Repositories
             _client = new MongoClient(_connectionString);
             _server = _client.GetServer();
             _database = _server.GetDatabase(ConfigurationManager.AppSettings["mongoDatabase"]);
-            _collection = _database.GetCollection(collection);
+            _collection = _database.GetCollection<T>(collection);
         }
     }
 }

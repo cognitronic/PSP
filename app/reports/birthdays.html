@@ -10,13 +10,13 @@
                     <div>
                         <b class="messagecontainer">Last Name:</b>
                         <p>
-                            <input class="form-control" type="text" ng-model="criteria_lastname"/>
+                            <input class="form-control" type="text" ng-model="birthdaysModel.lastName"/>
                         </p>
                     </div>
                     <div>
                         <b class="messagecontainer">Email:</b>
                         <p>
-                            <input class="form-control" type="text" ng-model="criteria_email"/>
+                            <input class="form-control" type="text" ng-model="birthdaysModel.email"/>
                         </p>
                     </div>
                 </div>
@@ -24,13 +24,18 @@
                     <div>
                         <b class="messagecontainer">Birthdate:</b>
                         <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="dtBirthdate" is-open="birthdateOpened" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                            <input type="text" class="form-control" datepicker-popup="{{ 'MM/dd' }}" ng-model="birthdaysModel.birthDate" is-open="birthdaysModel.birthdateOpened"   ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn " id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnBirthdate" ng-click="birthdaysModel.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="pull-right">
+                <button class="btn " id="run" ng-click="birthdaysModel.loadBirthdays()">
+                    <i class="glyphicon glyphicon-play"></i> Get Birthdays
+                </button>&nbsp;
             </div>
         </div>
     </div>
@@ -42,15 +47,16 @@
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Address</th>
+                    <th>Birthday</th>
                     <th style="text-align: right;">Actions</th>
                 </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="client in clients |
-            startFrom: pagination.page * pagination.perPage |
-            limitTo: pagination.perPage |
+            <tr ng-repeat="client in birthdaysModel.clients |
+            startFrom: birthdaysModel.pagination.page * birthdaysModel.pagination.perPage |
+            limitTo: birthdaysModel.pagination.perPage |
             convertToISODate  |
-            filter:{lastname: criteria_lastname, email : criteria_email, birthdate : convertDateToBirthdate()}">
+            filter:{lastname: birthdaysModel.lastname, email : birthdaysModel.email, birthdate : birthdaysModel.convertDateToBirthdate()}">
                 <td>{{ client.firstname }}</td>
                 <td>{{ client.lastname }}</td>
                 <td>{{ client.email }}</td>
@@ -58,17 +64,20 @@
                     {{ client.address }} <br />
                     {{ client.city }}, {{ client.state }} {{ client.zip }}
                 </td>
+                <td>
+                    {{ client.birthdate }}
+                </td>
                 <td style="text-align: right;">
-                    <span ng-show="!client.birthdaycouponsent"><a ng-click="sendCoupon(client)" class="btn " > Send Coupon</a></span>
-                    <span><a ng-click="deleteClient(client)" class="btn "> Delete</a></span>
+                    <span ng-show="!client.birthdaycouponsent"><a ng-click="birthdaysModel.sendCoupon(client)" class="btn " > Send Coupon</a></span>
+                    <span><a ng-click="birthdaysModel.deleteClient(client)" class="btn "> Delete</a></span>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn " ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
-    <span ng-repeat="n in [] | range: pagination.numPages" >
-        <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
+    <button class="btn " ng-hide="birthdaysModel.pagination.page == 0" ng-click="birthdaysModel.pagination.prevPage()">Previous</button>
+    <span ng-repeat="n in [] | range: birthdaysModel.pagination.numPages" >
+        <button class="btn btn-default" ng-class="{active: n == birthdaysModel.pagination.page}" ng-click="birthdaysModel.pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn" ng-hide="birthdaysModel.pagination.page + 1 >= birthdaysModel.pagination.numPages" ng-click="birthdaysModel.pagination.nextPage()">Next</button>
 </div>

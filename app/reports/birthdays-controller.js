@@ -4,24 +4,34 @@
 'use strict'
 
 app.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
-    $scope.pagination = Paginator.getNew(25);
-    $scope.criteria_lastname = "";
-    $scope.criteria_email = "";
-    $scope.dtBirthdate = new Date();
-    $scope.dtBirthdate.setDate($scope.dtBirthdate.getDate() + 1);
+    var _pagination = Paginator.getNew(25);
+    var _lastName = "";
+    var _email = "";
+    var _birthDate = new Date();
+    var _birthdateOpened = false;
+    var _clients = [];
 
-    ReportsService.getClients().then(function(data){
-        $scope.clients = data;
-        $scope.pagination.numPages = Math.ceil($scope.clients.length/$scope.pagination.perPage);
-        console.log((new Date()).getDay());
-    });
 
-    $scope.convertDateToBirthdate = function(){
-        if(!isNaN($scope.dtBirthdate))
-            return (new Date($scope.dtBirthdate).getMonth() + 1) + '/' + (new Date($scope.dtBirthdate).getDate());
+    var _loadBirthdays = function(){
+        var params = {
+            lastname: $scope.birthdaysModel.lastName,
+            email: $scope.birthdaysModel.email,
+            birthdate: $scope.birthdaysModel.convertDateToBirthdate()
+        };
+        ReportsService.getBirthdays(params).then(function(data){
+            $scope.birthdaysModel.clients = data;
+            console.log($scope.birthdaysModel.clients);
+            $scope.birthdaysModel.pagination.numPages = Math.ceil($scope.birthdaysModel.clients.length/$scope.birthdaysModel.pagination.perPage);
+            console.log((new Date()).getDay());
+        });
+    };
+
+    var _convertDateToBirthdate = function(){
+        if(!isNaN($scope.birthdaysModel.birthDate))
+            return (new Date($scope.birthdaysModel.birthDate).getMonth() + 1) + '/' + (new Date($scope.birthdaysModel.birthDate).getDate());
     }
 
-    $scope.deleteClient = function(client){
+    var _deleteClient = function(client){
         var deleteItem = confirm('Are you sure you want to delete record?');
         if(deleteItem){
             client.sid = client.Id.toString();
@@ -34,56 +44,49 @@ app.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParam
         }
     }
 
-    $scope.sendCoupon = function(client){
+    var _sendCoupon = function(client){
 
     }
 
-    $scope.toggleMax = function() {
-        $scope.maxDate = ( $scope.maxDate ) ? null : new Date();
-    };
-    $scope.toggleMax();
-
-
-
-    $scope.today = function() {
+    var _today = function() {
         $scope.dt = new Date();
     };
 
-    $scope.today();
+    _today();
 
-    $scope.showWeeks = true;
-    $scope.toggleWeeks = function () {
-        $scope.showWeeks = ! $scope.showWeeks;
-    };
-
-    $scope.clear = function () {
-        $scope.dt = null;
-    };
-
-    // Disable weekend selection
-    $scope.disabled = function(date, mode) {
-        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-    };
-
-    $scope.toggleMin = function() {
-        $scope.minDate = ( $scope.minDate ) ? null : new Date();
-    };
-    $scope.toggleMin();
-
-    $scope.open = function($event) {
+    var _open = function($event) {
         $event.preventDefault();
         $event.stopPropagation();
-        $scope.birthdateOpened = true;
+        $scope.birthdaysModel.birthdateOpened = true;
     };
 
-
-    $scope.dateOptions = {
+    var _dateOptions = {
         'year-format': "'yyyy'",
         'starting-day': 1
     };
 
-    $scope.formats = ['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
-    $scope.format = $scope.formats[1];
-    $scope.birthdateFormat = $scope.formats[2];
+    var _formats = ['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
+    var _format = _formats[1];
+    var _birthdateFormat = _formats[2];
 
+    var _init = function(){
+        $scope.birthdaysModel.birthDate.setDate($scope.birthdaysModel.birthDate.getDate() + 1);
+        $scope.birthdaysModel.loadBirthdays();
+    };
+
+    $scope.birthdaysModel = {
+        init: _init,
+        pagination: Paginator.getNew(25),
+        lastName: _lastName,
+        email: _email,
+        birthDate: _birthDate,
+        loadBirthdays: _loadBirthdays,
+        convertDateToBirthdate: _convertDateToBirthdate,
+        deleteClient: _deleteClient,
+        sendCoupon: _sendCoupon,
+        open: _open,
+        birthdateOpened: _birthdateOpened,
+        clients: _clients
+    };
+    $scope.birthdaysModel.init();
 });

@@ -12,7 +12,7 @@ using psp.repository.mongo.Cache;
 
 namespace psp.repository.mongo.Repositories
 {
-    public class GSRRepository : BaseRepository
+    public class GSRRepository : BaseRepository<GSR>
     {
         public GSRRepository()
             : base(ResourceStrings.Mongo_GSR_Collection)

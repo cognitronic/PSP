@@ -43,6 +43,14 @@ namespace psp.api.Controllers
             return gsr;
         }
 
+        [Route("{reportDate}")]
+        public string Get(string reportDate)
+        {
+            var notification = new GSRReport().BuildNotifications(new GSRReport().BuildNotificationData(reportDate), reportDate);
+            new SendMailController().Post(notification);
+            return notification.Subject;
+        }
+
         // POST api/gsr
         public void Post([FromBody]string value)
         {

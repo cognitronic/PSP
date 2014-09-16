@@ -25,7 +25,7 @@ namespace psp.api.Controllers
         [Route("")]
         public IList<Client> Get()
         {
-            var test = new DataImport().ImportClientsIntoMongoFromSqlServer();
+            //var test = new DataImport().ImportClientsIntoMongoFromSqlServer();
             var clients = _repository.GetAll().OrderByDescending(o => o.dateregistered).ToList<Client>();
             return clients;
         }
@@ -42,10 +42,17 @@ namespace psp.api.Controllers
             return _repository.Save(client);
         }
 
+        [Route("birthdays")]
+        public IList<Client> Post([FromBody]ClientSearchParams parms)
+        {
+            return _repository.GetForBirthdays(parms);
+        }
+
         // PUT api/clients/5
         public void Put(int id, [FromBody]string value)
         {
         }
+
 
         // DELETE api/clients/5
         public Client Delete([FromBody]Client client)

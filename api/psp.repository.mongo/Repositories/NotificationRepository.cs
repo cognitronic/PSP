@@ -12,7 +12,7 @@ using psp.repository.mongo.Cache;
 
 namespace psp.repository.mongo.Repositories
 {
-    public class NotificationRepository : BaseRepository
+    public class NotificationRepository : BaseRepository<Notification>
     {
         public NotificationRepository()
             : base(ResourceStrings.Mongo_Notification_Collection)

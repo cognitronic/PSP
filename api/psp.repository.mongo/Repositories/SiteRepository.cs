@@ -12,7 +12,7 @@ using psp.repository.mongo.Cache;
 
 namespace psp.repository.mongo.Repositories
 {
-    public class SiteRepository : BaseRepository
+    public class SiteRepository : BaseRepository<Site>
     {
         public SiteRepository()
             : base(ResourceStrings.Mongo_Site_Collection)
