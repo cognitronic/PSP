@@ -3,7 +3,7 @@
  */
 'use strict'
 
-app.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService, Paginator, $timeout){
+ramAngularApp.module.controller('settings.UsersCtrl', function($scope, $rootScope, $location, AuthService, UserService, Paginator, $timeout){
 
     $scope.pagination = Paginator.getNew(5);
 

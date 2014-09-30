@@ -44,12 +44,12 @@ namespace psp.api.Reports
                 gsr.washLinkTotalTireGloss_dollars = gsr.washLinkTotalTireGloss_count * (int)GSRMultiplier.PLUS_TWO;
 
                 //Plus+
-                //gsr.washLinkTotalPlusPlus_count = wlData.plusplus > 0 ? wlData.pluplus : 0;
-                //gsr.washLinkTotalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
+                gsr.washLinkTotalPlusPlus_count = wlData.plusplus > 0 ? wlData.plusplus : 0;
+                gsr.washLinkTotalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
 
                 // RainX
                 gsr.washLinkTotalRainX_count = wlData.rainx > 0 ? wlData.rainx : 0;
-                gsr.washLinkTotalRainX_dollars = gsr.washLinkTotalRainX_count * (int)GSRMultiplier.PLUS_THREE;
+                gsr.washLinkTotalRainX_dollars = gsr.washLinkTotalRainX_count * (int)GSRMultiplier.PLUS_TWO;
 
 
 
@@ -212,7 +212,7 @@ namespace psp.api.Reports
                             break;
                         case "49501690": // RainX
                             gsr.siteWatchRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
-                            gsr.siteWatchRainX_dollars += int.Parse(item.total);
+                            gsr.siteWatchRainX_count += int.Parse(item.total);
                             break;
                         case "49501693": // Reapply RainX
                             gsr.siteWatchReapplyRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
@@ -391,6 +391,7 @@ namespace psp.api.Reports
             //SW Prime Shine Total
             gsr.siteWatchTotalPrimeShine_count = (gsr.siteWatchPrimeShine_count +
                 gsr.siteWatchFleetPsx_count +
+                gsr.siteWatchPsx_count +
                 gsr.siteWatchPrimeShineRewash_count +
                 gsr.siteWatchUnlimitedPsx_count +
                 gsr.siteWatchUnlimitedPsxWithTireGloss_count +
@@ -418,8 +419,15 @@ namespace psp.api.Reports
                 gsr.siteWatchUnlimitedTireGloss_count +
                 gsr.siteWatchEnhancePsxWithTireGlossToProtex_count +
                 gsr.siteWatchEnhancePsxWithTireGlossToPremier_count +
+                gsr.siteWatchEnhanceProtexWithTireGlossToPremier_count +
                 gsr.siteWatchUnlimitedPremierWithTireGloss_count +
                 gsr.siteWatchUnlimitedProtexWithTireGloss_count +
+                gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count +
+                gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count +
+                gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count +
+                gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count +
+                gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count +
+                gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count +
                 gsr.siteWatchUnlimitedPsxWithTireGloss_count;
 
             gsr.totalTireGloss_dollars = gsr.washLinkTotalTireGloss_dollars +
@@ -479,11 +487,15 @@ namespace psp.api.Reports
             gsr.totalWashes_diff = gsr.totalTireGloss_diff + 
                 gsr.totalPrimeShine_diff + 
                 gsr.totalProtex_diff + 
+                gsr.totalPlusPlus_diff +
+                gsr.totalRainX_diff +
                 gsr.totalPremier_diff;
 
             gsr.totalWashes_dollars = gsr.totalPrimeShine_dollars +
                 gsr.totalProtex_dollars +
                 gsr.totalPremier_dollars +
+                gsr.totalRainX_dollars +
+                gsr.totalPlusPlus_dollars +
                 gsr.totalTireGloss_dollars;
             #endregion
 

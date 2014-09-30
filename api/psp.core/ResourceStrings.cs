@@ -24,6 +24,9 @@ namespace psp.core
         public static string Mongo_Notification_Collection = "notifications";
         public static string Mongo_Client_Collection = "client";
         public static string Mongo_GSR_Collection = "gsr";
+        public static string Mongo_Coupon_Collection = "coupon";
+        public static string Mongo_CouponCode_Collection = "coupon_code";
+        public static string Mongo_Audit_Collection = "audit";
         #endregion
     }
 }

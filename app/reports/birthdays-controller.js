@@ -3,7 +3,7 @@
  */
 'use strict'
 
-app.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
+ramAngularApp.module.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
     var _pagination = Paginator.getNew(25);
     var _lastName = "";
     var _email = "";
@@ -45,7 +45,14 @@ app.controller('reports.BirthdaysCtrl', function($scope, $rootScope, $routeParam
     }
 
     var _sendCoupon = function(client){
-
+        var params = {
+            coupon: 'birthday',
+            clientId: client.Id,
+            email: client.email
+        };
+        ReportsService.sendCoupon(params).then(function(data){
+           client.birthdaycouponsent = true;
+        });
     }
 
     var _today = function() {

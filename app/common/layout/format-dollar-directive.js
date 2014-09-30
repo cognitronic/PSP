@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 5/22/14.
  */
 
-app.directive('psFormatMoney', function($filter){
+ramAngularApp.module.directive('psFormatMoney', function($filter){
 
     function link(scope, element, attr){
         scope.$watch('dollarAmt', function(newValue, oldValue){

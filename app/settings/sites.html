@@ -1,7 +1,7 @@
 <div class="container view-container">
     <div class="row-fluid">
         <div class="pull-right">
-            <button class="btn " type="button" ng-click="AddSite()">
+            <button class="btn " ram-add-site ram-post-submit-action="modal.loadSites()">
                 <i class="glyphicon glyphicon-plus"></i> Add Sites
             </button>
         </div>
@@ -17,26 +17,26 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="site in sites | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+            <tr ng-repeat="site in model.sites | startFrom: model.pagination.page * model.pagination.perPage | limitTo: model.pagination.perPage">
                 <td>{{ site.location }}</td>
                 <td>{{ site.description }}</td>
                 <td>{{ site.washlinkip }}</td>
                 <td>{{ site.dbtype }}</td>
                 <td style="text-align: right;">
-                    <a ng-href="#/sites/{{ site.Id}}" class="btn">
+                    <button class="btn "  ram-add-site ram-editable="{{ site }}" ram-post-submit-action="model.loadSites()" >
                         <i class="glyphicon glyphicon-pencil"></i> Edit
-                    </a>
-                    <a ng-click="deleteSite(site)" class="btn">
+                    </button>
+                    <button ng-click="model.deleteSite(site)" class="btn">
                         <i class="glyphicon glyphicon-remove"></i> Delete
-                    </a>
+                    </button>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
-    <span ng-repeat="n in [] | range: pagination.numPages" >
-        <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
+    <button class="btn" ng-hide="model.pagination.page == 0" ng-click="model.pagination.prevPage()">Previous</button>
+    <span ng-repeat="n in [] | range: model.pagination.numPages" >
+        <button class="btn btn-default" ng-class="{active: n == model.pagination.page}" ng-click="model.pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn" ng-hide="model.pagination.page + 1 >= model.pagination.numPages" ng-click="model.pagination.nextPage()">Next</button>
 </div>

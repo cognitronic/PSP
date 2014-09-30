@@ -37,6 +37,7 @@ namespace psp.api.Controllers
         }
 
         // POST api/clients
+        [Route("")]
         public Client Post([FromBody]Client client)
         {
             return _repository.Save(client);
@@ -55,9 +56,10 @@ namespace psp.api.Controllers
 
 
         // DELETE api/clients/5
-        public Client Delete([FromBody]Client client)
+        [Route("{id}")]
+        public void Delete(string id)
         {
-            return _repository.Delete(client);
+             _repository.Delete(id);
         }
     }
 }

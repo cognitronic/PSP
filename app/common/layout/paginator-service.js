@@ -4,7 +4,7 @@
 
 'use strict';
 
-app.factory('Paginator', function(){
+ramAngularApp.module.factory('Paginator', function(){
    var pagination = {};
 
     pagination.getNew = function(perPage){
@@ -38,7 +38,7 @@ app.factory('Paginator', function(){
     return pagination;
 });
 
-app.filter('startFrom', function(){
+ramAngularApp.module.filter('startFrom', function(){
    return function(input, start){
        if(input === undefined){
            return input;
@@ -49,7 +49,7 @@ app.filter('startFrom', function(){
 });
 
 
-app.filter('range', function(){
+ramAngularApp.module.filter('range', function(){
    return function(input, total){
        total = parseInt(total);
        for(var i = 0; i < total; i++){

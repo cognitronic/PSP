@@ -722,6 +722,20 @@ html body {
 }
 
 .view-container{
+     background-color: #ffffff;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+     padding-right: 30px;
+     padding-left: 30px;
+     padding-bottom: 25px;
+     border: 1px solid;
+     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+     margin-bottom: 15px;
+ }
+
+.view-container-last{
     background-color: #ffffff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -878,4 +892,14 @@ html body {
 .stick {
     position:fixed;
     top:0px;
+}
+
+.container-header{
+    color: #fff;
+    background-color: #428bca;
+    height: 35px;
+    font-weight: 800;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
 }

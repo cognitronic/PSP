@@ -3,7 +3,7 @@
  */
 
 
-app.directive('ccConfirmDialog', [
+ramAngularApp.module.directive('ccConfirmDialog', [
     function(){
 
         function Link(scope, element, attr){
@@ -33,7 +33,7 @@ app.directive('ccConfirmDialog', [
     }
 ]);
 
-app.directive('ccNotifyDialog', [
+ramAngularApp.module.directive('ccNotifyDialog', [
     function(){
         function link(scope, element, attr){
             var msg = attr.ccNotifyDialog || 'Empty notification message';
@@ -50,7 +50,7 @@ app.directive('ccNotifyDialog', [
     }
 ]);
 
-app.directive('ccErrorDialog', [
+ramAngularApp.module.directive('ccErrorDialog', [
     function(){
         function link(scope, element, attr){
             var msg = attr.ccErrorDialog || 'Please, dont do that';
@@ -67,7 +67,7 @@ app.directive('ccErrorDialog', [
     }
 ]);
 
-app.directive('ccWaitDialog', [
+ramAngularApp.module.directive('ccWaitDialog', [
     function(){
 
         function Link(scope, element, attr){
@@ -90,7 +90,7 @@ app.directive('ccWaitDialog', [
     }
 ]);
 
-app.directive('ccAddUser', [ function(){
+ramAngularApp.module.directive('ccAddUser', [ function(){
     function link(scope, element, attrs){
         var dialogProvider = element.injector().get('dialogs');
         scope.modalData = {
@@ -125,6 +125,75 @@ app.directive('ccAddUser', [ function(){
     }
 }]);
 
-app.directive('ccWhatsNew', function($compile, ReportsService){
+ramAngularApp.module.directive('ramAddSite', [ function(){
+    function link(scope, element, attrs){
+        var dialogProvider = element.injector().get('dialogs');
+        scope.modalData = {
+            header: 'Add New User',
+            dtDateRegistered: new Date(),
+            registeredOpened: false,
+            burble: 'ly gurgle'
+        }
+        element.bind('click', function(event){
+            if(scope.ramEditable)
+                scope.modalData.editingSite = scope.$eval(scope.ramEditable);
+            var dlg = dialogProvider.create('/settings/modal-site-details.html','SiteController', scope.modalData);
+            dlg.result.then(function(){
+                if(scope.ramPostSubmitAction){
+                    scope.$eval(scope.ramPostSubmitAction);
+                }
+            },function(){
+                if(scope.postCancelAction){
+                    scope.$eval(scope.ramPostCancelAction);
+                }
+            });
+        })
+    }
+    return {
+        link: link,
+        scope: {
+            ramPostSubmitAction: '&',
+            ramPostCancelAction: '&',
+            ramEditable: '@'
+
+        }
+    }
+}]);
+
+ramAngularApp.module.directive('ramAddCustomer', [ function(){
+    function link(scope, element, attrs){
+        var dialogProvider = element.injector().get('dialogs');
+        scope.modalData = {
+            header: 'Manage Customer Details',
+            dtDateRegistered: new Date(),
+            registeredOpened: false
+        }
+        element.bind('click', function(event){
+            if(scope.ramEditable)
+                scope.modalData.editingClient = scope.$eval(scope.ramEditable);
+            var dlg = dialogProvider.create('/reports/modal-customer-details.html','CustomerDetailsController', scope.modalData);
+            dlg.result.then(function(){
+                if(scope.ramPostSubmitAction){
+                    scope.$eval(scope.ramPostSubmitAction);
+                }
+            },function(){
+                if(scope.postCancelAction){
+                    scope.$eval(scope.ramPostCancelAction);
+                }
+            });
+        })
+    }
+    return {
+        link: link,
+        scope: {
+            ramPostSubmitAction: '&',
+            ramPostCancelAction: '&',
+            ramEditable: '@'
+
+        }
+    }
+}]);
+
+ramAngularApp.module.directive('ccWhatsNew', function($compile, ReportsService){
 
 });

@@ -1,52 +1,58 @@
 <div class="container view-container" ng-cloak>
     <div class="row-fluid">
         <div class="pull-right">
-            <button ng-click="addClient()" class="btn "><i class="glyphicon glyphicon-plus"></i> Add Client</button>
+            <button ram-add-customer ram-post-submit-action="modal.loadClients()" class="btn "><i class="glyphicon glyphicon-plus"></i> Add Client</button>
         </div>
         <h3>Manage Clients</h3>
-        <div class="jumbotron">
-            <div class="jumbo-header">
-                Search Criteria
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div>
-                        <b class="messagecontainer">Last Name:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="criteria_lastname"/>
-                        </p>
-                    </div>
-                    <div>
-                        <b class="messagecontainer">Email:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="criteria_email"/>
-                        </p>
-                    </div>
+        <div class="container-header">
+            Search Criteria
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                    <b class="messagecontainer">Last Name:</b>
+                    <p>
+                        <input class="form-control" type="text" ng-model="model.criteria_lastname"/>
+                    </p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div>
-                        <b class="messagecontainer">Date Registered:</b>
-                        <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dtDateRegistered" is-open="registeredOpened" show-button-bar="false" enable-on-focus="false"  min="minDate" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                <div>
+                    <b class="messagecontainer">Email:</b>
+                    <p>
+                        <input class="form-control" type="text" ng-model="model.criteria_email"/>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                    <b class="messagecontainer">Date Registered:</b>
+                    <p class="input-group">
+                        <input type="text" class="form-control" datepicker-popup="{{'MM/dd/yyyy'}}" ng-model="model.dateRegistered" is-open="model.registeredOpened" show-button-bar="false" enable-on-focus="false" ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn " id="btnRegistered" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnRegistered" ng-click="model.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
-                        </p>
-                    </div>
-                    <div>
-                        <b class="messagecontainer">Birthdate:</b>
-                        <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{birthdateFormat}}" ng-model="dtBirthdate" is-open="birthdateOpened" datepicker-options="dateOptions"  ng-required="true" close-text="Close" />
+                    </p>
+                </div>
+                <div>
+                    <b class="messagecontainer">Birthdate:</b>
+                    <p class="input-group">
+                        <input type="text" class="form-control" datepicker-popup="{{'MM/dd'}}" ng-model="model.birthdate" is-open="model.birthdateOpened" ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
-                                <button class="btn " id="btnBirthdate" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                <button class="btn " id="btnBirthdate" ng-click="model.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
+                <div class="pull-right">
+                    <button class="btn " id="run" ng-click="model.loadClients()" ng-disabled="!model.criteria_lastName && !model.criteria_email && !model.dateRegistered && !model.birthdate">
+                        <i class="glyphicon glyphicon-play"></i> Get Clients
+                    </button>&nbsp;
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="container view-container" ng-cloak>
     <div class="row-fluid">
+        <br />
         <table class="table table-hover table-striped">
             <thead>
                 <tr class="bg-primary">
@@ -60,11 +66,11 @@
                 </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="client in clients |
-            startFrom: pagination.page * pagination.perPage |
-            limitTo: pagination.perPage |
+            <tr ng-repeat="client in model.clients  |
+            startFrom: model.pagination.page * model.pagination.perPage |
+            limitTo: model.pagination.perPage |
             convertToISODate  |
-            filter:{lastname: criteria_lastname, email : criteria_email, birthdate : convertDateToBirthdate(), dateregistered : dtDateRegistered.toLocaleDateString() }">
+            filter:{lastname: model.criteria_lastname, email : model.criteria_email, birthdate : model.convertDateToBirthdate(), dateregistered : model.dateRegistered.toLocaleDateString() } track by $index">
                 <td>{{ client.firstname }}</td>
                 <td>{{ client.lastname }}</td>
                 <td>{{ client.email }}</td>
@@ -75,16 +81,16 @@
                 </td>
                 <td>{{ client.birthdate }}</td>
                 <td style="text-align: right;">
-                    <span><a ng-click="editClient(client.Id)" class="btn "><i class="glyphicon glyphicon-pencil"></i> Edit</a></span>
-                    <span><a cc-confirm-dialog="Are you sure you wanna do this?" cc-confirm-header="Please Confirm" confirm-clicked="deleteClient(client)" class="btn "><i class="glyphicon glyphicon-remove"></i> Delete</a></span>
+                    <span><a ram-add-customer ram-editable="{{ client }}" ram-post-submit-action="model.loadClients()" class="btn "><i class="glyphicon glyphicon-pencil"></i> Edit</a></span>
+                    <span><a cc-confirm-dialog="Are you sure you wanna do this?" cc-confirm-header="Please Confirm" confirm-clicked="model.deleteClient(client, $index)" class="btn "><i class="glyphicon glyphicon-remove"></i> Delete</a></span>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <button class="btn " ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
-    <span ng-repeat="n in [] | range: pagination.numPages" >
-        <button class="btn btn-default" ng-class="{active: n == pagination.page}" ng-click="pagination.toPageId(n)">{{n + 1}}</button>
+    <button class="btn " ng-hide="model.pagination.page == 0" ng-click="model.pagination.prevPage()">Previous</button>
+    <span ng-repeat="n in [] | range: model.pagination.numPages" >
+        <button class="btn btn-default" ng-class="{active: n == model.pagination.page}" ng-click="model.pagination.toPageId(n)">{{n + 1}}</button>
     </span>
-    <button class="btn " ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+    <button class="btn " ng-hide="model.pagination.page + 1 >= model.pagination.numPages" ng-click="model.pagination.nextPage()">Next</button>
 </div>

@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 4/29/14.
  */
 
-app.directive('fieldValidate',['Constants',function(Constants) {
+ramAngularApp.module.directive('fieldValidate',['Constants',function(Constants) {
     return {
         // restrict to an attribute type.
         restrict: 'A',

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/GsrController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/GsrController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Bson.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Bson.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MongoDB.Driver.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MongoDB.Driver.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Driver.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Driver.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
@@ -19,6 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" />
@@ -38,22 +35,66 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/BaseRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/ClientRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/ClientRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/ClientsController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/ClientsController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/GSRRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/GSRRepository.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Bson.xml" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Bson.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MongoDB.Driver.xml" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/MongoDB.Driver.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Driver.xml" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/MongoDB.Driver.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/NotificationRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/NotificationRepository.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/ResourceStrings.cs" afterPath="$PROJECT_DIR$/api/psp.core/ResourceStrings.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/SiteController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/SiteRepository.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/UserRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/UserRepository.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Web.config" afterPath="$PROJECT_DIR$/api/psp.api/Web.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/App_Start/WebApiConfig.cs" afterPath="$PROJECT_DIR$/api/psp.api/App_Start/WebApiConfig.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/accesslevel-directive.js" afterPath="$PROJECT_DIR$/app/common/security/accesslevel-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/animate-event-directive.js" afterPath="$PROJECT_DIR$/app/common/layout/animate-event-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constants/app-constants.js" afterPath="$PROJECT_DIR$/app/constants/app-constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/birthdays-controller.js" afterPath="$PROJECT_DIR$/app/reports/birthdays-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/birthdays.html" afterPath="$PROJECT_DIR$/app/reports/birthdays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/packages.config" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/packages.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/cache-service.js" afterPath="$PROJECT_DIR$/app/common/cache-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/claims-controller.js" afterPath="$PROJECT_DIR$/app/forms/claims-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/claims.html" afterPath="$PROJECT_DIR$/app/forms/claims.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistration-controller.js" afterPath="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" afterPath="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/customerregistrations.html" afterPath="$PROJECT_DIR$/app/reports/customerregistrations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/dashboard-controller.js" afterPath="$PROJECT_DIR$/app/dashboard/dashboard-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/datepicker-directives.js" afterPath="$PROJECT_DIR$/app/common/layout/datepicker-directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/dialogs-directive.js" afterPath="$PROJECT_DIR$/app/common/layout/dialogs-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/dialogs-service.js" afterPath="$PROJECT_DIR$/app/common/layout/dialogs-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/format-dollar-directive.js" afterPath="$PROJECT_DIR$/app/common/layout/format-dollar-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/forms-controller.js" afterPath="$PROJECT_DIR$/app/forms/forms-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr-controller.js" afterPath="$PROJECT_DIR$/app/reports/gsr-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/loading-directive.js" afterPath="$PROJECT_DIR$/app/common/layout/loading-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/login-controller.js" afterPath="$PROJECT_DIR$/app/common/security/login-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard/main-controller.js" afterPath="$PROJECT_DIR$/app/dashboard/main-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/main.css" afterPath="$PROJECT_DIR$/app/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/nav-controller.js" afterPath="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/noaccess-controller.js" afterPath="$PROJECT_DIR$/app/common/security/noaccess-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notification-controller.js" afterPath="$PROJECT_DIR$/app/settings/notification-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notification.html" afterPath="$PROJECT_DIR$/app/settings/notification.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/notifications-controller.js" afterPath="$PROJECT_DIR$/app/settings/notifications-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/packages.config" afterPath="$PROJECT_DIR$/api/psp.api/packages.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/paginator-service.js" afterPath="$PROJECT_DIR$/app/common/layout/paginator-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csproj.FileListAbsolute.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csproj.FileListAbsolute.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" afterPath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/psp.core.csproj" afterPath="$PROJECT_DIR$/api/psp.core/psp.core.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/psp.repository.mongo.csproj" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/psp.repository.mongo.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/reports-controller.js" afterPath="$PROJECT_DIR$/app/reports/reports-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/reports-service.js" afterPath="$PROJECT_DIR$/app/reports/reports-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/requestVerificationToken.js" afterPath="$PROJECT_DIR$/app/common/security/requestVerificationToken.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/routingAccessConfig.js" afterPath="$PROJECT_DIR$/app/common/security/routingAccessConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/sidebar-controller.js" afterPath="$PROJECT_DIR$/app/common/layout/sidebar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/sidebar-slide-directive.js" afterPath="$PROJECT_DIR$/app/common/layout/sidebar-slide-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/site-controller.js" afterPath="$PROJECT_DIR$/app/settings/site-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites-controller.js" afterPath="$PROJECT_DIR$/app/settings/sites-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites-service.js" afterPath="$PROJECT_DIR$/app/settings/sites-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/sites.html" afterPath="$PROJECT_DIR$/app/settings/sites.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/user-controller.js" afterPath="$PROJECT_DIR$/app/settings/user-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/settings/users-controller.js" afterPath="$PROJECT_DIR$/app/settings/users-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/validation-directive.js" afterPath="$PROJECT_DIR$/app/common/security/validation-directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -77,97 +118,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="101" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="3820">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cache-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/cache-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="138" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1080">
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="birthdays.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="birthdays.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="39" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.6183115" vertical-offset="840" max-vertical-offset="1800">
+            <state line="5" column="14" selection-start="0" selection-end="211" vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="1840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
+      <file leaf-file-name="claims.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/forms/claims.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="59" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="640">
+            <state line="2" column="23" selection-start="99" selection-end="99" vertical-scroll-proportion="0.047562424" vertical-offset="0" max-vertical-offset="841">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
+      <file leaf-file-name="claims-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/forms/claims-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="35" selection-start="1113" selection-end="1290" vertical-scroll-proportion="-13.103448" vertical-offset="0" max-vertical-offset="2380">
+            <state line="37" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerregistrations.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="188" selection-start="2593" selection-end="2593" vertical-scroll-proportion="-19.310345" vertical-offset="320" max-vertical-offset="2140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+      <file leaf-file-name="customerregistrations-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="birthdays-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="33" selection-start="2879" selection-end="2879" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1200">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <element signature="e#415#1005#0" expanded="false" />
-                <element signature="e#1052#1252#0" expanded="false" />
-                <element signature="e#1294#1705#0" expanded="false" />
-                <element signature="e#1745#1753#0" expanded="false" />
-                <element signature="e#1783#1822#0" expanded="false" />
-                <element signature="e#1873#2001#0" expanded="false" />
-                <element signature="e#2027#2093#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reports-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="36" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="2240">
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notifications-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="43" selection-start="3820" selection-end="3820" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2340">
+            <state line="30" column="10" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1820">
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -178,7 +170,52 @@
       <file leaf-file-name="gsr.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="-0.0" vertical-offset="23920" max-vertical-offset="29300">
+            <state line="1182" column="20" selection-start="41589" selection-end="41589" vertical-scroll-proportion="-10.310345" vertical-offset="23341" max-vertical-offset="29320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="57" selection-start="4449" selection-end="4449" vertical-scroll-proportion="0.0" vertical-offset="1670" max-vertical-offset="2540">
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="birthdays-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="44" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="1900">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#2050#2089#0" expanded="false" />
+                <element signature="e#2140#2268#0" expanded="false" />
+                <element signature="e#2294#2360#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routingAccessConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/security/routingAccessConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="19" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2260">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="6" selection-start="1642" selection-end="1642" vertical-scroll-proportion="-19.310345" vertical-offset="120" max-vertical-offset="2300">
               <folding />
             </state>
           </provider>
@@ -202,22 +239,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/settings/user-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/common/security/login.html" />
-        <option value="$PROJECT_DIR$/app/vendor/bootstrap/dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
-        <option value="$PROJECT_DIR$/app/common/cache-service.js" />
-        <option value="$PROJECT_DIR$/app/common/security/auth-service.js" />
-        <option value="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
-        <option value="$PROJECT_DIR$/app/common/layout/_nav.html" />
-        <option value="$PROJECT_DIR$/app/settings/notifications.html" />
-        <option value="$PROJECT_DIR$/app/settings/notifications-service.js" />
-        <option value="$PROJECT_DIR$/app/settings/notification-controller.js" />
+        <option value="$PROJECT_DIR$/app/common/layout/dialogs-directive.js" />
+        <option value="$PROJECT_DIR$/app/common/layout/dialogs-service.js" />
+        <option value="$PROJECT_DIR$/app/reports/customerregistrations-controller.js" />
+        <option value="$PROJECT_DIR$/app/reports/customerregistration-controller.js" />
+        <option value="$PROJECT_DIR$/app/reports/modal-customer-details.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/app/common/security/routingAccessConfig.js" />
+        <option value="$PROJECT_DIR$/app/settings/notification.html" />
         <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/birthdays-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/birthdays.html" />
+        <option value="$PROJECT_DIR$/app/reports/customerregistrations.html" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
+        <option value="$PROJECT_DIR$/app/forms/claims-controller.js" />
+        <option value="$PROJECT_DIR$/app/forms/claims.html" />
       </list>
     </option>
   </component>
@@ -326,87 +363,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PSP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,8 +538,32 @@
       <created>1410818490612</created>
       <updated>1410818490612</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="refactored the birthday report to have to click button to fire rest call.  mongo refactored to check for params and do a case-insensitive search">
+      <created>1410889863349</created>
+      <updated>1410889863349</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -592,10 +573,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1547492" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1547492" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -657,7 +638,8 @@
     <MESSAGE value="added plus+ and rainx packages to gsr" />
     <MESSAGE value="created notifications console project and created volume report for email notifications" />
     <MESSAGE value="hooked up gsr notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="hooked up gsr notification" />
+    <MESSAGE value="refactored the birthday report to have to click button to fire rest call.  mongo refactored to check for params and do a case-insensitive search" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored the birthday report to have to click button to fire rest call.  mongo refactored to check for params and do a case-insensitive search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,6 +659,54 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistration-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/modal-customer-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="175" selection-start="5058" selection-end="5225" vertical-scroll-proportion="-17.965517" vertical-offset="1279" max-vertical-offset="2140">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="10" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1820">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/layout/_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="6" selection-start="1642" selection-end="1642" vertical-scroll-proportion="-19.310345" vertical-offset="120" max-vertical-offset="2300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="737" column="15" selection-start="9938" selection-end="9938" vertical-scroll-proportion="0.0" vertical-offset="14170" max-vertical-offset="18200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/common/security/accesslevel-directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
@@ -686,132 +716,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/requestVerificationToken.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/common/security/routingAccessConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2260">
+        <state line="19" column="19" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2260">
           <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="44" selection-start="1548" selection-end="1587" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/_nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="44" selection-start="2735" selection-end="2735" vertical-scroll-proportion="-17.344828" vertical-offset="517" max-vertical-offset="1420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/nav-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="83" selection-start="733" selection-end="733" vertical-scroll-proportion="0.5275229" vertical-offset="0" max-vertical-offset="900">
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1196" column="85" selection-start="42299" selection-end="42299" vertical-scroll-proportion="-0.0" vertical-offset="23920" max-vertical-offset="29300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/cache-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="138" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1080">
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="59" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="43" selection-start="3820" selection-end="3820" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2340">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/paginator-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="1340">
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="1113" selection-end="1290" vertical-scroll-proportion="-13.103448" vertical-offset="0" max-vertical-offset="2380">
+        <state line="37" column="41" selection-start="2086" selection-end="2086" vertical-scroll-proportion="-19.310345" vertical-offset="180" max-vertical-offset="2520">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="44" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1900">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#2050#2089#0" expanded="false" />
+            <element signature="e#2140#2268#0" expanded="false" />
+            <element signature="e#2294#2360#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="36" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="2240">
+        <state line="109" column="57" selection-start="4449" selection-end="4449" vertical-scroll-proportion="0.0" vertical-offset="1670" max-vertical-offset="2540">
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/reports/customerregistrations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="33" selection-start="2879" selection-end="2879" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1200">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#415#1005#0" expanded="false" />
-            <element signature="e#1052#1252#0" expanded="false" />
-            <element signature="e#1294#1705#0" expanded="false" />
-            <element signature="e#1745#1753#0" expanded="false" />
-            <element signature="e#1783#1822#0" expanded="false" />
-            <element signature="e#1873#2001#0" expanded="false" />
-            <element signature="e#2027#2093#0" expanded="false" />
-          </folding>
+        <state line="44" column="188" selection-start="2593" selection-end="2593" vertical-scroll-proportion="-19.310345" vertical-offset="320" max-vertical-offset="2140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1182" column="20" selection-start="41589" selection-end="41589" vertical-scroll-proportion="-10.310345" vertical-offset="23341" max-vertical-offset="29320">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.6183115" vertical-offset="840" max-vertical-offset="1800">
+        <state line="5" column="14" selection-start="0" selection-end="211" vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="1840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/forms/claims-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/forms/claims.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="99" selection-end="99" vertical-scroll-proportion="0.047562424" vertical-offset="0" max-vertical-offset="841">
           <folding />
         </state>
       </provider>

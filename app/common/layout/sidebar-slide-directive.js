@@ -2,7 +2,7 @@
  * Created by danny_000 on 3/25/14.
  */
 
-app.directive("btnToggleSidebar", function(){
+ramAngularApp.module.directive("btnToggleSidebar", function(){
 
     function link($scope, element, attributes){
         alert('hi');

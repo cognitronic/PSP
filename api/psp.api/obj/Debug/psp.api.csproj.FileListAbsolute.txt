@@ -45,3 +45,6 @@ C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Core.dll
 C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Web.dll
 C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Core.pdb
 C:\Projects\PSP\api\psp.api\bin\IdeaSeed.Web.pdb
+C:\Projects\PSP\api\psp.api\bin\System.Web.Cors.dll
+C:\Projects\PSP\api\psp.api\bin\System.Web.Http.Cors.dll
+C:\Projects\PSP\api\psp.api\bin\System.Web.Http.Cors.xml

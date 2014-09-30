@@ -54,9 +54,13 @@ namespace psp.repository.mongo.Repositories
             {
                 andQueries.Add(Query.EQ("birthdate", parms.birthdate));
             }
+            if (!string.IsNullOrEmpty(parms.dateregistered))
+            {
+                andQueries.Add(Query.EQ("dateregistered", BsonDateTime.Create(parms.dateregistered).AsBsonDateTime));
+            }
             if (andQueries != null && andQueries.Count > 0)
             {
-                var query = Query.Or(andQueries);
+                var query = Query.And(andQueries);
                 return collection.Find(query).OrderBy(o => o.lastname).ToList<Client>();
             }
             return null;
@@ -72,12 +76,10 @@ namespace psp.repository.mongo.Repositories
             return client;
         }
 
-        public Client Delete(Client client)
+        public void Delete(string id)
         {
-            var usr = client;
-            var query = Query<Client>.EQ(u => u.Id, new ObjectId(client.sid));
+            var query = Query<Client>.EQ(u => u.Id, new ObjectId(id));
             _collection.Remove(query);
-            return usr;
         }
     }
 }

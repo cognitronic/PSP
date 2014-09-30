@@ -1,44 +1,45 @@
 <div class="container view-container" ng-cloak>
     <div class="row-fluid">
         <h3>Manage Birthday Coupon Notifications</h3>
-        <div class="jumbotron">
-            <div class="jumbo-header">
-                Search Criteria
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div>
-                        <b class="messagecontainer">Last Name:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="birthdaysModel.lastName"/>
-                        </p>
-                    </div>
-                    <div>
-                        <b class="messagecontainer">Email:</b>
-                        <p>
-                            <input class="form-control" type="text" ng-model="birthdaysModel.email"/>
-                        </p>
-                    </div>
+        <div class="container-header">
+            Search Criteria
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                    <b class="messagecontainer">Last Name:</b>
+                    <p>
+                        <input class="form-control" type="text" ng-model="birthdaysModel.lastName"/>
+                    </p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div>
-                        <b class="messagecontainer">Birthdate:</b>
-                        <p class="input-group">
-                            <input type="text" class="form-control" datepicker-popup="{{ 'MM/dd' }}" ng-model="birthdaysModel.birthDate" is-open="birthdaysModel.birthdateOpened"   ng-required="true" close-text="Close" />
+                <div>
+                    <b class="messagecontainer">Email:</b>
+                    <p>
+                        <input class="form-control" type="text" ng-model="birthdaysModel.email"/>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                    <b class="messagecontainer">Birthdate:</b>
+                    <p class="input-group">
+                        <input type="text" class="form-control" datepicker-popup="{{ 'MM/dd' }}" ng-model="birthdaysModel.birthDate" is-open="birthdaysModel.birthdateOpened"   ng-required="true" close-text="Close" />
                             <span class="input-group-btn">
                                 <button class="btn " id="btnBirthdate" ng-click="birthdaysModel.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                             </span>
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
-            <div class="pull-right">
-                <button class="btn " id="run" ng-click="birthdaysModel.loadBirthdays()">
-                    <i class="glyphicon glyphicon-play"></i> Get Birthdays
-                </button>&nbsp;
-            </div>
+        </div>
+        <div class="pull-right">
+            <button class="btn " id="run" ng-click="birthdaysModel.loadBirthdays()" ng-disabled="!birthdaysModel.email && !birthdaysModel.lastName && !birthdaysModel.birthDate">
+                <i class="glyphicon glyphicon-play"></i> Get Birthdays
+            </button>&nbsp;
         </div>
     </div>
+</div>
+<div class="container view-container-last">
+    <br />
     <div class="row-fluid">
         <table class="table table-hover table-striped">
             <thead>

@@ -4,7 +4,7 @@
 
 'use strict'
 
-app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootScope, $routeParams, UserService, $modalInstance, data, defaultStrings ){
+ramAngularApp.module.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootScope, $routeParams, UserService, $modalInstance, modalData, defaultStrings ){
     $scope.user = {};
     $scope.roles = routingAccessConfig.rolesList;
     $scope.role = $scope.roles[0];
@@ -12,12 +12,12 @@ app.controller('settings.UserCtrl', function($scope, $location,$timeout, $rootSc
     $scope.showHideText = 'Show';
     $scope.passwordType = 'password';
 
-    $scope.header = data.header;
+    $scope.header = modalData.header;
     $scope.defaultStrings = defaultStrings;
     //$scope.editing = data.editingUser;
-console.log(data);
-    if(data.editingUser){
-        $scope.user = data.editingUser;
+console.log(modalData);
+    if(modalData.editingUser){
+        $scope.user = modalData.editingUser;
     }
 
     $scope.cancel = function(){

@@ -30,7 +30,7 @@ angular.module('service.reports', [])
                 }
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.delete(APP_SETTINGS.apiUrl + 'Clients', client)
+                $http.delete(APP_SETTINGS.apiUrl + 'Clients/' + client.sid)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);
@@ -99,6 +99,21 @@ angular.module('service.reports', [])
                     .error(function(){
                         $rootScope.loading = false;
                         console.log('rejected: ');
+                        deferred.reject();
+                    });
+                return deferred.promise;
+            },
+            sendCoupon: function(params){
+                var deferred = $q.defer();
+                $rootScope.loading = true;
+                console.log(params);
+                $http.post(APP_SETTINGS.apiUrl + 'coupons', params)
+                    .success(function(data){
+                        $rootScope.loading = false;
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        $rootScope.loading = false;
                         deferred.reject();
                     });
                 return deferred.promise;

@@ -3,6 +3,6 @@
  */
 'use strict'
 
-app.controller('DashboardCtrl', function($scope, $rootScope, AuthService){
+ramAngularApp.module.controller('DashboardCtrl', function($scope, $rootScope, AuthService){
     $scope.username = AuthService.currentUser().first;
 });

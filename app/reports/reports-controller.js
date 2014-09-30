@@ -3,6 +3,6 @@
  */
 'use strict'
 
-app.controller('ReportsCtrl', function($scope, $rootScope, AuthService){
+ramAngularApp.module.controller('ReportsCtrl', function($scope, $rootScope, AuthService){
 
 });

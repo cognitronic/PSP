@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 4/6/14.
  */
 
-app.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, NotificationService){
+ramAngularApp.module.controller('settings.NotificationCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, NotificationService){
     $scope.currentNotification = {};
     $scope.isHidden = true;
     $scope.recipients = [];

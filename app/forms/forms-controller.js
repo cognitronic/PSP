@@ -3,6 +3,6 @@
  */
 'use strict'
 
-app.controller('FormsCtrl', function($scope, $rootScope, AuthService){
+ramAngularApp.module.controller('FormsCtrl', function($scope, $rootScope, AuthService){
 
 });

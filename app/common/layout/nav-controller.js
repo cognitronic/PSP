@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 3/23/14.
  */
 
-app.controller('NavCtrl', function($scope, $rootScope, AuthService, $location, CacheService){
+ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthService, $location, CacheService){
 
     $scope.isAuthenticated = AuthService.isAuthenticated();
 

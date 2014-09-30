@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 4/29/14.
  */
 
-app.constant('Constants',{
+ramAngularApp.module.constant('Constants',{
     VALIDATION_ERRORS: {
         INVALID_PASSWORD: "You must enter a valid password.",
         INVALID_PHONE: "You must enter a valid phone number.",

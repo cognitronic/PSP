@@ -2,7 +2,7 @@
  * Created by Danny Schreiber on 4/7/14.
  */
 
-app.directive('loading', function () {
+ramAngularApp.module.directive('loading', function () {
     return {
         restrict: 'E',
         replace:true,

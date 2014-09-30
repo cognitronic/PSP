@@ -17,7 +17,7 @@
             'sitemanager',
             'executive',
             'admin',
-            'inivsible'],
+            'invisible'],
 
         /*
          Build out all the access levels you want referencing the roles listed above

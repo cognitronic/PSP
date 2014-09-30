@@ -3,7 +3,7 @@
  */
 
 
-app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$log', function (dateFilter, $parse, datepickerConfig, $log) {
+ramAngularApp.module.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$log', function (dateFilter, $parse, datepickerConfig, $log) {
     return {
         restrict: 'EA',
         replace: true,
@@ -131,7 +131,7 @@ app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$lo
     };
 }]);
 
-    app.constant('ccDatepickerPopupConfig', {
+ramAngularApp.module.constant('ccDatepickerPopupConfig', {
         dateFormat: 'yyyy-MM-dd',
         currentText: 'Today',
         toggleWeeksText: 'Weeks',
@@ -143,7 +143,7 @@ app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$lo
         enableOnFocus: false
     });
 
-    app.directive('ccDatepickerPopup', ['$compile', '$parse', '$document', 'ccWidgetPositionService', 'dateFilter', 'ccDatepickerPopupConfig', 'datepickerConfig',
+ramAngularApp.module.directive('ccDatepickerPopup', ['$compile', '$parse', '$document', 'ccWidgetPositionService', 'dateFilter', 'ccDatepickerPopupConfig', 'datepickerConfig',
         function ($compile, $parse, $document, ccWidgetPositionService, dateFilter, ccDatepickerPopupConfig, datepickerConfig) {
             return {
                 restrict: 'EA',
@@ -359,7 +359,7 @@ app.directive( 'ccDatePicker', ['dateFilter', '$parse', 'datepickerConfig', '$lo
             };
         }]);
 
-    app.directive('ccDatepickerPopupWrap', function() {
+ramAngularApp.module.directive('ccDatepickerPopupWrap', function() {
         return {
             restrict:'EA',
             replace: true,

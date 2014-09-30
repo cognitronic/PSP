@@ -58,14 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="domain\AuditLog.cs" />
     <Compile Include="domain\Client.cs" />
     <Compile Include="domain\ClientSearchParams.cs" />
+    <Compile Include="domain\Coupon.cs" />
+    <Compile Include="domain\CouponCode.cs" />
     <Compile Include="domain\IAPIResponse.cs" />
     <Compile Include="domain\GSR.cs" />
     <Compile Include="domain\IClient.cs" />
     <Compile Include="domain\Notification.cs" />
     <Compile Include="domain\NotificationMessage.cs" />
     <Compile Include="domain\RewashNotificationResponse.cs" />
+    <Compile Include="domain\SendCouponParams.cs" />
     <Compile Include="domain\Site.cs" />
     <Compile Include="domain\SiteWatchSalesItem.cs" />
     <Compile Include="domain\user\IUser.cs" />

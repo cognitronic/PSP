@@ -110,7 +110,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 
                 confirm : function(header,msg){
                     return $modal.open({
-                        templateUrl : '/dialogs/confirm.html',
+                        templateUrl : '/common/layout/dialog-confirm.html',
                         controller : 'confirmDialogCtrl',
                         backdrop: b,
                         keyboard: k,
@@ -130,7 +130,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
                         backdrop : b,
                         windowClass: w,
                         resolve : {
-                            data : function() {
+                            modalData : function() {
                                 if(copy){
                                     console.log('copy is true');
                                     return angular.copy(data);

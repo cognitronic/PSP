@@ -37,3 +37,6 @@ c:\Projects\PSP\api\psp.api.Tests\bin\Debug\MongoDB.Bson.xml
 C:\Projects\PSP\api\psp.api.Tests\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
 C:\Projects\PSP\api\psp.api.Tests\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
 C:\Projects\PSP\api\psp.api.Tests\bin\Debug\MySql.Data.dll
+C:\Projects\PSP\api\psp.api.Tests\bin\Debug\System.Web.Http.Cors.dll
+C:\Projects\PSP\api\psp.api.Tests\bin\Debug\System.Web.Cors.dll
+C:\Projects\PSP\api\psp.api.Tests\bin\Debug\System.Web.Http.Cors.xml

@@ -2,98 +2,84 @@
  * Created by Danny Schreiber on 4/9/14.
  */
 
-'use strict'
+(function(){
+    'use strict';
 
-app.controller('reports.CustomerRegistrationsCtrl', function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator, dialogs){
+    var CustomerController = function($scope, $rootScope, $routeParams, $location, AuthService, ReportsService, Paginator){
 
-    $scope.pagination = Paginator.getNew(25);
-    $scope.criteria_lastname = "";
-    $scope.criteria_email = "";
-    $scope.dtBirthdate = undefined;
-    $scope.dtDateRegistered = undefined;
+        var _criteria_lastname = "";
+        var _criteria_email = "";
+        var _birthdate = undefined;
+        var _dateRegistered = undefined;
+        var _clients = [];
 
-    ReportsService.getClients().then(function(data){
-        $scope.clients = data;
-        $scope.pagination.numPages = Math.ceil($scope.clients.length/$scope.pagination.perPage);
-        console.log(new Date($scope.clients[2].dateregistered).toLocaleDateString());
-    });
+        var _loadClients = function(){
+            $scope.model.clients = [];
 
-    $scope.convertDateToBirthdate = function(){
-        if(!isNaN($scope.dtBirthdate))
-            return (new Date($scope.dtBirthdate).getMonth() + 1) + '/' + (new Date($scope.dtBirthdate).getDate());
-    }
-
-    $scope.deleteClient = function(client){
-        client.sid = client.Id.toString();
-        ReportsService.deleteClient(client)
-            .then(function(data){
-                ReportsService.getClients().then(function(data){
-                    $scope.clients = data;
-                });
+            var params = {
+                lastname: $scope.model.criteria_lastname,
+                email: $scope.model.criteria_email,
+                birthdate: $scope.model.convertDateToBirthdate(),
+                dateregistered: _convertDateToISO()
+            };
+            ReportsService.getBirthdays(params).then(function(data){
+                $scope.model.clients = data;
+                console.log($scope.model.clients);
+                $scope.model.pagination.numPages = Math.ceil($scope.model.clients.length/$scope.model.pagination.perPage);
+                console.log(params);
             });
-    }
+        };
 
-    $scope.editClient = function(id){
-
-        $location.path('/reports/customerregistrations/' + id);
-    }
-
-    $scope.addClient = function(){
-
-        $location.path('/reports/customerregistrations/new');
-    }
-
-    $scope.toggleMax = function() {
-        $scope.maxDate = ( $scope.maxDate ) ? null : new Date();
-    };
-    $scope.toggleMax();
-
-
-
-    $scope.today = function() {
-        $scope.dt = new Date();
-    };
-
-    $scope.today();
-
-    $scope.showWeeks = true;
-    $scope.toggleWeeks = function () {
-        $scope.showWeeks = ! $scope.showWeeks;
-    };
-
-    $scope.clear = function () {
-        $scope.dt = null;
-    };
-
-    // Disable weekend selection
-    $scope.disabled = function(date, mode) {
-        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-    };
-
-    $scope.toggleMin = function() {
-        $scope.minDate = ( $scope.minDate ) ? null : new Date();
-    };
-    $scope.toggleMin();
-
-    $scope.open = function($event) {
-        $event.preventDefault();
-        $event.stopPropagation();
-        if($event.currentTarget.id === 'btnBirthdate'){
-            $scope.birthdateOpened = true;
-            $scope.registeredOpened = false;
-        } else {
-            $scope.birthdateOpened = false;
-            $scope.registeredOpened = true;
+        var _convertDateToBirthdate = function(){
+            if(!isNaN($scope.model.birthdate))
+                return (new Date($scope.model.birthdate).getMonth() + 1) + '/' + (new Date($scope.model.birthdate).getDate());
         }
+
+        var _convertDateToISO = function(){
+            if(!isNaN($scope.model.dateRegistered))
+                return $scope.model.dateRegistered.toISOString();
+            return null;
+        }
+
+        var _open = function($event) {
+            $event.preventDefault();
+            $event.stopPropagation();
+            if($event.currentTarget.id === 'btnBirthdate'){
+                $scope.model.birthdateOpened = true;
+                $scope.model.registeredOpened = false;
+            } else {
+                $scope.model.birthdateOpened = false;
+                $scope.model.registeredOpened = true;
+            }
+        };
+
+        var _deleteClient = function(client, $index){
+            client.sid = client.Id;
+            ReportsService.deleteClient(client).then(function(data){
+                $scope.model.clients.splice($index, 1);
+            });
+        };
+
+        var _init = function(){
+            //$scope.model.loadClients();
+        };
+
+        $scope.model = {
+            init: _init,
+            convertDateToBirthdate: _convertDateToBirthdate,
+            birthdate: _birthdate,
+            dateRegistered: _dateRegistered,
+            clients: _clients,
+            loadClients: _loadClients,
+            pagination: Paginator.getNew(25),
+            open: _open,
+            criteria_lastname: _criteria_lastname,
+            criteria_email: _criteria_email,
+            deleteClient: _deleteClient
+        };
+
+        $scope.model.init();
     };
 
-
-    $scope.dateOptions = {
-        'year-format': "'yyyy'",
-        'starting-day': 1
-    };
-
-    $scope.formats = ['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
-    $scope.format = $scope.formats[1];
-    $scope.birthdateFormat = $scope.formats[2];
-});
+    ramAngularApp.module.controller('reports.CustomerRegistrationsCtrl', ['$scope', '$rootScope', '$routeParams', '$location', 'AuthService', 'ReportsService', 'Paginator', CustomerController]);
+})();

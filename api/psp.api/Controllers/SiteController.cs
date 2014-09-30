@@ -43,6 +43,7 @@ namespace psp.api.Controllers
         }
 
         // POST api/site
+        [Route("")]
         public Site Post([FromBody]Site site)
         {
             return _repository.Save(site);
@@ -54,8 +55,10 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/site/5
-        public void Delete(int id)
+        [Route("{id}")]
+        public void Delete(string id)
         {
+            _repository.Delete(id);
         }
     }
 }

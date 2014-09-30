@@ -4,7 +4,7 @@
 
 'use strict'
 
-app.controller('MainCtrl', function($scope, $location, $rootScope, AuthService){
+ramAngularApp.module.controller('MainCtrl', function($scope, $location, $rootScope, AuthService){
 
     if(!AuthService.isAuthenticated()){
         $location.path('/login');

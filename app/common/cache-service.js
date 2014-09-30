@@ -44,5 +44,5 @@
         }
     };
 
-    angular.module('psp').factory('CacheService', [CacheService]);
+    ramAngularApp.module.factory('CacheService', [CacheService]);
 })();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
+using System.Web.Http.Cors;
 
 namespace psp.api
 {
@@ -10,7 +11,9 @@ namespace psp.api
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+
+            var cors = new EnableCorsAttribute("*", "*", "GET,POST,PUT,DELETE,OPTIONS");
+            config.EnableCors(cors);
 
             // Web API routes
             config.MapHttpAttributeRoutes();

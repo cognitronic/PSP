@@ -62,7 +62,7 @@ angular.module('service.site', [])
             deleteSite: function(site){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.delete(APP_SETTINGS.apiUrl + 'Sites', site)
+                $http.delete(APP_SETTINGS.apiUrl + 'Sites/' + site.sid)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);

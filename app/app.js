@@ -2,7 +2,8 @@
  * Created by Danny Schreiber on 3/22/14.
  */
 
-var app = angular.module('psp', [
+var ramAngularApp = ramAngularApp || {};
+ramAngularApp.module = angular.module('psp', [
         'ngResource',
         'ngSanitize',
         'ngRoute',
@@ -15,9 +16,9 @@ var app = angular.module('psp', [
         'service.reports',
         'filters.app',
         'dialogs.services',
-        'cc.widgets.position'])
+        'cc.widgets.position']);
 
-.config(function($routeProvider, $httpProvider, dialogsProvider){
+ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvider){
 
         var access = routingAccessConfig.accessLevels;
     //This transformRequest is a global override for $http.post that transforms the body to the same param format used by  jQuery's $.post call
@@ -31,7 +32,11 @@ var app = angular.module('psp', [
         dialogsProvider.useCopy(false);
 
     //sets the content type header globally for $http calls
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+    $httpProvider.defaults.headers['delete'] = {'Content-Type': 'application/json; charset=UTF-8'};
 
     $routeProvider
         .when('/', {
@@ -66,7 +71,7 @@ var app = angular.module('psp', [
         })
         .when('/reports/customerregistrations/:id', {
             templateUrl: 'reports/customerregistration.html',
-            controller: 'reports.CustomerRegistrationCtrl',
+            controller: 'CustomerDetailsController',
             access: access.office
         })
         .when('/reports/birthdays', {
@@ -96,12 +101,12 @@ var app = angular.module('psp', [
         })
         .when('/settings/sites', {
             templateUrl: 'settings/sites.html',
-            controller: 'settings.SitesCtrl',
+            controller: 'SitesController',
             access: access.admin
         })
         .when('/settings/sites/:id', {
             templateUrl: 'settings/site.html',
-            controller: 'settings.SiteCtrl',
+            controller: 'SiteController',
             access: access.admin
         })
         .when('/settings/notifications', {
@@ -147,19 +152,22 @@ var app = angular.module('psp', [
 //        });
 
 
-})
-.constant('AUTH_EVENTS', {
+});
+
+ramAngularApp.module.constant('AUTH_EVENTS', {
     loginSuccess: 'auth-login-success',
     loginFailed: 'auth-login-failed',
     logoutSuccess: 'auth-logout-success',
     sessionTimeout: 'auth-session-timeout',
     notAuthenticated: 'auth-not-authenticated',
     notAuthorized: 'auth-not-authorized'
-})
-.constant('APP_SETTINGS', {
+});
+
+ramAngularApp.module.constant('APP_SETTINGS', {
         apiUrl: 'http://pspapi.localhost/api/'
-    })
-.run(function($rootScope, $location, AuthService){
+    });
+
+ramAngularApp.module.run(function($rootScope, $location, AuthService){
 
         $rootScope.isVisible = true;
 

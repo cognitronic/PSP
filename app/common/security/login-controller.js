@@ -5,7 +5,7 @@
 'use strict'
 
 
-app.controller('LoginCtrl', function($scope, $rootScope, AUTH_EVENTS, AuthService){
+ramAngularApp.module.controller('LoginCtrl', function($scope, $rootScope, AUTH_EVENTS, AuthService){
     console.log('Inside of login controller');
     $scope.credentials = {
         email: '',

@@ -122,5 +122,5 @@
         $scope.model.init();
     };
 
-    angular.module('psp').controller('GSRReportController',['$scope', '$rootScope', 'CacheService', 'ReportsService', 'SiteService', GSRReportController]);
+    ramAngularApp.module.controller('GSRReportController',['$scope', '$rootScope', 'CacheService', 'ReportsService', 'SiteService', GSRReportController]);
 })();

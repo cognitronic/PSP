@@ -3,7 +3,7 @@
  */
 'use strict';
 
-app.directive('accessLevel', ['AuthService', '$rootScope', '$location', function(AuthService, $rootScope, $location) {
+ramAngularApp.module.directive('accessLevel', ['AuthService', '$rootScope', '$location', function(AuthService, $rootScope, $location) {
     return {
         restrict: 'A',
         link: function($scope, element, attrs) {

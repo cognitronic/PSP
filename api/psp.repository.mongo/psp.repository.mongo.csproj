@@ -56,8 +56,11 @@
     <Compile Include="Cache\MongoDBCacheAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\MongoDBOutputCacheProvider.cs" />
+    <Compile Include="Repositories\AuditLogRepository.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\CouponCodeRepository.cs" />
+    <Compile Include="Repositories\CouponRepository.cs" />
     <Compile Include="Repositories\GSRRepository.cs" />
     <Compile Include="Repositories\NotificationRepository.cs" />
     <Compile Include="Repositories\SiteRepository.cs" />
