@@ -93,9 +93,11 @@ angular.module('service.notifications', [])
                 var url = '';
                 console.log(noteparam.name);
                 if(noteparam.name == 'Volume_Report'){
-                    url = 'reports/volume/' + noteparam.date;
+                    url = 'reports/volume/run-notification/' + noteparam.date;
                 } else if(noteparam.name == 'GSR_Audit'){
-                    url = 'gsr/' + noteparam.date;
+                    url = 'gsr/run-notification/' + noteparam.date;
+                } else if(noteparam.name == 'Rewash_Alert'){
+                    url = 'reports/rewash/run-notification/' + noteparam.date
                 }
                 $http.get(APP_SETTINGS.apiUrl + url)
                     .success(function(data){

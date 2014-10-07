@@ -16,6 +16,7 @@ ramAngularApp.module = angular.module('psp', [
         'service.reports',
         'filters.app',
         'dialogs.services',
+        'highcharts-ng',
         'cc.widgets.position']);
 
 ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvider){
@@ -62,6 +63,11 @@ ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvi
         .when('/reports/gsr', {
             templateUrl: 'reports/gsr.html',
             controller: 'GSRReportController',
+            access: access.executive
+        })
+        .when('/reports/volume', {
+            templateUrl: 'reports/volume.html',
+            controller: 'VolumeReportController',
             access: access.executive
         })
         .when('/reports/customerregistrations', {

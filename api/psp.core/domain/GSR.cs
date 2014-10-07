@@ -242,7 +242,7 @@ namespace psp.core.domain
         public decimal washLinkTotalTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int totalTireGloss_diff { get; set; }
+        public decimal totalTireGloss_diff { get; set; }
 
         [DataMember]
         public int washLinkTotalWashes_count { get; set; }

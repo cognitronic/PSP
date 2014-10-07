@@ -28,5 +28,11 @@ namespace psp.core
         public static string Mongo_CouponCode_Collection = "coupon_code";
         public static string Mongo_Audit_Collection = "audit";
         #endregion
+
+        #region Audit Types
+        public static string Audit_Connectivity = "Connectivity";
+        public static string Audit_Report = "Reports";
+        public static string Audit_Notification = "Notification";
+        #endregion
     }
 }

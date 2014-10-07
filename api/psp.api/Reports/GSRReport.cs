@@ -20,7 +20,7 @@ namespace psp.api.Reports
             var  wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate); 
             var gsr = new GSR();
             gsr.siteId = site.sitewatchid.ToString();
-            gsr.siteName = site.name;
+            gsr.siteName = site.location;
             gsr.sid = site.Id.ToString();
             gsr.gsrDate = reportdate.ToShortDateString();
 
@@ -675,27 +675,45 @@ namespace psp.api.Reports
             int iExcludingCars = ((gsr.siteWatchTotalPrimeShine_count - gsr.washLinkTotalPrimeShine_count) * (int)GSRMultiplier.PLUS_SEVEN) +
                 ((gsr.siteWatchTotalProtex_count - gsr.washLinkTotalProtex_count) * (int)GSRMultiplier.PLUS_TEN) +
                 ((gsr.siteWatchTotalPremier_count - gsr.washLinkTotalPremier_count) * (int)GSRMultiplier.PLUS_TWELVE) +
-                gsr.totalTireGloss_diff;
+                gsr.siteWatchTotalTireGloss_count;
             gsr.amountToAudit = gsr.totalOverUnder_dollars +((iExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
             
             return gsr;
         }
 
-        public IList<SiteWatchSalesItem> BuildNotificationData(string gsrDate)
+        public IList<SiteWatchSalesItem> BuildNotificationData(string gsrDate, bool saveReport)
         {
             var sites = new SiteController().Get();
             var list = new List<SiteWatchSalesItem>();
             foreach (var site in sites)
             {
                 var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate));
-                list.Add(new SiteWatchSalesItem
+                if (gsr != null)
                 {
-                    total = gsr.siteWatchTotalWashes_count.ToString(),
-                    locationid = site.sitewatchid,
-                    sitename = site.description,
-                    val = gsr.totalOverUnder_dollars.ToString(),
-                    amt = gsr.amountToAudit.ToString()
-                });
+                    list.Add(new SiteWatchSalesItem
+                    {
+                        total = gsr.siteWatchTotalWashes_count.ToString(),
+                        locationid = site.sitewatchid,
+                        sitename = site.name,
+                        val = gsr.totalOverUnder_dollars.ToString(),
+                        amt = gsr.amountToAudit.ToString()
+                    });
+                    try
+                    {
+                        if (saveReport)
+                            new psp.repository.mongo.Repositories.GSRRepository().Save(gsr);
+                    }
+                    catch(Exception exc)
+                    {
+                        AuditService.SaveLog(new AuditLog
+                        {
+                            auditDate = DateTime.Now,
+                            message = "Could not save gsr for" + site.name + ".  The error thrown is: " + exc.Message,
+                            type = psp.core.ResourceStrings.Audit_Report,
+                            name = "Saving GSR"
+                        });
+                    }
+                }
             }
             return list;
         }

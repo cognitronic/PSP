@@ -79,6 +79,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.Cors">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.2\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -185,6 +186,7 @@
     <Compile Include="Controllers\GsrController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotificationsController.cs" />
+    <Compile Include="Controllers\RewashController.cs" />
     <Compile Include="Controllers\SendCouponController.cs" />
     <Compile Include="Controllers\SendMailController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
@@ -203,8 +205,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\domain\VolumeChart.cs" />
+    <Compile Include="Reports\domain\VolumeChartSeries.cs" />
+    <Compile Include="Reports\domain\VolumeChartSeriesPoint.cs" />
+    <Compile Include="Reports\domain\VolumeDto.cs" />
     <Compile Include="Reports\GSRMultiplier.cs" />
     <Compile Include="Reports\GSRReport.cs" />
+    <Compile Include="Reports\RewashReport.cs" />
     <Compile Include="Reports\VolumeReport.cs" />
   </ItemGroup>
   <ItemGroup>
