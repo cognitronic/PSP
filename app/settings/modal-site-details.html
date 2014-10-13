@@ -1,0 +1,93 @@
+<div class="modal-header dialog-header-confirm">
+    <button type="button" class="close" ng-click="no()">&times;</button>
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-check"></span>
+        Manage {{ model.selectedSite.name }}
+    </h4>
+</div>
+<div class="modal-body">
+    <div>{{ model.modalData.msg }}</div>
+    <form name="userForm">
+        <ng-form name="nameForm">
+            <div class="control-group span6">
+                <label class="control-label"><b>Name:</b><small> keep name all lower case with no spaces. this field is used as a key.</small></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.name }}" control-group="false" name="name" id="name" class="form-control" type="text" placeholder="Enter name" ng-model="model.selectedSite.name" isrequired="true" field-validate autofocus>
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="locationForm">
+            <div class="control-group">
+                <label class="control-label"><b>Location:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.location }}" name="location" id="location" class="form-control" type="text" placeholder="Enter location" ng-model="model.selectedSite.location" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="descriptionForm">
+            <div class="control-group">
+                <label class="control-label"><b>Description:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.description }}" name="description" id="description" class="form-control" type="text" placeholder="Enter description" ng-model="model.selectedSite.description" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="cityForm">
+            <div class="control-group">
+                <label class="control-label"><b>City:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.city }}" name="city" id="city" class="form-control" type="text" placeholder="Enter city" ng-model="model.selectedSite.city" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="siteWatchIdForm">
+            <div class="control-group">
+                <label class="control-label"><b>Site Watch ID:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.sitewatchid}}" name="sitewatchid" id="sitewatchid" class="form-control" type="text" placeholder="Enter site watch id" ng-model="model.selectedSite.sitewatchid" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="washLinkIPAddressForm">
+            <div class="control-group">
+                <label class="control-label"><b>Wash Link IP Address:</b></label>
+                <div class="controls">
+                    <input value="{{ model.site.washlinkip}}" name="washlinkip" id="washlinkip" class="form-control" type="text" placeholder="Enter wash link ip address" ng-model="model.selectedSite.washlinkip" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="dbConnectionStringForm">
+            <div class="control-group">
+                <label class="control-label"><b>Database Connection String:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedSite.dbconnectionstring}}" name="dbconnectionstring" id="dbconnectionstring" class="form-control" type="text" placeholder="Enter database connectionstring" ng-model="model.selectedSite.dbconnectionstring" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="dbNameForm">
+            <div class="control-group">
+                <label class="control-label"><b>Database Name:</b></label>
+                <div class="controls">
+                    <input name="dbname" id="dbname" class="form-control" type="text" placeholder="Enter database name" ng-model="model.selectedSite.dbname" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="dbTypeForm">
+            <div class="control-group">
+                <label class="control-label"><b>Database Type:</b></label>
+                <div class="controls">
+                    <select class="form-control" ng-model="model.selectedSite.dbtype" ng-options="s for s in model.dbTypes">
+                        <option value="">-- Select Type --</option>
+                    </select>
+                </div>
+            </div>
+        </ng-form>
+    </form>
+    <div style="clear: both;"></div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-disabled="userForm.$invalid" ng-click="model.saveSite()"><i class="glyphicon glyphicon-save"></i> Save</button>
+    <button class="btn btn-danger" type="button" ng-click="model.deleteSite()" ng-disabled="userForm.$invalid"><i class="glyphicon glyphicon-remove"></i> Delete</button>
+    <button class="btn" ng-click="$dismiss()"><i class="glyphicon glyphicon-ban-circle"></i> Cancel</button>
+
+</div>

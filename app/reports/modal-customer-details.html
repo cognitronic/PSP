@@ -1,0 +1,94 @@
+<div class="modal-header dialog-header-confirm">
+    <button type="button" class="close" ng-click="no()">&times;</button>
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-check"></span>
+        Manage {{ model.selectedClient.fullname }}
+    </h4>
+</div>
+<div class="modal-body">
+    <div>{{ model.modalData.msg }}</div>
+    <form name="userForm">
+        <ng-form name="nameForm">
+            <div class="control-group span6">
+                <label class="control-label"><b>First Name:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.firstname }}" name="firstname" id="firstname" class="form-control" type="text" placeholder="Enter First Name" ng-model="model.selectedClient.firstname"  isrequired="true" field-validate autofocus>
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="lastNameForm">
+            <div class="control-group">
+                <label class="control-label"><b>Last Name:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.lastname }}" name="lastname" id="lastname" class="form-control" type="text" placeholder="Enter Last Name" ng-model="model.selectedClient.lastname" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="emailForm">
+            <div class="control-group">
+                <label class="control-label"><b>Email:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.email }}" name="email" id="email" class="form-control" type="email" placeholder="Enter Email" ng-model="model.selectedClient.email" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="phoneForm">
+            <div class="control-group">
+                <label class="control-label"><b>Phone:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.phone }}" name="phone" id="phone" class="form-control" type="tel" placeholder="Enter Phone" ng-model="model.selectedClient.phone" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="addressForm">
+            <div class="control-group">
+                <label class="control-label"><b>Address:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.address }}" name="address" id="address" class="form-control" type="text" placeholder="Enter Address" ng-model="model.selectedClient.address" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="cityForm">
+            <div class="control-group">
+                <label class="control-label"><b>City:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.city }}" name="city" id="city" class="form-control" type="text" placeholder="Enter City" ng-model="model.selectedClient.city" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="stateForm">
+            <div class="control-group">
+                <label class="control-label"><b>State:</b></label>
+                <div class="controls">
+                    <input value="{{ model.selectedClient.state }}" name="state" id="state" class="form-control" type="text" placeholder="Enter State" ng-model="model.selectedClient.state" control-group="false" isrequired="true" field-validate >
+                </div>
+            </div>
+        </ng-form>
+        <ng-form name="birthdateForm">
+            <div class="control-group">
+                <label class="control-label"><b>Birthday:</b></label>
+                <div class="controls">
+                    <p class="input-group col-lg-4 col-md-4 col-sm-4">
+                        <input type="text"
+                               class="form-control"
+                               datepicker-popup="{{'MM/dd'}}"
+                               ng-model="model.selectedClient.birthdate"
+                               is-open="model.birthdateOpened"
+                               ng-required="true"
+                               close-text="Close" />
+                        <span class="input-group-btn">
+                            <button class="btn" id="btnBirthdate" ng-click="model.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                    </p>
+                   </div>
+            </div>
+        </ng-form>
+    </form>
+    <div style="clear: both;"></div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-disabled="userForm.$invalid" ng-click="model.saveClient()"><i class="glyphicon glyphicon-save"></i> Save</button>
+    <!--<button class="btn btn-danger" type="button" ng-click="model.deleteClient()" ng-disabled="userForm.$invalid"><i class="glyphicon glyphicon-remove"></i> Delete</button>-->
+    <button class="btn" ng-click="$dismiss()"><i class="glyphicon glyphicon-ban-circle"></i> Cancel</button>
+
+</div>

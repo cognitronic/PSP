@@ -1,0 +1,47 @@
+<div class="container view-container">
+    <div class="row-fluid">
+        <h3>Volume Report</h3>
+        <div class="container-header">
+            Search Criteria
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div>
+                    <b class="messagecontainer">Date:</b>
+                    <p class="input-group">
+                        <input type="text" class="form-control" cc-datepicker-popup="{{model.format}}" ng-model="model.dt" is-open="model.opened" enable-on-focus="false" close-text="Close" />
+                    <span class="input-group-btn">
+                        <button class="btn " id="btnRegistered" ng-click="model.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="form-group">
+                    <b class="messagecontainer">Site:</b>
+                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.location for site in model.sites">
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="form-group">
+                    <br/>
+                    <button class="btn " ng-confirm ng-click="model.getVolume()"><i class="glyphicon glyphicon-play"></i> Run Volume Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container view-container">
+    <div class="row-fluid">
+        <br />
+        <highchart id="byDateChart" config="model.byDateChartConfig"></highchart>
+    </div>
+</div>
+<div class="container view-container-last">
+    <div class="row-fluid">
+        <br />
+        <highchart id="byWashesChart" config="model.byWashesChartConfig"></highchart>
+    </div>
+</div>
+
