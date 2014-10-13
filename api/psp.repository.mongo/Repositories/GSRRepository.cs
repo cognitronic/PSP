@@ -60,11 +60,11 @@ namespace psp.repository.mongo.Repositories
         public IList<WashLinkWashTotals> GetWashTotals(string date)
         {
             var collection = _database.GetCollection<GSR>("gsr");
-            var cursor = collection.FindAs<GSR>(Query.EQ("gsrDate", date.Replace("-", "/") + " 12:00:00 AM"));
-            if(cursor.Count() < 1)
-            {
-                cursor = collection.FindAs<GSR>(Query.EQ("gsrDate", date.Replace("-", "/")));
-            }
+            var cursor = collection.FindAs<GSR>(Query.Matches("gsrDate", BsonRegularExpression.Create(new Regex(date.Replace("-", "/")))));
+            //if(cursor.Count() < 1)
+            //{
+            //    cursor = collection.FindAs<GSR>(Query.EQ("gsrDate", date.Replace("-", "/") + " 12:00:00 AM"));
+            //}
             cursor.SetFields(Fields.Include("washLinkTotalPrimeShine_count", "washLinkTotalProtex_count", "washLinkTotalPremier_count", "washLinkTotalTireGloss_count", "washLinkTotalPlusPlus_count", "washLinkTotalRainX_count", "siteName"));
             var totals = new List<WashLinkWashTotals>();
             foreach(var gsr in cursor.ToList())
@@ -85,10 +85,10 @@ namespace psp.repository.mongo.Repositories
 
         public GSR Save(GSR gsr)
         {
-            //if (gsr.sid != null && gsr.sid != "")
-            //{
-            //    gsr.Id = new ObjectId(gsr.sid);
-            //}
+            if (gsr.sid != null && gsr.sid != "")
+            {
+                gsr.Id = new ObjectId(gsr.sid);
+            }
             _collection.Save<GSR>(gsr);
             return gsr;
         }
