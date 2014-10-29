@@ -30,5 +30,8 @@ namespace psp.core.domain
 
         [DataMember]
         public string sitename { get; set; }
+
+        [DataMember]
+        public DateTime date { get; set; }
     }
 }

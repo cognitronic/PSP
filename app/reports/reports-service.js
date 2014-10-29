@@ -4,7 +4,7 @@
 'use strict'
 
 angular.module('service.reports', [])
-    .factory('ReportsService', function($http, $rootScope,$q, $location, APP_SETTINGS){
+    .factory('ReportsService', function($http, $rootScope,$q, $location, APP_SETTINGS, $window){
 
         return{
             saveClient: function(client){
@@ -145,6 +145,42 @@ angular.module('service.reports', [])
                         deferred.reject();
                     });
                 return deferred.promise;
+            },
+            exportGSRReport: function(site, gsrDate){
+//                var deferred = $q.defer();
+//                $rootScope.loading = true;
+//                $http.get(APP_SETTINGS.apiUrl + 'gsr/export/' + site + '/' + gsrDate)
+//                    .success(function(data){
+//                        $rootScope.loading = false;
+//                        deferred.resolve(data);
+//                    })
+//                    .error(function(){
+//                        $rootScope.loading = false;
+//                        deferred.reject();
+//                    });
+//                return deferred.promise;
+                $window.location = APP_SETTINGS.apiUrl + 'gsr/export/' + site + '/' + gsrDate;
+            },
+            exportGSRBySiteDateRange: function(params){
+
+                var deferred = $q.defer();
+                $rootScope.loading = true;
+                console.log(params);
+                $http.post(APP_SETTINGS.apiUrl + 'gsr/export/session', params)
+                    .success(function(data){
+                        $rootScope.loading = false;
+                        deferred.resolve(data);
+                    })
+                    .error(function(){
+                        $rootScope.loading = false;
+                        deferred.reject();
+                    });
+                deferred.promise.then(function(key){
+                    console.log(key);
+                    if(key){
+                        $window.location = APP_SETTINGS.apiUrl + 'gsr/export/key/' + key.replace('"', '').replace('"', '');
+                    }
+                });
             }
 
         }

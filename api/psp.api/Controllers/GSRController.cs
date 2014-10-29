@@ -9,6 +9,8 @@ using psp.repository.mongo.Repositories;
 using psp.api.Reports;
 using MongoDB.Bson;
 using psp.api.helpers;
+using System.Text;
+using System.Reflection;
 
 namespace psp.api.Controllers
 {
@@ -25,6 +27,13 @@ namespace psp.api.Controllers
         // GET api/gsr
         public IEnumerable<string> Get()
         {
+            return new string[] { "value1", "value2" };
+        }
+
+        [Route("save/{gsrDate}")]
+        public IEnumerable<string> GetSaveGSR(string gsrDate)
+        {
+            new psp.api.Reports.GSRReport().BuildNotificationData(gsrDate, true);
             return new string[] { "value1", "value2" };
         }
 
@@ -51,14 +60,60 @@ namespace psp.api.Controllers
             return notification.Subject;
         }
 
-        // POST api/gsr
-        public void Post([FromBody]string value)
+        [Route("export/{siteName}/{dateRange}")]
+        public HttpResponseMessage GetExportGSR(string siteName, string dateRange)
         {
+            var sb = new StringBuilder();
+            if(siteName == "All" || siteName == "")
+            {
+                sb.Append(new GSRReport().ExportGSRToCSV(new SiteRepository().GetAll(), dateRange));
+            }
+            else
+            {
+                var sites = new List<Site>();
+                sites.Add(new SiteRepository().GetByName(siteName));
+                sb.Append(new GSRReport().ExportGSRToCSV(sites, dateRange));
+            }
+            HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.OK);
+            result.Content = new StringContent(sb.ToString());
+            result.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+            result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment"); //attachment will force download
+            result.Content.Headers.ContentDisposition.FileName = "GSRExport.csv";
+
+            return result;
         }
 
-        // PUT api/gsr/5
-        public void Put(int id, [FromBody]string value)
+        // POST api/gsr
+        [Route("export/session")]
+        public string PostExportSession([FromBody]GSRExportModel parms)
         {
+            var session = new PspSession();
+            session.name = DateTime.Now.ToFileTimeUtc().ToString();;
+            var sites = new List<Site>();
+            foreach (var site in parms.sites)
+            {
+                sites.Add(new SiteRepository().GetByName(site));
+            }
+            session.val = new GSRReport().ExportGSRToCSV(sites, parms.dateRange);
+            new SessionRepository().Save(session);
+            return session.name;
+        }
+
+        [Route("export/key/{key}")]
+
+        // PUT api/gsr/5
+        public HttpResponseMessage GetByKey(string key)
+        {
+            var session = new SessionRepository().GetByName(key);
+            new SessionRepository().Delete(session.name);
+
+            HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.OK);
+            result.Content = new StringContent(session.val);
+            result.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+            result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment"); //attachment will force download
+            result.Content.Headers.ContentDisposition.FileName = "GSRExport.csv";
+
+            return result;
         }
 
         // DELETE api/gsr/5
@@ -71,5 +126,11 @@ namespace psp.api.Controllers
     {
         public string site { get; set; }
         public DateTime gsrDate { get; set; }
+    }
+
+    public class GSRExportModel
+    {
+        public string dateRange { get; set; }
+        public IList<string> sites { get; set; }
     }
 }

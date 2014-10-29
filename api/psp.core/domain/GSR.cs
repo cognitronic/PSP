@@ -24,7 +24,7 @@ namespace psp.core.domain
         public string siteId { get; set; }
 
         [DataMember]
-        public string gsrDate { get; set; }
+        public DateTime gsrDate { get; set; }
 
         //[DataMember]
         //public int washLinkPrimeShine_count { get; set; }

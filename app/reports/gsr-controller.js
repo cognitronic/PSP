@@ -9,7 +9,7 @@
         var _selectedSite = {};
         var _selectedDate = '';
         var _reportParams = {};
-        var _gsr = {};
+        var _gsr = undefined;
         var _maxDate = '';
         var _dt = undefined;
         var _showWeeks = true;
@@ -94,6 +94,11 @@
             }
         };
 
+        var _exportGSR = function(){
+            ReportsService.exportGSRReport($scope.model.selectedSite.location, 'CUSTOM_' +
+                $scope.model.dt.toLocaleDateString().replace('/','-').replace('/','-') + '_' + $scope.model.dt.toLocaleDateString().replace('/','-').replace('/','-'));
+        };
+
         $scope.model = {
             init: _init,
             selectedSite: _selectedSite,
@@ -116,7 +121,8 @@
             open: _open,
             formats: _formats,
             format: _format,
-            birthdateFormat: _birthdateFormat
+            birthdateFormat: _birthdateFormat,
+            exportGSR: _exportGSR
         }
 
         $scope.model.init();

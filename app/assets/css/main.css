@@ -903,3 +903,20 @@ html body {
     width: 100%;
     margin-bottom: 5px;
 }
+
+.drop-down-menu {
+    max-height: 200px;
+    overflow-y: auto;
+    text-wrap: normal;
+    width: 100%;
+    cursor: pointer;
+}
+
+.drop-down-menu li{
+    padding: 10px;
+    width: 100%;
+}
+
+.drop-down-menu li:hover{
+    background-color: #f0f0f0;
+}

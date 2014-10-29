@@ -63,6 +63,7 @@
     <Compile Include="Repositories\CouponRepository.cs" />
     <Compile Include="Repositories\GSRRepository.cs" />
     <Compile Include="Repositories\NotificationRepository.cs" />
+    <Compile Include="Repositories\SessionRepository.cs" />
     <Compile Include="Repositories\SiteRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>

@@ -56,7 +56,7 @@
                    },
                    series: data.data,
                    title: {
-                       text: 'Total Volume By Site For: ' + $scope.model.dt.toDateString()
+                       text: data.name
                    },
                    xAxis: {
                        title: {
@@ -65,8 +65,6 @@
                        categories: data.categories
                    },
                    yAxis: {
-                       currentMin: 0,
-                       currentMax: 1000,
                        minRange: 100,
                        title: {
                            text: 'Car Count'
@@ -79,21 +77,24 @@
         var _getVolumeByWashes = function(){
             ReportsService.getVolumeByWashes($scope.model.dt.toLocaleDateString().replace('/','-').replace('/','-')).then(function(data){
                 console.log(data);
-                $scope.model.byWashesChartConfig = {
+                $('#byWashesChart').highcharts({
                     options: {
                         chart: {
-                            type: 'column',
-                            zoomType: 'x'
+                            type: 'column'
                         }
                     },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                        shared: true
+                    },
                     plotOptions: {
-                        area: {
-                            fillOpacity: 0.5
+                        column: {
+                            stacking: 'percent'
                         }
                     },
                     series: data.data,
                     title: {
-                        text: 'Wash Volume By Site For: ' + $scope.model.dt.toDateString()
+                        text: 'Package & Options Volume % for : ' + $scope.model.dt.toDateString()
                     },
                     xAxis: {
                         title: {
@@ -102,14 +103,12 @@
                         categories: data.categories
                     },
                     yAxis: {
-                        currentMin: 0,
-                        currentMax: 1000,
-                        minRange: 100,
+                        min: 0,
                         title: {
                             text: 'Car Count'
                         }
                     }
-                };
+                });
             });
         };
 

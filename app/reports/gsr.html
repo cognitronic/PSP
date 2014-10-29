@@ -27,6 +27,7 @@
                 <div class="form-group">
                     <br/>
                     <button class="btn " ng-confirm ng-click="model.getGsr()"><i class="glyphicon glyphicon-play"></i> Run GSR</button>
+                    <button class="btn " ng-confirm ng-click="model.exportGSR()" ng-disabled="model.gsr == undefined"><i class="glyphicon glyphicon-export"></i> Export To CSV</button>
                 </div>
             </div>
         </div>

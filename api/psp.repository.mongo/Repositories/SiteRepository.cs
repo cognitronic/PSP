@@ -31,7 +31,7 @@ namespace psp.repository.mongo.Repositories
 
         public Site GetByName(string name)
         {
-            var query = Query<Site>.EQ(e => e.name, name);
+            var query = Query<Site>.EQ(e => e.location, name);
             return _collection.FindOneAs<Site>(query);
         }
 

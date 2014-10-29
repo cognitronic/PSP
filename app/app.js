@@ -70,6 +70,11 @@ ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvi
             controller: 'VolumeReportController',
             access: access.executive
         })
+        .when('/reports/engine', {
+            templateUrl: 'reports/engine.html',
+            controller: 'ReportEngineController',
+            access: access.executive
+        })
         .when('/reports/customerregistrations', {
             templateUrl: 'reports/customerregistrations.html',
             controller: 'reports.CustomerRegistrationsCtrl',

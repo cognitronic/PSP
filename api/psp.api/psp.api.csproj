@@ -198,6 +198,8 @@
     <Compile Include="helpers\BaseHelpers.cs" />
     <Compile Include="helpers\DataImport.cs" />
     <Compile Include="helpers\NotificationTemplates.cs" />
+    <Compile Include="helpers\PSPHttpControllerHandler.cs" />
+    <Compile Include="helpers\PSPHttpControllerRouteHandler.cs" />
     <Compile Include="helpers\SendCoupon.cs" />
     <Compile Include="helpers\SiteWatch.cs" />
     <Compile Include="helpers\WashLink.cs" />

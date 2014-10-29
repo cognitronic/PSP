@@ -28,5 +28,16 @@ ramAngularApp.module.constant('Constants',{
             CONTAINS_DIGIT: "Password must contain at least one digit (0-9)",
             CONTAINS_LETTER: "Password must contain at least one letter (a-zA-Z)"
         }
-    }
+    },
+    DATE_RANGES:[
+        {name: 'Today', val: 'Today'},
+        {name: 'Yesterday', val: 'Yesterday'},
+        {name: 'This Week', val: 'ThisWeek'},
+        {name: 'Last Week', val: 'LastWeek'},
+        {name: 'This Month', val: 'ThisMonth'},
+        {name: 'Last Month', val: 'LastMonth'},
+        {name: 'This Quarter', val: 'ThisQuarter'},
+        {name: 'Last Quarter', val: 'LastQuarter'},
+        {name: 'Year To Date', val: 'YearToDate'}
+    ]
 });

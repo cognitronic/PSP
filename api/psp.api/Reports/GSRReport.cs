@@ -6,6 +6,9 @@ using System.Data;
 using psp.api.helpers;
 using psp.core.domain;
 using psp.api.Controllers;
+using psp.repository.mongo.Repositories;
+using System.Reflection;
+using System.Text;
 
 namespace psp.api.Reports
 {
@@ -22,7 +25,7 @@ namespace psp.api.Reports
             gsr.siteId = site.sitewatchid.ToString();
             gsr.siteName = site.location;
             gsr.sid = site.Id.ToString();
-            gsr.gsrDate = reportdate.ToShortDateString();
+            gsr.gsrDate = reportdate;
 
             #region WashLink Wash and Tire Gloss Counts
             if (wlData != null)
@@ -595,7 +598,7 @@ namespace psp.api.Reports
                     {
                         if(!string.IsNullOrEmpty(coupons.total))
                         {
-                            if(!string.IsNullOrEmpty(coupons.val))
+                            if(!string.IsNullOrEmpty(coupons.amt))
                                 gsr.couponsAndDiscounts += ((int.Parse(coupons.total) * Math.Abs(decimal.Parse(coupons.amt))) * (int)GSRMultiplier.NEGATIVE_ONE);
                         }
                     }
@@ -812,6 +815,45 @@ namespace psp.api.Reports
             message.Subject = notification.subject.Replace("!!date!!", date);
             message.MessageBody = NotificationTemplates.StandardNotificationFooter(sb);
             return message;
+        }
+
+        public String ExportGSRToCSV(IList<Site> sites, string dateRange)
+        {
+            var gsrList = new List<GSR>();
+            var dates = psp.core.helpers.DateUtilities.GetRangesByName(dateRange);
+            foreach (var site in sites)
+            {
+                if (site != null)
+                {
+                    gsrList.AddRange(new GSRRepository().GetBySiteDateRange(dates["StartDate"], dates["EndDate"], site.location));
+                }
+            }
+
+            var sb = new StringBuilder();
+            PropertyInfo[] properties;
+            properties = typeof(GSR).GetProperties();
+            var gsrProps = "";
+
+            //build header row
+            foreach (var prop in properties)
+            {
+                gsrProps += prop.Name + ",";
+            }
+            gsrProps = gsrProps.Substring(0, gsrProps.Length - 1) + "\r\n";
+            sb.Append(gsrProps);
+
+            //build data rows
+            foreach(var gsr in gsrList)
+            {
+                var gsrVals = "";
+                foreach (var vals in properties)
+                {
+                    gsrVals += vals.GetValue(gsr) + ",";
+                }
+                gsrVals = gsrVals.Substring(0, gsrVals.Length - 1) + "\r\n";
+                sb.Append(gsrVals);
+            }
+            return sb.ToString();
         }
     }
 }
