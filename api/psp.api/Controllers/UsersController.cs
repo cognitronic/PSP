@@ -43,9 +43,9 @@ namespace psp.api.Controllers
         }
 
         // DELETE api/user/5
-        public User Delete([FromBody]User usr)
+        public void Delete(string id)
         {
-            return _userRepository.Delete(usr);
+            _userRepository.Delete(id);
         }
     }
 }

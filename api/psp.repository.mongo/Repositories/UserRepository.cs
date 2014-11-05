@@ -52,12 +52,10 @@ namespace psp.repository.mongo.Repositories
             return user;
         }
 
-        public User Delete(User user)
+        public void Delete(string id)
         {
-            var usr = user;
-            var query = Query<User>.EQ(u => u.Id, new ObjectId(user.sid));
+            var query = Query<User>.EQ(u => u.Id, new ObjectId(id));
             _collection.Remove(query);
-            return usr;
         }
     }
 }

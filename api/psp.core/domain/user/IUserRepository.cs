@@ -14,6 +14,6 @@ namespace psp.core.domain.user
         User GetByEmail(string email);
         User GetByEmailPassword(string email, string password);
         User Save(User user);
-        User Delete(User user);
+        void Delete(string id);
     }
 }

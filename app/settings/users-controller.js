@@ -22,13 +22,13 @@ ramAngularApp.module.controller('settings.UsersCtrl', function($scope, $rootScop
     };
 
     $scope.deleteUser = function(usr){
+        console.log(usr);
         usr.sid = usr.Id;
         UserService.deleteUser(usr).then(function(data){
             UserService.getUsers().then(function(data){
                 $scope.users = data;
             });
         });
-        console.log(usr);
         $scope.confirmed = 'from the directive';
     };
 });

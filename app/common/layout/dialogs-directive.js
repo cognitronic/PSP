@@ -17,7 +17,6 @@ ramAngularApp.module.directive('ccConfirmDialog', [
             element.bind('click', function(event){
                 var dlg = factoryInstance.confirm(header, msg, 'static');
                 dlg.result.then(function(btn){
-                    console.log(scope);
                     scope.$eval(scope.confirmClicked);
                 },function(btn){
                     console.log('cancelled click');

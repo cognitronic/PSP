@@ -140,28 +140,6 @@ ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvi
             access: access.anon
     });
 
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
-
-//        // create a decorator
-//        $provide.decorator('$rootScope', function($delegate) {
-//            // in this case $delegate == $rootScope
-//            // otherwise $delegate would be an array of
-//            // directives registered as the decorator name
-//            var times = 1;
-//            // augument the apply method to log how many times
-//            // it was called
-//            $delegate.$apply = loggerify($delegate.$apply);
-//            function loggerify(fn) {
-//                return function() {
-//                    fn.apply(this, arguments);
-//                    console.log('$apply: ' + times);
-//                    times += 1;
-//                }
-//            }
-//            return $delegate;
-//        });
-
 
 });
 

@@ -218,11 +218,11 @@ namespace psp.api.Reports
                             gsr.siteWatchRainX_count += int.Parse(item.total);
                             break;
                         case "49501693": // Reapply RainX
-                            gsr.siteWatchReapplyRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchReapplyRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_TWO;
                             gsr.siteWatchReapplyRainX_count += int.Parse(item.total);
                             break;
                         case "609015": // Unlimited PSX With Plus+
-                            gsr.siteWatchUnlimitedPsxWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchUnlimitedPsxWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchUnlimitedPsxWithPlusPlus_count += int.Parse(item.total);
                             break;
                         case "609014": // Unlimited PSX With RainX
@@ -230,7 +230,7 @@ namespace psp.api.Reports
                             gsr.siteWatchUnlimitedPsxWithRainX_count += int.Parse(item.total);
                             break;
                         case "609019": // Unlimited Protex With Plus+
-                            gsr.siteWatchUnlimitedProtexWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchUnlimitedProtexWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchUnlimitedProtexWithPlusPlus_count += int.Parse(item.total);
                             break;
                         case "609018": // Unlimited Protex With RainX
@@ -238,7 +238,7 @@ namespace psp.api.Reports
                             gsr.siteWatchUnlimitedProtexWithRainX_count += int.Parse(item.total);
                             break;
                         case "609021": // Unlimited Premier With Plus+
-                            gsr.siteWatchUnlimitedPremierWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchUnlimitedPremierWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchUnlimitedPremierWithPlusPlus_count += int.Parse(item.total);
                             break;
                         case "609020": // Unlimited Premier With RainX
@@ -250,11 +250,11 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhancePsxToProtexWithRainX_count += int.Parse(item.total);
                             break;
                         case "49000310": // Enhance PSX To Protex Plus+
-                            gsr.siteWatchEnhancePsxToProtexWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxToProtexWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000312": // Enhance PSX With Tire Gloss To Protex Plus+
-                            gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000313": // Enhance PSX With Tire Gloss To Protex RainX
@@ -266,11 +266,11 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhancePsxToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000316": // Enhance PSX To Premier With Plus+
-                            gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000317": // Enhance PSX With Tire Gloss To Premier With Plus+
-                            gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000318": // Enhance PSX With Tire Gloss To Premier With RainX
@@ -278,7 +278,7 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000319": // Enhance Protex To Premier With Plus+
-                            gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhanceProtexToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000320": // Enhance Protex To Premier With RainX
@@ -290,7 +290,7 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000322": // Enhance Protex To Premier With Plus+
-                            gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000324": // Reapply Fleet Plus+
@@ -462,7 +462,7 @@ namespace psp.api.Reports
                 gsr.siteWatchReapplyRainX_dollars;
             gsr.totalRainX_diff = (gsr.sitewatchTotalRainX_count - gsr.washLinkTotalRainX_count) * (int)GSRMultiplier.PLUS_TWO;
 
-
+            // Plus+
             gsr.sitewatchTotalPlusPlus_count = gsr.siteWatchPlusPlus_count +
                 gsr.sitewatchReapplyPlusPlus_count +
                 gsr.sitewatchReapplyFleetPlusPlus_count +
@@ -670,6 +670,8 @@ namespace psp.api.Reports
             // Total Over
             gsr.totalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.totalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;
             gsr.totalOverUnder_diff = gsr.totalTireGloss_diff + 
+                gsr.totalPlusPlus_diff +
+                gsr.totalRainX_diff +
                 gsr.totalPrimeShine_diff + 
                 gsr.totalProtex_diff + 
                 gsr.totalPremier_diff;
@@ -678,8 +680,17 @@ namespace psp.api.Reports
             int iExcludingCars = ((gsr.siteWatchTotalPrimeShine_count - gsr.washLinkTotalPrimeShine_count) * (int)GSRMultiplier.PLUS_SEVEN) +
                 ((gsr.siteWatchTotalProtex_count - gsr.washLinkTotalProtex_count) * (int)GSRMultiplier.PLUS_TEN) +
                 ((gsr.siteWatchTotalPremier_count - gsr.washLinkTotalPremier_count) * (int)GSRMultiplier.PLUS_TWELVE) +
+                gsr.sitewatchTotalPlusPlus_count +
+                gsr.sitewatchTotalRainX_count +
                 gsr.siteWatchTotalTireGloss_count;
-            gsr.amountToAudit = gsr.totalOverUnder_dollars +((iExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
+            decimal dExcludingCars = gsr.totalPrimeShine_diff +
+                gsr.totalProtex_diff +
+                gsr.totalPremier_diff +
+                gsr.totalPlusPlus_diff +
+                gsr.totalRainX_diff +
+                gsr.totalTireGloss_diff;
+
+            gsr.amountToAudit = gsr.totalOverUnder_dollars + ((dExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
             
             return gsr;
         }

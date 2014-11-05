@@ -64,7 +64,7 @@ angular.module('service.user', [])
             deleteUser: function(usr){
                 var deferred = $q.defer();
                 $rootScope.loading = true;
-                $http.delete(APP_SETTINGS.apiUrl + 'Users', usr)
+                $http.delete(APP_SETTINGS.apiUrl + 'Users/' + usr.sid)
                     .success(function(data){
                         $rootScope.loading = false;
                         deferred.resolve(data);

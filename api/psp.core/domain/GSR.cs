@@ -497,10 +497,10 @@ namespace psp.core.domain
         public decimal totalPlusPlus_diff { get; set; }
 
         [DataMember]
-        public decimal sitewatchTotalRainX_count { get; set; }
+        public int sitewatchTotalRainX_count { get; set; }
 
         [DataMember]
-        public decimal sitewatchTotalPlusPlus_count { get; set; }
+        public int sitewatchTotalPlusPlus_count { get; set; }
 
         [DataMember]
         public int sitewatchReapplyFleetPlusPlus_count { get; set; }

@@ -40,7 +40,12 @@ namespace psp.api.Controllers
         [Route("")]
         public Client Post([FromBody]Client client)
         {
-            return _repository.Save(client);
+            var c = new ClientRepository().GetByEmail(client.email);
+            if(c == null)
+            {
+                return _repository.Save(client);
+            }
+            return null;
         }
 
         [Route("birthdays")]
