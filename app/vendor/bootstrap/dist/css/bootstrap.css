@@ -2138,7 +2138,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #333;
 }
 .btn-primary {
-  color: #000;
+  color: #fff;
   background-color: #428bca;
   border-color: #357ebd;
 }
@@ -2147,7 +2147,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #000;
+  color: #fff;
   background-color: #3276b1;
   border-color: #285e8e;
 }
@@ -5027,9 +5027,10 @@ a.list-group-item-danger.active:focus {
   border-color: #ddd;
 }
 .panel-default > .panel-heading {
-  color: #333;
-  background-color: #f5f5f5;
-  border-color: #ddd;
+  color: #fff;
+  background-color: #428bca;
+  border-color: #4A9CE3;
+  height: 40px;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #ddd;

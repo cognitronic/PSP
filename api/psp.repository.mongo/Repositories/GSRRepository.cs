@@ -84,7 +84,7 @@ namespace psp.repository.mongo.Repositories
 
        
 
-        public IList<WashLinkWashTotals> GetWashTotals(DateTime date)
+        public IList<WashLinkWashTotals> GetSiteWashTotals(DateTime date)
         {
             var dt = DateTime.Parse(date.ToShortDateString());
             var collection = _database.GetCollection<GSR>("gsr");
@@ -95,19 +95,19 @@ namespace psp.repository.mongo.Repositories
             //{
             //    cursor = collection.FindAs<GSR>(Query.EQ("gsrDate", date.Replace("-", "/") + " 12:00:00 AM"));
             //}
-            cursor.SetFields(Fields.Include("washLinkTotalPrimeShine_count", "washLinkTotalProtex_count", "washLinkTotalPremier_count", "washLinkTotalTireGloss_count", "washLinkTotalPlusPlus_count", "washLinkTotalRainX_count", "siteName"));
+            cursor.SetFields(Fields.Include("siteWatchTotalPrimeShine_count", "siteWatchTotalProtex_count", "siteWatchTotalPremier_count", "siteWatchTotalTireGloss_count", "sitewatchTotalPlusPlus_count", "sitewatchTotalRainX_count", "siteName"));
             var totals = new List<WashLinkWashTotals>();
             foreach(var gsr in cursor.ToList())
             {
                 totals.Add(new WashLinkWashTotals
                 {
-                    plusplus = gsr.washLinkTotalPlusPlus_count,
-                    premierwash = gsr.washLinkTotalPremier_count,
-                    primeshinewash = gsr.washLinkTotalPrimeShine_count,
-                    protexwash = gsr.washLinkTotalProtex_count,
-                    rainx = gsr.washLinkTotalRainX_count,
+                    plusplus = gsr.sitewatchTotalPlusPlus_count,
+                    premierwash = gsr.siteWatchTotalPremier_count,
+                    primeshinewash = gsr.siteWatchTotalPrimeShine_count,
+                    protexwash = gsr.siteWatchTotalProtex_count,
+                    rainx = gsr.sitewatchTotalRainX_count,
                     sitename = gsr.siteName,
-                    tireshine = gsr.washLinkTotalTireGloss_count,
+                    tireshine = gsr.siteWatchTotalTireGloss_count,
                     date = gsr.gsrDate
                 });
             }

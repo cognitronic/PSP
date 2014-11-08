@@ -63,12 +63,12 @@ ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvi
         .when('/reports/gsr', {
             templateUrl: 'reports/gsr.html',
             controller: 'GSRReportController',
-            access: access.executive
+            access: access.manager
         })
         .when('/reports/volume', {
             templateUrl: 'reports/volume.html',
             controller: 'VolumeReportController',
-            access: access.executive
+            access: access.manager
         })
         .when('/reports/engine', {
             templateUrl: 'reports/engine.html',

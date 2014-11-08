@@ -1,4 +1,4 @@
-<div class="container view-container">
+<div class="container view-container" sticky>
     <div class="row-fluid">
         <h3>GSR Report</h3>
         <div class="container-header">
@@ -19,7 +19,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-group">
                     <b class="messagecontainer">Site:</b>
-                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.location for site in model.sites">
+                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.location for site in model.sites | orderBy: 'sitewatchid'">
                     </select>
                 </div>
             </div>
@@ -37,1423 +37,1564 @@
     <div class="row-fluid">
         <br />
         <table class="table model.gsrtable">
-            <thead>
-                <tr class="bg-primary">
-                    <th>
-                        PSX Wash Services
-                    </th>
-                    <th>
-                        Wash Count
-                    </th>
-                    <th>
-                        SW Count
-                    </th>
-                    <th>
-                        Dollars
-                    </th>
-                    <th>
-                        Diff (Count)
-                    </th>
-                </tr>
-            </thead>
             <tbody>
-                <tr>
-                    <td>
-                        Prime Shine Wash:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalPrimeShine_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                       <span ps-format-money dollar-amt="model.gsr.washLinkTotalPrimeShine_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fleet PSX Wash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchFleetPsx_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchFleetPsx_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        PSX Wash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPsx_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPsx_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Prime Shine Rewash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPrimeShineRewash_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPrimeShineRewash_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited PSX Wash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPsx_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsx_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited UCW:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedUcw_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedUcw_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited PSX W/TG:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPsxWithTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited PSX W/Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPsxWithPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited PSX W/Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPsxWithRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Prime Shine:</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.washLinkTotalPrimeShine_count }}</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.siteWatchTotalPrimeShine_count }}</b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalPrimeShine_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalPrimeShine_diff"></span></b>
-                    </td>
-                </tr>
-                <tr class="bg-primary">
-                    <td>
-                        <b>Protex Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Protex Wash:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalProtex_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.washLinkTotalProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Protex Rewash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchProtexRewash_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchProtexRewash_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX To Pro:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToProtex_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Protex Wash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedProtex_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fleet Protex:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchFleetProtex_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchFleetProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        PSX Fleet Protex:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPsxFleetProtex_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Pro W/TG:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedProtexWithTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG To Pro:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxWithTireGlossToProtex_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxWithTireGlossToProtex_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Pro W/Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedProtexWithPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Pro W/Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedProtexWithRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX to Protext Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToProtexWithRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtexWithRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX to Protext Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtexWithPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG to Protext Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToProtexRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG to Protext Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Protex:</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.washLinkTotalProtex_count }}</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.siteWatchTotalProtex_count }}</b>
-                    </td>
-                    <td>
-                        <b><span ps-format-money dollar-amt="model.gsr.totalProtex_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalProtex_diff"></span></b>
-                    </td>
-                </tr>
-                <tr class="bg-primary">
-                    <td>
-                        <b>Premier Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Premier Wash:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalPremier_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.washLinkTotalPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Premier Rewash:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPremierRewash_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPremierRewash_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Premier:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Premier W/TG:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPremierWithTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fleet Premier:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchFleetPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchFleetPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        PSX Fleet Premier:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPsxFleetPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        PSX FleetPremierNoGloss:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchPsxFleetPremierNoGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetPremierNoGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro To Pre:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexToPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX To Pre:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG To Pre:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxWithTiregGlossToPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxWithTireGlossToPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro W/TG To Pre:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexWithTireGlossToPremier_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexWithTireGlossToPremier_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Premier W/Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPremierWithPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Premier W/Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPremierWithRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX to Premier Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToPremierRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremierRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX to Premier Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxToPremierPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG to Premier Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance PSX W/TG to Premier Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToPremierRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro to Premier Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexToPremierPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro to Premier Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexToPremierRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremierRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro W/TG to Premier Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Enhance Pro W/TG to Premier Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Premier:</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.washLinkTotalPremier_count }}</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.siteWatchTotalPremier_count }}</b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalPremier_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalPremier_diff"></span></b>
-                    </td>
-                </tr>
-                <tr class="bg-primary">
-                    <td>
-                        <b>Tire Gloss Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Tire Gloss:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalTireGloss_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.washLinkTotalTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fleet Tire Gloss:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchFleetTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchFleetTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Tire Gloss:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Reapply Tire Gloss:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchReapplyTireGloss_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchReapplyTireGloss_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Tire Gloss:</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.washLinkTotalTireGloss_count }}</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.siteWatchTotalTireGloss_count }}</b>
-                    </td>
-                    <td>
-                        <b>  <span ps-format-money dollar-amt="model.gsr.totalTireGloss_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.tireGloss_diff"></span></b>
-                    </td>
-                </tr>
+			<accordion close-others="false">
+			<accordion-group is-open="status.open">
+				<accordion-heading>
+					<div class="col-md-4">
+						PSX Wash Services
+					</div>
+					<div class="col-md-2">
+						Wash Count
+					</div>
+					<div class="col-md-2">
+						SW Count
+					</div>
+					<div class="col-md-2">
+						Dollars
+					</div>
+					<div class="col-md-2">
+						Diff (Count) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</div>
 
-                <tr class="bg-primary">
-                    <td>
-                        <b>Rain-X Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Rain-X:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalRainX_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.washLinkTotalRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Reapply Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchReapplyRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchReapplyRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Reapply Fleet Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchReapplyFleetRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchReapplyFleetRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Rain-X:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedRainX_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedRainX_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Rain-X:</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.washLinkTotalRainX_count }}</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.siteWatchRainX_count }}</b>
-                    </td>
-                    <td>
-                        <b>  <span ps-format-money dollar-amt="model.gsr.totalRainX_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalRainX_diff"></span></b>
-                    </td>
-                </tr>
+				</accordion-heading>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Prime Shine Wash:
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.washLinkTotalPrimeShine_count }}
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.washLinkTotalPrimeShine_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Fleet PSX Wash:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchFleetPsx_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchFleetPsx_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						PSX Wash:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchPsx_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchPsx_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Prime Shine Rewash:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchPrimeShineRewash_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchPrimeShineRewash_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Unlimited PSX Wash:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchUnlimitedPsx_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsx_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Unlimited UCW:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchUnlimitedUcw_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedUcw_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Unlimited PSX W/TG:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchUnlimitedPsxWithTireGloss_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithTireGloss_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Unlimited PSX W/Plus+:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchUnlimitedPsxWithPlusPlus_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithPlusPlus_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+				<hr/>
+				<div class="clearfix"/>
+				<div class="row-fluid">
+					<div class="col-md-4">
+						Unlimited PSX W/Rain-X:
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+					<div class="col-md-2">
+						{{ model.gsr.siteWatchUnlimitedPsxWithRainX_count }}
+					</div>
+					<div class="col-md-2">
+						<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPsxWithRainX_dollars"></span>
+					</div>
+					<div class="col-md-2">
+						--
+					</div>
+				</div>
+			</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Prime Shine:</b>
+				</div>
+				<div class="col-md-2">
+					<b> {{ model.gsr.washLinkTotalPrimeShine_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b> {{ model.gsr.siteWatchTotalPrimeShine_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalPrimeShine_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalPrimeShine_diff"></span></b>
+				</div>
+			</div>
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Protex Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
 
-                <tr class="bg-primary">
-                    <td>
-                        <b>Plus+ Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Plus+:
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalPlusPlus_count }}
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.washLinkTotalPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Reapply Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchReapplyPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchReapplyPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Reapply Fleet Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchReapplyFleetPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchReapplyFleetPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Unlimited Plus+:
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchUnlimitedPlusPlus_count }}
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPlusPlus_dollars"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Plus+:</b>
-                    </td>
-                    <td>
-                        <b>{{ model.gsr.washLinkTotalPlusPlus_count }}</b>
-                    </td>
-                    <td>
-                        <b> {{ model.gsr.sitewatchTotalPlusPlus_count }}</b>
-                    </td>
-                    <td>
-                        <b>  <span ps-format-money dollar-amt="model.gsr.totalPlusPlus_dollars"></span></b>
-                    </td>
-                    <td>
-                        <b> <span ps-format-money dollar-amt="model.gsr.totalPlusPlus_diff"></span></b>
-                    </td>
-                </tr>
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Protex Wash:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalProtex_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Protex Rewash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchProtexRewash_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchProtexRewash_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX To Pro:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToProtex_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Protex Wash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedProtex_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Fleet Protex:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchFleetProtex_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchFleetProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							PSX Fleet Protex:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchPsxFleetProtex_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Pro W/TG:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedProtexWithTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG To Pro:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxWithTireGlossToProtex_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxWithTireGlossToProtex_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Pro W/Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedProtexWithPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Pro W/Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedProtexWithRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedProtexWithRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX to Protext Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToProtexWithRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtexWithRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX to Protext Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToProtexWithPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG to Protext Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToProtexRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG to Protext Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Protex:</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.washLinkTotalProtex_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.siteWatchTotalProtex_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.totalProtex_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalProtex_diff"></span></b>
+				</div>
+			</div>
 
-                <tr class="bg-primary">
-                    <td>
-                        <b>Wash Services</b>
-                    </td>
-                    <td>
-                        <b>Wash Count</b>
-                    </td>
-                    <td>
-                        <b>SW Count</b>
-                    </td>
-                    <td>
-                        <b>Dollars</b>
-                    </td>
-                    <td>
-                        <b>Diff (Count)</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Washes/Dollars:</b>
-                    </td>
-                    <td>
-                        {{ model.gsr.washLinkTotalWashes_count }}
-                    </td>
-                    <td>
-                        {{ model.gsr.siteWatchTotalWashes_count }}
-                    </td>
-                    <td>
-                    <span ps-format-money dollar-amt="model.gsr.totalWashes_dollars"></span>
-                    </td>
-                    <td>
-                    <span ps-format-money dollar-amt="model.gsr.totalWashes_diff"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Web Connect:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                    <span ps-format-money dollar-amt="model.gsr.webConnect"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Impulse Items:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.impulseItems"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Wash Services:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.totalWashServices"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Machine Sales:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.machineSales"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Pre Paids:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.prePaids"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Pump WashCode Tender:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.pumpCodeWash"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Coupons & Discounts:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.couponsAndDiscounts"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Paidout/Refunds:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.totalPaidoutRefunds"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total To Account For:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.totalToAccountFor"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Cash Deposit:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.cashDeposit"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Credit Cards:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.creditCards"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Total Over/Under:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.totalOverUnder_dollars"></span>
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.totalOverUnder_diff"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Amount To Audit:</b>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        <span ps-format-money dollar-amt="model.gsr.amountToAudit"></span>
-                    </td>
-                    <td>
-                        --
-                    </td>
-                </tr>
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Premier Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
+
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Premier Wash:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalPremier_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Premier:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Premier W/TG:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedPremierWithTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Fleet Premier:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchFleetPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchFleetPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							PSX Fleet Premier:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchPsxFleetPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							PSX FleetPremierNoGloss:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchPsxFleetPremierNoGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchPsxFleetPremierNoGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro To Pre:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexToPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX To Pre:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG To Pre:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxWithTiregGlossToPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxWithTireGlossToPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro W/TG To Pre:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexWithTireGlossToPremier_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexWithTireGlossToPremier_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Premier W/Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedPremierWithPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Premier W/Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedPremierWithRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPremierWithRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX to Premier Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToPremierRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremierRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX to Premier Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxToPremierPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG to Premier Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance PSX W/TG to Premier Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhancePsxTireGlossToPremierRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro to Premier Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexToPremierPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro to Premier Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexToPremierRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexToPremierRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro W/TG to Premier Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Enhance Pro W/TG to Premier Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Premier:</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.washLinkTotalPremier_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.siteWatchTotalPremier_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.totalPremier_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalPremier_diff"></span></b>
+				</div>
+			</div>
+
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Tire Gloss Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
+
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Tire Gloss:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Fleet Tire Gloss:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchFleetTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchFleetTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Tire Gloss:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Reapply Tire Gloss:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchReapplyTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchReapplyTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Tire Gloss:</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.washLinkTotalTireGloss_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.siteWatchTotalTireGloss_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.totalTireGloss_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.tireGloss_diff"></span></b>
+				</div>
+			</div>
+
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Rain-X Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
+
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Rain-X:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalRainX_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Reapply Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchReapplyRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchReapplyRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Reapply Fleet Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchReapplyFleetRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchReapplyFleetRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Rain-X:</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.washLinkTotalRainX_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.siteWatchRainX_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.totalRainX_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalRainX_diff"></span></b>
+				</div>
+			</div>
+
+
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Plus+ Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
+
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Plus+:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Reapply Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchReapplyPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchReapplyPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Reapply Fleet Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchReapplyFleetPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchReapplyFleetPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchUnlimitedPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.siteWatchUnlimitedPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Plus+:</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.washLinkTotalPlusPlus_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b>{{ model.gsr.sitewatchTotalPlusPlus_count }}</b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.totalPlusPlus_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalPlusPlus_diff"></span></b>
+				</div>
+			</div>
+
+			<accordion close-others="false">
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							<b>Total Wash Services</b>
+						</div>
+						<div class="col-md-2">
+							<b>Wash Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Count</b>
+						</div>
+						<div class="col-md-2">
+							<b>Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
+
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Total Washes/Dollars:</b>
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalWashes_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.siteWatchTotalWashes_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalWashes_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalWashes_diff"></span>
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Web Connect:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.webConnect"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Impulse Items:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.impulseItems"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Total Wash Services:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalWashServices"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Machine Sales:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.machineSales"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Pre Paids:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.prePaids"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Pump WashCode Tender:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.pumpCodeWash"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Coupons & Discounts:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.couponsAndDiscounts"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Total Paidout/Refunds:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalPaidoutRefunds"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Total To Account For:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalToAccountFor"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Cash Deposit:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.cashDeposit"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							<b>Credit Cards:</b>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.creditCards"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+				</accordion-group>
+			</accordion>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Total Over/Under:</b>
+				</div>
+				<div class="col-md-2">
+					--
+				</div>
+				<div class="col-md-2">
+					--
+				</div>
+				<div class="col-md-2">
+					<span ps-format-money dollar-amt="model.gsr.totalOverUnder_dollars"></span>
+				</div>
+				<div class="col-md-2">
+					<span ps-format-money dollar-amt="model.gsr.totalOverUnder_diff"></span>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<b>Amount To Audit:</b>
+				</div>
+				<div class="col-md-2">
+					--
+				</div>
+				<div class="col-md-2">
+					--
+				</div>
+				<div class="col-md-2">
+					<span ps-format-money dollar-amt="model.gsr.amountToAudit"></span>
+				</div>
+				<div class="col-md-2">
+					--
+				</div>
+			</div>
+
+
             </tbody>
         </table>
     </div>

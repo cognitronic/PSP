@@ -20,7 +20,7 @@ namespace psp.api.Reports
         public GSR GetAmountToAudit(Site site, DateTime reportdate)
         {
             var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid.ToString(), reportdate);
-            var  wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate); 
+            var wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate);
             var gsr = new GSR();
             gsr.siteId = site.sitewatchid.ToString();
             gsr.siteName = site.location;
@@ -31,7 +31,7 @@ namespace psp.api.Reports
             if (wlData != null)
             {
                 // Prime Shine Wash
-                gsr.washLinkTotalPrimeShine_count = wlData.primeshinewash > 0 ? wlData.primeshinewash: 0;
+                gsr.washLinkTotalPrimeShine_count = wlData.primeshinewash > 0 ? wlData.primeshinewash : 0;
                 gsr.washLinkTotalPrimeShine_dollars = gsr.washLinkTotalPrimeShine_count * (int)GSRMultiplier.PLUS_SEVEN;
 
                 // Protex Wash
@@ -246,7 +246,7 @@ namespace psp.api.Reports
                             gsr.siteWatchUnlimitedPremierWithRainX_count += int.Parse(item.total);
                             break;
                         case "49000311": // Enhance PSX To Protex RainX
-                            gsr.siteWatchEnhancePsxToProtexWithRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxToProtexWithRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxToProtexWithRainX_count += int.Parse(item.total);
                             break;
                         case "49000310": // Enhance PSX To Protex Plus+
@@ -254,31 +254,31 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000312": // Enhance PSX With Tire Gloss To Protex Plus+
-                            gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000313": // Enhance PSX With Tire Gloss To Protex RainX
-                            gsr.siteWatchEnhancePsxTireGlossToProtexRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxTireGlossToProtexRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.siteWatchEnhancePsxTireGlossToProtexRainX_count += int.Parse(item.total);
                             break;
                         case "49000315": // Enhance PSX To Premier With RainX
-                            gsr.siteWatchEnhancePsxToPremierRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxToPremierRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_FIVE;
                             gsr.siteWatchEnhancePsxToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000316": // Enhance PSX To Premier With Plus+
-                            gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_FIVE;
                             gsr.siteWatchEnhancePsxToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000317": // Enhance PSX With Tire Gloss To Premier With Plus+
-                            gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars+= int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_FIVE;
                             gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000318": // Enhance PSX With Tire Gloss To Premier With RainX
-                            gsr.siteWatchEnhancePsxTireGlossToPremierRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.siteWatchEnhancePsxTireGlossToPremierRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_FIVE;
                             gsr.siteWatchEnhancePsxTireGlossToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000319": // Enhance Protex To Premier With Plus+
-                            gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.siteWatchEnhanceProtexToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
                             gsr.siteWatchEnhanceProtexToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000320": // Enhance Protex To Premier With RainX
@@ -290,7 +290,7 @@ namespace psp.api.Reports
                             gsr.siteWatchEnhanceProtexTireGlossToPremierRainX_count += int.Parse(item.total);
                             break;
                         case "49000322": // Enhance Protex To Premier With Plus+
-                            gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
                             gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49000324": // Reapply Fleet Plus+
@@ -321,9 +321,9 @@ namespace psp.api.Reports
 
             #region Unlimited PSX and Totals
 
-            
 
-            gsr.washLinkTotalWashes_count = gsr.washLinkTotalPrimeShine_count + 
+
+            gsr.washLinkTotalWashes_count = gsr.washLinkTotalPrimeShine_count +
                 gsr.washLinkTotalProtex_count +
                 gsr.washLinkTotalPremier_count;
 
@@ -355,7 +355,7 @@ namespace psp.api.Reports
                 gsr.siteWatchUnlimitedProtexWithRainX_dollars;
 
             gsr.totalProtex_diff = (gsr.siteWatchTotalProtex_count - gsr.washLinkTotalProtex_count) * (int)GSRMultiplier.PLUS_TEN;
-            
+
             //SW Premier Total
             gsr.siteWatchTotalPremier_count = gsr.siteWatchPremierWash_count +
                 gsr.siteWatchPremierRewash_count +
@@ -368,12 +368,12 @@ namespace psp.api.Reports
                 gsr.siteWatchPsxFleetPremier_count +
                 gsr.siteWatchUnlimitedPremier_count +
                 gsr.siteWatchUnlimitedPremierWithPlusPlus_count +
-                gsr.siteWatchUnlimitedPremierWithRainX_count + 
+                gsr.siteWatchUnlimitedPremierWithRainX_count +
                 gsr.siteWatchUnlimitedPremierWithTireGloss_count +
                 gsr.siteWatchPsxFleetPremierNoGloss_count +
                 gsr.siteWatchFleetPremier_count;
             // Premier Total Dollars
-            gsr.totalPremier_dollars  = gsr.washLinkTotalPremier_dollars +
+            gsr.totalPremier_dollars = gsr.washLinkTotalPremier_dollars +
                 gsr.siteWatchPremierRewash_dollars +
                 gsr.siteWatchEnhancePsxToPremier_dollars +
                 gsr.siteWatchEnhancePsxToPremierPlusPlus_dollars +
@@ -412,13 +412,13 @@ namespace psp.api.Reports
                 gsr.siteWatchUnlimitedPsxWithPlusPlus_dollars +
                 gsr.siteWatchUnlimitedPsxWithRainX_dollars;
             gsr.totalPrimeShine_diff = (gsr.siteWatchTotalPrimeShine_count - gsr.washLinkTotalPrimeShine_count) * (int)GSRMultiplier.PLUS_SEVEN;
-            
+
             // SW Tire Gloss
-            
+
 
             gsr.siteWatchTotalTireGloss_count = gsr.siteWatchTireGloss_count +
-                gsr.siteWatchFleetTireGloss_count + 
-                gsr.siteWatchReapplyTireGloss_count + 
+                gsr.siteWatchFleetTireGloss_count +
+                gsr.siteWatchReapplyTireGloss_count +
                 gsr.siteWatchUnlimitedTireGloss_count +
                 gsr.siteWatchEnhancePsxWithTireGlossToProtex_count +
                 gsr.siteWatchEnhancePsxWithTireGlossToPremier_count +
@@ -466,16 +466,16 @@ namespace psp.api.Reports
             gsr.sitewatchTotalPlusPlus_count = gsr.siteWatchPlusPlus_count +
                 gsr.sitewatchReapplyPlusPlus_count +
                 gsr.sitewatchReapplyFleetPlusPlus_count +
-                gsr.sitewatchUnlimitedPlusPlus_count +
-                gsr.siteWatchUnlimitedPremierWithPlusPlus_count +
-                gsr.siteWatchUnlimitedProtexWithPlusPlus_count +
-                gsr.siteWatchUnlimitedPsxWithPlusPlus_count +
-                gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count +
-                gsr.siteWatchEnhanceProtexToPremierPlusPlus_count +
-                gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count +
-                gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count +
-                gsr.siteWatchEnhancePsxToPremierPlusPlus_count +
-                gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count;
+                gsr.sitewatchUnlimitedPlusPlus_count;// +
+            //gsr.siteWatchUnlimitedPremierWithPlusPlus_count +
+            //gsr.siteWatchUnlimitedProtexWithPlusPlus_count +
+            //gsr.siteWatchUnlimitedPsxWithPlusPlus_count +
+            //gsr.siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count +
+            //gsr.siteWatchEnhanceProtexToPremierPlusPlus_count +
+            //gsr.siteWatchEnhancePsxTireGlossToProtexPlusPlus_count +
+            //gsr.siteWatchEnhancePsxToProtexWithPlusPlus_count +
+            //gsr.siteWatchEnhancePsxToPremierPlusPlus_count +
+            //gsr.siteWatchEnhancePsxTireGlossToPremierPlusPlus_count;
 
             gsr.totalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_dollars +
                 gsr.sitewatchReapplyPlusPlus_dollars +
@@ -483,13 +483,13 @@ namespace psp.api.Reports
                 gsr.sitewatchUnlimitedPlusPlus_dollars;
             gsr.totalPlusPlus_diff = (gsr.sitewatchTotalPlusPlus_count - gsr.washLinkTotalPlusPlus_count) * (int)GSRMultiplier.PLUS_THREE;
 
-            gsr.siteWatchTotalWashes_count = gsr.siteWatchTotalPrimeShine_count + 
-                gsr.siteWatchTotalProtex_count + 
+            gsr.siteWatchTotalWashes_count = gsr.siteWatchTotalPrimeShine_count +
+                gsr.siteWatchTotalProtex_count +
                 gsr.siteWatchTotalPremier_count;
 
-            gsr.totalWashes_diff = gsr.totalTireGloss_diff + 
-                gsr.totalPrimeShine_diff + 
-                gsr.totalProtex_diff + 
+            gsr.totalWashes_diff = gsr.totalTireGloss_diff +
+                gsr.totalPrimeShine_diff +
+                gsr.totalProtex_diff +
                 gsr.totalPlusPlus_diff +
                 gsr.totalRainX_diff +
                 gsr.totalPremier_diff;
@@ -502,16 +502,16 @@ namespace psp.api.Reports
                 gsr.totalTireGloss_dollars;
             #endregion
 
-            
 
-            if(swData.Count > 0)
+
+            if (swData.Count > 0)
             {
                 #region Impulse Items
-                foreach(var impulseItem in swData)
+                foreach (var impulseItem in swData)
                 {
-                    if(impulseItem.reportcategory.Equals("500025"))
+                    if (impulseItem.reportcategory.Equals("500025"))
                     {
-                        if(!string.IsNullOrEmpty(impulseItem.total))
+                        if (!string.IsNullOrEmpty(impulseItem.total))
                         {
                             gsr.impulseItems += (Math.Abs(int.Parse(impulseItem.total)) * decimal.Parse(impulseItem.val));
                         }
@@ -520,14 +520,14 @@ namespace psp.api.Reports
                 #endregion
 
                 #region Machine Sales
-                foreach(var machineSales in swData)
+                foreach (var machineSales in swData)
                 {
-                    if(machineSales.reportcategory.Equals("500036") || 
+                    if (machineSales.reportcategory.Equals("500036") ||
                         machineSales.reportcategory.Equals("500037") ||
                         machineSales.reportcategory.Equals("500091") ||
                         machineSales.reportcategory.Equals("500057"))
                     {
-                        if(!string.IsNullOrEmpty(machineSales.total))
+                        if (!string.IsNullOrEmpty(machineSales.total))
                         {
                             gsr.machineSales += (Math.Abs(int.Parse(machineSales.total)) * decimal.Parse(machineSales.val));
                         }
@@ -536,18 +536,18 @@ namespace psp.api.Reports
                 #endregion
 
                 #region Web connect
-                foreach(var webConnect in swData)
+                foreach (var webConnect in swData)
                 {
-                    if(webConnect.reportcategory.Equals("500103") ||
+                    if (webConnect.reportcategory.Equals("500103") ||
                         webConnect.reportcategory.Equals("500103") ||
                         webConnect.reportcategory.Equals("500100") ||
                         webConnect.reportcategory.Equals("500102") ||
                         webConnect.reportcategory.Equals("500101") ||
                         webConnect.reportcategory.Equals("49000002"))
                     {
-                        if(!string.IsNullOrEmpty(webConnect.total))
+                        if (!string.IsNullOrEmpty(webConnect.total))
                         {
-                            if(!string.IsNullOrEmpty(webConnect.val))
+                            if (!string.IsNullOrEmpty(webConnect.val))
                                 gsr.webConnect += (Math.Abs(int.Parse(webConnect.total) * decimal.Parse(webConnect.val))) * (int)GSRMultiplier.NEGATIVE_ONE;
                             else
                                 gsr.webConnect += (Math.Abs(int.Parse(webConnect.total) * decimal.Parse(webConnect.amt))) * (int)GSRMultiplier.NEGATIVE_ONE;
@@ -558,11 +558,11 @@ namespace psp.api.Reports
 
                 #region Pre Paids
 
-                foreach(var prePaids in swData)
+                foreach (var prePaids in swData)
                 {
-                    if(prePaids.reportcategory.Equals("52167") || prePaids.reportcategory.Equals("500058"))
+                    if (prePaids.reportcategory.Equals("52167") || prePaids.reportcategory.Equals("500058"))
                     {
-                        if(!string.IsNullOrEmpty(prePaids.total))
+                        if (!string.IsNullOrEmpty(prePaids.total))
                         {
                             gsr.prePaids += (Math.Abs(int.Parse(prePaids.total)) * decimal.Parse(prePaids.amt));
                         }
@@ -572,11 +572,11 @@ namespace psp.api.Reports
 
                 #region Pump Code Wash
 
-                foreach(var pumpCode in swData)
+                foreach (var pumpCode in swData)
                 {
                     if (pumpCode.reportcategory.Equals("500052"))
                     {
-                        if(!string.IsNullOrEmpty(pumpCode.total))
+                        if (!string.IsNullOrEmpty(pumpCode.total))
                         {
                             gsr.pumpCodeWash += (Math.Abs(int.Parse(pumpCode.total)) * decimal.Parse(pumpCode.amt));
                         }
@@ -585,9 +585,9 @@ namespace psp.api.Reports
                 #endregion
 
                 #region Coupons and Discounts
-                foreach(var coupons in swData)
+                foreach (var coupons in swData)
                 {
-                    if(coupons.reportcategory.Equals("59458") ||
+                    if (coupons.reportcategory.Equals("59458") ||
                         coupons.reportcategory.Equals("49500003") ||
                         coupons.reportcategory.Equals("49500001") ||
                         coupons.reportcategory.Equals("500028") ||
@@ -596,9 +596,9 @@ namespace psp.api.Reports
                         coupons.reportcategory.Equals("49500344") ||
                         coupons.reportcategory.Equals("49500342"))
                     {
-                        if(!string.IsNullOrEmpty(coupons.total))
+                        if (!string.IsNullOrEmpty(coupons.total))
                         {
-                            if(!string.IsNullOrEmpty(coupons.amt))
+                            if (!string.IsNullOrEmpty(coupons.amt))
                                 gsr.couponsAndDiscounts += ((int.Parse(coupons.total) * Math.Abs(decimal.Parse(coupons.amt))) * (int)GSRMultiplier.NEGATIVE_ONE);
                         }
                     }
@@ -607,11 +607,11 @@ namespace psp.api.Reports
 
                 #region Total Paidout / Refunds
 
-                foreach(var totalPaidOut in swData)
+                foreach (var totalPaidOut in swData)
                 {
-                    if(totalPaidOut.reportcategory.Equals("103965"))
+                    if (totalPaidOut.reportcategory.Equals("103965"))
                     {
-                        if(!string.IsNullOrEmpty(totalPaidOut.total))
+                        if (!string.IsNullOrEmpty(totalPaidOut.total))
                         {
                             gsr.totalPaidoutRefunds += (Math.Abs(int.Parse(totalPaidOut.total) * decimal.Parse(totalPaidOut.amt))) * (int)GSRMultiplier.NEGATIVE_ONE;
                         }
@@ -621,11 +621,11 @@ namespace psp.api.Reports
 
                 #region Cash Deposit
 
-                foreach(var cashDeposit in swData)
+                foreach (var cashDeposit in swData)
                 {
-                    if(cashDeposit.reportcategory.Equals("500044"))
+                    if (cashDeposit.reportcategory.Equals("500044"))
                     {
-                        if(!string.IsNullOrEmpty(cashDeposit.total))
+                        if (!string.IsNullOrEmpty(cashDeposit.total))
                         {
                             gsr.cashDeposit += (Math.Abs(int.Parse(cashDeposit.total)) * decimal.Parse(cashDeposit.amt));
                         }
@@ -635,11 +635,11 @@ namespace psp.api.Reports
 
                 #region Credit Cards
 
-                foreach(var creditCards in swData)
+                foreach (var creditCards in swData)
                 {
-                    if(creditCards.reportcategory.Equals("500050"))
+                    if (creditCards.reportcategory.Equals("500050"))
                     {
-                        if(!string.IsNullOrEmpty(creditCards.total))
+                        if (!string.IsNullOrEmpty(creditCards.total))
                         {
                             gsr.creditCards += (Math.Abs(int.Parse(creditCards.total)) * decimal.Parse(creditCards.amt));
                         }
@@ -669,11 +669,11 @@ namespace psp.api.Reports
 
             // Total Over
             gsr.totalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.totalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;
-            gsr.totalOverUnder_diff = gsr.totalTireGloss_diff + 
+            gsr.totalOverUnder_diff = gsr.totalTireGloss_diff +
                 gsr.totalPlusPlus_diff +
                 gsr.totalRainX_diff +
-                gsr.totalPrimeShine_diff + 
-                gsr.totalProtex_diff + 
+                gsr.totalPrimeShine_diff +
+                gsr.totalProtex_diff +
                 gsr.totalPremier_diff;
 
             // Total Over Excluding Cars
@@ -691,7 +691,7 @@ namespace psp.api.Reports
                 gsr.totalTireGloss_diff;
 
             gsr.amountToAudit = gsr.totalOverUnder_dollars + ((dExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
-            
+
             return gsr;
         }
 
@@ -717,7 +717,7 @@ namespace psp.api.Reports
                         if (saveReport)
                             new psp.repository.mongo.Repositories.GSRRepository().Save(gsr);
                     }
-                    catch(Exception exc)
+                    catch (Exception exc)
                     {
                         AuditService.SaveLog(new AuditLog
                         {
@@ -765,7 +765,7 @@ namespace psp.api.Reports
                     sb.Append(item.amt);
                     sb.Append("</td>");
                 }
-                
+
                 if (item.val.Contains("-"))
                 {
                     sb.Append("<td width='75px' style='color: #ff0000;'>$(");
@@ -854,7 +854,7 @@ namespace psp.api.Reports
             sb.Append(gsrProps);
 
             //build data rows
-            foreach(var gsr in gsrList)
+            foreach (var gsr in gsrList)
             {
                 var gsrVals = "";
                 foreach (var vals in properties)

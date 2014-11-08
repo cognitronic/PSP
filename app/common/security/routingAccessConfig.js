@@ -27,6 +27,7 @@
             'public' : "*",
             'anon': ['public', 'admin', 'executive'],
             'user' : ['user', 'admin'],
+			'manager' : ['sitemanager', 'admin', 'executive'],
             'office': ['office', 'executive', 'admin'],
             'executive': ['executive', 'admin'],
             'admin': ['admin'],

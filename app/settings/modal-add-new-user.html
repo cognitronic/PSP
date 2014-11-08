@@ -45,7 +45,7 @@
         </ng-form>
         <ng-form name="passwordForm">
             <div class="control-group">
-                <label class="control-label">Password: <small style="cursor: pointer; color:#00b3ee;" ng-click="togglePassword()">{{ showHideText }}</small></label>
+                <label class="control-label">Password: <small style="cursor: pointer; color:#00b3ee;" ng-click="togglePassword()">{{ showHideText }}</small> - <small>must include uppercase and a number</small></label>
                 <div class="controls">
                     <input control-group="false" name="password" id="password" class="form-control" type="{{ passwordType }}" value="{{ user.password }}" placeholder="Enter Password" ng-model="user.password" isrequired="true" field-validate="password" >
                 </div>

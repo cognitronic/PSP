@@ -30,7 +30,7 @@ namespace psp.api.Controllers
         public IList<Site> Get()
         {
             //var test = _sitewatch.SitewatchSalesBySiteDate("2", DateTime.Today.AddDays(-60));
-            var sites = _repository.GetAll().OrderBy(o => o.name).ToList<Site>();
+            var sites = _repository.GetAll().OrderBy(o => o.sitewatchid).ToList<Site>();
             //var mysql = _washlink.WashLinkWashTotalsBySiteDate(sites[11], DateTime.Today.AddDays(-60));
             return sites;
         }

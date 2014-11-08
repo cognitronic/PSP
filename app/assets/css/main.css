@@ -699,7 +699,7 @@ html body {
 
 .panel-body {
 	position: relative;
-	padding-bottom: 65px !important;
+	/*padding-bottom: 65px !important;*/
 }
 
 .panel-footer {
@@ -848,7 +848,8 @@ html body {
 }
 
 .loadingContainer{
-    position:absolute;
+    position:fixed;
+	bottom: 0;
     top:0;
     left:0;
     width:100%;
@@ -890,8 +891,12 @@ html body {
 }
 
 .stick {
-    position:fixed;
-    top:0px;
+	width: 100%;
+	position: fixed;
+	left: 50%;
+	margin: 0 0 0 -50%;
+    top:50px;
+	z-index: 3500;
 }
 
 .container-header{
