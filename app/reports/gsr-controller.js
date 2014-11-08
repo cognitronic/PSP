@@ -4,7 +4,7 @@
 
 (function(){
     'use strict';
-    var GSRReportController = function($scope, $rootScope, CacheService, ReportsService, SiteService){
+    var GSRReportController = function($scope, $rootScope, CacheService, ReportsService, SiteService, $q){
 
         var _selectedSite = {};
         var _selectedDate = '';
@@ -32,14 +32,17 @@
             $scope.model.toggleMax();
             $scope.model.today();
             $scope.model.format = $scope.model.formats[1];
+			$scope.model.birthdateFormat = $scope.model.formats[2];
 
-            $scope.model.sites = $scope.model.getSites();
-            $scope.model.birthdateFormat = $scope.model.formats[2];
-            if(CacheService.getItem(CacheService.Items.Reports.selectedGsr)){
-                $scope.model.gsr = CacheService.getItem(CacheService.Items.Reports.selectedGsr);
-            } else {
-                $scope.model.getGsr();
-            }
+            $scope.model.getSites().then(function(data){
+				if(CacheService.getItem(CacheService.Items.Reports.selectedGsr)){
+					$scope.model.gsr = CacheService.getItem(CacheService.Items.Reports.selectedGsr);
+					$scope.model.getGsr();
+				} else {
+					$scope.model.getGsr();
+				}
+
+			});
         };
 
         var _getGsr = function(){
@@ -60,10 +63,13 @@
         }
 
         var _getSites = function(){
+			var defered = $q.defer();
             SiteService.getSites().then(function(data){
                  $scope.model.sites = data;
                 $scope.model.selectedSite = $scope.model.sites[0];
+				defered.resolve(data);
             });
+			return defered.promise;
         };
 
         var _toggleMax = function() {
@@ -128,5 +134,5 @@
         $scope.model.init();
     };
 
-    ramAngularApp.module.controller('GSRReportController',['$scope', '$rootScope', 'CacheService', 'ReportsService', 'SiteService', GSRReportController]);
+    ramAngularApp.module.controller('GSRReportController',['$scope', '$rootScope', 'CacheService', 'ReportsService', 'SiteService', '$q', GSRReportController]);
 })();

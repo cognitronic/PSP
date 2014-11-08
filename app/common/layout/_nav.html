@@ -17,7 +17,7 @@
                 <!--<li ng-class="{active:isActive(['/dashboard'])}">-->
                     <!--<a href="#dashboard">Dashboard</a>-->
                 <!--</li>-->
-                <li ng-class="{active:isActive(['/reports/gsr'])}">
+                <li data-access-level='manager' ng-class="{active:isActive(['/reports/gsr'])}">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li data-access-level='manager'><a href="#/reports/gsr">GSR</a></li>
@@ -48,7 +48,7 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-nav pull-right">
+            <ul data-access-level='user' class="nav navbar-nav pull-right">
                 <li ng-show="isAuthenticated">
                     <a href="#">{{ getLoggedOnUser() }}</a>
                 </li>
