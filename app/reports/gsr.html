@@ -19,7 +19,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-group">
                     <b class="messagecontainer">Site:</b>
-                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.location for site in model.sites | orderBy: 'sitewatchid'">
+                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.description for site in model.sites | orderBy: 'sitewatchid'">
                     </select>
                 </div>
             </div>
@@ -1312,7 +1312,7 @@
 			</div>
 
 			<accordion close-others="false">
-				<accordion-group is-open="status.open">
+				<accordion-group is-open="true">
 					<accordion-heading>
 						<div class="col-md-4">
 							<b>Total Wash Services</b>
@@ -1327,7 +1327,7 @@
 							<b>Dollars</b>
 						</div>
 						<div class="col-md-2">
-							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': true, 'glyphicon-chevron-right': false}"></i>
 						</div>
 
 					</accordion-heading>

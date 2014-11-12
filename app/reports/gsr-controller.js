@@ -21,7 +21,7 @@
         var _formats =['dd-MMMM-yyyy', 'MM/dd/yyyy', 'MM/dd'];
         var _format = undefined;
         var _birthdateFormat = undefined;
-        var _sites = []
+        var _sites = [];
 
 
         $scope.$on('$routeChangeStart', function(next, current) {
