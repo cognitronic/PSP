@@ -23,7 +23,7 @@ namespace psp.api.Controllers.Vendor
 
             var site = new SiteController().Get(siteId);
 
-            var results = new WashLink().WashLinkWashTotalsBySiteDate(site, DateTime.Parse(reportDate));
+            var results = new WashLink().WashLinkWashTotalsBySiteDate(site, DateTime.Parse(reportDate), "", "");
             return results;
         }
 

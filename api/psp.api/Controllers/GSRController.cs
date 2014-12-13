@@ -48,7 +48,7 @@ namespace psp.api.Controllers
         {
             var site = new SiteController().Get(siteId);
 
-            var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate));
+            var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate), "", "");
             return gsr;
         }
 
@@ -99,6 +99,15 @@ namespace psp.api.Controllers
             return session.name;
         }
 
+        [Route("{siteId}/{gsrDate}")]
+        public GSR PostByDate([FromBody]GSRViewModel parms)
+        {
+            var site = new SiteController().Get(parms.site);
+
+            var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(parms.gsrDate), parms.fromTime, parms.toTime);
+            return gsr;
+        }
+
         [Route("export/key/{key}")]
 
         // PUT api/gsr/5
@@ -125,7 +134,9 @@ namespace psp.api.Controllers
     public class GSRViewModel
     {
         public string site { get; set; }
-        public DateTime gsrDate { get; set; }
+        public string gsrDate { get; set; }
+        public string fromTime { get; set; }
+        public string toTime { get; set; }
     }
 
     public class GSRExportModel

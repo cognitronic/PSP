@@ -17,10 +17,10 @@ namespace psp.api.Reports
         SiteWatch sitewatch = new SiteWatch();
         WashLink washlink = new WashLink();
 
-        public GSR GetAmountToAudit(Site site, DateTime reportdate)
+        public GSR GetAmountToAudit(Site site, DateTime reportdate, string fromTime, string toTime)
         {
             var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid.ToString(), reportdate);
-            var wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate);
+            var wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate, fromTime, toTime);
             var gsr = new GSR();
             gsr.siteId = site.sitewatchid.ToString();
             gsr.siteName = site.location;
@@ -701,7 +701,7 @@ namespace psp.api.Reports
             var list = new List<SiteWatchSalesItem>();
             foreach (var site in sites)
             {
-                var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate));
+                var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate), "", "");
                 if (gsr != null)
                 {
                     list.Add(new SiteWatchSalesItem

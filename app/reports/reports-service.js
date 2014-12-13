@@ -89,7 +89,7 @@ angular.module('service.reports', [])
                 var deferred = $q.defer();
                 $rootScope.loading = true;
                 $http({
-                    url: APP_SETTINGS.apiUrl + 'Gsr/' + viewModel.site + '/' + viewModel.gsrDate.replace('/', '-').replace('/', '-'),
+                    url: APP_SETTINGS.apiUrl + 'Gsr/' + viewModel.site + '/' + viewModel.gsrDate,
                     method: 'GET'})
                     .success(function(data){
                         $rootScope.loading = false;
@@ -103,6 +103,23 @@ angular.module('service.reports', [])
                     });
                 return deferred.promise;
             },
+			postGSRBySiteDate: function(viewModel){
+				console.log(viewModel);
+				var deferred = $q.defer();
+				$rootScope.loading = true;
+				$http.post(APP_SETTINGS.apiUrl + 'Gsr/' + viewModel.site + '/' + viewModel.gsrDate, viewModel)
+					.success(function(data){
+						$rootScope.loading = false;
+						console.log('success: ' + data);
+						deferred.resolve(data);
+					})
+					.error(function(){
+						$rootScope.loading = false;
+						console.log('rejected: ');
+						deferred.reject();
+					});
+				return deferred.promise;
+			},
             sendCoupon: function(params){
                 var deferred = $q.defer();
                 $rootScope.loading = true;

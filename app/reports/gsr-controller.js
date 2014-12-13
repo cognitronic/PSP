@@ -22,6 +22,11 @@
         var _format = undefined;
         var _birthdateFormat = undefined;
         var _sites = [];
+		var _fromTime = '';
+		var _toTime = '';
+		var _useTime = false;
+		var _useTimeText = 'By hour?';
+
 
 
         $scope.$on('$routeChangeStart', function(next, current) {
@@ -33,7 +38,7 @@
             $scope.model.today();
             $scope.model.format = $scope.model.formats[1];
 			$scope.model.birthdateFormat = $scope.model.formats[2];
-
+			_configTimePickers();
             $scope.model.getSites().then(function(data){
 				if(CacheService.getItem(CacheService.Items.Reports.selectedGsr)){
 					$scope.model.gsr = CacheService.getItem(CacheService.Items.Reports.selectedGsr);
@@ -45,6 +50,23 @@
 			});
         };
 
+		var _configTimePickers = function(){
+			var d = new Date();
+			d.setHours(6);
+			d.setMinutes(0);
+			$scope.model.fromTime = d;
+			$scope.model.toTime = d;
+		};
+		var _toggleUseTime = function(){
+			$scope.model.useTime = !$scope.model.useTime;
+			if($scope.model.useTime){
+				$scope.model.useTimeText = 'By full day?';
+			} else {
+				_configTimePickers();
+				$scope.model.useTimeText = 'By hour?';
+			}
+		};
+
         var _getGsr = function(){
             CacheService.removeItem(CacheService.Items.Reports.selectedGsr);
             console.log($scope.model.selectedSite);
@@ -52,9 +74,11 @@
 
                 $scope.model.reportParams = {
                     site: $scope.model.selectedSite.Id,
-                    gsrDate: $scope.model.dt.toLocaleDateString()
+                    gsrDate: $scope.model.dt.toLocaleDateString().replace('/', '-').replace('/', '-'),
+					fromTime: $scope.model.useTime == true ? $scope.model.fromTime.toLocaleTimeString() : '',
+					toTime: $scope.model.useTime == true ? $scope.model.toTime.toLocaleTimeString() : ''
                 }
-                ReportsService.getGSRBySiteDate($scope.model.reportParams).then(function(data){
+                ReportsService.postGSRBySiteDate($scope.model.reportParams).then(function(data){
                     CacheService.setItem(CacheService.Items.Reports.selectedGsr, data);
                     $scope.model.gsr = data;
                     console.log(data);
@@ -128,7 +152,12 @@
             formats: _formats,
             format: _format,
             birthdateFormat: _birthdateFormat,
-            exportGSR: _exportGSR
+            exportGSR: _exportGSR,
+			fromTime: _fromTime,
+			toTime: _toTime,
+			useTime: _useTime,
+			useTimeText: _useTimeText,
+			toggleUseTime: _toggleUseTime
         }
 
         $scope.model.init();
