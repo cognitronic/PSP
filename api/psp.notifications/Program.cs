@@ -8,6 +8,8 @@ using psp.repository.mongo.Repositories;
 using psp.api.Controllers;
 using psp.api.Reports;
 using System.Web.Http;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using psp.api.helpers;
 
 namespace psp.notifications
@@ -58,7 +60,7 @@ namespace psp.notifications
 
         public void SaveGSRSnapshot()
         {
-            new psp.api.Reports.GSRReport().BuildNotificationData(DateTime.Today.ToShortDateString(), true);
+            new psp.api.Reports.GSRReport().BuildNotificationData(DateTime.Today.ToShortDateString().Replace('/','-'), true);
             AuditService.SaveLog(new AuditLog
             {
                 auditDate = DateTime.Now,
@@ -83,8 +85,31 @@ namespace psp.notifications
                     prog.RunRewashReport();
                     break;
                 case "gsr_snapshot":
-                    prog.SaveGSRSnapshot();
+
+                    RunAsync().Wait();
                     break;
+            }
+        }
+
+        static async Task RunAsync()
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://pspapi.primeshine.com/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpResponseMessage response = await client.GetAsync("api/gsr/save/" + DateTime.Today.ToShortDateString().Replace('/','-'));
+                if (response.IsSuccessStatusCode)
+                {
+                    AuditService.SaveLog(new AuditLog
+                    {
+                        auditDate = DateTime.Now,
+                        message = "Scheduled GSR save snapshot executed",
+                        type = psp.core.ResourceStrings.Audit_Notification,
+                        name = "GSR Notification"
+                    });
+                }
             }
         }
     }

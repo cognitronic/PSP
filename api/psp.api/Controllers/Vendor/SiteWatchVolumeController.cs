@@ -16,7 +16,7 @@ namespace psp.api.Controllers.Vendor
         [Route("{siteId}/{volumeDate}")]
         public IEnumerable<SiteWatchSalesItem> Get(string siteId, string volumeDate)
         {
-            var results = new SiteWatch().SitewatchSalesBySiteDate(siteId, DateTime.Parse(volumeDate));
+            var results = new SiteWatch().SitewatchSalesBySiteDate(siteId, DateTime.Parse(volumeDate),"","");
 
             return results;
         }
@@ -25,7 +25,7 @@ namespace psp.api.Controllers.Vendor
         [Route("{volumeDate:datetime}/{siteId:int}")]
         public IEnumerable<SiteWatchSalesItem> Get(DateTime volumeDate, string siteId)
         {
-            var results = new SiteWatch().SitewatchSalesBySiteDate(siteId, volumeDate);
+            var results = new SiteWatch().SitewatchSalesBySiteDate(siteId, volumeDate,"", "");
 
             return results;
         }

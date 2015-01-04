@@ -19,7 +19,7 @@ namespace psp.api.Reports
 
         public GSR GetAmountToAudit(Site site, DateTime reportdate, string fromTime, string toTime)
         {
-            var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid.ToString(), reportdate);
+            var swData = sitewatch.SitewatchSalesBySiteDate(site.sitewatchid.ToString(), reportdate, fromTime, toTime);
             var wlData = washlink.WashLinkWashTotalsBySiteDate(site, reportdate, fromTime, toTime);
             var gsr = new GSR();
             gsr.siteId = site.sitewatchid.ToString();
@@ -699,6 +699,13 @@ namespace psp.api.Reports
         {
             var sites = new SiteController().Get();
             var list = new List<SiteWatchSalesItem>();
+            AuditService.SaveLog(new AuditLog
+            {
+                auditDate = DateTime.Now,
+                message = "Inside the build notification data",
+                type = psp.core.ResourceStrings.Audit_Report,
+                name = "Saving GSR"
+            });
             foreach (var site in sites)
             {
                 var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate), "", "");
@@ -715,7 +722,17 @@ namespace psp.api.Reports
                     try
                     {
                         if (saveReport)
+                        {
                             new psp.repository.mongo.Repositories.GSRRepository().Save(gsr);
+                            AuditService.SaveLog(new AuditLog
+                            {
+                                auditDate = DateTime.Now,
+                                message = "GSR saved for date " + gsrDate + " and site: " + site.name,
+                                type = psp.core.ResourceStrings.Audit_Report,
+                                notification = gsr,
+                                name = "Saving GSR"
+                            });
+                        }
                     }
                     catch (Exception exc)
                     {

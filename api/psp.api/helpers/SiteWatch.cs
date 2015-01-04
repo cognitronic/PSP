@@ -25,10 +25,12 @@ namespace psp.api.helpers
         }
 
         private readonly string connectionString = ConfigurationManager.AppSettings["sitewatchConnectionString"];
-        public IList<SiteWatchSalesItem> SitewatchSalesBySiteDate(string siteid, DateTime startdate)
+        public IList<SiteWatchSalesItem> SitewatchSalesBySiteDate(string siteid, DateTime startdate, string fromTime, string toTime)
         {
             string sQuery = "";//ConfigurationSettings.AppSettings["PSFirebirdConnectionString"];
-            sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
+            if (string.IsNullOrEmpty(fromTime))
+            {
+                sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
                     From
                     V_item i
                     Inner join v_SaleItems si on
@@ -42,6 +44,26 @@ namespace psp.api.helpers
                     i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344','103965', '500052') and 
                     s.logdate  = '" + startdate.ToShortDateString() + @"'
                     group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val";
+
+            }
+            else
+            {
+                sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
+                    From
+                    V_item i
+                    Inner join v_SaleItems si on
+                    i.objid = si.item
+                    inner join v_sale s on
+                    s.objid = si.saleid
+                    where
+                    s.site = '" + siteid + @"' and
+                    s.site = si.site and
+                    s.terminal <> 3500036 and
+                    i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344','103965', '500052') and 
+                    s.logdate  = '" + startdate.ToShortDateString() + @"' and
+                    s.logtime between " + ConvertToTenthsOfAMinute(fromTime).ToString() + " and " + ConvertToTenthsOfAMinute(toTime).ToString() + @"
+                    group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val";
+            }
             var ds = new DataSet();
             var list = new List<SiteWatchSalesItem>();
             using(FbConnection con = new FbConnection(connectionString))
@@ -170,7 +192,20 @@ namespace psp.api.helpers
             return list;
         }
 
-
+        private int ConvertToTenthsOfAMinute(string time)
+        {
+            var temp = time.Split(':');
+            if(temp.Length > 0)
+            {
+                var convertedTime = int.Parse(temp[0]);
+                if(time.Contains("PM"))
+                {
+                    convertedTime += 12;
+                }
+                return convertedTime * 10 * 60;
+            }
+            return 0;
+        }
         public string RunRewashNotification(Notification note, string reportDate)
         {
             var list = new List<IAPIResponse>();
