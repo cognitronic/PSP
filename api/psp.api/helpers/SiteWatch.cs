@@ -198,7 +198,7 @@ namespace psp.api.helpers
             if(temp.Length > 0)
             {
                 var convertedTime = int.Parse(temp[0]);
-                if(time.Contains("PM"))
+                if(time.Contains("PM") && convertedTime < 12)
                 {
                     convertedTime += 12;
                 }
