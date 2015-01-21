@@ -102,12 +102,12 @@ namespace psp.repository.mongo.Repositories
                 totals.Add(new WashLinkWashTotals
                 {
                     plusplus = gsr.sitewatchTotalPlusPlus_count,
-                    premierwash = gsr.siteWatchTotalPremier_count,
-                    primeshinewash = gsr.siteWatchTotalPrimeShine_count,
-                    protexwash = gsr.siteWatchTotalProtex_count,
+                    premierwash = gsr.sitewatchTotalPremier_count,
+                    primeshinewash = gsr.sitewatchTotalPrimeShine_count,
+                    protexwash = gsr.sitewatchTotalProtex_count,
                     rainx = gsr.sitewatchTotalRainX_count,
                     sitename = gsr.siteName,
-                    tireshine = gsr.siteWatchTotalTireGloss_count,
+                    tireshine = gsr.sitewatchTotalTireGloss_count,
                     date = gsr.gsrDate
                 });
             }

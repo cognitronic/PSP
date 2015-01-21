@@ -33,49 +33,49 @@ namespace psp.core.domain
         //public decimal washLinkPrimeShine_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPrimeShine_count { get; set; }
+        public int sitewatchPrimeShine_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPrimeShine_dollars { get; set; }
+        public decimal sitewatchPrimeShine_dollars { get; set; }
 
         [DataMember]
-        public decimal siteWatchTotalPrimeShine_dollars { get; set; }
+        public decimal sitewatchTotalPrimeShine_dollars { get; set; }
 
         [DataMember]
-        public decimal siteWatchTotalProtex_dollars { get; set; }
+        public decimal sitewatchTotalProtex_dollars { get; set; }
 
         [DataMember]
-        public decimal siteWatchTotalPremier_dollars { get; set; }
+        public decimal sitewatchTotalPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchFleetPsx_count { get; set; }
+        public int sitewatchFleetPsx_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchFleetPsx_dollars { get; set; }
+        public decimal sitewatchFleetPsx_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPsx_count { get; set; }
+        public int sitewatchPsx_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPsx_dollars { get; set; }
+        public decimal sitewatchPsx_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPrimeShineRewash_count { get; set; }
+        public int sitewatchPrimeShineRewash_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPrimeShineRewash_dollars { get; set; }
+        public decimal sitewatchPrimeShineRewash_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPsx_count { get; set; }
+        public int sitewatchUnlimitedPsx_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPsx_dollars { get; set; }
+        public decimal sitewatchUnlimitedPsx_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedUcw_count { get; set; }
+        public int sitewatchUnlimitedUcw_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedUcw_dollars { get; set; }
+        public decimal sitewatchUnlimitedUcw_dollars { get; set; }
         [DataMember]
         public decimal totalTireGloss_dollars { get; set; }
         [DataMember]
@@ -92,7 +92,7 @@ namespace psp.core.domain
         public decimal totalRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchTotalPrimeShine_count { get; set; }
+        public int sitewatchTotalPrimeShine_count { get; set; }
 
         [DataMember]
         public int washLinkTotalPrimeShine_count { get; set; }
@@ -104,10 +104,10 @@ namespace psp.core.domain
         public decimal totalPrimeShine_diff { get; set; }
 
         [DataMember]
-        public int siteWatchPremierWash_count { get; set; }
+        public int sitewatchPremierWash_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPremierWash_dollars { get; set; }
+        public decimal sitewatchPremierWash_dollars { get; set; }
 
         [DataMember]
         public decimal washLinkTotalPremier_dollars { get; set; }
@@ -116,46 +116,46 @@ namespace psp.core.domain
         public decimal totalPremier_diff { get; set; }
 
         [DataMember]
-        public int siteWatchPremierRewash_count { get; set; }
+        public int sitewatchPremierRewash_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPremierRewash_dollars { get; set; }
+        public decimal sitewatchPremierRewash_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchFleetPremier_count { get; set; }
+        public int sitewatchFleetPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchFleetPremier_dollars { get; set; }
+        public decimal sitewatchFleetPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToPremier_count { get; set; }
+        public int sitewatchEnhancePsxToPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToPremier_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxWithTireGlossToPremier_count { get; set; }
+        public int sitewatchEnhancePsxWithTireGlossToPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxWithTireGlossToPremier_dollars { get; set; }
+        public decimal sitewatchEnhancePsxWithTireGlossToPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexToPremier_count { get; set; }
+        public int sitewatchEnhanceProtexToPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexToPremier_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexToPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexWithTireGlossToPremier_count { get; set; }
+        public int sitewatchEnhanceProtexWithTireGlossToPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexWithTireGlossToPremier_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexWithTireGlossToPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToProtex_count { get; set; }
+        public int sitewatchEnhancePsxToProtex_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToProtex_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToProtex_dollars { get; set; }
 
         //[DataMember]
         //public int unlimitedUg_count { get; set; }
@@ -164,37 +164,37 @@ namespace psp.core.domain
         //public decimal unlimitedUg_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchTotalPremier_count { get; set; }
+        public int sitewatchTotalPremier_count { get; set; }
 
         [DataMember]
         public int washLinkTotalPremier_count { get; set; }
 
         [DataMember]
-        public int siteWatchProtexWash_count { get; set; }
+        public int sitewatchProtexWash_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchProtexWash_dollars { get; set; }
+        public decimal sitewatchProtexWash_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchProtexRewash_count { get; set; }
+        public int sitewatchProtexRewash_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchProtexRewash_dollars { get; set; }
+        public decimal sitewatchProtexRewash_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedProtex_count { get; set; }
+        public int sitewatchUnlimitedProtex_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedProtex_dollars { get; set; }
+        public decimal sitewatchUnlimitedProtex_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchFleetProtex_count { get; set; }
+        public int sitewatchFleetProtex_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchFleetProtex_dollars { get; set; }
+        public decimal sitewatchFleetProtex_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchTotalProtex_count { get; set; }
+        public int sitewatchTotalProtex_count { get; set; }
 
         [DataMember]
         public int washLinkTotalProtex_count { get; set; }
@@ -212,28 +212,28 @@ namespace psp.core.domain
         public decimal washLinkTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchTireGloss_count { get; set; }
+        public int sitewatchTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchTireGloss_dollars { get; set; }
+        public decimal sitewatchTireGloss_dollars { get; set; }
 
         [DataMember]
         public decimal tireGloss_diff { get; set; }
 
         [DataMember]
-        public int siteWatchFleetTireGloss_count { get; set; }
+        public int sitewatchFleetTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchFleetTireGloss_dollars { get; set; }
+        public decimal sitewatchFleetTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchReapplyTireGloss_count { get; set; }
+        public int sitewatchReapplyTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchReapplyTireGloss_dollars { get; set; }
+        public decimal sitewatchReapplyTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchTotalTireGloss_count { get; set; }
+        public int sitewatchTotalTireGloss_count { get; set; }
 
         [DataMember]
         public int washLinkTotalTireGloss_count { get; set; }
@@ -248,7 +248,7 @@ namespace psp.core.domain
         public int washLinkTotalWashes_count { get; set; }
 
         [DataMember]
-        public int siteWatchTotalWashes_count { get; set; }
+        public int sitewatchTotalWashes_count { get; set; }
 
         [DataMember]
         public decimal totalWashes_dollars { get; set; }
@@ -299,184 +299,184 @@ namespace psp.core.domain
         public decimal amountToAudit { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPsxWithTireGloss_count { get; set; }
+        public int sitewatchUnlimitedPsxWithTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPsxWithTireGloss_dollars { get; set; }
+        public decimal sitewatchUnlimitedPsxWithTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedProtexWithTireGloss_count { get; set; }
+        public int sitewatchUnlimitedProtexWithTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedProtexWithTireGloss_dollars { get; set; }
+        public decimal sitewatchUnlimitedProtexWithTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxWithTireGlossToProtex_count { get; set; }
+        public int sitewatchEnhancePsxWithTireGlossToProtex_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxWithTireGlossToProtex_dollars { get; set; }
+        public decimal sitewatchEnhancePsxWithTireGlossToProtex_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPsxFleetPremier_count { get; set; }
+        public int sitewatchPsxFleetPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPsxFleetPremier_dollars { get; set; }
+        public decimal sitewatchPsxFleetPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPsxFleetPremierNoGloss_count { get; set; }
+        public int sitewatchPsxFleetPremierNoGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPsxFleetPremierNoGloss_dollars { get; set; }
+        public decimal sitewatchPsxFleetPremierNoGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPsxFleetProtex_count { get; set; }
+        public int sitewatchPsxFleetProtex_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPsxFleetProtex_dollars { get; set; }
+        public decimal sitewatchPsxFleetProtex_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPremier_count { get; set; }
+        public int sitewatchUnlimitedPremier_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPremier_dollars { get; set; }
+        public decimal sitewatchUnlimitedPremier_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPremierWithTireGloss_count { get; set; }
+        public int sitewatchUnlimitedPremierWithTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPremierWithTireGloss_dollars { get; set; }
+        public decimal sitewatchUnlimitedPremierWithTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedTireGloss_count { get; set; }
+        public int sitewatchUnlimitedTireGloss_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedTireGloss_dollars { get; set; }
+        public decimal sitewatchUnlimitedTireGloss_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchReapplyRainX_count { get; set; }
+        public int sitewatchReapplyRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchReapplyRainX_dollars { get; set; }
+        public decimal sitewatchReapplyRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchRainX_count { get; set; }
+        public int sitewatchRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchRainX_dollars { get; set; }
+        public decimal sitewatchRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchPlusPlus_count { get; set; }
+        public int sitewatchPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchPlusPlus_dollars { get; set; }
+        public decimal sitewatchPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPsxWithPlusPlus_count { get; set; }
+        public int sitewatchUnlimitedPsxWithPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPsxWithPlusPlus_dollars { get; set; }
+        public decimal sitewatchUnlimitedPsxWithPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPsxWithRainX_count { get; set; }
+        public int sitewatchUnlimitedPsxWithRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPsxWithRainX_dollars { get; set; }
+        public decimal sitewatchUnlimitedPsxWithRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedProtexWithPlusPlus_count { get; set; }
+        public int sitewatchUnlimitedProtexWithPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedProtexWithPlusPlus_dollars { get; set; }
+        public decimal sitewatchUnlimitedProtexWithPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedProtexWithRainX_count { get; set; }
+        public int sitewatchUnlimitedProtexWithRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedProtexWithRainX_dollars { get; set; }
+        public decimal sitewatchUnlimitedProtexWithRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPremierWithRainX_count { get; set; }
+        public int sitewatchUnlimitedPremierWithRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPremierWithRainX_dollars { get; set; }
+        public decimal sitewatchUnlimitedPremierWithRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchUnlimitedPremierWithPlusPlus_count { get; set; }
+        public int sitewatchUnlimitedPremierWithPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchUnlimitedPremierWithPlusPlus_dollars { get; set; }
+        public decimal sitewatchUnlimitedPremierWithPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToProtexWithRainX_count { get; set; }
+        public int sitewatchEnhancePsxToProtexWithRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToProtexWithRainX_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToProtexWithRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToProtexWithPlusPlus_count { get; set; }
+        public int sitewatchEnhancePsxToProtexWithPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToProtexWithPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToProtexWithPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxTireGlossToProtexPlusPlus_count { get; set; }
+        public int sitewatchEnhancePsxTireGlossToProtexPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxTireGlossToProtexPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhancePsxTireGlossToProtexPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxTireGlossToProtexRainX_count { get; set; }
+        public int sitewatchEnhancePsxTireGlossToProtexRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxTireGlossToProtexRainX_dollars { get; set; }
+        public decimal sitewatchEnhancePsxTireGlossToProtexRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToPremierRainX_count { get; set; }
+        public int sitewatchEnhancePsxToPremierRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToPremierRainX_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToPremierRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxToPremierPlusPlus_count { get; set; }
+        public int sitewatchEnhancePsxToPremierPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxToPremierPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhancePsxToPremierPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxTireGlossToPremierRainX_count { get; set; }
+        public int sitewatchEnhancePsxTireGlossToPremierRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxTireGlossToPremierRainX_dollars { get; set; }
+        public decimal sitewatchEnhancePsxTireGlossToPremierRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhancePsxTireGlossToPremierPlusPlus_count { get; set; }
+        public int sitewatchEnhancePsxTireGlossToPremierPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhancePsxTireGlossToPremierPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhancePsxTireGlossToPremierPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexToPremierPlusPlus_count { get; set; }
+        public int sitewatchEnhanceProtexToPremierPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexToPremierPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexToPremierPlusPlus_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexToPremierRainX_count { get; set; }
+        public int sitewatchEnhanceProtexToPremierRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexToPremierRainX_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexToPremierRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexTireGlossToPremierRainX_count { get; set; }
+        public int sitewatchEnhanceProtexTireGlossToPremierRainX_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexTireGlossToPremierRainX_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexTireGlossToPremierRainX_dollars { get; set; }
 
         [DataMember]
-        public int siteWatchEnhanceProtexTireGlossToPremierPlusPlus_count { get; set; }
+        public int sitewatchEnhanceProtexTireGlossToPremierPlusPlus_count { get; set; }
 
         [DataMember]
-        public decimal siteWatchEnhanceProtexTireGlossToPremierPlusPlus_dollars { get; set; }
+        public decimal sitewatchEnhanceProtexTireGlossToPremierPlusPlus_dollars { get; set; }
         
         [DataMember]
         public int washLinkTotalPlusPlus_count { get; set; }
@@ -507,12 +507,22 @@ namespace psp.core.domain
 
         [DataMember]
         public decimal sitewatchReapplyFleetPlusPlus_dollars { get; set; }
+        [DataMember]
+        public int sitewatchFleetPlusPlus_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchFleetPlusPlus_dollars { get; set; }
 
         [DataMember]
         public int sitewatchReapplyFleetRainX_count { get; set; }
 
         [DataMember]
         public decimal sitewatchReapplyFleetRainX_dollars { get; set; }
+        [DataMember]
+        public int sitewatchFleetRainX_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchFleetRainX_dollars { get; set; }
 
         [DataMember]
         public int sitewatchReapplyPlusPlus_count { get; set; }

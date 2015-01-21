@@ -24,7 +24,7 @@ namespace psp.api.Reports
                 var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate), "", "");
                 list.Add(new SiteWatchSalesItem
                 {
-                    total = gsr.siteWatchTotalWashes_count.ToString(),
+                    total = gsr.sitewatchTotalWashes_count.ToString(),
                     locationid = site.sitewatchid,
                     sitename = site.description,
                     val = gsr.totalToAccountForPerCar_dollars.ToString()
@@ -107,17 +107,17 @@ namespace psp.api.Reports
                         {
                             var gsr = gsrs[count];
                             decimal ppc = 0;
-                            if (gsr.siteWatchTotalWashes_count > 0)
+                            if (gsr.sitewatchTotalWashes_count > 0)
                             {
-                                ppc = Math.Round(gsr.totalToAccountFor / gsr.siteWatchTotalWashes_count, 2);
+                                ppc = Math.Round(gsr.totalToAccountFor / gsr.sitewatchTotalWashes_count, 2);
                             }
                             dtos.Add(new VolumeChartSeriesPoint
                             {
                                 name = "Price Per Car: $" + ppc,
-                                y = gsr.siteWatchTotalWashes_count,
+                                y = gsr.sitewatchTotalWashes_count,
                                 dto = new VolumeDto
                                 {
-                                    carCount = gsr.siteWatchTotalWashes_count,
+                                    carCount = gsr.sitewatchTotalWashes_count,
                                     pricePerCar = ppc,
                                     reportDate = gsr.gsrDate.ToShortDateString(),
                                     siteName = gsr.siteName
