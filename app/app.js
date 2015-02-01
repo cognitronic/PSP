@@ -10,6 +10,7 @@ ramAngularApp.module = angular.module('psp', [
         'ngAnimate',
         'service.auth',
         'service.user',
+		'toaster',
         'service.site',
         'ui.bootstrap',
         'service.notifications',

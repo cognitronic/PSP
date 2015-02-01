@@ -193,6 +193,38 @@ ramAngularApp.module.directive('ramAddCustomer', [ function(){
     }
 }]);
 
+ramAngularApp.module.directive('ramChangePassword', [ function(){
+	function link(scope, element, attrs){
+		var dialogProvider = element.injector().get('dialogs');
+		scope.modalData = {
+			header: 'Change Password'
+		}
+		element.bind('click', function(event){
+			if(scope.ccEditable)
+				scope.modalData.editingUser = scope.$eval(scope.ccEditable);
+			var dlg = dialogProvider.create('/common/layout/change-password-popover.html','NavCtrl', scope.modalData);
+			dlg.result.then(function(){
+				if(scope.ccPostSubmitAction){
+					scope.$eval(scope.ccPostSubmitAction);
+				}
+			},function(){
+				if(scope.postCancelAction){
+					scope.$eval(scope.ccPostCancelAction);
+				}
+			});
+		})
+	}
+	return {
+		link: link,
+		scope: {
+			ccPostSubmitAction: '&',
+			ccPostCancelAction: '&',
+			ccEditable: '@'
+
+		}
+	}
+}]);
+
 ramAngularApp.module.directive('ccWhatsNew', function($compile, ReportsService){
 
 });

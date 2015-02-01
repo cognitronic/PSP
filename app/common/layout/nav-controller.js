@@ -2,7 +2,9 @@
  * Created by Danny Schreiber on 3/23/14.
  */
 
-ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthService, $location, CacheService){
+ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthService, $location, CacheService, UserService, toaster){
+
+	var _currentPassword, _newPassword, _confirmPassword;
 
     $scope.isAuthenticated = AuthService.isAuthenticated();
 
@@ -13,6 +15,25 @@ ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthServ
     $scope.$on('userLoggedOut', function (event, data){
         $scope.isAuthenticated = AuthService.isAuthenticated();
     });
+
+	var _changePassword = function(){
+		if($scope.model.newPassword == $scope.model.confirmPassword){
+			if($scope.model.currentPassword == CacheService.getItem(CacheService.Items.UserInfo.currentUser).password){
+				var user = CacheService.getItem(CacheService.Items.UserInfo.currentUser);
+				user.password = $scope.model.newPassword;
+				UserService.saveUser(user);
+				toaster.pop('success', "Password Changed", "Your password has been updated successfully.");
+				$scope.$dismiss();
+			} else {
+				$scope.model.message = "Invalid passwords";
+				toaster.pop('error', "Password Change Failed", "Invalid password combinations, please try again.");
+			}
+		}else {
+			toaster.pop('error', "Password Change Failed", "Invalid password combinations, please try again.");
+		}
+	};
+
+
 
 
     $scope.logout = function(){
@@ -37,4 +58,11 @@ ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthServ
         }
         return retval;
     }
+
+	$scope.model = {
+		changePassword: _changePassword,
+		currentPassword: _currentPassword,
+		newPassword: _newPassword,
+		confirmPassword: _confirmPassword
+	}
 });

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/angular-motion.min.css" />
     <link rel="stylesheet" href="https://rawgithub.com/daneden/animate.css/master/animate.css">
+	<link rel="stylesheet" href="vendor/angularjs-toaster/toaster.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -28,7 +29,7 @@
 <![endif]-->
 
 <div ng-include="'common/layout/_nav.html'"></div>
-<!--<div id="sidebar"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar" ng-include="'components/layout/_sidebar.html'"></div>-->
+<toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-center'}"></toaster-container>
 <loading></loading>
 <div id="main-content" class="main-content " ng-view="">
 
@@ -54,6 +55,7 @@
 <script src="vendor/angular-cookies/angular-cookies.js"></script>
 <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
 <script src="vendor/angular-route/angular-route.js"></script>
+<script src="vendor/angularjs-toaster/toaster.js"></script>
 <script src="vendor/underscore/underscore.js"></script>
 <script src="vendor/highcharts/highcharts.js"></script>
 <script src="vendor/highcharts/highcharts-more.js"></script>

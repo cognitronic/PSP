@@ -890,6 +890,13 @@ html body {
     color: #ff0000;
 }
 
+.login-error{
+	background-color: #d2322d;
+	color: #ffffff;
+	margin: 10px 0;
+	padding: 5px;
+}
+
 .stick {
 	width: 100%;
 	position: fixed;

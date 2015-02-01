@@ -12,7 +12,9 @@ ramAngularApp.module.controller('LoginCtrl', function($scope, $rootScope, AUTH_E
         password: ''
     };
     $scope.login = function(credentials){
-        console.log(AuthService.login(credentials));
+        AuthService.login(credentials).then(function(data){
+			$scope.loginmessage = "Invalid email/password.  Please try again.";
+		});
     };
 
 });

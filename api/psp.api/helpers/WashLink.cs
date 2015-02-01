@@ -59,7 +59,7 @@ namespace psp.api.helpers
                                                              + FormatMySqlTime(fromTime, true) + @"' AND '"
                                                              + FormatMySqlDate(date.ToShortDateString()) + @" "
                                                              + FormatMySqlTime(toTime, false) + @"'
-                        group by timestamp;";
+                        group by date(timestamp);";
                 DataSet ds = new DataSet();
                 try
                 {
