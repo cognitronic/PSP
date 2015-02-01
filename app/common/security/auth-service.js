@@ -21,8 +21,10 @@ angular.module('service.auth', [])
                         if(data === "null"){
                             console.log('Invalid email or password');
                             CacheService.removeItem(CacheService.Items.UserInfo.currentUser);
+							data.success = false;
                             return authMsg = 'Invalid email or password';
                         } else {
+							data.success = true;
                             CacheService.setItem(CacheService.Items.UserInfo.currentUser, data);
                             if(CacheService.getItem(CacheService.Items.UserInfo.currentUser) !== null){
                                 $rootScope.$broadcast('userLoggedIn', {user: data});

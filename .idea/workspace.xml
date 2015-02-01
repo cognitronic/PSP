@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/common/layout/change-password-popover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/auth-service.js" afterPath="$PROJECT_DIR$/app/common/security/auth-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/change-password-popover.html" afterPath="$PROJECT_DIR$/app/common/layout/change-password-popover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/login-controller.js" afterPath="$PROJECT_DIR$/app/common/security/login-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/security/login.html" afterPath="$PROJECT_DIR$/app/common/security/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/layout/nav-controller.js" afterPath="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -27,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav-controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav-controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/common/layout/nav-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1440">
-              <caret line="31" column="111" selection-start-line="31" selection-start-column="111" selection-end-line="31" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.7106599" vertical-offset="60" max-vertical-offset="1420">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -47,13 +51,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="change-password-popover.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="change-password-popover.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/common/layout/change-password-popover.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24911033" vertical-offset="0" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="1000">
               <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,7 +66,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.206897" vertical-offset="500" max-vertical-offset="2500">
+            <state vertical-scroll-proportion="-23.448277" vertical-offset="0" max-vertical-offset="2500">
               <caret line="34" column="0" selection-start-line="33" selection-start-column="56" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
@@ -72,8 +76,28 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3800">
+            <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="3800">
               <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/security/login-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+              <caret line="16" column="108" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/security/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7586207" vertical-offset="0" max-vertical-offset="640">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -89,43 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2060">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/site-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1560">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="auth-service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1460">
-              <caret line="26" column="92" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1640">
-              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1500">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -158,15 +150,15 @@
         <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/gsr-controller.js" />
         <option value="$PROJECT_DIR$/app/reports/gsr.html" />
-        <option value="$PROJECT_DIR$/app/common/security/login-controller.js" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/common/security/login.html" />
-        <option value="$PROJECT_DIR$/app/common/security/auth-service.js" />
         <option value="$PROJECT_DIR$/app/common/layout/dialogs-directive.js" />
         <option value="$PROJECT_DIR$/app/common/layout/_nav.html" />
-        <option value="$PROJECT_DIR$/app/common/layout/change-password-popover.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/common/security/auth-service.js" />
+        <option value="$PROJECT_DIR$/app/common/security/login-controller.js" />
+        <option value="$PROJECT_DIR$/app/common/security/login.html" />
+        <option value="$PROJECT_DIR$/app/common/layout/change-password-popover.html" />
         <option value="$PROJECT_DIR$/app/common/layout/nav-controller.js" />
       </list>
     </option>
@@ -696,7 +688,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422818717163</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="- added change password modal&#10;">
+      <created>1422818848029</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1422818848029</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -788,7 +786,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="changed ui to match company's marketing vibe" />
     <MESSAGE value="Refactored rest api  and made appropriate modifications to domain objects" />
     <MESSAGE value="refactored angular sites controller and hooked up webApi rest layer for gsr, sites, and gsrReport" />
     <MESSAGE value="modified base style and added notification project" />
@@ -813,7 +810,8 @@
     <MESSAGE value="added method to calculate tenths of a minute starting at midnight" />
     <MESSAGE value="added fleet rainx and plusplus" />
     <MESSAGE value="- added toaster library&#10;- added ability for users to change their password.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added toaster library&#10;- added ability for users to change their password.&#10;" />
+    <MESSAGE value="- added change password modal&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added change password modal&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1060,22 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/login-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28985506" vertical-offset="0" max-vertical-offset="897">
-          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="720">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.51724" vertical-offset="17171" max-vertical-offset="18800">
@@ -1178,14 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1460">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/modal-site-details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="2120">
@@ -1218,37 +1192,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3800">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897" vertical-offset="500" max-vertical-offset="2500">
+        <state vertical-scroll-proportion="-23.448277" vertical-offset="0" max-vertical-offset="2500">
           <caret line="34" column="0" selection-start-line="33" selection-start-column="56" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/layout/nav-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1440">
-          <caret line="31" column="111" selection-start-line="31" selection-start-column="111" selection-end-line="31" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="3800">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1500">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/login-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <caret line="16" column="108" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/security/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7586207" vertical-offset="0" max-vertical-offset="640">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layout/change-password-popover.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24911033" vertical-offset="0" max-vertical-offset="1020">
+        <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="1020">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/layout/nav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7106599" vertical-offset="60" max-vertical-offset="1420">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

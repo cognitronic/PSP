@@ -25,7 +25,6 @@ ramAngularApp.module.controller('NavCtrl', function($scope, $rootScope, AuthServ
 				toaster.pop('success', "Password Changed", "Your password has been updated successfully.");
 				$scope.$dismiss();
 			} else {
-				$scope.model.message = "Invalid passwords";
 				toaster.pop('error', "Password Change Failed", "Invalid password combinations, please try again.");
 			}
 		}else {

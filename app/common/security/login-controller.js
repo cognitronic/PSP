@@ -5,7 +5,7 @@
 'use strict'
 
 
-ramAngularApp.module.controller('LoginCtrl', function($scope, $rootScope, AUTH_EVENTS, AuthService){
+ramAngularApp.module.controller('LoginCtrl', function($scope, $rootScope, AUTH_EVENTS, AuthService, toaster){
     console.log('Inside of login controller');
     $scope.credentials = {
         email: '',
@@ -13,7 +13,9 @@ ramAngularApp.module.controller('LoginCtrl', function($scope, $rootScope, AUTH_E
     };
     $scope.login = function(credentials){
         AuthService.login(credentials).then(function(data){
-			$scope.loginmessage = "Invalid email/password.  Please try again.";
+			if(!data.data.success){
+				toaster.pop('error', "Authentication Failed", "Invalid email/password.  Please try again.");
+			}
 		});
     };
 
