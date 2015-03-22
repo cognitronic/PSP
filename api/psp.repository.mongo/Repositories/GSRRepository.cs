@@ -95,7 +95,7 @@ namespace psp.repository.mongo.Repositories
             //{
             //    cursor = collection.FindAs<GSR>(Query.EQ("gsrDate", date.Replace("-", "/") + " 12:00:00 AM"));
             //}
-            cursor.SetFields(Fields.Include("siteWatchTotalPrimeShine_count", "siteWatchTotalProtex_count", "siteWatchTotalPremier_count", "siteWatchTotalTireGloss_count", "sitewatchTotalPlusPlus_count", "sitewatchTotalRainX_count", "siteName"));
+            cursor.SetFields(Fields.Include("sitewatchTotalPrimeShine_count", "sitewatchTotalProtex_count", "sitewatchTotalPremier_count", "sitewatchTotalTireGloss_count", "sitewatchTotalPlusPlus_count", "sitewatchTotalRainX_count", "siteName"));
             var totals = new List<WashLinkWashTotals>();
             foreach(var gsr in cursor.ToList())
             {

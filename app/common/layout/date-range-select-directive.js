@@ -12,7 +12,6 @@
         };
 
         scope.dateSelected = function (_item) {
-            var found = false;
             if (typeof(scope.ngModel) != "undefined" && scope.ngModel) {
                 scope.ngModel = _item;
                 scope.selectLabel = scope.ngModel.name;
