@@ -54,6 +54,7 @@
 			var d = new Date();
 			d.setHours(6);
 			d.setMinutes(0);
+			d.setSeconds(0);
 			$scope.model.fromTime = d;
 			$scope.model.toTime = d;
 		};

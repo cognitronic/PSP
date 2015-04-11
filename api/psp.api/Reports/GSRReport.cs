@@ -168,7 +168,7 @@ namespace psp.api.Reports
                             gsr.sitewatchTotalPremier_dollars += gsr.sitewatchFleetPremier_dollars;
                             break;
                         case "608832": // PSX Fleet Premier
-                            gsr.sitewatchPsxFleetPremier_dollars = int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_SEVEN;
+                            gsr.sitewatchPsxFleetPremier_dollars = int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_FIVE;
                             gsr.sitewatchPsxFleetPremier_count = int.Parse(item.total);
                             gsr.sitewatchTotalPremier_dollars += gsr.sitewatchPsxFleetPremier_dollars;
                             break;
@@ -488,6 +488,7 @@ namespace psp.api.Reports
             gsr.totalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_dollars +
                 gsr.sitewatchReapplyPlusPlus_dollars +
                 gsr.sitewatchReapplyFleetPlusPlus_dollars +
+                gsr.sitewatchFleetPlusPlus_dollars +
                 gsr.sitewatchUnlimitedPlusPlus_dollars;
             gsr.totalPlusPlus_diff = (gsr.sitewatchTotalPlusPlus_count - gsr.washLinkTotalPlusPlus_count) * (int)GSRMultiplier.PLUS_THREE;
 
