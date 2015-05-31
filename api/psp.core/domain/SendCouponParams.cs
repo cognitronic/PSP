@@ -18,5 +18,7 @@ namespace psp.core.domain
 
         [DataMember]
         public string email { get; set; }
+        [DataMember]
+        public string sentBy { get; set; }
     }
 }

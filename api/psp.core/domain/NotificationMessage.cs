@@ -28,5 +28,9 @@ namespace psp.core.domain
         public string MessageBody { get; set; }
         [DataMember]
         public string Subject { get; set; }
+        [DataMember]
+        public DateTime DateSent { get; set; }
+        [DataMember]
+        public string SentBy { get; set; }
     }
 }

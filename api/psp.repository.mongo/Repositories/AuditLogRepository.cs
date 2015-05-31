@@ -32,10 +32,11 @@ namespace psp.repository.mongo.Repositories
             return _collection.FindOneAs<AuditLog>(query);
         }
 
-        public AuditLog GetByType(string type)
+        public IList<AuditLog> GetByType(string type)
         {
+            var collection = _database.GetCollection<AuditLog>("audit");
             var query = Query<AuditLog>.EQ(e => e.type, type);
-            return _collection.FindOneAs<AuditLog>(query);
+            return collection.Find(query).OrderBy(o => o.auditDate).ToList<AuditLog>();
         }
 
         public AuditLog Save(AuditLog log)

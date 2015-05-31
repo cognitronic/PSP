@@ -91,6 +91,11 @@ ramAngularApp.module.config(function($routeProvider, $httpProvider, dialogsProvi
             controller: 'reports.BirthdaysCtrl',
             access: access.office
         })
+		.when('/reports/courtesy-coupon', {
+			templateUrl: 'reports/courtesy-coupon.html',
+			controller: 'CourtesyCouponController',
+			access: access.office
+		})
         .when('/forms', {
             templateUrl: 'forms/forms-index.html',
             controller: 'FormsCtrl',

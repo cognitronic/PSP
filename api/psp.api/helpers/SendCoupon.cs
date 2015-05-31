@@ -42,5 +42,37 @@ namespace psp.api.helpers
 
 
         }
+
+        public void SendCourtesyCoupon(SendCouponParams parms)
+        {
+            var emails = parms.email.Split(',');
+            foreach(string email in emails) 
+            {
+                var notification = new NotificationRepository().GetByName("Courtesy_Coupon");
+                var message = new NotificationMessage();
+                StringBuilder sb = new StringBuilder();
+                sb.Append(NotificationTemplates.CourtesyCouponHtmlStart(email));
+                sb.Append(NotificationTemplates.CourtesyCouponHtmlEnd());
+                message.Bccs = notification.recipients;
+                message.ToEmails.Add(email);
+                message.FromEmail = notification.fromemail;
+                message.MessageBody = sb.ToString();
+                message.Subject = notification.subject;
+                message.DateSent = DateTime.Now;
+                message.SentBy = parms.sentBy;
+
+                new SendMailController().Post(message);
+
+                AuditService.SaveLog(new AuditLog
+                {
+                    auditDate = DateTime.Now,
+                    message = "Courtesy coupon sent",
+                    name = "Courtesy_Coupon Notification",
+                    type = "courtesy_coupon_notification",
+                    notification = message
+                });
+
+            }
+        }
     }
 }

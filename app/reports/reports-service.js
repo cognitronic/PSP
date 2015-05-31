@@ -84,6 +84,21 @@ angular.module('service.reports', [])
                     });
                 return deferred.promise;
             },
+			getSentCourtesyCoupons: function(params){
+				var deferred = $q.defer();
+				$rootScope.loading = true;
+				console.log(params);
+				$http.get(APP_SETTINGS.apiUrl + 'coupon-codes/complimentary')
+					.success(function(data){
+						$rootScope.loading = false;
+						deferred.resolve(data);
+					})
+					.error(function(){
+						$rootScope.loading = false;
+						deferred.reject();
+					});
+				return deferred.promise;
+			},
             getGSRBySiteDate: function(viewModel){
                 console.log(viewModel);
                 var deferred = $q.defer();

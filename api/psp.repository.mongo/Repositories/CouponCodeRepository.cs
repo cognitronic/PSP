@@ -43,7 +43,7 @@ namespace psp.repository.mongo.Repositories
         {
             var collection = _database.GetCollection<CouponCode>("coupon_code");
             var query = Query.And(Query<CouponCode>.EQ(e => e.coupon, coupon), Query<CouponCode>.EQ(e => e.isassigned, isassigned));
-            return collection.Find(query).OrderBy(o => o.codetext).ToList<CouponCode>();
+            return collection.Find(query).OrderByDescending(o => o.dateassigned).ToList<CouponCode>();
         }
 
         public CouponCode GetByCode(string code)

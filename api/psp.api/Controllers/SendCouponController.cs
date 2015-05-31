@@ -38,6 +38,9 @@ namespace psp.api.Controllers
                 case "birthday":
                     new SendCoupon().SendBirthdayCoupon(parms);
                     break;
+                case "courtesy":
+                    new SendCoupon().SendCourtesyCoupon(parms);
+                    break;
             }
         }
 

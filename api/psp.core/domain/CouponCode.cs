@@ -23,5 +23,10 @@ namespace psp.core.domain
         public bool isredeemed { get; set; }
         [DataMember]
         public bool isassigned { get; set; }
+
+        [DataMember]
+        public string assignedemail { get; set; }
+        [DataMember]
+        public DateTime dateassigned { get; set; }
     }
 }
