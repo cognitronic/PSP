@@ -28,5 +28,8 @@ namespace psp.core.domain
         public string assignedemail { get; set; }
         [DataMember]
         public DateTime dateassigned { get; set; }
+
+        [DataMember]
+        public string sentby { get; set; }
     }
 }

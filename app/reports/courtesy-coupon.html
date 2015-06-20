@@ -30,6 +30,7 @@
 			<tr class="bg-primary">
 				<th>Emails</th>
 				<th>Date Sent</th>
+				<th>Sent By</th>
 				<th>Code</th>
 			</tr>
 			</thead>
@@ -37,6 +38,7 @@
 			<tr ng-repeat="coupon in courtesyModel.sentCoupons">
 				<td>{{ coupon.assignedemail }}</td>
 				<td>{{ coupon.dateassigned | date:'MM/dd/yyyy @ h:mma'  }}</td>
+				<td>{{ coupon.sentby}}</td>
 				<td>{{ coupon.codetext }}</td>
 			</tr>
 			</tbody>

@@ -1,42 +1,42 @@
 <div class="container view-container" sticky>
-    <div class="row-fluid">
-        <h3>GSR Report</h3>
-        <div class="container-header">
-            Search Criteria
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div>
-                    <b class="messagecontainer">
+	<div class="row-fluid">
+		<h3>GSR Report</h3>
+		<div class="container-header">
+			Search Criteria
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div>
+					<b class="messagecontainer">
 						Date:
 						<span style="cursor: pointer; color:#00b3ee; " class="pull-right" ng-click="model.toggleUseTime()">
 							{{model.useTimeText}}
 						</span>
 					</b>
-                    <p class="input-group">
-                        <input type="text" class="form-control" cc-datepicker-popup="{{model.format}}" ng-model="model.dt" is-open="model.registeredOpened" enable-on-focus="false"  max="maxDate" cc-datepicker-options="model.dateOptions"  ng-required="true" close-text="Close" />
+					<p class="input-group">
+						<input type="text" class="form-control" cc-datepicker-popup="{{model.format}}" ng-model="model.dt" is-open="model.registeredOpened" enable-on-focus="false"  max="maxDate" cc-datepicker-options="model.dateOptions"  ng-required="true" close-text="Close" />
                     <span class="input-group-btn">
                         <button class="btn " id="btnRegistered" ng-click="model.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                     </span>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="form-group">
-                    <b class="messagecontainer">Site:</b>
-                    <select class="form-control" ng-model="model.selectedSite" ng-options="site.description for site in model.sites | orderBy: 'sitewatchid'">
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="form-group">
-                    <br/>
-                    <button class="btn " ng-confirm ng-click="model.getGsr()"><i class="glyphicon glyphicon-play"></i> Run GSR</button>
-                    <button class="btn " ng-confirm ng-click="model.exportGSR()" ng-disabled="model.gsr == undefined"><i class="glyphicon glyphicon-export"></i> Export To CSV</button>
-                </div>
-            </div>
-        </div>
-    </div>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="form-group">
+					<b class="messagecontainer">Site:</b>
+					<select class="form-control" ng-model="model.selectedSite" ng-options="site.description for site in model.sites | orderBy: 'sitewatchid'">
+					</select>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="form-group">
+					<br/>
+					<button class="btn " ng-confirm ng-click="model.getGsr()"><i class="glyphicon glyphicon-play"></i> Run GSR</button>
+					<button class="btn " ng-confirm ng-click="model.exportGSR()" ng-disabled="model.gsr == undefined"><i class="glyphicon glyphicon-export"></i> Export To CSV</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row" ng-if="model.useTime">
 		<div class="col-lg-4 col-md-4 col-sm-4">
 			<div>
@@ -53,200 +53,200 @@
 	</div>
 </div>
 <div class="container view-container">
-    <div class="row-fluid">
-        <br />
-        <table class="table model.gsrtable">
-            <tbody>
+	<div class="row-fluid">
+		<br />
+		<table class="table model.gsrtable">
+			<tbody>
 			<accordion close-others="false">
-			<accordion-group is-open="status.open">
-				<accordion-heading>
-					<div class="col-md-4">
-						PSX Wash Services
-					</div>
-					<div class="col-md-2">
-						Wash Count
-					</div>
-					<div class="col-md-2">
-						SW Count
-					</div>
-					<div class="col-md-2">
-						Dollars
-					</div>
-					<div class="col-md-2">
-						Diff (Count) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-					</div>
+				<accordion-group is-open="status.open">
+					<accordion-heading>
+						<div class="col-md-4">
+							PSX Wash Services
+						</div>
+						<div class="col-md-2">
+							Wash Count
+						</div>
+						<div class="col-md-2">
+							SW Count
+						</div>
+						<div class="col-md-2">
+							Dollars
+						</div>
+						<div class="col-md-2">
+							Diff (Count) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+						</div>
 
-				</accordion-heading>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Prime Shine Wash:
+					</accordion-heading>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Prime Shine Wash:
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.washLinkTotalPrimeShine_count }}
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalPrimeShine_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						{{ model.gsr.washLinkTotalPrimeShine_count }}
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Fleet PSX Wash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchFleetPsx_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetPsx_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						--
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							PSX Wash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchPsx_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchPsx_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.washLinkTotalPrimeShine_dollars"></span>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Prime Shine Rewash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchPrimeShineRewash_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchPrimeShineRewash_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						--
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited PSX Wash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedPsx_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsx_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Fleet PSX Wash:
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited UCW:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedUcw_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedUcw_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						--
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited PSX W/TG:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedPsxWithTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchFleetPsx_count }}
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited PSX W/Plus+:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedPsxWithPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchFleetPsx_dollars"></span>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
+							Unlimited PSX W/Rain-X:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedPsxWithRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
 					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						PSX Wash:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchPsx_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchPsx_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Prime Shine Rewash:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchPrimeShineRewash_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchPrimeShineRewash_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Unlimited PSX Wash:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchUnlimitedPsx_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsx_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Unlimited UCW:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchUnlimitedUcw_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedUcw_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Unlimited PSX W/TG:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchUnlimitedPsxWithTireGloss_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithTireGloss_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Unlimited PSX W/Plus+:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchUnlimitedPsxWithPlusPlus_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithPlusPlus_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-				<hr/>
-				<div class="clearfix"/>
-				<div class="row-fluid">
-					<div class="col-md-4">
-						Unlimited PSX W/Rain-X:
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-					<div class="col-md-2">
-						{{ model.gsr.sitewatchUnlimitedPsxWithRainX_count }}
-					</div>
-					<div class="col-md-2">
-						<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPsxWithRainX_dollars"></span>
-					</div>
-					<div class="col-md-2">
-						--
-					</div>
-				</div>
-			</accordion-group>
+				</accordion-group>
 			</accordion>
 			<div class="row-fluid">
 				<div class="col-md-4">
@@ -610,6 +610,25 @@
 					<div class="clearfix"/>
 					<div class="row-fluid">
 						<div class="col-md-4">
+							Premier Rewash:
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchPremierRewash_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchPremierRewash_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							--
+						</div>
+					</div>
+					<hr/>
+					<div class="clearfix"/>
+					<div class="row-fluid">
+						<div class="col-md-4">
 							Unlimited Premier:
 						</div>
 						<div class="col-md-2">
@@ -749,7 +768,7 @@
 							--
 						</div>
 						<div class="col-md-2">
-							{{ model.gsr.sitewatchEnhancePsxWithTiregGlossToPremier_count }}
+							{{ model.gsr.sitewatchEnhancePsxWithTireGlossToPremier_count }}
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchEnhancePsxWithTireGlossToPremier_dollars"></span>
@@ -1652,8 +1671,8 @@
 			</div>
 
 
-            </tbody>
-        </table>
-    </div>
+			</tbody>
+		</table>
+	</div>
 </div>
 <div class="container view-container"></div>

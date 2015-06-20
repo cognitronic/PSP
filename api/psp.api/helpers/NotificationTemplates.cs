@@ -205,7 +205,7 @@ namespace psp.api.helpers
             return sb.ToString();
         }
 
-        public static string CourtesyCouponHtmlStart(string email)
+        public static string CourtesyCouponHtmlStart(string email, SendCouponParams parms)
         {
             string cssstyle = @".maincontainer
             {
@@ -292,6 +292,7 @@ namespace psp.api.helpers
             sb.Append("' alt='Courtesy Wash From Prime Shine!' /></a>");
             cc.isassigned = true;
             cc.assignedemail = email;
+            cc.sentby = parms.sentBy;
             cc.dateassigned = DateTime.Now;
             new CouponCodeRepository().Save(cc);
             return sb.ToString();

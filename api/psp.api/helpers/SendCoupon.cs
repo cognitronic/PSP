@@ -51,8 +51,12 @@ namespace psp.api.helpers
                 var notification = new NotificationRepository().GetByName("Courtesy_Coupon");
                 var message = new NotificationMessage();
                 StringBuilder sb = new StringBuilder();
-                sb.Append(NotificationTemplates.CourtesyCouponHtmlStart(email));
+                sb.Append(NotificationTemplates.CourtesyCouponHtmlStart(email, parms));
                 sb.Append(NotificationTemplates.CourtesyCouponHtmlEnd());
+                foreach(string bccs in notification.bccemails)
+                {
+                    notification.recipients.Add(bccs);
+                }
                 message.Bccs = notification.recipients;
                 message.ToEmails.Add(email);
                 message.FromEmail = notification.fromemail;

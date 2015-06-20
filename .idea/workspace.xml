@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/reports/courtesy-coupon-controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/reports/courtesy-coupon.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
@@ -17,7 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" />
@@ -37,21 +34,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/AuditLogRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/AuditLogRepository.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/CouponCode.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/CouponCode.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/CouponCodeRepository.cs" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/Repositories/CouponCodeRepository.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/NotificationMessage.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/NotificationMessage.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/NotificationTemplates.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/NotificationTemplates.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/SendCoupon.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/SendCoupon.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Controllers/SendCouponController.cs" afterPath="$PROJECT_DIR$/api/psp.api/Controllers/SendCouponController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/SendCouponParams.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/SendCouponParams.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Web.config" afterPath="$PROJECT_DIR$/api/psp.api/Web.config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/courtesy-coupon.html" afterPath="$PROJECT_DIR$/app/reports/courtesy-coupon.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" afterPath="$PROJECT_DIR$/api/psp.api/psp.api.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll.config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/reports-service.js" afterPath="$PROJECT_DIR$/app/reports/reports-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -89,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+              <caret line="147" column="51" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -108,7 +97,7 @@
       <file leaf-file-name="_nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/common/layout/_nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.354838">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="102" />
               <folding />
             </state>
@@ -118,8 +107,18 @@
       <file leaf-file-name="courtesy-coupon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reports/courtesy-coupon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68095237">
-              <caret line="26" column="29" selection-start-line="25" selection-start-column="27" selection-end-line="26" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.45053634">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gsr.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.3">
+              <caret line="992" column="32" selection-start-line="992" selection-start-column="23" selection-end-line="992" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -138,7 +137,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.225806">
+            <state vertical-scroll-proportion="0.0">
               <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
               <folding />
             </state>
@@ -177,7 +176,6 @@
         <option value="$PROJECT_DIR$/app/common/security/routingAccessConfig.js" />
         <option value="$PROJECT_DIR$/app/common/layout/sticky-directive.js" />
         <option value="$PROJECT_DIR$/app/common/security/noaccess-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/assets/css/main.css" />
         <option value="$PROJECT_DIR$/app/common/layout/dialogs-directive.js" />
         <option value="$PROJECT_DIR$/app/common/layout/_nav.html" />
@@ -194,6 +192,7 @@
         <option value="$PROJECT_DIR$/app/reports/birthdays.html" />
         <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/courtesy-coupon-controller.js" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/reports/courtesy-coupon.html" />
       </list>
     </option>
@@ -326,8 +325,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -662,7 +661,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428757780732</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;">
+      <created>1433108630108</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1433108630108</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -691,7 +696,6 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14552239" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -704,6 +708,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -752,7 +757,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="modified base style and added notification project" />
     <MESSAGE value="added line items for Rain-X and Plus+" />
     <MESSAGE value="fixed refresh bug in gsr reload" />
     <MESSAGE value="added packages to gsr and refactored rest api accordingly" />
@@ -777,7 +781,8 @@
     <MESSAGE value="- added change password modal&#10;" />
     <MESSAGE value="- removed old error/warning messages&#10;" />
     <MESSAGE value="- made changes to gsr calculation rules&#10;- updated by hour report to factor in seconds&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- made changes to gsr calculation rules&#10;- updated by hour report to factor in seconds&#10;" />
+    <MESSAGE value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -798,13 +803,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/user-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/modal-site-details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5172415">
@@ -1100,21 +1098,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5453502">
           <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.225806">
-          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layout/_nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="102" />
           <folding />
         </state>
@@ -1128,19 +1117,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/birthdays.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8119048">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,6 +1128,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39285713">
           <caret line="15" column="65" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3">
+          <caret line="992" column="32" selection-start-line="992" selection-start-column="23" selection-end-line="992" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="51" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1162,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/courtesy-coupon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68095237">
-          <caret line="26" column="29" selection-start-line="25" selection-start-column="27" selection-end-line="26" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.45053634">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
         </state>
       </provider>
