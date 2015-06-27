@@ -46,16 +46,19 @@ namespace psp.api.Reports
                 gsr.washLinkTotalPremier_dollars = gsr.washLinkPremier_count * (int)GSRMultiplier.PLUS_TWELVE;
 
                 // Tire Shine
-                gsr.washLinkTotalTireGloss_count = wlData.tireshine > 0 ? wlData.tireshine : 0;
-                gsr.washLinkTotalTireGloss_dollars = gsr.washLinkTotalTireGloss_count * (int)GSRMultiplier.PLUS_TWO;
+                gsr.washLinkTireGloss_count = wlData.tireshine > 0 ? wlData.tireshine : 0;
+                gsr.washLinkTireGloss_dollars = gsr.washLinkTireGloss_count * (int)GSRMultiplier.PLUS_TWO;
+                gsr.washLinkTotalTireGloss_dollars = gsr.washLinkTireGloss_count * (int)GSRMultiplier.PLUS_TWO;
 
                 //Plus+
-                gsr.washLinkTotalPlusPlus_count = wlData.plusplus > 0 ? wlData.plusplus : 0;
-                gsr.washLinkTotalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
+                gsr.washLinkPlusPlus_count = wlData.plusplus > 0 ? wlData.plusplus : 0;
+                gsr.washLinkPlusPlus_dollars = gsr.washLinkPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
+                gsr.washLinkTotalPlusPlus_dollars = gsr.washLinkPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
 
                 // RainX
-                gsr.washLinkTotalRainX_count = wlData.rainx > 0 ? wlData.rainx : 0;
-                gsr.washLinkTotalRainX_dollars = gsr.washLinkTotalRainX_count * (int)GSRMultiplier.PLUS_TWO;
+                gsr.washLinkRainX_count = wlData.rainx > 0 ? wlData.rainx : 0;
+                gsr.washLinkRainX_dollars = gsr.washLinkRainX_count * (int)GSRMultiplier.PLUS_TWO;
+                gsr.washLinkTotalRainX_dollars = gsr.washLinkRainX_count * (int)GSRMultiplier.PLUS_TWO;
 
 
 
@@ -70,7 +73,6 @@ namespace psp.api.Reports
                     switch (item.objid)
                     {
                         case "49501608": // Tire Gloss
-                            gsr.sitewatchTireGloss_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
                             gsr.sitewatchTireGloss_count += int.Parse(item.total);
                             break;
                         case "49501617": // Fleet Tire Gloss
@@ -247,11 +249,9 @@ namespace psp.api.Reports
                             gsr.sitewatchPremierWash_count += int.Parse(item.total);
                             break;
                         case "49501691": // Plus+
-                            gsr.sitewatchPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
                             gsr.sitewatchPlusPlus_count += int.Parse(item.total);
                             break;
                         case "49501690": // RainX
-                            gsr.sitewatchRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
                             gsr.sitewatchRainX_count += int.Parse(item.total);
                             break;
                         case "49501693": // Reapply RainX
@@ -542,26 +542,26 @@ namespace psp.api.Reports
                 gsr.sitewatchFleetTireGloss_count +
                 gsr.sitewatchReapplyTireGloss_count +
                 gsr.sitewatchUnlimitedTireGloss_count +
-                gsr.sitewatchEnhancePsxWithTireGlossToProtex_count +
-                gsr.sitewatchEnhancePsxWithTireGlossToPremier_count +
-                gsr.sitewatchEnhanceProtexWithTireGlossToPremier_count +
                 gsr.sitewatchUnlimitedPremierWithTireGloss_count +
                 gsr.sitewatchUnlimitedProtexWithTireGloss_count +
-                gsr.sitewatchEnhanceProtexTireGlossToPremierPlusPlus_count +
-                gsr.sitewatchEnhanceProtexTireGlossToPremierRainX_count +
-                gsr.sitewatchEnhancePsxTireGlossToPremierPlusPlus_count +
-                gsr.sitewatchEnhancePsxTireGlossToPremierRainX_count +
-                gsr.sitewatchEnhancePsxTireGlossToProtexPlusPlus_count +
-                gsr.sitewatchEnhancePsxTireGlossToProtexRainX_count +
                 gsr.sitewatchUnlimitedPsxWithTireGloss_count;
+
+            gsr.sitewatchTireGloss_count = gsr.sitewatchTotalTireGloss_count;
+
+            gsr.sitewatchTotalTireGloss_count = gsr.sitewatchTireGloss_count - (gsr.sitewatchFleetTireGloss_count + gsr.sitewatchUnlimitedTireGloss_count + gsr.sitewatchReapplyTireGloss_count);
+            gsr.washLinkTotalTireGloss_count = gsr.washLinkTireGloss_count - (gsr.sitewatchFleetTireGloss_count + gsr.sitewatchUnlimitedTireGloss_count + gsr.sitewatchReapplyTireGloss_count);
+
+            gsr.sitewatchTireGloss_dollars += gsr.sitewatchTireGloss_count * (int)GSRMultiplier.PLUS_TWO;
 
             gsr.totalTireGloss_dollars = gsr.washLinkTotalTireGloss_dollars +
                 gsr.sitewatchFleetTireGloss_dollars +
                 gsr.sitewatchUnlimitedTireGloss_dollars +
                 gsr.sitewatchReapplyTireGloss_dollars;
 
-            gsr.tireGloss_diff = (gsr.sitewatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
-            gsr.totalTireGloss_diff = (gsr.sitewatchTotalTireGloss_count - gsr.washLinkTotalTireGloss_count) * (int)GSRMultiplier.PLUS_TWO;
+            gsr.sitewatchTotalTireGloss_dollars = gsr.sitewatchTireGloss_dollars + (gsr.sitewatchReapplyTireGloss_dollars + gsr.sitewatchUnlimitedTireGloss_dollars + gsr.sitewatchFleetTireGloss_dollars);
+            gsr.washLinkTotalTireGloss_dollars = gsr.washLinkTireGloss_dollars + (gsr.sitewatchReapplyTireGloss_dollars + gsr.sitewatchUnlimitedTireGloss_dollars + gsr.sitewatchFleetTireGloss_dollars);
+
+            gsr.totalTireGloss_diff = gsr.sitewatchTotalTireGloss_dollars - gsr.washLinkTotalTireGloss_dollars;
 
             // Rain-X
             gsr.sitewatchTotalRainX_count = gsr.sitewatchRainX_count +
@@ -569,55 +569,76 @@ namespace psp.api.Reports
                 gsr.sitewatchUnlimitedPremierWithRainX_count +
                 gsr.sitewatchUnlimitedProtexWithRainX_count +
                 gsr.sitewatchUnlimitedPsxWithRainX_count +
-                gsr.sitewatchEnhanceProtexTireGlossToPremierRainX_count +
-                gsr.sitewatchEnhanceProtexToPremierRainX_count +
-                gsr.sitewatchEnhancePsxTireGlossToProtexRainX_count +
-                gsr.sitewatchEnhancePsxToProtexWithRainX_count +
-                gsr.sitewatchEnhancePsxToPremierRainX_count +
                 gsr.sitewatchReapplyFleetRainX_count +
-                gsr.sitewatchFleetRainX_count +
-                gsr.sitewatchUnlimitedRainX_count +
-                gsr.sitewatchEnhancePsxTireGlossToPremierRainX_count;
+                gsr.sitewatchFleetRainX_count  +
+                gsr.sitewatchUnlimitedRainX_count;
 
+            gsr.sitewatchRainX_count = gsr.sitewatchTotalRainX_count;
+
+            gsr.sitewatchTotalRainX_count = gsr.sitewatchRainX_count - (gsr.sitewatchFleetRainX_count + gsr.sitewatchUnlimitedRainX_count + gsr.sitewatchReapplyRainX_count);
+            gsr.washLinkTotalRainX_count = gsr.washLinkRainX_count - (gsr.sitewatchFleetRainX_count + gsr.sitewatchUnlimitedRainX_count + gsr.sitewatchReapplyRainX_count);
+
+            gsr.sitewatchRainX_dollars += gsr.sitewatchRainX_count * (int)GSRMultiplier.PLUS_TWO;
             gsr.totalRainX_dollars = gsr.washLinkTotalRainX_dollars +
                 gsr.sitewatchFleetRainX_dollars +
                 gsr.sitewatchUnlimitedRainX_dollars +
                 gsr.sitewatchReapplyRainX_dollars;
-            gsr.totalRainX_diff = (gsr.sitewatchTotalRainX_count - gsr.washLinkTotalRainX_count) * (int)GSRMultiplier.PLUS_TWO;
+
+            gsr.sitewatchTotalRainX_dollars = gsr.sitewatchRainX_dollars + (gsr.sitewatchReapplyRainX_dollars + gsr.sitewatchUnlimitedRainX_dollars + gsr.sitewatchFleetRainX_dollars);
+            gsr.washLinkTotalRainX_dollars = gsr.washLinkRainX_dollars + (gsr.sitewatchReapplyRainX_dollars + gsr.sitewatchUnlimitedRainX_dollars + gsr.sitewatchFleetRainX_dollars);
+
+            gsr.totalRainX_diff = gsr.sitewatchTotalRainX_dollars - gsr.washLinkTotalRainX_dollars;
 
             // Plus+
             gsr.sitewatchTotalPlusPlus_count = gsr.sitewatchPlusPlus_count +
                 gsr.sitewatchReapplyPlusPlus_count +
                 gsr.sitewatchReapplyFleetPlusPlus_count +
                 gsr.sitewatchFleetPlusPlus_count +
-                gsr.sitewatchUnlimitedPlusPlus_count;// +
-            //gsr.sitewatchUnlimitedPremierWithPlusPlus_count +
-            //gsr.sitewatchUnlimitedProtexWithPlusPlus_count +
-            //gsr.sitewatchUnlimitedPsxWithPlusPlus_count +
-            //gsr.sitewatchEnhanceProtexTireGlossToPremierPlusPlus_count +
-            //gsr.sitewatchEnhanceProtexToPremierPlusPlus_count +
-            //gsr.sitewatchEnhancePsxTireGlossToProtexPlusPlus_count +
-            //gsr.sitewatchEnhancePsxToProtexWithPlusPlus_count +
-            //gsr.sitewatchEnhancePsxToPremierPlusPlus_count +
-            //gsr.sitewatchEnhancePsxTireGlossToPremierPlusPlus_count;
+                gsr.sitewatchUnlimitedPlusPlus_count;
+
+            gsr.sitewatchPlusPlus_count = gsr.sitewatchTotalPlusPlus_count;
+
+            gsr.sitewatchTotalPlusPlus_count = gsr.sitewatchPlusPlus_count - (gsr.sitewatchFleetPlusPlus_count + gsr.sitewatchUnlimitedPlusPlus_count + gsr.sitewatchReapplyPlusPlus_count);
+            gsr.washLinkTotalPlusPlus_count = gsr.washLinkPlusPlus_count - (gsr.sitewatchFleetPlusPlus_count + gsr.sitewatchUnlimitedPlusPlus_count + gsr.sitewatchReapplyPlusPlus_count);
+
+            gsr.sitewatchPlusPlus_dollars += gsr.sitewatchPlusPlus_count * (int)GSRMultiplier.PLUS_THREE;
 
             gsr.totalPlusPlus_dollars = gsr.washLinkTotalPlusPlus_dollars +
                 gsr.sitewatchReapplyPlusPlus_dollars +
-                gsr.sitewatchReapplyFleetPlusPlus_dollars +
                 gsr.sitewatchFleetPlusPlus_dollars +
                 gsr.sitewatchUnlimitedPlusPlus_dollars;
-            gsr.totalPlusPlus_diff = (gsr.sitewatchTotalPlusPlus_count - gsr.washLinkTotalPlusPlus_count) * (int)GSRMultiplier.PLUS_THREE;
+
+            gsr.sitewatchTotalPlusPlus_dollars = gsr.sitewatchPlusPlus_dollars + (gsr.sitewatchReapplyPlusPlus_dollars + gsr.sitewatchUnlimitedPlusPlus_dollars + gsr.sitewatchFleetPlusPlus_dollars);
+            gsr.washLinkTotalPlusPlus_dollars = gsr.washLinkPlusPlus_dollars + (gsr.sitewatchReapplyPlusPlus_dollars + gsr.sitewatchUnlimitedPlusPlus_dollars + gsr.sitewatchFleetPlusPlus_dollars);
+
+            gsr.totalPlusPlus_diff = gsr.sitewatchTotalPlusPlus_dollars - gsr.washLinkTotalPlusPlus_dollars;
+
+
+
 
             gsr.sitewatchTotalWashes_count = gsr.sitewatchTotalPrimeShine_count +
                 gsr.sitewatchTotalProtex_count +
                 gsr.sitewatchTotalPremier_count;
 
-            gsr.totalWashes_diff = gsr.totalTireGloss_diff +
-                gsr.totalPrimeShine_diff +
-                gsr.totalProtex_diff +
-                gsr.totalPlusPlus_diff +
-                gsr.totalRainX_diff +
-                gsr.totalPremier_diff;
+            gsr.washLinkTotalWashes_count = gsr.washLinkTotalPrimeShine_count +
+                gsr.washLinkTotalProtex_count +
+                gsr.washLinkTotalPremier_count;
+
+            gsr.sitewatchTotalWashes_dollars = gsr.sitewatchTotalPrimeShine_dollars +
+                gsr.sitewatchTotalProtex_dollars +
+                gsr.sitewatchTotalPremier_dollars +
+                gsr.sitewatchTotalTireGloss_dollars +
+                gsr.sitewatchTotalRainX_dollars +
+                gsr.sitewatchTotalPlusPlus_dollars;
+
+            gsr.washLinkTotalWashes_dollars = gsr.washLinkTotalPrimeShine_dollars +
+                gsr.washLinkTotalProtex_dollars +
+                gsr.washLinkTotalPremier_dollars +
+                gsr.washLinkTotalTireGloss_dollars +
+                gsr.washLinkTotalRainX_dollars +
+                gsr.washLinkTotalPlusPlus_dollars;
+
+            gsr.totalWashes_diff = gsr.sitewatchTotalWashes_dollars - gsr.washLinkTotalWashes_dollars;
 
             gsr.totalWashes_dollars = gsr.totalPrimeShine_dollars +
                 gsr.totalProtex_dollars +
@@ -775,14 +796,24 @@ namespace psp.api.Reports
             }
 
             // Total Wash Service
-            gsr.totalWashServices = gsr.totalWashes_dollars + gsr.impulseItems + gsr.webConnect;
+            gsr.sitewatchTotalWashServices = gsr.sitewatchTotalWashes_dollars + gsr.impulseItems + gsr.webConnect;
+            gsr.washLinkTotalWashServices = gsr.washLinkTotalWashes_dollars + gsr.impulseItems + gsr.webConnect;
+            gsr.totalWashServicesDiff = gsr.sitewatchTotalWashServices - gsr.washLinkTotalWashServices;
 
             // Total To Account For
-            gsr.totalToAccountFor = gsr.totalWashServices +
-                gsr.machineSales +
+            gsr.sitewatchTotalToAccountFor = gsr.sitewatchTotalWashServices +
+                 gsr.machineSales +
                 gsr.pumpCodeWash +
                 gsr.prePaids -
                 ((gsr.couponsAndDiscounts * (int)GSRMultiplier.NEGATIVE_ONE) - gsr.totalPaidoutRefunds);
+            gsr.washLinkTotalToAccountFor = gsr.washLinkTotalWashServices +
+                 gsr.machineSales +
+                gsr.pumpCodeWash +
+                gsr.prePaids -
+                ((gsr.couponsAndDiscounts * (int)GSRMultiplier.NEGATIVE_ONE) - gsr.totalPaidoutRefunds);
+
+            gsr.totalToAccountForDiff = gsr.sitewatchTotalToAccountFor - gsr.washLinkTotalToAccountFor;
+
             if (gsr.washLinkTotalWashes_count > 0)
             {
                 gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.totalToAccountFor / gsr.washLinkTotalWashes_count), 2);
@@ -793,13 +824,10 @@ namespace psp.api.Reports
             }
 
             // Total Over
-            gsr.totalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.totalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;
-            gsr.totalOverUnder_diff = gsr.totalTireGloss_diff +
-                gsr.totalPlusPlus_diff +
-                gsr.totalRainX_diff +
-                gsr.totalPrimeShine_diff +
-                gsr.totalProtex_diff +
-                gsr.totalPremier_diff;
+            gsr.sitewatchTotalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.sitewatchTotalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;
+            gsr.washLinkTotalOverUnder_dollars = ((gsr.cashDeposit + gsr.creditCards) + gsr.washLinkTotalToAccountFor) * (int)GSRMultiplier.NEGATIVE_ONE;
+
+            gsr.totalOverUnder_diff = gsr.sitewatchTotalOverUnder_dollars - gsr.washLinkTotalOverUnder_dollars;
 
             // Total Over Excluding Cars
             int iExcludingCars = ((gsr.sitewatchTotalPrimeShine_count - gsr.washLinkTotalPrimeShine_count) * (int)GSRMultiplier.PLUS_SEVEN) +
@@ -815,8 +843,8 @@ namespace psp.api.Reports
                 gsr.totalRainX_diff +
                 gsr.totalTireGloss_diff;
 
-            gsr.amountToAudit = gsr.totalOverUnder_dollars + ((dExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
-
+            //gsr.amountToAudit = gsr.totalOverUnder_dollars + ((dExcludingCars) * (int)GSRMultiplier.NEGATIVE_ONE);
+            gsr.amountToAudit = gsr.sitewatchTotalOverUnder_dollars;
             return gsr;
         }
 

@@ -112,16 +112,14 @@
       <file leaf-file-name="gsr.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3694875">
-              <caret line="463" column="41" selection-start-line="463" selection-start-column="41" selection-end-line="463" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.18474375">
+              <caret line="1164" column="35" selection-start-line="1164" selection-start-column="35" selection-end-line="1164" selection-end-column="35" />
               <folding>
                 <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
@@ -130,6 +128,13 @@
                 <element signature="n#div#2;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -684,7 +689,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434834024599</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary=" - refactored  washes on gsr report per john's spreadsheet">
+      <created>1435431464588</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1435431464588</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -713,6 +724,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14552239" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -725,7 +737,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -774,7 +785,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed refresh bug in gsr reload" />
     <MESSAGE value="added packages to gsr and refactored rest api accordingly" />
     <MESSAGE value="added plus+ and rainx packages to gsr" />
     <MESSAGE value="created notifications console project and created volume report for email notifications" />
@@ -799,7 +809,8 @@
     <MESSAGE value="- made changes to gsr calculation rules&#10;- updated by hour report to factor in seconds&#10;" />
     <MESSAGE value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
     <MESSAGE value=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons." />
-    <option name="LAST_COMMIT_MESSAGE" value=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons." />
+    <MESSAGE value=" - refactored  washes on gsr report per john's spreadsheet" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - refactored  washes on gsr report per john's spreadsheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1181,16 +1192,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3694875">
-          <caret line="463" column="41" selection-start-line="463" selection-start-column="41" selection-end-line="463" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.18474375">
+          <caret line="1164" column="35" selection-start-line="1164" selection-start-column="35" selection-end-line="1164" selection-end-column="35" />
           <folding>
             <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#1;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#2;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#3;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#4;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#6;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
@@ -1199,6 +1208,13 @@
             <element signature="n#div#2;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#4;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#6;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#accordion-group#0;n#accordion#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

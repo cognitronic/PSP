@@ -460,17 +460,20 @@
 			<accordion close-others="false">
 				<accordion-group is-open="status.open">
 					<accordion-heading>
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Tire Gloss</b>
 						</div>
 						<div class="col-md-2">
-							<b>Wash Count</b>
+							<b>WL Count</b>
 						</div>
 						<div class="col-md-2">
 							<b>SW Count</b>
 						</div>
 						<div class="col-md-2">
-							<b>Dollars</b>
+							<b>WL Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Dollars</b>
 						</div>
 						<div class="col-md-2">
 							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
@@ -478,17 +481,20 @@
 
 					</accordion-heading>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							Tire Gloss:
 						</div>
 						<div class="col-md-2">
-							{{ model.gsr.washLinkTotalTireGloss_count }}
+							{{ model.gsr.washLinkTireGloss_count }}
 						</div>
 						<div class="col-md-2">
-							--
+							{{ model.gsr.sitewatchTireGloss_count }}
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.washLinkTotalTireGloss_dollars"></span>
+							<span ps-format-money dollar-amt="model.gsr.washLinkTireGloss_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchTireGloss_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							--
@@ -497,14 +503,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Fleet Tire Gloss:
-						</div>
 						<div class="col-md-2">
-							--
+							Fleet:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchFleetTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchFleetTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetTireGloss_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetTireGloss_dollars"></span>
@@ -516,14 +525,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Unlimited Tire Gloss:
-						</div>
 						<div class="col-md-2">
-							--
+							Unlimited:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchUnlimitedTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedTireGloss_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedTireGloss_dollars"></span>
@@ -535,14 +547,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Reapply Tire Gloss:
-						</div>
 						<div class="col-md-2">
-							--
+							Reapply:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchReapplyTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchReapplyTireGloss_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyTireGloss_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyTireGloss_dollars"></span>
@@ -554,7 +569,7 @@
 				</accordion-group>
 			</accordion>
 			<div class="row-fluid">
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<b>Total Tire Gloss:</b>
 				</div>
 				<div class="col-md-2">
@@ -564,27 +579,33 @@
 					<b>{{ model.gsr.sitewatchTotalTireGloss_count }}</b>
 				</div>
 				<div class="col-md-2">
-					<b><span ps-format-money dollar-amt="model.gsr.totalTireGloss_dollars"></span></b>
+					<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalTireGloss_dollars"></span></b>
 				</div>
 				<div class="col-md-2">
-					<b> <span ps-format-money dollar-amt="model.gsr.tireGloss_diff"></span></b>
+					<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalTireGloss_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b> <span ps-format-money dollar-amt="model.gsr.totalTireGloss_diff"></span></b>
 				</div>
 			</div>
 
 			<accordion close-others="false">
 				<accordion-group is-open="status.open">
 					<accordion-heading>
-						<div class="col-md-4">
-							<b>Rain-X Wash Services</b>
+						<div class="col-md-2">
+							<b>Rain-X</b>
 						</div>
 						<div class="col-md-2">
-							<b>Wash Count</b>
+							<b>WL Count</b>
 						</div>
 						<div class="col-md-2">
 							<b>SW Count</b>
 						</div>
 						<div class="col-md-2">
-							<b>Dollars</b>
+							<b>WL Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Dollars</b>
 						</div>
 						<div class="col-md-2">
 							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
@@ -592,17 +613,20 @@
 
 					</accordion-heading>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							Rain-X:
 						</div>
 						<div class="col-md-2">
-							{{ model.gsr.washLinkTotalRainX_count }}
+							{{ model.gsr.washLinkRainX_count }}
 						</div>
 						<div class="col-md-2">
-							--
+							{{ model.gsr.sitewatchRainX_count }}
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.washLinkTotalRainX_dollars"></span>
+							<span ps-format-money dollar-amt="model.gsr.washLinkRainX_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchRainX_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							--
@@ -611,14 +635,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Fleet Rain-X:
-						</div>
 						<div class="col-md-2">
-							--
+							Fleet:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchFleetRainX_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchFleetRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetRainX_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetRainX_dollars"></span>
@@ -630,14 +657,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Reapply Rain-X:
-						</div>
 						<div class="col-md-2">
-							--
+							Reapply:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchReapplyRainX_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchReapplyRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyRainX_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyRainX_dollars"></span>
@@ -650,32 +680,16 @@
 					<div class="clearfix"/>
 					<div class="row-fluid">
 						<div class="col-md-4">
-							Reapply Fleet Rain-X:
-						</div>
-						<div class="col-md-2">
-							--
-						</div>
-						<div class="col-md-2">
-							{{ model.gsr.sitewatchReapplyFleetRainX_count }}
-						</div>
-						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyFleetRainX_dollars"></span>
-						</div>
-						<div class="col-md-2">
-							--
-						</div>
-					</div>
-					<hr/>
-					<div class="clearfix"/>
-					<div class="row-fluid">
-						<div class="col-md-4">
-							Unlimited Rain-X:
-						</div>
-						<div class="col-md-2">
-							--
+							Unlimited:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchUnlimitedRainX_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedRainX_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedRainX_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedRainX_dollars"></span>
@@ -687,17 +701,20 @@
 				</accordion-group>
 			</accordion>
 			<div class="row-fluid">
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<b>Total Rain-X:</b>
 				</div>
 				<div class="col-md-2">
 					<b>{{ model.gsr.washLinkTotalRainX_count }}</b>
 				</div>
 				<div class="col-md-2">
-					<b>{{ model.gsr.sitewatchRainX_count }}</b>
+					<b>{{ model.gsr.sitewatchTotalRainX_count }}</b>
 				</div>
 				<div class="col-md-2">
-					<b><span ps-format-money dollar-amt="model.gsr.totalRainX_dollars"></span></b>
+					<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalRainX_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalRainX_dollars"></span></b>
 				</div>
 				<div class="col-md-2">
 					<b> <span ps-format-money dollar-amt="model.gsr.totalRainX_diff"></span></b>
@@ -708,17 +725,20 @@
 			<accordion close-others="false">
 				<accordion-group is-open="status.open">
 					<accordion-heading>
-						<div class="col-md-4">
-							<b>Plus+ Wash Services</b>
+						<div class="col-md-2">
+							<b>Plus+ </b>
 						</div>
 						<div class="col-md-2">
-							<b>Wash Count</b>
+							<b>WL Count</b>
 						</div>
 						<div class="col-md-2">
 							<b>SW Count</b>
 						</div>
 						<div class="col-md-2">
-							<b>Dollars</b>
+							<b>WL Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Dollars</b>
 						</div>
 						<div class="col-md-2">
 							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
@@ -726,17 +746,20 @@
 
 					</accordion-heading>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							Plus+:
 						</div>
 						<div class="col-md-2">
-							{{ model.gsr.washLinkTotalPlusPlus_count }}
+							{{ model.gsr.washLinkPlusPlus_count }}
 						</div>
 						<div class="col-md-2">
-							--
+							{{ model.gsr.sitewatchPlusPlus_count }}
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.washLinkTotalPlusPlus_dollars"></span>
+							<span ps-format-money dollar-amt="model.gsr.washLinkPlusPlus_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchPlusPlus_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							--
@@ -745,14 +768,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Fleet Plus+:
-						</div>
 						<div class="col-md-2">
-							--
+							Fleet:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchFleetPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchFleetPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetPlusPlus_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchFleetPlusPlus_dollars"></span>
@@ -764,14 +790,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Reapply Plus+:
-						</div>
 						<div class="col-md-2">
-							--
+							Reapply:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchReapplyPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchReapplyPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyPlusPlus_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyPlusPlus_dollars"></span>
@@ -783,33 +812,17 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							Reapply Fleet Plus+:
-						</div>
 						<div class="col-md-2">
-							--
-						</div>
-						<div class="col-md-2">
-							{{ model.gsr.sitewatchReapplyFleetPlusPlus_count }}
-						</div>
-						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.sitewatchReapplyFleetPlusPlus_dollars"></span>
-						</div>
-						<div class="col-md-2">
-							--
-						</div>
-					</div>
-					<hr/>
-					<div class="clearfix"/>
-					<div class="row-fluid">
-						<div class="col-md-4">
-							Unlimited Plus+:
-						</div>
-						<div class="col-md-2">
-							--
+							Unlimited:
 						</div>
 						<div class="col-md-2">
 							{{ model.gsr.sitewatchUnlimitedPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							{{ model.gsr.sitewatchUnlimitedPlusPlus_count }}
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPlusPlus_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.sitewatchUnlimitedPlusPlus_dollars"></span>
@@ -821,7 +834,7 @@
 				</accordion-group>
 			</accordion>
 			<div class="row-fluid">
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<b>Total Plus+:</b>
 				</div>
 				<div class="col-md-2">
@@ -831,7 +844,10 @@
 					<b>{{ model.gsr.sitewatchTotalPlusPlus_count }}</b>
 				</div>
 				<div class="col-md-2">
-					<b><span ps-format-money dollar-amt="model.gsr.totalPlusPlus_dollars"></span></b>
+					<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalPlusPlus_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalPlusPlus_dollars"></span></b>
 				</div>
 				<div class="col-md-2">
 					<b> <span ps-format-money dollar-amt="model.gsr.totalPlusPlus_diff"></span></b>
@@ -841,17 +857,20 @@
 			<accordion close-others="false">
 				<accordion-group is-open="true">
 					<accordion-heading>
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Total Wash Services</b>
 						</div>
 						<div class="col-md-2">
-							<b>Wash Count</b>
+							<b>WL Count</b>
 						</div>
 						<div class="col-md-2">
 							<b>SW Count</b>
 						</div>
 						<div class="col-md-2">
-							<b>Dollars</b>
+							<b>WL Dollars</b>
+						</div>
+						<div class="col-md-2">
+							<b>SW Dollars</b>
 						</div>
 						<div class="col-md-2">
 							<b>Diff (Count)</b> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': true, 'glyphicon-chevron-right': false}"></i>
@@ -859,7 +878,7 @@
 
 					</accordion-heading>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Total Washes/Dollars:</b>
 						</div>
 						<div class="col-md-2">
@@ -869,7 +888,10 @@
 							{{ model.gsr.sitewatchTotalWashes_count }}
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.totalWashes_dollars"></span>
+							<span ps-format-money dollar-amt="model.gsr.washLinkTotalWashes_dollars"></span>
+						</div>
+						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.sitewatchTotalWashes_dollars"></span>
 						</div>
 						<div class="col-md-2">
 							<span ps-format-money dollar-amt="model.gsr.totalWashes_diff"></span>
@@ -878,7 +900,7 @@
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Web Connect:</b>
 						</div>
 						<div class="col-md-2">
@@ -891,13 +913,16 @@
 							<span ps-format-money dollar-amt="model.gsr.webConnect"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.webConnect"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Impulse Items:</b>
 						</div>
 						<div class="col-md-2">
@@ -910,13 +935,16 @@
 							<span ps-format-money dollar-amt="model.gsr.impulseItems"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.impulseItems"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Total Wash Services:</b>
 						</div>
 						<div class="col-md-2">
@@ -926,16 +954,19 @@
 							--
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.totalWashServices"></span>
+							<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalWashServices"></span></b>
 						</div>
 						<div class="col-md-2">
-							--
+							<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalWashServices"></span></b>
+						</div>
+						<div class="col-md-2">
+							<b><span ps-format-money dollar-amt="model.gsr.totalWashServicesDiff"></span></b>
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Machine Sales:</b>
 						</div>
 						<div class="col-md-2">
@@ -948,13 +979,16 @@
 							<span ps-format-money dollar-amt="model.gsr.machineSales"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.machineSales"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Pre Paids:</b>
 						</div>
 						<div class="col-md-2">
@@ -967,14 +1001,17 @@
 							<span ps-format-money dollar-amt="model.gsr.prePaids"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.prePaids"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							<b>Pump WashCode Tender:</b>
+						<div class="col-md-2">
+							<b>Pump WashCode:</b>
 						</div>
 						<div class="col-md-2">
 							--
@@ -986,14 +1023,17 @@
 							<span ps-format-money dollar-amt="model.gsr.pumpCodeWash"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.pumpCodeWash"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							<b>Coupons & Discounts:</b>
+						<div class="col-md-2">
+							<b>Coupons:</b>
 						</div>
 						<div class="col-md-2">
 							--
@@ -1005,14 +1045,17 @@
 							<span ps-format-money dollar-amt="model.gsr.couponsAndDiscounts"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.couponsAndDiscounts"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
-							<b>Total Paidout/Refunds:</b>
+						<div class="col-md-2">
+							<b>Total Refunds:</b>
 						</div>
 						<div class="col-md-2">
 							--
@@ -1024,13 +1067,16 @@
 							<span ps-format-money dollar-amt="model.gsr.totalPaidoutRefunds"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.totalPaidoutRefunds"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Total To Account For:</b>
 						</div>
 						<div class="col-md-2">
@@ -1040,16 +1086,19 @@
 							--
 						</div>
 						<div class="col-md-2">
-							<span ps-format-money dollar-amt="model.gsr.totalToAccountFor"></span>
+							<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalToAccountFor"></span></b>
 						</div>
 						<div class="col-md-2">
-							--
+							<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalToAccountFor"></span></b>
+						</div>
+						<div class="col-md-2">
+							<b><span ps-format-money dollar-amt="model.gsr.totalToAccountForDiff"></span></b>
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Cash Deposit:</b>
 						</div>
 						<div class="col-md-2">
@@ -1062,13 +1111,16 @@
 							<span ps-format-money dollar-amt="model.gsr.cashDeposit"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.cashDeposit"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 					<hr/>
 					<div class="clearfix"/>
 					<div class="row-fluid">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<b>Credit Cards:</b>
 						</div>
 						<div class="col-md-2">
@@ -1081,13 +1133,16 @@
 							<span ps-format-money dollar-amt="model.gsr.creditCards"></span>
 						</div>
 						<div class="col-md-2">
+							<span ps-format-money dollar-amt="model.gsr.creditCards"></span>
+						</div>
+						<div class="col-md-2">
 							--
 						</div>
 					</div>
 				</accordion-group>
 			</accordion>
 			<div class="row-fluid">
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<b>Total Over/Under:</b>
 				</div>
 				<div class="col-md-2">
@@ -1097,14 +1152,18 @@
 					--
 				</div>
 				<div class="col-md-2">
-					<span ps-format-money dollar-amt="model.gsr.totalOverUnder_dollars"></span>
+					<b><span ps-format-money dollar-amt="model.gsr.washLinkTotalOverUnder_dollars"></span></b>
 				</div>
 				<div class="col-md-2">
-					<span ps-format-money dollar-amt="model.gsr.totalOverUnder_diff"></span>
+					<b><span ps-format-money dollar-amt="model.gsr.sitewatchTotalOverUnder_dollars"></span></b>
+				</div>
+				<div class="col-md-2">
+					<!--<span ps-format-money dollar-amt="model.gsr.totalOverUnder_diff"></span>-->
+					--
 				</div>
 			</div>
 			<div class="row-fluid">
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<b>Amount To Audit:</b>
 				</div>
 				<div class="col-md-2">
@@ -1114,7 +1173,10 @@
 					--
 				</div>
 				<div class="col-md-2">
-					<span ps-format-money dollar-amt="model.gsr.amountToAudit"></span>
+					<b><span ps-format-money dollar-amt="model.gsr.amountToAudit"></span></b>
+				</div>
+				<div class="col-md-2">
+					--
 				</div>
 				<div class="col-md-2">
 					--

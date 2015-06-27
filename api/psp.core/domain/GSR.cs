@@ -99,6 +99,50 @@ namespace psp.core.domain
         public decimal premierFleet_dollars { get; set; }
 
 
+        [DataMember]
+        public int tireGlossFleet_count { get; set; }
+
+        [DataMember]
+        public decimal tireGlossFleet_dollars { get; set; }
+
+
+        [DataMember]
+        public int rainXFleet_count { get; set; }
+
+        [DataMember]
+        public decimal rainXFleet_dollars { get; set; }
+
+        [DataMember]
+        public int plusPlusFleet_count { get; set; }
+
+        [DataMember]
+        public decimal plusPlusFleet_dollars { get; set; }
+
+
+
+        [DataMember]
+        public int tireGlossUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal tireGlossUnlimited_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalTireGloss_dollars { get; set; }
+
+
+        [DataMember]
+        public int rainXUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal rainXUnlimited_dollars { get; set; }
+
+        [DataMember]
+        public int plusPlusUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal plusPlusUnlimited_dollars { get; set; }
+
+
 
         [DataMember]
         public int primeShineUnlimited_count { get; set; }
@@ -607,5 +651,54 @@ namespace psp.core.domain
 
         [DataMember]
         public double totalToAccountForPerCar_dollars { get; set; }
+
+        [DataMember]
+        public int washLinkPlusPlus_count { get; set; }
+
+        [DataMember]
+        public decimal washLinkPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public int washLinkRainX_count { get; set; }
+
+        [DataMember]
+        public decimal washLinkRainX_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalRainX_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalPlusPlus_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalWashes_dollars { get; set; }
+
+        [DataMember]
+        public decimal washLinkTotalWashes_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalWashServices { get; set; }
+
+        [DataMember]
+        public decimal washLinkTotalWashServices { get; set; }
+
+        [DataMember]
+        public decimal totalWashServicesDiff { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalToAccountFor { get; set; }
+
+        [DataMember]
+        public decimal washLinkTotalToAccountFor { get; set; }
+
+        [DataMember]
+        public decimal totalToAccountForDiff { get; set; }
+
+        [DataMember]
+        public decimal sitewatchTotalOverUnder_dollars { get; set; }
+        
+        [DataMember]
+        public decimal washLinkTotalOverUnder_dollars { get; set; }
+
     }
 }
