@@ -26,17 +26,41 @@ namespace psp.core.domain
         [DataMember]
         public DateTime gsrDate { get; set; }
 
-        //[DataMember]
-        //public int washLinkPrimeShine_count { get; set; }
+        [DataMember]
+        public decimal washLinkPrimeShine_dollars { get; set; }
 
-        //[DataMember]
-        //public decimal washLinkPrimeShine_dollars { get; set; }
+        [DataMember]
+        public int washLinkPrimeShine_count { get; set; }
+
+        [DataMember]
+        public decimal washLinkProtex_dollars { get; set; }
+
+        [DataMember]
+        public int washLinkProtex_count { get; set; }
+
+        [DataMember]
+        public decimal washLinkPremier_dollars { get; set; }
+
+        [DataMember]
+        public int washLinkPremier_count { get; set; }
 
         [DataMember]
         public int sitewatchPrimeShine_count { get; set; }
 
         [DataMember]
         public decimal sitewatchPrimeShine_dollars { get; set; }
+
+        [DataMember]
+        public decimal sitewatchProtex_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchProtex_count { get; set; }
+
+        [DataMember]
+        public decimal sitewatchPremier_dollars { get; set; }
+
+        [DataMember]
+        public int sitewatchPremier_count { get; set; }
 
         [DataMember]
         public decimal sitewatchTotalPrimeShine_dollars { get; set; }
@@ -55,6 +79,45 @@ namespace psp.core.domain
 
         [DataMember]
         public int sitewatchPsx_count { get; set; }
+
+        [DataMember]
+        public int primeShineFleet_count { get; set; }
+
+        [DataMember]
+        public decimal primeShineFleet_dollars { get; set; }
+
+        [DataMember]
+        public int protexFleet_count { get; set; }
+
+        [DataMember]
+        public decimal protexFleet_dollars { get; set; }
+
+        [DataMember]
+        public int premierFleet_count { get; set; }
+
+        [DataMember]
+        public decimal premierFleet_dollars { get; set; }
+
+
+
+        [DataMember]
+        public int primeShineUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal primeShineUnlimited_dollars { get; set; }
+
+        [DataMember]
+        public int protexUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal protexUnlimited_dollars { get; set; }
+
+        [DataMember]
+        public int premierUnlimited_count { get; set; }
+
+        [DataMember]
+        public decimal premierUnlimited_dollars { get; set; }
+
 
         [DataMember]
         public decimal sitewatchPsx_dollars { get; set; }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" />
@@ -34,12 +33,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/CouponCode.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/CouponCode.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/NotificationTemplates.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/NotificationTemplates.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/helpers/SendCoupon.cs" afterPath="$PROJECT_DIR$/api/psp.api/helpers/SendCoupon.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/courtesy-coupon.html" afterPath="$PROJECT_DIR$/app/reports/courtesy-coupon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -104,22 +99,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courtesy-coupon.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="courtesy-coupon.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/courtesy-coupon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45053634">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state vertical-scroll-proportion="-22.0">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gsr.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gsr.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3">
-              <caret line="992" column="32" selection-start-line="992" selection-start-column="23" selection-end-line="992" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="0.3694875">
+              <caret line="463" column="41" selection-start-line="463" selection-start-column="41" selection-end-line="463" selection-end-column="41" />
+              <folding>
+                <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,8 +203,8 @@
         <option value="$PROJECT_DIR$/app/reports/birthdays.html" />
         <option value="$PROJECT_DIR$/app/reports/reports-service.js" />
         <option value="$PROJECT_DIR$/app/reports/courtesy-coupon-controller.js" />
-        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
         <option value="$PROJECT_DIR$/app/reports/courtesy-coupon.html" />
+        <option value="$PROJECT_DIR$/app/reports/gsr.html" />
       </list>
     </option>
   </component>
@@ -255,6 +266,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,7 +338,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -667,7 +678,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433108630108</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons.">
+      <created>1434834024599</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1434834024599</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -757,7 +774,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added line items for Rain-X and Plus+" />
     <MESSAGE value="fixed refresh bug in gsr reload" />
     <MESSAGE value="added packages to gsr and refactored rest api accordingly" />
     <MESSAGE value="added plus+ and rainx packages to gsr" />
@@ -782,7 +798,8 @@
     <MESSAGE value="- removed old error/warning messages&#10;" />
     <MESSAGE value="- made changes to gsr calculation rules&#10;- updated by hour report to factor in seconds&#10;" />
     <MESSAGE value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
+    <MESSAGE value=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons." />
+    <option name="LAST_COMMIT_MESSAGE" value=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,7 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49483353">
           <caret line="137" column="32" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,14 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3">
-          <caret line="992" column="32" selection-start-line="992" selection-start-column="23" selection-end-line="992" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1165,9 +1173,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/courtesy-coupon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45053634">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state vertical-scroll-proportion="-22.0">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3694875">
+          <caret line="463" column="41" selection-start-line="463" selection-start-column="41" selection-end-line="463" selection-end-column="41" />
+          <folding>
+            <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#accordion-group#0;n#accordion#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#accordion-group#0;n#accordion#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
