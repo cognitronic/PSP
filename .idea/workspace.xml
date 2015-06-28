@@ -2,40 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb1d47-f9e9-4440-ba1c-0e48380feeaf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.v12.suo" afterPath="$PROJECT_DIR$/api/api.v12.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.Tests.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/obj/Debug/psp.api.Tests.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.pdb" afterPath="$PROJECT_DIR$/api/psp.api/obj/Debug/psp.api.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.core/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.core/obj/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.core.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.dll" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api.Tests/bin/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.api/bin/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/bin/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" afterPath="$PROJECT_DIR$/api/psp.repository.mongo/obj/Debug/psp.repository.mongo.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" afterPath="$PROJECT_DIR$/api/psp.core/domain/GSR.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" afterPath="$PROJECT_DIR$/api/psp.api/Reports/GSRReport.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reports/gsr.html" afterPath="$PROJECT_DIR$/app/reports/gsr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PSP.iws" />
@@ -57,18 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="birthdays-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reports/birthdays-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="11" selection-start-line="47" selection-start-column="8" selection-end-line="54" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="reports-service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/reports-service.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gsr.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gsr.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18474375">
+            <state vertical-scroll-proportion="-1.451613">
               <caret line="1164" column="35" selection-start-line="1164" selection-start-column="35" selection-end-line="1164" selection-end-column="35" />
               <folding>
                 <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
@@ -136,6 +103,36 @@
                 <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.2580647">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications-service.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.8965517">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -695,7 +692,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435431464588</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary=" - refactored  the rest of the sections of the gsr per john's spreadsheet">
+      <created>1435448105139</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1435448105139</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -785,7 +788,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added packages to gsr and refactored rest api accordingly" />
     <MESSAGE value="added plus+ and rainx packages to gsr" />
     <MESSAGE value="created notifications console project and created volume report for email notifications" />
     <MESSAGE value="hooked up gsr notification" />
@@ -810,7 +812,8 @@
     <MESSAGE value=" - added courtesy wash coupon to reports&#10;  - added ability to send out courtesy washes&#10;   - added ability to add recipients to &#10;" />
     <MESSAGE value=" - made changes to protext and premier wash total dollar calculations&#10;  - added sent by property to courtesy wash coupons." />
     <MESSAGE value=" - refactored  washes on gsr report per john's spreadsheet" />
-    <option name="LAST_COMMIT_MESSAGE" value=" - refactored  washes on gsr report per john's spreadsheet" />
+    <MESSAGE value=" - refactored  the rest of the sections of the gsr per john's spreadsheet" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - refactored  the rest of the sections of the gsr per john's spreadsheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -831,13 +834,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/settings/modal-site-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5172415">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings/user-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -946,20 +942,6 @@
     <entry file="file://$PROJECT_DIR$/app/settings/notifications-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7026407">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1192,7 +1174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reports/gsr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18474375">
+        <state vertical-scroll-proportion="-1.451613">
           <caret line="1164" column="35" selection-start-line="1164" selection-start-column="35" selection-end-line="1164" selection-end-column="35" />
           <folding>
             <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
@@ -1216,6 +1198,30 @@
             <element signature="n#accordion-heading#0;n#accordion-group#0;n#accordion#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.2580647">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings/notifications-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8965517">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

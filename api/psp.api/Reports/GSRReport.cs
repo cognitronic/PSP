@@ -869,7 +869,8 @@ namespace psp.api.Reports
                         total = gsr.sitewatchTotalWashes_count.ToString(),
                         locationid = site.sitewatchid,
                         sitename = site.name,
-                        val = gsr.totalOverUnder_dollars.ToString(),
+                        val = gsr.washLinkTotalOverUnder_dollars.ToString(),
+                        reportcategory = gsr.sitewatchTotalOverUnder_dollars.ToString(), //just used reportcategory instead of create another prop
                         amt = gsr.amountToAudit.ToString()
                     });
                     try
@@ -907,9 +908,10 @@ namespace psp.api.Reports
             var sb = NotificationTemplates.StandardNotificationHeader("Prime Shine GSR Report", date);
             sb.Append("<table style='width: 400px; font-weight: 900; border-collapse: collapse;'>");
             int i = 0;
-            sb.Append("<tr><td width='250px'><h4>Location</h4></td><td width='75px'><h4>Amt. To Audit</h4></td><td width='75px'><h4>Total O/U</h4></td></tr>");
+            sb.Append("<tr><td width='250px'><h4>Location</h4></td><td width='75px'><h4>Amt. To Audit</h4></td><td width='75px'><h4>WL Total O/U</h4></td><td width='75px'><h4>SW Total O/U</h4></td></tr>");
             decimal ttlOU = 0;
             decimal ttlaa = 0;
+            decimal ttlSWOU = 0;
             foreach (var item in items.OrderBy(o => o.locationid))
             {
                 if (i % 2 == 0)
@@ -935,7 +937,7 @@ namespace psp.api.Reports
                     sb.Append(item.amt);
                     sb.Append("</td>");
                 }
-
+                //WL Total Over/Under
                 if (item.val.Contains("-"))
                 {
                     sb.Append("<td width='75px' style='color: #ff0000;'>$(");
@@ -948,11 +950,25 @@ namespace psp.api.Reports
                     sb.Append(item.val);
                     sb.Append("</td>");
                 }
+                //SW Total Over/Under
+                if (item.reportcategory.Contains("-"))
+                {
+                    sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                    sb.Append(item.reportcategory);
+                    sb.Append(")</td>");
+                }
+                else
+                {
+                    sb.Append("<td width='75px'>$");
+                    sb.Append(item.reportcategory);
+                    sb.Append("</td>");
+                }
                 sb.Append("</td>");
                 sb.Append("</tr>");
 
                 ttlaa += Convert.ToDecimal(item.amt);
                 ttlOU += Convert.ToDecimal(item.val);
+                ttlSWOU += Convert.ToDecimal(item.reportcategory);
             }
             sb.Append("<tr style='border-bottom: solid 20px #ffffff;'>");
             sb.Append("<td width='250px'><h4>Total:</h4>");
@@ -978,6 +994,18 @@ namespace psp.api.Reports
             {
                 sb.Append("<td width='75px'>$");
                 sb.Append(ttlOU.ToString());
+                sb.Append("</td>");
+            }
+            if (ttlSWOU < 0)
+            {
+                sb.Append("<td width='75px' style='color: #ff0000;'>$(");
+                sb.Append(ttlSWOU.ToString());
+                sb.Append(")</td>");
+            }
+            else
+            {
+                sb.Append("<td width='75px'>$");
+                sb.Append(ttlSWOU.ToString());
                 sb.Append("</td>");
             }
             sb.Append("</tr></table>");
