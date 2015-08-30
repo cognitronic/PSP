@@ -54,7 +54,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="recipient in recipients">
+                <tr ng-repeat="recipient in recipients track by $index">
                     <td>
                         {{ recipient }}
                     </td>
@@ -88,7 +88,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="bcc in bccemails">
+                <tr ng-repeat="bcc in bccemails track by $index">
                     <td>
                         {{ bcc }}
                     </td>
