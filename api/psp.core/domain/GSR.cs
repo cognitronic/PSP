@@ -700,5 +700,8 @@ namespace psp.core.domain
         [DataMember]
         public decimal washLinkTotalOverUnder_dollars { get; set; }
 
+        [DataMember]
+        public int washLinkTotalGrossWashes_count { get; set; }
+
     }
 }

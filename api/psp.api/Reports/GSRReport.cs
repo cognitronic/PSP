@@ -100,8 +100,11 @@ namespace psp.api.Reports
                             gsr.sitewatchPsx_dollars = int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_SEVEN;
                             gsr.sitewatchPsx_count = int.Parse(item.total);
                             gsr.sitewatchTotalPrimeShine_dollars += gsr.sitewatchPsx_dollars;
+
+                            gsr.primeShineUnlimited_count += int.Parse(item.total);
+                            gsr.primeShineUnlimited_dollars += gsr.sitewatchPsx_dollars;
                             break;
-                        case "49501680": // PSX Wash W/TG
+                        case "49501680": // Unlimited PSX Wash W/TG
                             gsr.sitewatchUnlimitedPsxWithTireGloss_dollars = int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_NINE;
                             gsr.sitewatchUnlimitedPsxWithTireGloss_count = int.Parse(item.total);
                             gsr.sitewatchTotalPrimeShine_dollars += gsr.sitewatchUnlimitedPsxWithTireGloss_dollars;
@@ -291,14 +294,14 @@ namespace psp.api.Reports
                             gsr.protexUnlimited_dollars += gsr.sitewatchUnlimitedProtexWithRainX_dollars;
                             break;
                         case "609021": // Unlimited Premier With Plus+
-                            gsr.sitewatchUnlimitedPremierWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_THREE;
+                            gsr.sitewatchUnlimitedPremierWithPlusPlus_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_FIVE;
                             gsr.sitewatchUnlimitedPremierWithPlusPlus_count += int.Parse(item.total);
 
                             gsr.premierUnlimited_count += int.Parse(item.total);
                             gsr.premierUnlimited_dollars += gsr.sitewatchUnlimitedPremierWithPlusPlus_dollars;
                             break;
                         case "609020": // Unlimited Premier With RainX
-                            gsr.sitewatchUnlimitedPremierWithRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.PLUS_TWO;
+                            gsr.sitewatchUnlimitedPremierWithRainX_dollars += int.Parse(item.total) * (int)GSRMultiplier.NEGATIVE_FIVE;
                             gsr.sitewatchUnlimitedPremierWithRainX_count += int.Parse(item.total);
 
                             gsr.premierUnlimited_count += int.Parse(item.total);
@@ -386,9 +389,11 @@ namespace psp.api.Reports
 
 
 
-            gsr.washLinkTotalWashes_count = gsr.washLinkTotalPrimeShine_count +
-                gsr.washLinkTotalProtex_count +
-                gsr.washLinkTotalPremier_count;
+            gsr.washLinkTotalWashes_count = gsr.washLinkPrimeShine_count +
+                gsr.washLinkProtex_count +
+                gsr.washLinkPremier_count;
+
+            gsr.washLinkTotalGrossWashes_count = gsr.washLinkTotalWashes_count;
 
             //SW Protex Total
             gsr.sitewatchTotalProtex_count = gsr.sitewatchProtexWash_count +
@@ -655,7 +660,24 @@ namespace psp.api.Reports
                 #region Impulse Items
                 foreach (var impulseItem in swData)
                 {
-                    if (impulseItem.reportcategory.Equals("500025"))
+                    //if(
+                    //    impulseItem.objid.Equals("609234") ||
+                    //    impulseItem.objid.Equals("49500019") ||
+                    //    impulseItem.objid.Equals("49500036") ||
+                    //    impulseItem.objid.Equals("49501486") ||
+                    //    impulseItem.objid.Equals("49501663") ||
+                    //    impulseItem.objid.Equals("49501665") ||
+                    //    impulseItem.objid.Equals("49501668") ||
+                    //    impulseItem.objid.Equals("49501669")
+                    //)
+                    //{
+                    //    if (!string.IsNullOrEmpty(impulseItem.total))
+                    //    {
+                    //        gsr.impulseItems += (Math.Abs(int.Parse(impulseItem.total)) * decimal.Parse(impulseItem.val));
+                    //    }
+                    //}
+                    if (impulseItem.reportcategory.Equals("500025") &&
+                        (impulseItem.status.Equals("C:P") || impulseItem.status.Equals("C:PW") || impulseItem.status.Equals("I:P-W")))
                     {
                         if (!string.IsNullOrEmpty(impulseItem.total))
                         {
@@ -806,6 +828,7 @@ namespace psp.api.Reports
                 gsr.pumpCodeWash +
                 gsr.prePaids -
                 ((gsr.couponsAndDiscounts * (int)GSRMultiplier.NEGATIVE_ONE) - gsr.totalPaidoutRefunds);
+
             gsr.washLinkTotalToAccountFor = gsr.washLinkTotalWashServices +
                  gsr.machineSales +
                 gsr.pumpCodeWash +
@@ -816,7 +839,7 @@ namespace psp.api.Reports
 
             if (gsr.washLinkTotalWashes_count > 0)
             {
-                gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.totalToAccountFor / gsr.washLinkTotalWashes_count), 2);
+                gsr.totalToAccountForPerCar_dollars = Math.Round(Convert.ToDouble(gsr.washLinkTotalToAccountFor / gsr.washLinkTotalWashes_count), 2);
             }
             else
             {

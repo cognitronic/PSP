@@ -30,5 +30,7 @@ namespace psp.core.domain
         public string val { get; set; }
         [DataMember]
         public string sitename { get; set; }
+        [DataMember]
+        public string status { get; set; }
     }
 }

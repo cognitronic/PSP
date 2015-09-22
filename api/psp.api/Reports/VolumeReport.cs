@@ -24,7 +24,8 @@ namespace psp.api.Reports
                 var gsr = new GSRReport().GetAmountToAudit(site, DateTime.Parse(gsrDate), "", "");
                 list.Add(new SiteWatchSalesItem
                 {
-                    total = gsr.sitewatchTotalWashes_count.ToString(),
+                    total = gsr.washLinkTotalGrossWashes_count.ToString(),
+
                     locationid = site.sitewatchid,
                     sitename = site.description,
                     val = gsr.totalToAccountForPerCar_dollars.ToString()

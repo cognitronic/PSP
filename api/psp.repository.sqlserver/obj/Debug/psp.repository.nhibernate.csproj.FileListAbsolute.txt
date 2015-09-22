@@ -1,0 +1,17 @@
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\psp.repository.nhibernate.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\psp.repository.nhibernate.pdb
+c:\Projects\PSP\api\psp.repository.sqlserver\obj\Debug\psp.repository.nhibernate.csprojResolveAssemblyReference.cache
+c:\Projects\PSP\api\psp.repository.sqlserver\obj\Debug\psp.repository.nhibernate.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\obj\Debug\psp.repository.nhibernate.pdb
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\FluentNHibernate.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\Iesi.Collections.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\Newtonsoft.Json.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\NHibernate.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\psp.core.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\MongoDB.Bson.dll
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\psp.core.pdb
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\FluentNHibernate.xml
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\Iesi.Collections.xml
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\Newtonsoft.Json.xml
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\NHibernate.xml
+c:\Projects\PSP\api\psp.repository.sqlserver\bin\Debug\MongoDB.Bson.xml

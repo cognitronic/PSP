@@ -30,7 +30,7 @@ namespace psp.api.helpers
             string sQuery = "";//ConfigurationSettings.AppSettings["PSFirebirdConnectionString"];
             if (string.IsNullOrEmpty(fromTime))
             {
-                sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
+                sQuery = @"Select i.objid, f_StatusCode(s.status) status, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
                     From
                     V_item i
                     Inner join v_SaleItems si on
@@ -43,12 +43,12 @@ namespace psp.api.helpers
                     s.terminal <> 3500036 and
                     i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344','103965', '500052') and 
                     s.logdate  = '" + startdate.ToShortDateString() + @"'
-                    group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val";
+                    group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val, s.status";
 
             }
             else
             {
-                sQuery = @"Select i.objid, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
+                sQuery = @"Select i.objid, f_StatusCode(s.status) status, i.name item, i.itemtype, sum(si.qty) total, s.logdate, i.reportcategory, s.site locationid, si.amt, si.val
                     From
                     V_item i
                     Inner join v_SaleItems si on
@@ -62,7 +62,7 @@ namespace psp.api.helpers
                     i.reportcategory in ('52167', '59458', '500044', '500090', '500061', '500050', '500036', '49500343', '500043', '500058', '500060', '49500342', '49500003', '49500001', '1000003', '500059', '49500354', '49500351', '53631', '500025', '500091', '500057', '52179', '500031', '53724', '500028', '1000004', '500063', '500027', '49500349', '500062', '500064', '500037', '500063', '500103', '500100', '49000002', '500102', '500101', '500112', '49500344','103965', '500052') and 
                     s.logdate  = '" + startdate.ToShortDateString() + @"' and
                     s.logtime between " + ConvertToTenthsOfAMinute(fromTime).ToString() + " and " + ConvertToTenthsOfAMinute(toTime).ToString() + @"
-                    group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val";
+                    group by i.reportcategory, i.name, i.objid, s.logdate, i.itemtype, s.site, si.amt, si.val, s.status";
             }
             var ds = new DataSet();
             var list = new List<SiteWatchSalesItem>();
@@ -81,7 +81,8 @@ namespace psp.api.helpers
                reportcategory = r["reportcategory"].ToString(),
                locationid = Convert.ToInt16(r["locationid"]),
                amt = r["amt"].ToString(),
-               val = r["val"].ToString()
+               val = r["val"].ToString(),
+               status = r["status"].ToString()
             })).ToList<SiteWatchSalesItem>();
 
             return list;

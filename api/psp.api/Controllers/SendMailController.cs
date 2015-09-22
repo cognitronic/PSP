@@ -36,40 +36,52 @@ namespace psp.api.Controllers
         [Route("")]
         public void Post([FromBody]NotificationMessage notificationMessage)
         {
-            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["SMTP_Host"]);
-            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["SMTP_Username"], ConfigurationManager.AppSettings["SMTP_Pwd"]);
-            MailMessage message = new MailMessage();
-            message.From = new MailAddress(notificationMessage.FromEmail);
+            try
+            {
+                SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["SMTP_Host"]);
+                client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["SMTP_Username"], ConfigurationManager.AppSettings["SMTP_Pwd"]);
+                MailMessage message = new MailMessage();
+                message.From = new MailAddress(notificationMessage.FromEmail);
 
-            if (notificationMessage.ToEmails != null && notificationMessage.ToEmails.Count > 0)
-            {
-                foreach (var email in notificationMessage.ToEmails)
+                if (notificationMessage.ToEmails != null && notificationMessage.ToEmails.Count > 0)
                 {
-                    message.To.Add(new MailAddress(email));
+                    foreach (var email in notificationMessage.ToEmails)
+                    {
+                        message.To.Add(new MailAddress(email));
+                    }
                 }
-            }
-            if (notificationMessage.Bccs != null && notificationMessage.Bccs.Count > 0)
-            {
-                foreach (var bcc in notificationMessage.Bccs)
+                if (notificationMessage.Bccs != null && notificationMessage.Bccs.Count > 0)
                 {
-                    message.Bcc.Add(bcc);
+                    foreach (var bcc in notificationMessage.Bccs)
+                    {
+                        message.Bcc.Add(bcc);
+                    }
                 }
-            }
-            if (notificationMessage.Ccs != null && notificationMessage.Ccs.Count > 0)
-            {
-                foreach (var cc in notificationMessage.Ccs)
+                if (notificationMessage.Ccs != null && notificationMessage.Ccs.Count > 0)
                 {
-                    message.CC.Add(cc);
+                    foreach (var cc in notificationMessage.Ccs)
+                    {
+                        message.CC.Add(cc);
+                    }
                 }
-            }
 
-            message.Subject = notificationMessage.Subject;
-            message.SubjectEncoding = System.Text.Encoding.UTF8;
-            message.Body = notificationMessage.MessageBody;
-            message.BodyEncoding = System.Text.Encoding.UTF8;
-            message.IsBodyHtml = true;
-            client.Send(message);
-            Console.Write("Message Sent!");
+                message.Subject = notificationMessage.Subject;
+                message.SubjectEncoding = System.Text.Encoding.UTF8;
+                message.Body = notificationMessage.MessageBody;
+                message.BodyEncoding = System.Text.Encoding.UTF8;
+                message.IsBodyHtml = true;
+                client.Send(message);
+            }
+            catch (Exception e)
+            {
+                AuditService.SaveLog(new AuditLog
+                {
+                    auditDate = DateTime.Now,
+                    message = "Failed To Send Mail",
+                    type = psp.core.ResourceStrings.Audit_Notification,
+                    name = "SendMailController"
+                });
+            }
         }
 
         // PUT api/sendmail/5
